@@ -326,6 +326,7 @@ This applies at every stage, not just at the end — Raymon gets a breakdown aft
 6. **Every webhook event gets persisted.** No dashboard number is allowed to be computed live-only with no stored record behind it.
 7. **Errors fail loud, not silent.** Any agent that hits an error state reports it in its breakdown rather than quietly falling back to placeholder data.
 8. **Every output is verified against the fact sheet.** No document, email, or dashboard copy ships without passing the automated check (`scripts/verify_document.py`) for the client's facts in `facts.json`. A dropped number or a leftover placeholder fails the stage.
+9. **Commit automatically after every completed task.** Once a task (and its QA pass, where applicable) is done and verified, the agent commits the changes to git with a concise message describing what was done. Never leave work uncommitted at the end of a session, and never include secrets or `.env` (gitignored). Only the current repo is committed — never push unless Raymon asks.
 
 ---
 
