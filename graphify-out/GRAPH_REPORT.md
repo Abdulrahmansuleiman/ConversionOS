@@ -36,6 +36,7 @@
 - SpeedTrendChart.tsx
 - pipeline-dashboard/src/types/events.ts
 - Proposal Writer
+- @types/react
 - bloomline-dashboard/src/components/Sidebar.tsx
 - bloomline-dashboard/src/api/client.ts
 - compilerOptions
@@ -123,7 +124,6 @@
 - Receipt Template
 - Performance Log — Infrastructure Agent
 - Performance Store
-- eslint
 - vite
 
 ## God Nodes (most connected - your core abstractions)
@@ -297,7 +297,7 @@ Nodes (16): Aside, Avatar, Brand, BrandName, BuiltBy, Company, Nav, NAV_ITEMS (+
 
 ### Community 34 - "devDependencies"
 Cohesion: 0.12
-Nodes (17): devDependencies, concurrently, @eslint/js, eslint-plugin-react-hooks, globals, @types/react, typescript, typescript-eslint (+9 more)
+Nodes (17): devDependencies, concurrently, eslint, @eslint/js, eslint-plugin-react-hooks, globals, typescript, typescript-eslint (+9 more)
 
 ### Community 35 - "Documents.tsx"
 Cohesion: 0.14

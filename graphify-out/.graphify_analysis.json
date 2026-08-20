@@ -847,6 +847,10 @@
       "opencode_agents_skills_proposal_writer_skill_solution_section",
       "opencode_agents_skills_proposal_writer_skill_understanding_section"
     ],
+    "22": [
+      "bloomline_dashboard_package_devdependencies_types_react",
+      "bloomline_dashboard_package_json_types_react"
+    ],
     "23": [
       "bloomline_dashboard_src_components_sidebar",
       "bloomline_dashboard_src_components_sidebar_aside",
@@ -1066,17 +1070,17 @@
     "34": [
       "bloomline_dashboard_package_devdependencies",
       "bloomline_dashboard_package_devdependencies_concurrently",
+      "bloomline_dashboard_package_devdependencies_eslint",
       "bloomline_dashboard_package_devdependencies_eslint_js",
       "bloomline_dashboard_package_devdependencies_eslint_plugin_react_hooks",
       "bloomline_dashboard_package_devdependencies_globals",
-      "bloomline_dashboard_package_devdependencies_types_react",
       "bloomline_dashboard_package_devdependencies_typescript",
       "bloomline_dashboard_package_devdependencies_typescript_eslint",
       "bloomline_dashboard_package_devdependencies_vitejs_plugin_react",
       "bloomline_dashboard_package_json_concurrently",
-      "bloomline_dashboard_package_json_types_react",
       "bloomline_dashboard_package_json_typescript",
       "bloomline_dashboard_package_json_vitejs_plugin_react",
+      "eslint",
       "eslint_js",
       "eslint_plugin_react_hooks",
       "globals",
@@ -1862,10 +1866,6 @@
       "docs_performance_readme_performance_store",
       "docs_performance_readme_rules"
     ],
-    "124": [
-      "bloomline_dashboard_package_devdependencies_eslint",
-      "eslint"
-    ],
     "125": [
       "bloomline_dashboard_package_devdependencies_vite",
       "bloomline_dashboard_package_json_vite"
@@ -1897,6 +1897,7 @@
     "19": 0.1523809523809524,
     "20": 0.13157894736842105,
     "21": 0.08695652173913043,
+    "22": 1.0,
     "23": 0.1111111111111111,
     "24": 0.3888888888888889,
     "25": 0.08333333333333333,
@@ -1993,7 +1994,6 @@
     "121": 1.0,
     "122": 0.5,
     "123": 0.5,
-    "124": 1.0,
     "125": 1.0,
     "126": 1.0
   },

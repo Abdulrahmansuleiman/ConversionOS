@@ -6600,28 +6600,6 @@
       "source_location": "L32"
     },
     {
-      "id": "bloomline_dashboard_package_devdependencies_eslint",
-      "label": "eslint",
-      "_origin": "ast",
-      "community": 124,
-      "community_name": "eslint",
-      "file_type": "code",
-      "norm_label": "eslint",
-      "source_file": "bloomline-dashboard/package.json",
-      "source_location": "L30"
-    },
-    {
-      "id": "eslint",
-      "label": "eslint",
-      "_origin": "ast",
-      "community": 124,
-      "community_name": "eslint",
-      "file_type": "concept",
-      "norm_label": "eslint",
-      "source_file": "bloomline-dashboard/package.json",
-      "source_location": "L30"
-    },
-    {
       "id": "bloomline_dashboard_package_devdependencies_vite",
       "label": "vite",
       "_origin": "ast",
@@ -9467,6 +9445,28 @@
       "source_location": "L343"
     },
     {
+      "id": "bloomline_dashboard_package_devdependencies_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "@types/react",
+      "file_type": "code",
+      "norm_label": "@types/react",
+      "source_file": "bloomline-dashboard/package.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "bloomline_dashboard_package_json_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "@types/react",
+      "file_type": "concept",
+      "norm_label": "@types/react",
+      "source_file": "bloomline-dashboard/package.json",
+      "source_location": "L26"
+    },
+    {
       "id": "bloomline_dashboard_src_components_sidebar",
       "label": "bloomline-dashboard/src/components/Sidebar.tsx",
       "_origin": "ast",
@@ -12030,6 +12030,17 @@
       "source_location": "L29"
     },
     {
+      "id": "bloomline_dashboard_package_devdependencies_eslint",
+      "label": "eslint",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "eslint",
+      "source_file": "bloomline-dashboard/package.json",
+      "source_location": "L30"
+    },
+    {
       "id": "bloomline_dashboard_package_devdependencies_eslint_js",
       "label": "@eslint/js",
       "_origin": "ast",
@@ -12061,17 +12072,6 @@
       "norm_label": "globals",
       "source_file": "bloomline-dashboard/package.json",
       "source_location": "L33"
-    },
-    {
-      "id": "bloomline_dashboard_package_devdependencies_types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/react",
-      "source_file": "bloomline-dashboard/package.json",
-      "source_location": "L26"
     },
     {
       "id": "bloomline_dashboard_package_devdependencies_typescript",
@@ -12118,17 +12118,6 @@
       "source_location": "L29"
     },
     {
-      "id": "bloomline_dashboard_package_json_types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "@types/react",
-      "source_file": "bloomline-dashboard/package.json",
-      "source_location": "L26"
-    },
-    {
       "id": "bloomline_dashboard_package_json_typescript",
       "label": "typescript",
       "_origin": "ast",
@@ -12149,6 +12138,17 @@
       "norm_label": "@vitejs/plugin-react",
       "source_file": "bloomline-dashboard/package.json",
       "source_location": "L28"
+    },
+    {
+      "id": "eslint",
+      "label": "eslint",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "devDependencies",
+      "file_type": "concept",
+      "norm_label": "eslint",
+      "source_file": "bloomline-dashboard/package.json",
+      "source_location": "L30"
     },
     {
       "id": "eslint_js",
