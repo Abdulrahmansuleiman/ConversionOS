@@ -1092,10 +1092,10 @@
     "semantic_hash": "ec1c1087246e1007eb075b8a846e7180"
   },
   ".opencode/.agents/skills/notion-project-store/SKILL.md": {
-    "mtime": 1787223237.9498572,
-    "seen": 1787249946.0138168,
-    "ast_hash": "a37f52d0bc2c53b746a70ac168174258",
-    "semantic_hash": "a37f52d0bc2c53b746a70ac168174258"
+    "mtime": 1787252686.2131343,
+    "seen": 1787253294.9167697,
+    "ast_hash": "a263b22b2c40ef714689ec962b8c44ec",
+    "semantic_hash": ""
   },
   ".opencode/.agents/skills/pdf/SKILL.md": {
     "mtime": 1785805053.834761,
@@ -1212,10 +1212,10 @@
     "semantic_hash": "d889ee62ee255b116baab6ec0ca3e5d4"
   },
   "AGENTS.md": {
-    "mtime": 1787248541.170297,
-    "seen": 1787249946.0138767,
-    "ast_hash": "426d3503575a8edd6eaba04ba233e8ba",
-    "semantic_hash": "426d3503575a8edd6eaba04ba233e8ba"
+    "mtime": 1787252697.6763835,
+    "seen": 1787253294.9168732,
+    "ast_hash": "5e3ab59cadd388327c41c023fb353a30",
+    "semantic_hash": ""
   },
   "MEMORY.md": {
     "mtime": 1785948673.5259552,
@@ -1644,9 +1644,9 @@
     "semantic_hash": ""
   },
   "docs/performance/builder.md": {
-    "mtime": 1785809897.371456,
-    "seen": 1787251289.7488055,
-    "ast_hash": "c24577fec6af390b708d80b4a5356844",
+    "mtime": 1787252717.120335,
+    "seen": 1787253294.9169145,
+    "ast_hash": "d0967a763f05a075b64fd9c55742f925",
     "semantic_hash": ""
   },
   "docs/performance/email.md": {
@@ -1719,6 +1719,12 @@
     "mtime": 1787220379.1132646,
     "seen": 1787251289.7626197,
     "ast_hash": "556317d20695d405207727b1d5b38b43",
+    "semantic_hash": ""
+  },
+  "pipeline-dashboard/supabase/migrations.sql": {
+    "mtime": 1787036815.2630172,
+    "seen": 1787253294.916578,
+    "ast_hash": "a8f09a6565738c3f6a73f2977c85bf3b",
     "semantic_hash": ""
   }
 }
