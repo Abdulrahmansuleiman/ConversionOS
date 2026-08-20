@@ -1,12 +1,12 @@
 ---
-source_file: "launchops-portal/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "concept"
-community: "Chart and Server Deps"
-location: "L17"
+community: "dependencies"
+location: "L18"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Chart_and_Server_Deps
+  - community/dependencies
 ---
 
 # react
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[react_2]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Chart_and_Server_Deps
+#graphify/concept #graphify/EXTRACTED #community/dependencies

@@ -1,18 +1,18 @@
 ---
-source_file: "pipeline-dashboard/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "code"
-community: "Core Web Dependencies"
-location: "L30"
+community: "dependencies"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Core_Web_Dependencies
+  - community/dependencies
 ---
 
 # styled-components
 
 ## Connections
-- [[dependencies_2]] - `contains` [EXTRACTED]
+- [[dependencies_1]] - `contains` [EXTRACTED]
 - [[styled-components_4]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Core_Web_Dependencies
+#graphify/code #graphify/EXTRACTED #community/dependencies

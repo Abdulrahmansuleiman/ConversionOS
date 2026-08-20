@@ -36,12 +36,12 @@ SORT file.name ASC
 - 16 edges to [[_COMMUNITY_Status and Badge Components]]
 - 10 edges to [[_COMMUNITY_Calendar Tab View]]
 - 6 edges to [[_COMMUNITY_Booking Tab Navigation]]
-- 5 edges to [[_COMMUNITY_Data Fetching Hooks]]
+- 5 edges to [[_COMMUNITY_pipeline-dashboardsrcapiclient.ts]]
 - 3 edges to [[_COMMUNITY_Pipeline Sidebar]]
 - 3 edges to [[_COMMUNITY_Settings Form Components]]
 - 2 edges to [[_COMMUNITY_Pipeline Error Boundary]]
 - 2 edges to [[_COMMUNITY_Trend Chart Components]]
-- 2 edges to [[_COMMUNITY_Header and Dev Badges]]
+- 2 edges to [[_COMMUNITY_pipeline-dashboardsrccomponentsHeader.tsx]]
 - 2 edges to [[_COMMUNITY_KPI Dashboard Tab]]
 
 ## Top bridge nodes

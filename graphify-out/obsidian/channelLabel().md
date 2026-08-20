@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/utils/format.ts"
+source_file: "pipeline-dashboard/src/utils/format.ts"
 type: "code"
-community: "Calendar and Month Navigation"
+community: "Calendar Tab View"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_and_Month_Navigation
+  - community/Calendar_Tab_View
 ---
 
 # channelLabel()
 
 ## Connections
-- [[bloomline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_and_Month_Navigation
+#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View

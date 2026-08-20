@@ -1,31 +1,22 @@
 ---
-source_file: "launchops-portal/src/components/ui.tsx"
+source_file: "bloomline-dashboard/src/utils/format.ts"
 type: "code"
-community: "Header and Testimonials"
-location: "L202"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Testimonials
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # formatDate()
 
 ## Connections
-- [[Documents()]] - `calls` [EXTRACTED]
-- [[Documents.tsx]] - `imports` [EXTRACTED]
-- [[Feedback()]] - `calls` [EXTRACTED]
-- [[Feedback.tsx]] - `imports` [EXTRACTED]
-- [[Header()]] - `calls` [EXTRACTED]
-- [[Overview()]] - `calls` [EXTRACTED]
-- [[Overview.tsx]] - `imports` [EXTRACTED]
-- [[ProjectDetail()]] - `calls` [EXTRACTED]
-- [[ProjectDetail.tsx]] - `imports` [EXTRACTED]
-- [[Projects()]] - `calls` [EXTRACTED]
-- [[Projects.tsx]] - `imports` [EXTRACTED]
-- [[Testimonials()]] - `calls` [EXTRACTED]
-- [[Testimonials.tsx]] - `imports` [EXTRACTED]
-- [[launchops-portalsrccomponentsHeader.tsx]] - `imports` [EXTRACTED]
-- [[launchops-portalsrccomponentsui.tsx]] - `contains` [EXTRACTED]
+- [[FollowUpsTab()]] - `calls` [EXTRACTED]
+- [[SettingsTab()]] - `calls` [EXTRACTED]
+- [[bloomline-dashboardsrctabsFollowUpsTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsSettingsTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
+- [[formatDateTime()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Testimonials
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

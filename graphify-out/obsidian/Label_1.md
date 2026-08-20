@@ -1,17 +1,17 @@
 ---
-source_file: "pipeline-dashboard/src/components/KpiCard.tsx"
+source_file: "bloomline-dashboard/src/components/MonthNav.tsx"
 type: "code"
-community: "KPI Card Components"
-location: "L50"
+community: "PDF Processing Advanced Reference"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KPI_Card_Components
+  - community/PDF_Processing_Advanced_Reference
 ---
 
 # Label
 
 ## Connections
-- [[pipeline-dashboardsrccomponentsKpiCard.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsMonthNav.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KPI_Card_Components
+#graphify/code #graphify/EXTRACTED #community/PDF_Processing_Advanced_Reference

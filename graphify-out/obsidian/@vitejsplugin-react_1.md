@@ -1,18 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
-type: "code"
-community: "Vite React Plugin"
-location: "L26"
+source_file: "bloomline-dashboard/package.json"
+type: "concept"
+community: "Community None"
+location: "L28"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Vite_React_Plugin
+  - community/Community_None
 ---
 
 # @vitejs/plugin-react
 
 ## Connections
-- [[@vitejsplugin-react_3]] - `imports` [EXTRACTED]
-- [[devDependencies_1]] - `contains` [EXTRACTED]
+- [[@vitejsplugin-react]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Vite_React_Plugin
+#graphify/concept #graphify/EXTRACTED #community/Community_None

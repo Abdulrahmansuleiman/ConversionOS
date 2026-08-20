@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/ui.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # StatusPill()
@@ -18,4 +18,4 @@ tags:
 - [[bloomline-dashboardsrctabsFollowUpsTab.tsx]] - `imports` [EXTRACTED]
 - [[statusTone()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

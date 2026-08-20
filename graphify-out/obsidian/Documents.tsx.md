@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/src/views/Documents.tsx"
 type: "code"
-community: "Document Management View"
+community: "Documents.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Document_Management_View
+  - community/Documentstsx
 ---
 
 # Documents.tsx
@@ -17,8 +17,8 @@ tags:
 - [[Document]] - `imports` [EXTRACTED]
 - [[Documents()]] - `contains` [EXTRACTED]
 - [[DownloadLink]] - `contains` [EXTRACTED]
-- [[EmptyState()]] - `imports` [EXTRACTED]
-- [[Head_1]] - `contains` [EXTRACTED]
+- [[EmptyState()_1]] - `imports` [EXTRACTED]
+- [[Head]] - `contains` [EXTRACTED]
 - [[Header()]] - `imports` [EXTRACTED]
 - [[Loading()]] - `imports` [EXTRACTED]
 - [[Notes]] - `contains` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[Th_2]] - `contains` [EXTRACTED]
 - [[TypeTag]] - `contains` [EXTRACTED]
 - [[client_2]] - `imports` [EXTRACTED]
-- [[formatDate()]] - `imports` [EXTRACTED]
+- [[formatDate()_1]] - `imports` [EXTRACTED]
 - [[index.ts]] - `imports_from` [EXTRACTED]
 - [[launchops-portalsrcApp.tsx]] - `imports_from` [EXTRACTED]
 - [[launchops-portalsrcapiclient.ts]] - `imports_from` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[statusColor()]] - `contains` [EXTRACTED]
 - [[theme_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Document_Management_View
+#graphify/code #graphify/EXTRACTED #community/Documentstsx

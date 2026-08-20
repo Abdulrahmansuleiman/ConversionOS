@@ -1,17 +1,17 @@
 ---
-source_file: "pipeline-dashboard/src/types/changes.ts"
+source_file: "bloomline-dashboard/src/types/changes.ts"
 type: "code"
-community: "KPI Card Components"
+community: "bloomline-dashboard/src/components/KpiCard.tsx"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KPI_Card_Components
+  - community/bloomline-dashboard/src/components/KpiCardtsx
 ---
 
 # ChangeLabel
 
 ## Connections
-- [[pipeline-dashboardsrctypeschanges.ts]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrctypeschanges.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KPI_Card_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/components/KpiCardtsx

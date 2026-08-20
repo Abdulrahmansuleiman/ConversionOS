@@ -10,7 +10,7 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[ChartWrap_3]] - code - pipeline-dashboard/src/components/charts/ConversionDonut.tsx
+- [[ChartWrap_2]] - code - pipeline-dashboard/src/components/charts/ConversionDonut.tsx
 - [[ConversionDonut()]] - code - pipeline-dashboard/src/components/charts/ConversionDonut.tsx
 - [[ConversionDonutProps]] - code - pipeline-dashboard/src/components/charts/ConversionDonut.tsx
 - [[DonutSegment]] - code - pipeline-dashboard/src/components/charts/ConversionDonut.tsx

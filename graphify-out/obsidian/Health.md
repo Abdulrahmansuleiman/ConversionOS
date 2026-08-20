@@ -1,19 +1,19 @@
 ---
-source_file: "pipeline-dashboard/src/types/events.ts"
+source_file: "bloomline-dashboard/src/types/events.ts"
 type: "code"
-community: "Header and Dev Badges"
-location: "L79"
+community: "bloomline-dashboard/src/types/events.ts"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Dev_Badges
+  - community/bloomline-dashboard/src/types/eventsts
 ---
 
 # Health
 
 ## Connections
-- [[pipeline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrchooksuseHealth.ts]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrchooksuseHealth.ts]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Dev_Badges
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/types/eventsts

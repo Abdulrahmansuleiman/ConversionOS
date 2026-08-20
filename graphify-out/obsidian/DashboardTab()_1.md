@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/DashboardTab.tsx"
 type: "code"
-community: "API Client and Hooks"
+community: "bloomline-dashboard/src/types/events.ts"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Client_and_Hooks
+  - community/bloomline-dashboard/src/types/eventsts
 ---
 
 # DashboardTab()
@@ -19,4 +19,4 @@ tags:
 - [[useTopLeads()_1]] - `calls` [EXTRACTED]
 - [[useTrend()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Client_and_Hooks
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/types/eventsts

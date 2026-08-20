@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/hooks/useEvents.ts"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # useEvents()
@@ -25,4 +25,4 @@ tags:
 - [[bloomline-dashboardsrctabsHumanTransfersTab.tsx]] - `imports` [EXTRACTED]
 - [[useFetch()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

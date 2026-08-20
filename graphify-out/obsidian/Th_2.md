@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/src/views/Documents.tsx"
 type: "code"
-community: "Document Management View"
+community: "Documents.tsx"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Document_Management_View
+  - community/Documentstsx
 ---
 
 # Th
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Documents.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Document_Management_View
+#graphify/code #graphify/EXTRACTED #community/Documentstsx

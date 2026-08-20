@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/tsconfig.app.json"
 type: "code"
-community: "TypeScript Compiler Config"
+community: "compilerOptions"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Compiler_Config
+  - community/compilerOptions
 ---
 
 # compilerOptions
@@ -15,7 +15,7 @@ tags:
 - [[allowImportingTsExtensions]] - `contains` [EXTRACTED]
 - [[bloomline-dashboardtsconfig.app.json]] - `contains` [EXTRACTED]
 - [[jsx]] - `contains` [EXTRACTED]
-- [[lib_3]] - `contains` [EXTRACTED]
+- [[lib]] - `contains` [EXTRACTED]
 - [[module]] - `contains` [EXTRACTED]
 - [[moduleDetection]] - `contains` [EXTRACTED]
 - [[moduleResolution]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[useDefineForClassFields]] - `contains` [EXTRACTED]
 - [[verbatimModuleSyntax]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Compiler_Config
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

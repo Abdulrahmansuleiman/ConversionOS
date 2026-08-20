@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/main.tsx"
 type: "code"
-community: "Dashboard Theme Setup"
+community: "bloomline-dashboard/src/components/charts/WeeklyTrend.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Theme_Setup
+  - community/bloomline-dashboard/src/components/charts/WeeklyTrendtsx
 ---
 
 # bloomline-dashboard/src/main.tsx
@@ -19,4 +19,4 @@ tags:
 - [[bloomline-dashboardsrcstylesGlobalStyles.ts]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctheme.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Theme_Setup
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/components/charts/WeeklyTrendtsx

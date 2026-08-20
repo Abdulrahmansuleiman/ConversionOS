@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/src/views/Testimonials.tsx"
 type: "code"
-community: "Header and Testimonials"
+community: "Testimonials.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Testimonials
+  - community/Testimonialstsx
 ---
 
 # Testimonials.tsx
@@ -19,8 +19,8 @@ tags:
 - [[Card]] - `contains` [EXTRACTED]
 - [[ClientName]] - `contains` [EXTRACTED]
 - [[ClientSub]] - `contains` [EXTRACTED]
-- [[EmptyState()]] - `imports` [EXTRACTED]
-- [[Grid_1]] - `contains` [EXTRACTED]
+- [[EmptyState()_1]] - `imports` [EXTRACTED]
+- [[Grid]] - `contains` [EXTRACTED]
 - [[Header()]] - `imports` [EXTRACTED]
 - [[Loading()]] - `imports` [EXTRACTED]
 - [[Meta]] - `contains` [EXTRACTED]
@@ -33,7 +33,7 @@ tags:
 - [[Toggle]] - `contains` [EXTRACTED]
 - [[TopRow]] - `contains` [EXTRACTED]
 - [[client_2]] - `imports` [EXTRACTED]
-- [[formatDate()]] - `imports` [EXTRACTED]
+- [[formatDate()_1]] - `imports` [EXTRACTED]
 - [[index.ts]] - `imports_from` [EXTRACTED]
 - [[launchops-portalsrcApp.tsx]] - `imports_from` [EXTRACTED]
 - [[launchops-portalsrcapiclient.ts]] - `imports_from` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[launchops-portalsrctheme.ts]] - `imports_from` [EXTRACTED]
 - [[theme_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Testimonials
+#graphify/code #graphify/EXTRACTED #community/Testimonialstsx

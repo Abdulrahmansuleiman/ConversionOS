@@ -1,17 +1,17 @@
 ---
-source_file: "launchops-portal/src/components/Header.tsx"
+source_file: "launchops-portal/src/components/LoginScreen.tsx"
 type: "code"
-community: "Header and Testimonials"
-location: "L29"
+community: "Login Screen UI"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Testimonials
+  - community/Login_Screen_UI
 ---
 
 # Eyebrow
 
 ## Connections
-- [[launchops-portalsrccomponentsHeader.tsx]] - `contains` [EXTRACTED]
+- [[LoginScreen.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Testimonials
+#graphify/code #graphify/EXTRACTED #community/Login_Screen_UI

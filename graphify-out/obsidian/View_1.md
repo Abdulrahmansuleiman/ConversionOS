@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # View
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

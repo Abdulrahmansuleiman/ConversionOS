@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # BookingsTab()
@@ -16,9 +16,9 @@ tags:
 - [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `contains` [EXTRACTED]
 - [[displayName()]] - `calls` [EXTRACTED]
 - [[formatDateTime()]] - `calls` [EXTRACTED]
-- [[monthLabel()]] - `calls` [EXTRACTED]
+- [[monthLabel()_1]] - `calls` [EXTRACTED]
 - [[toCalendarBooking()]] - `indirect_call` [INFERRED]
-- [[toMonthKey()]] - `calls` [EXTRACTED]
+- [[toMonthKey()_1]] - `calls` [EXTRACTED]
 - [[useEvents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

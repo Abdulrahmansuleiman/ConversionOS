@@ -1,18 +1,18 @@
 ---
-source_file: "pipeline-dashboard/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "code"
-community: "React Icons Library"
-location: "L28"
+community: "feedback-issue-template.md"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/React_Icons_Library
+  - community/feedback-issue-templatemd
 ---
 
 # react-icons
 
 ## Connections
-- [[dependencies_2]] - `contains` [EXTRACTED]
+- [[dependencies_1]] - `contains` [EXTRACTED]
 - [[react-icons_3]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/React_Icons_Library
+#graphify/code #graphify/EXTRACTED #community/feedback-issue-templatemd

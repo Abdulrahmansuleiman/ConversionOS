@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # bloomline-dashboard/src/tabs/BookingsTab.tsx
@@ -14,16 +14,16 @@ tags:
 ## Connections
 - [[BookingsTab()]] - `contains` [EXTRACTED]
 - [[CalendarBooking_1]] - `imports` [EXTRACTED]
-- [[CalendarGrid()]] - `imports` [EXTRACTED]
+- [[CalendarGrid()_1]] - `imports` [EXTRACTED]
 - [[Card_3]] - `imports` [EXTRACTED]
 - [[CardHeader_1]] - `imports` [EXTRACTED]
 - [[CardSub_1]] - `imports` [EXTRACTED]
 - [[CardTitle_1]] - `imports` [EXTRACTED]
 - [[ChannelPill()_1]] - `imports` [EXTRACTED]
-- [[EmptyState()_1]] - `imports` [EXTRACTED]
+- [[EmptyState()]] - `imports` [EXTRACTED]
 - [[ErrorState()]] - `imports` [EXTRACTED]
 - [[MonthNav()]] - `imports` [EXTRACTED]
-- [[NormalizedEvent_1]] - `imports` [EXTRACTED]
+- [[NormalizedEvent]] - `imports` [EXTRACTED]
 - [[SampleDataBadge()_1]] - `imports` [EXTRACTED]
 - [[StatusPill()_1]] - `imports` [EXTRACTED]
 - [[Table_2]] - `imports` [EXTRACTED]
@@ -45,9 +45,9 @@ tags:
 - [[bloomline-dashboardsrcutilsformat.ts]] - `imports_from` [EXTRACTED]
 - [[displayName()]] - `imports` [EXTRACTED]
 - [[formatDateTime()]] - `imports` [EXTRACTED]
-- [[monthLabel()]] - `imports` [EXTRACTED]
+- [[monthLabel()_1]] - `imports` [EXTRACTED]
 - [[toCalendarBooking()]] - `contains` [EXTRACTED]
-- [[toMonthKey()]] - `imports` [EXTRACTED]
+- [[toMonthKey()_1]] - `imports` [EXTRACTED]
 - [[useEvents()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

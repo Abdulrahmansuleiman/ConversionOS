@@ -1,17 +1,17 @@
 ---
 source_file: "bloomline-dashboard/tsconfig.app.json"
 type: "concept"
-community: "Dashboard App TSConfig"
+community: "bloomline-dashboard/package.json"
 location: "L25"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Dashboard_App_TSConfig
+  - community/bloomline-dashboard/packagejson
 ---
 
 # src
 
 ## Connections
-- [[include_3]] - `extends` [EXTRACTED]
+- [[include]] - `extends` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Dashboard_App_TSConfig
+#graphify/concept #graphify/EXTRACTED #community/bloomline-dashboard/packagejson

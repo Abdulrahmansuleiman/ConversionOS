@@ -1,34 +1,34 @@
 ---
 source_file: "bloomline-dashboard/src/components/CalendarGrid.tsx"
 type: "code"
-community: "Calendar and Month Navigation"
+community: "PDF Processing Advanced Reference"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_and_Month_Navigation
+  - community/PDF_Processing_Advanced_Reference
 ---
 
 # bloomline-dashboard/src/components/CalendarGrid.tsx
 
 ## Connections
-- [[BookingChip]] - `contains` [EXTRACTED]
-- [[BookingTime]] - `contains` [EXTRACTED]
+- [[BookingChip_1]] - `contains` [EXTRACTED]
+- [[BookingTime_1]] - `contains` [EXTRACTED]
 - [[CalendarBooking_1]] - `imports` [EXTRACTED]
-- [[CalendarGrid()]] - `contains` [EXTRACTED]
+- [[CalendarGrid()_1]] - `contains` [EXTRACTED]
 - [[CalendarGridProps_1]] - `contains` [EXTRACTED]
-- [[DayCell]] - `contains` [EXTRACTED]
-- [[DayHeader]] - `contains` [EXTRACTED]
-- [[DayNumber]] - `contains` [EXTRACTED]
-- [[EmptyState()_1]] - `imports` [EXTRACTED]
-- [[Grid]] - `contains` [EXTRACTED]
-- [[WEEKDAYS]] - `contains` [EXTRACTED]
+- [[DayCell_1]] - `contains` [EXTRACTED]
+- [[DayHeader_1]] - `contains` [EXTRACTED]
+- [[DayNumber_1]] - `contains` [EXTRACTED]
+- [[EmptyState()]] - `imports` [EXTRACTED]
+- [[Grid_2]] - `contains` [EXTRACTED]
+- [[WEEKDAYS_1]] - `contains` [EXTRACTED]
 - [[bloomline-dashboardsrccomponentsEmptyState.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctabsCalendarTab.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctypesevents.ts]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrcutilsformat.ts]] - `imports_from` [EXTRACTED]
 - [[displayName()]] - `imports` [EXTRACTED]
-- [[formatTime()]] - `imports` [EXTRACTED]
+- [[formatTime()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_and_Month_Navigation
+#graphify/code #graphify/EXTRACTED #community/PDF_Processing_Advanced_Reference

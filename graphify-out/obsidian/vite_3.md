@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/package.json"
 type: "concept"
-community: "Vite Dev Dependencies"
+community: "Process"
 location: "L29"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Vite_Dev_Dependencies
+  - community/Process
 ---
 
 # vite
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[vite_2]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Vite_Dev_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/Process

@@ -1,19 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "concept"
-community: "React Icons Library"
-location: "L19"
+community: "Community None"
+location: "L20"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/React_Icons_Library
+  - community/Community_None
 ---
 
 # react-icons
 
 ## Connections
-- [[react-icons]] - `imports` [EXTRACTED]
-- [[react-icons_1]] - `imports` [EXTRACTED]
 - [[react-icons_2]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/React_Icons_Library
+#graphify/concept #graphify/EXTRACTED #community/Community_None

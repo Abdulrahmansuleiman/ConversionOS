@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/components/MonthNav.tsx"
+source_file: "bloomline-dashboard/src/components/Sidebar.tsx"
 type: "code"
-community: "Calendar and Month Navigation"
-location: "L12"
+community: "Dashboard Sidebar"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_and_Month_Navigation
+  - community/Dashboard_Sidebar
 ---
 
 # Nav
 
 ## Connections
-- [[bloomline-dashboardsrccomponentsMonthNav.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsSidebar.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_and_Month_Navigation
+#graphify/code #graphify/EXTRACTED #community/Dashboard_Sidebar

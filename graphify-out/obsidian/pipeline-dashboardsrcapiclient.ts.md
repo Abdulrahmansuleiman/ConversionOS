@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/src/api/client.ts"
 type: "code"
-community: "Data Fetching Hooks"
+community: "pipeline-dashboard/src/api/client.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Data_Fetching_Hooks
+  - community/pipeline-dashboard/src/api/clientts
 ---
 
 # pipeline-dashboard/src/api/client.ts
@@ -16,12 +16,12 @@ tags:
 - [[ApiError]] - `contains` [EXTRACTED]
 - [[CalendarBooking]] - `imports` [EXTRACTED]
 - [[DashboardUser]] - `imports` [EXTRACTED]
-- [[Health]] - `imports` [EXTRACTED]
-- [[KpiData]] - `imports` [EXTRACTED]
-- [[NormalizedEvent]] - `imports` [EXTRACTED]
+- [[Health_1]] - `imports` [EXTRACTED]
+- [[KpiData_1]] - `imports` [EXTRACTED]
+- [[NormalizedEvent_1]] - `imports` [EXTRACTED]
 - [[SpeedBucket]] - `imports` [EXTRACTED]
 - [[Timeframe]] - `imports` [EXTRACTED]
-- [[TopLead]] - `imports` [EXTRACTED]
+- [[TopLead_1]] - `imports` [EXTRACTED]
 - [[TrendBucket]] - `imports` [EXTRACTED]
 - [[api]] - `contains` [EXTRACTED]
 - [[pipeline-dashboardsrchooksuseCalendar.ts]] - `imports_from` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[request()]] - `contains` [EXTRACTED]
 - [[useSpeedTrend.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Data_Fetching_Hooks
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/api/clientts

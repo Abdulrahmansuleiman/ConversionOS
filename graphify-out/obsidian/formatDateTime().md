@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/utils/format.ts"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # formatDateTime()
@@ -21,7 +21,7 @@ tags:
 - [[bloomline-dashboardsrctabsFollowUpsTab.tsx]] - `imports` [EXTRACTED]
 - [[bloomline-dashboardsrctabsHumanTransfersTab.tsx]] - `imports` [EXTRACTED]
 - [[bloomline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
-- [[formatDate()_1]] - `calls` [EXTRACTED]
-- [[formatTime()]] - `calls` [EXTRACTED]
+- [[formatDate()]] - `calls` [EXTRACTED]
+- [[formatTime()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

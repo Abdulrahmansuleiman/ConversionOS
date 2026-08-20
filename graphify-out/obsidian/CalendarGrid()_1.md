@@ -1,21 +1,21 @@
 ---
-source_file: "pipeline-dashboard/src/components/CalendarGrid.tsx"
+source_file: "bloomline-dashboard/src/components/CalendarGrid.tsx"
 type: "code"
-community: "Calendar Tab View"
+community: "PDF Processing Advanced Reference"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_Tab_View
+  - community/PDF_Processing_Advanced_Reference
 ---
 
 # CalendarGrid()
 
 ## Connections
-- [[displayName()_1]] - `calls` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsCalendarGrid.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsCalendarTab.tsx]] - `imports` [EXTRACTED]
+- [[displayName()]] - `calls` [EXTRACTED]
 - [[formatTime()_1]] - `calls` [EXTRACTED]
-- [[pipeline-dashboardsrccomponentsCalendarGrid.tsx]] - `contains` [EXTRACTED]
-- [[pipeline-dashboardsrctabsBookingsTab.tsx]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrctabsCalendarTab.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View
+#graphify/code #graphify/EXTRACTED #community/PDF_Processing_Advanced_Reference

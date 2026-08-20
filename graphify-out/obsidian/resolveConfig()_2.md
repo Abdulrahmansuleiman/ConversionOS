@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/server/config.js"
 type: "code"
-community: "Local File Storage"
+community: "pipeline-dashboard/server/app.js"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local_File_Storage
+  - community/pipeline-dashboard/server/appjs
 ---
 
 # resolveConfig()
@@ -18,4 +18,4 @@ tags:
 - [[pipeline-dashboardserverseed-sample.js]] - `imports` [EXTRACTED]
 - [[pipeline-dashboardserverstore.js]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local_File_Storage
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/server/appjs

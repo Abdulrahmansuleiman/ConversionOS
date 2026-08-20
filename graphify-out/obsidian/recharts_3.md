@@ -1,19 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "concept"
-community: "Chart and Server Deps"
-location: "L20"
+community: "Community None"
+location: "L21"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Chart_and_Server_Deps
+  - community/Community_None
 ---
 
 # recharts
 
 ## Connections
-- [[recharts]] - `imports` [EXTRACTED]
-- [[recharts_1]] - `imports` [EXTRACTED]
 - [[recharts_2]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Chart_and_Server_Deps
+#graphify/concept #graphify/EXTRACTED #community/Community_None

@@ -1,19 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "concept"
-community: "Core Web Dependencies"
-location: "L21"
+community: "Community None"
+location: "L22"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Core_Web_Dependencies
+  - community/Community_None
 ---
 
 # styled-components
 
 ## Connections
-- [[styled-components_1]] - `imports` [EXTRACTED]
-- [[styled-components_2]] - `imports` [EXTRACTED]
 - [[styled-components_3]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Core_Web_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/Community_None

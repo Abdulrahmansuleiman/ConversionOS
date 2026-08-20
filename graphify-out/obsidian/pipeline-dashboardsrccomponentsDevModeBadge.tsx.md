@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/src/components/DevModeBadge.tsx"
 type: "code"
-community: "Header and Dev Badges"
+community: "pipeline-dashboard/src/components/Header.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Dev_Badges
+  - community/pipeline-dashboard/src/components/Headertsx
 ---
 
 # pipeline-dashboard/src/components/DevModeBadge.tsx
@@ -18,4 +18,4 @@ tags:
 - [[pipeline-dashboardsrchooksuseHealth.ts]] - `imports_from` [EXTRACTED]
 - [[useHealth()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Dev_Badges
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/components/Headertsx

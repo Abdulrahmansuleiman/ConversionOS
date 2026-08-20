@@ -1,18 +1,18 @@
 ---
 source_file: "bloomline-dashboard/package.json"
 type: "code"
-community: "Supabase Integration"
+community: "dependencies"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Supabase_Integration
+  - community/dependencies
 ---
 
 # @supabase/supabase-js
 
 ## Connections
-- [[@supabasesupabase-js_2]] - `imports` [EXTRACTED]
-- [[dependencies]] - `contains` [EXTRACTED]
+- [[@supabasesupabase-js_1]] - `imports` [EXTRACTED]
+- [[dependencies_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Supabase_Integration
+#graphify/code #graphify/EXTRACTED #community/dependencies

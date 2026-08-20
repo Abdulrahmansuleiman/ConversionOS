@@ -1,18 +1,18 @@
 ---
 source_file: "bloomline-dashboard/package.json"
 type: "code"
-community: "Vite Dev Dependencies"
+community: "Process"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Vite_Dev_Dependencies
+  - community/Process
 ---
 
 # concurrently
 
 ## Connections
-- [[concurrently_3]] - `imports` [EXTRACTED]
+- [[concurrently_1]] - `imports` [EXTRACTED]
 - [[devDependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Vite_Dev_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Process

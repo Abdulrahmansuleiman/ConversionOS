@@ -1,17 +1,17 @@
 ---
-source_file: "pipeline-dashboard/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "code"
-community: "Pipeline Package Metadata"
+community: "scripts"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pipeline_Package_Metadata
+  - community/scripts
 ---
 
 # version
 
 ## Connections
-- [[pipeline-dashboardpackage.json]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_Package_Metadata
+#graphify/code #graphify/EXTRACTED #community/scripts

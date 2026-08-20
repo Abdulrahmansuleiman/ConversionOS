@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/package.json"
 type: "concept"
-community: "React DOM Types"
+community: "@types/react-dom"
 location: "L20"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/React_DOM_Types
+  - community/types/react-dom
 ---
 
 # vite
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[vite_4]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/React_DOM_Types
+#graphify/concept #graphify/EXTRACTED #community/types/react-dom

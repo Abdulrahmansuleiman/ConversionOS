@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/SampleDataBadge.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # SampleDataBadge()
@@ -19,4 +19,4 @@ tags:
 - [[bloomline-dashboardsrctabsFollowUpsTab.tsx]] - `imports` [EXTRACTED]
 - [[bloomline-dashboardsrctabsHumanTransfersTab.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

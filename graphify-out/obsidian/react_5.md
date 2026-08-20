@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/package.json"
 type: "concept"
-community: "Supabase Integration"
+community: "dependencies"
 location: "L26"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Supabase_Integration
+  - community/dependencies
 ---
 
 # react
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[react_4]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Supabase_Integration
+#graphify/concept #graphify/EXTRACTED #community/dependencies

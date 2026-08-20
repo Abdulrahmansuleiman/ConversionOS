@@ -1,17 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
+source_file: "pipeline-dashboard/package.json"
 type: "code"
-community: "Portal Package Config"
+community: "bloomline-dashboard/src/components/charts/ConversionDonut.tsx"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Portal_Package_Config
+  - community/bloomline-dashboard/src/components/charts/ConversionDonuttsx
 ---
 
 # version
 
 ## Connections
-- [[launchops-portalpackage.json]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Portal_Package_Config
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/components/charts/ConversionDonuttsx

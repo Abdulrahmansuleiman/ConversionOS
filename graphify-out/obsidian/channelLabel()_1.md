@@ -1,17 +1,17 @@
 ---
-source_file: "pipeline-dashboard/src/utils/format.ts"
+source_file: "bloomline-dashboard/src/utils/format.ts"
 type: "code"
-community: "Calendar Tab View"
+community: "PDF Processing Advanced Reference"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_Tab_View
+  - community/PDF_Processing_Advanced_Reference
 ---
 
 # channelLabel()
 
 ## Connections
-- [[pipeline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View
+#graphify/code #graphify/EXTRACTED #community/PDF_Processing_Advanced_Reference

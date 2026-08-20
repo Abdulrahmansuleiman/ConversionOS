@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/components/ErrorBoundary.tsx"
+source_file: "launchops-portal/src/components/Header.tsx"
 type: "code"
-community: "Error Boundary Component"
-location: "L33"
+community: "Testimonials.tsx"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Error_Boundary_Component
+  - community/Testimonialstsx
 ---
 
 # Title
 
 ## Connections
-- [[bloomline-dashboardsrccomponentsErrorBoundary.tsx]] - `contains` [EXTRACTED]
+- [[launchops-portalsrccomponentsHeader.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Error_Boundary_Component
+#graphify/code #graphify/EXTRACTED #community/Testimonialstsx

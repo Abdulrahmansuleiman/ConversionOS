@@ -1,19 +1,19 @@
 ---
 source_file: "pipeline-dashboard/tsconfig.node.json"
 type: "code"
-community: "TypeScript Base Config"
+community: "compilerOptions"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Base_Config
+  - community/compilerOptions
 ---
 
 # compilerOptions
 
 ## Connections
 - [[allowImportingTsExtensions_5]] - `contains` [EXTRACTED]
-- [[lib_2]] - `contains` [EXTRACTED]
+- [[lib_5]] - `contains` [EXTRACTED]
 - [[module_5]] - `contains` [EXTRACTED]
 - [[moduleDetection_5]] - `contains` [EXTRACTED]
 - [[moduleResolution_5]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[tsBuildInfoFile_5]] - `contains` [EXTRACTED]
 - [[verbatimModuleSyntax_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Base_Config
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

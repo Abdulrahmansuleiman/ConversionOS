@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/hooks/useUsers.ts"
 type: "code"
-community: "Settings and Error States"
+community: "bloomline-dashboard/src/api/client.ts"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Settings_and_Error_States
+  - community/bloomline-dashboard/src/api/clientts
 ---
 
 # useUsers()
@@ -17,4 +17,4 @@ tags:
 - [[bloomline-dashboardsrctabsSettingsTab.tsx]] - `imports` [EXTRACTED]
 - [[useFetch()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Settings_and_Error_States
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/api/clientts

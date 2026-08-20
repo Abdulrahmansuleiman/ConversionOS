@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/tsconfig.node.json"
 type: "code"
-community: "TypeScript Module Config"
+community: "compilerOptions"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Module_Config
+  - community/compilerOptions
 ---
 
 # compilerOptions
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[allowImportingTsExtensions_3]] - `contains` [EXTRACTED]
 - [[launchops-portaltsconfig.node.json]] - `contains` [EXTRACTED]
-- [[lib_1]] - `contains` [EXTRACTED]
+- [[lib_3]] - `contains` [EXTRACTED]
 - [[module_3]] - `contains` [EXTRACTED]
 - [[moduleDetection_3]] - `contains` [EXTRACTED]
 - [[moduleResolution_3]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[tsBuildInfoFile_3]] - `contains` [EXTRACTED]
 - [[verbatimModuleSyntax_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Module_Config
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

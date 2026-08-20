@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/src/components/ui.tsx"
 type: "code"
-community: "Portal UI Components"
+community: "launchops-portal/src/components/ui.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Portal_UI_Components
+  - community/launchops-portal/src/components/uitsx
 ---
 
 # launchops-portal/src/components/ui.tsx
@@ -20,7 +20,7 @@ tags:
 - [[Documents.tsx]] - `imports_from` [EXTRACTED]
 - [[Dot]] - `contains` [EXTRACTED]
 - [[Empty]] - `contains` [EXTRACTED]
-- [[EmptyState()]] - `contains` [EXTRACTED]
+- [[EmptyState()_1]] - `contains` [EXTRACTED]
 - [[Feedback.tsx]] - `imports_from` [EXTRACTED]
 - [[Fill]] - `contains` [EXTRACTED]
 - [[LoadWrap]] - `contains` [EXTRACTED]
@@ -37,11 +37,11 @@ tags:
 - [[Testimonials.tsx]] - `imports_from` [EXTRACTED]
 - [[Track]] - `contains` [EXTRACTED]
 - [[daysUntil()]] - `contains` [EXTRACTED]
-- [[formatDate()]] - `contains` [EXTRACTED]
+- [[formatDate()_1]] - `contains` [EXTRACTED]
 - [[hexToRgba()]] - `contains` [EXTRACTED]
 - [[launchops-portalsrccomponentsHeader.tsx]] - `imports_from` [EXTRACTED]
 - [[launchops-portalsrctheme.ts]] - `imports_from` [EXTRACTED]
 - [[stringToColor()]] - `contains` [EXTRACTED]
 - [[theme_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Portal_UI_Components
+#graphify/code #graphify/EXTRACTED #community/launchops-portal/src/components/uitsx

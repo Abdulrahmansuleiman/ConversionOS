@@ -1,17 +1,17 @@
 ---
-source_file: "launchops-portal/src/views/Documents.tsx"
+source_file: "launchops-portal/src/components/Header.tsx"
 type: "code"
-community: "Document Management View"
-location: "L111"
+community: "Testimonials.tsx"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Document_Management_View
+  - community/Testimonialstsx
 ---
 
 # Head
 
 ## Connections
-- [[Documents.tsx]] - `contains` [EXTRACTED]
+- [[launchops-portalsrccomponentsHeader.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Document_Management_View
+#graphify/code #graphify/EXTRACTED #community/Testimonialstsx

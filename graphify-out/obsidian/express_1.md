@@ -1,12 +1,12 @@
 ---
-source_file: "bloomline-dashboard/package.json"
+source_file: "launchops-portal/package.json"
 type: "concept"
-community: "Core Web Dependencies"
-location: "L17"
+community: "QA Categories"
+location: "L16"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Core_Web_Dependencies
+  - community/QA_Categories
 ---
 
 # express
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[express]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Core_Web_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/QA_Categories

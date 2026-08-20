@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/package.json"
 type: "code"
-community: "React DOM Types"
+community: "@types/react-dom"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/React_DOM_Types
+  - community/types/react-dom
 ---
 
 # vite
@@ -15,4 +15,4 @@ tags:
 - [[devDependencies_2]] - `contains` [EXTRACTED]
 - [[vite_5]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/React_DOM_Types
+#graphify/code #graphify/EXTRACTED #community/types/react-dom

@@ -1,18 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
-type: "code"
-community: "Vite Dev Dependencies"
-location: "L27"
+source_file: "bloomline-dashboard/package.json"
+type: "concept"
+community: "Community None"
+location: "L29"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Vite_Dev_Dependencies
+  - community/Community_None
 ---
 
 # concurrently
 
 ## Connections
-- [[concurrently_3]] - `imports` [EXTRACTED]
-- [[devDependencies_1]] - `contains` [EXTRACTED]
+- [[concurrently]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Vite_Dev_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/Community_None

@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/CalendarGrid.tsx"
 type: "code"
-community: "API Client and Hooks"
+community: "bloomline-dashboard/src/types/events.ts"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Client_and_Hooks
+  - community/bloomline-dashboard/src/types/eventsts
 ---
 
 # CalendarGridProps
@@ -15,4 +15,4 @@ tags:
 - [[CalendarBooking_1]] - `references` [EXTRACTED]
 - [[bloomline-dashboardsrccomponentsCalendarGrid.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Client_and_Hooks
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/types/eventsts

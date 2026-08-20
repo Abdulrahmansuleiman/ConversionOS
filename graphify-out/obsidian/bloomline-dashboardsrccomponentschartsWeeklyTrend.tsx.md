@@ -1,19 +1,19 @@
 ---
 source_file: "bloomline-dashboard/src/components/charts/WeeklyTrend.tsx"
 type: "code"
-community: "Weekly Trend Charts"
+community: "Non-fillable fields"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Weekly_Trend_Charts
+  - community/Non-fillable_fields
 ---
 
 # bloomline-dashboard/src/components/charts/WeeklyTrend.tsx
 
 ## Connections
-- [[ChartWrap_2]] - `contains` [EXTRACTED]
-- [[EmptyState()_1]] - `imports` [EXTRACTED]
+- [[ChartWrap_3]] - `contains` [EXTRACTED]
+- [[EmptyState()]] - `imports` [EXTRACTED]
 - [[Theme_1]] - `imports` [EXTRACTED]
 - [[TrendBucket_1]] - `imports` [EXTRACTED]
 - [[WeeklyTrend()_1]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[bloomline-dashboardsrcutilsformat.ts]] - `imports_from` [EXTRACTED]
 - [[formatDayKey()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Weekly_Trend_Charts
+#graphify/code #graphify/EXTRACTED #community/Non-fillable_fields

@@ -42,11 +42,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_Data Fetching Hooks]]
+- 16 edges to [[_COMMUNITY_pipeline-dashboardsrcapiclient.ts]]
 - 6 edges to [[_COMMUNITY_Trend Chart Components]]
 - 6 edges to [[_COMMUNITY_Status and Badge Components]]
 - 3 edges to [[_COMMUNITY_Conversion Donut Chart]]
-- 2 edges to [[_COMMUNITY_KPI Card Components]]
+- 2 edges to [[_COMMUNITY_pipeline-dashboardsrccomponentsKpiCard.tsx]]
 - 2 edges to [[_COMMUNITY_Settings Form Components]]
 - 2 edges to [[_COMMUNITY_App Layout and Tabs]]
 - 2 edges to [[_COMMUNITY_Empty State Components]]

@@ -1,18 +1,18 @@
 ---
-source_file: "pipeline-dashboard/package.json"
+source_file: "launchops-portal/package.json"
 type: "code"
-community: "Vite Dev Dependencies"
-location: "L18"
+community: "Process"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Vite_Dev_Dependencies
+  - community/Process
 ---
 
 # concurrently
 
 ## Connections
 - [[concurrently_3]] - `imports` [EXTRACTED]
-- [[devDependencies_2]] - `contains` [EXTRACTED]
+- [[devDependencies_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Vite_Dev_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Process

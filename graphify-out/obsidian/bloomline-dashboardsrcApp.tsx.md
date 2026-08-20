@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/App.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # bloomline-dashboard/src/App.tsx
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[App()_2]] - `contains` [EXTRACTED]
 - [[BookingsTab()]] - `imports` [EXTRACTED]
-- [[CalendarTab()]] - `imports` [EXTRACTED]
+- [[CalendarTab()_1]] - `imports` [EXTRACTED]
 - [[Content]] - `contains` [EXTRACTED]
 - [[ConversationsTab()]] - `imports` [EXTRACTED]
 - [[DashboardTab()_1]] - `imports` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[bloomline-dashboardsrctabsHumanTransfersTab.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctabsSettingsTab.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

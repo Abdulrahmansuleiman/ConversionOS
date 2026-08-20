@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/DashboardTab.tsx"
 type: "code"
-community: "Chart and Toggle Components"
+community: "bloomline-dashboard/src/tabs/DashboardTab.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Chart_and_Toggle_Components
+  - community/bloomline-dashboard/src/tabs/DashboardTabtsx
 ---
 
 # bloomline-dashboard/src/tabs/DashboardTab.tsx
@@ -22,12 +22,12 @@ tags:
 - [[DarkTitle_1]] - `contains` [EXTRACTED]
 - [[DashboardTab()_1]] - `contains` [EXTRACTED]
 - [[DonutSegment_1]] - `imports` [EXTRACTED]
-- [[EmptyState()_1]] - `imports` [EXTRACTED]
+- [[EmptyState()]] - `imports` [EXTRACTED]
 - [[ErrorState()]] - `imports` [EXTRACTED]
 - [[KPI_META_1]] - `contains` [EXTRACTED]
 - [[KpiCard()_2]] - `imports` [EXTRACTED]
 - [[KpiGrid_2]] - `contains` [EXTRACTED]
-- [[KpiKey_1]] - `imports` [EXTRACTED]
+- [[KpiKey]] - `imports` [EXTRACTED]
 - [[KpiRow_1]] - `contains` [EXTRACTED]
 - [[LeadBar_1]] - `contains` [EXTRACTED]
 - [[LeadBarTrack_1]] - `contains` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[TIMEFRAME_LABELS_3]] - `contains` [EXTRACTED]
 - [[Theme_1]] - `imports` [EXTRACTED]
 - [[Timeframe_1]] - `imports` [EXTRACTED]
-- [[TimeframeToggle()]] - `imports` [EXTRACTED]
+- [[TimeframeToggle()_1]] - `imports` [EXTRACTED]
 - [[TopBar_1]] - `contains` [EXTRACTED]
 - [[TopRight_1]] - `contains` [EXTRACTED]
 - [[TopRow_2]] - `contains` [EXTRACTED]
@@ -67,4 +67,4 @@ tags:
 - [[useTopLeads()_1]] - `imports` [EXTRACTED]
 - [[useTrend()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Chart_and_Toggle_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/DashboardTabtsx

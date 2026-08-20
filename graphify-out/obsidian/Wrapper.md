@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/components/ErrorState.tsx"
+source_file: "bloomline-dashboard/src/components/EmptyState.tsx"
 type: "code"
-community: "Settings and Error States"
-location: "L11"
+community: "Non-fillable fields"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Settings_and_Error_States
+  - community/Non-fillable_fields
 ---
 
 # Wrapper
 
 ## Connections
-- [[bloomline-dashboardsrccomponentsErrorState.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsEmptyState.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Settings_and_Error_States
+#graphify/code #graphify/EXTRACTED #community/Non-fillable_fields

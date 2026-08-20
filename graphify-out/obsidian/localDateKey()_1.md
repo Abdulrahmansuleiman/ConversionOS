@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/server/kpis.js"
 type: "code"
-community: "KPI Calculation Logic"
+community: "Proposal Writer"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KPI_Calculation_Logic
+  - community/Proposal_Writer
 ---
 
 # localDateKey()
@@ -16,4 +16,4 @@ tags:
 - [[dailySpeedBuckets()]] - `calls` [EXTRACTED]
 - [[pipeline-dashboardserverkpis.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KPI_Calculation_Logic
+#graphify/code #graphify/EXTRACTED #community/Proposal_Writer

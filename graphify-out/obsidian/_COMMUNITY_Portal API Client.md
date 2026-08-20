@@ -31,14 +31,14 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Sidebar Navigation]]
-- 5 edges to [[_COMMUNITY_Header and Testimonials]]
-- 5 edges to [[_COMMUNITY_Project List Components]]
+- 5 edges to [[_COMMUNITY_Testimonials.tsx]]
+- 5 edges to [[_COMMUNITY_Projects.tsx]]
 - 4 edges to [[_COMMUNITY_Overview Dashboard View]]
-- 4 edges to [[_COMMUNITY_Document Management View]]
-- 3 edges to [[_COMMUNITY_Portal UI Components]]
+- 4 edges to [[_COMMUNITY_Documents.tsx]]
+- 3 edges to [[_COMMUNITY_launchops-portalsrccomponentsui.tsx]]
 - 3 edges to [[_COMMUNITY_Project Detail View]]
 - 2 edges to [[_COMMUNITY_Login Screen UI]]
-- 2 edges to [[_COMMUNITY_Portal Theme and Styles]]
+- 2 edges to [[_COMMUNITY_launchops-portalsrctheme.ts]]
 
 ## Top bridge nodes
 - [[launchops-portalsrcApp.tsx]] - degree 27, connects to 9 communities

@@ -1,18 +1,17 @@
 ---
 source_file: "launchops-portal/package.json"
-type: "code"
-community: "Chart and Server Deps"
+type: "concept"
+community: "QA Categories"
 location: "L20"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Chart_and_Server_Deps
+  - community/QA_Categories
 ---
 
 # recharts
 
 ## Connections
-- [[dependencies_1]] - `contains` [EXTRACTED]
-- [[recharts_3]] - `imports` [EXTRACTED]
+- [[recharts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Chart_and_Server_Deps
+#graphify/concept #graphify/EXTRACTED #community/QA_Categories

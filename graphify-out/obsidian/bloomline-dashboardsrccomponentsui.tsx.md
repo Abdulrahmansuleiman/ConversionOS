@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/ui.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # bloomline-dashboard/src/components/ui.tsx
@@ -38,4 +38,4 @@ tags:
 - [[channelColor()_1]] - `contains` [EXTRACTED]
 - [[statusTone()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

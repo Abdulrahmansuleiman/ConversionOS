@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/src/views/Testimonials.tsx"
 type: "code"
-community: "Header and Testimonials"
+community: "Testimonials.tsx"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Testimonials
+  - community/Testimonialstsx
 ---
 
 # TopRow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Testimonials.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Testimonials
+#graphify/code #graphify/EXTRACTED #community/Testimonialstsx

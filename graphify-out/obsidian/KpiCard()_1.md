@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/src/components/KpiCard.tsx"
 type: "code"
-community: "KPI Card Components"
+community: "pipeline-dashboard/src/components/KpiCard.tsx"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KPI_Card_Components
+  - community/pipeline-dashboard/src/components/KpiCardtsx
 ---
 
 # KpiCard()
@@ -17,4 +17,4 @@ tags:
 - [[pipeline-dashboardsrccomponentsKpiCard.tsx]] - `contains` [EXTRACTED]
 - [[pipeline-dashboardsrctabsDashboardTab.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KPI_Card_Components
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/components/KpiCardtsx

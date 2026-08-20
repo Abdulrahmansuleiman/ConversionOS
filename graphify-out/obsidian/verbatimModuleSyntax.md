@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/tsconfig.app.json"
 type: "code"
-community: "TypeScript Compiler Config"
+community: "compilerOptions"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Compiler_Config
+  - community/compilerOptions
 ---
 
 # verbatimModuleSyntax
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compilerOptions]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Compiler_Config
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

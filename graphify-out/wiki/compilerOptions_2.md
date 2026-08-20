@@ -1,30 +1,40 @@
 # compilerOptions
 
-> God node · 18 connections · `launchops-portal/tsconfig.app.json`
+> 17 nodes · cohesion 0.12
 
-**Community:** [TypeScript JSX Config](TypeScript_JSX_Config.md)
+## Key Concepts
 
-## Connections by Relation
+- **compilerOptions** (16 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **lib** (2 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **allowImportingTsExtensions** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **module** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **moduleDetection** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **moduleResolution** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **noEmit** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **noFallthroughCasesInSwitch** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **noUncheckedSideEffectImports** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **noUnusedLocals** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **noUnusedParameters** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **skipLibCheck** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **strict** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **target** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **tsBuildInfoFile** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **verbatimModuleSyntax** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
+- **ES2023** (1 connections) — `bloomline-dashboard/tsconfig.node.json`
 
-### contains
-- lib `EXTRACTED`
-- launchops-portal/tsconfig.app.json `EXTRACTED`
-- allowImportingTsExtensions `EXTRACTED`
-- verbatimModuleSyntax `EXTRACTED`
-- moduleDetection `EXTRACTED`
-- noEmit `EXTRACTED`
-- jsx `EXTRACTED`
-- strict `EXTRACTED`
-- noUnusedLocals `EXTRACTED`
-- noUnusedParameters `EXTRACTED`
-- noFallthroughCasesInSwitch `EXTRACTED`
-- noUncheckedSideEffectImports `EXTRACTED`
-- tsBuildInfoFile `EXTRACTED`
-- target `EXTRACTED`
-- useDefineForClassFields `EXTRACTED`
-- module `EXTRACTED`
-- skipLibCheck `EXTRACTED`
-- moduleResolution `EXTRACTED`
+## Relationships
+
+- [pipeline-dashboard/src/types/events.ts](pipeline-dashboard-src-types-events.ts.md) (1 shared connections)
+
+## Source Files
+
+- `bloomline-dashboard/tsconfig.node.json`
+
+## Audit Trail
+
+- EXTRACTED: 17 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
 
 ---
 

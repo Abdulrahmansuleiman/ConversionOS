@@ -30,12 +30,12 @@
 
 ## Relationships
 
-- [Data Fetching Hooks](Data_Fetching_Hooks.md) (16 shared connections)
+- [pipeline-dashboard/src/api/client.ts](pipeline-dashboard-src-api-client.ts.md) (16 shared connections)
 - [Trend Chart Components](Trend_Chart_Components.md) (6 shared connections)
 - [Status and Badge Components](Status_and_Badge_Components.md) (6 shared connections)
 - [Conversion Donut Chart](Conversion_Donut_Chart.md) (3 shared connections)
 - [Timeframe Toggle Component](Timeframe_Toggle_Component.md) (2 shared connections)
-- [KPI Card Components](KPI_Card_Components.md) (2 shared connections)
+- [pipeline-dashboard/src/components/KpiCard.tsx](pipeline-dashboard-src-components-KpiCard.tsx.md) (2 shared connections)
 - [Empty State Components](Empty_State_Components.md) (2 shared connections)
 - [Settings Form Components](Settings_Form_Components.md) (2 shared connections)
 - [App Layout and Tabs](App_Layout_and_Tabs.md) (2 shared connections)

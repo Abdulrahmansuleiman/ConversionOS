@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/src/components/KpiCard.tsx"
 type: "code"
-community: "KPI Card Components"
+community: "pipeline-dashboard/src/components/KpiCard.tsx"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KPI_Card_Components
+  - community/pipeline-dashboard/src/components/KpiCardtsx
 ---
 
 # Value
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pipeline-dashboardsrccomponentsKpiCard.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KPI_Card_Components
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/components/KpiCardtsx

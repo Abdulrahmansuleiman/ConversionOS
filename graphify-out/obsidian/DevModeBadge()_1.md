@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/DevModeBadge.tsx"
 type: "code"
-community: "API Client and Hooks"
+community: "bloomline-dashboard/src/types/events.ts"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Client_and_Hooks
+  - community/bloomline-dashboard/src/types/eventsts
 ---
 
 # DevModeBadge()
@@ -16,4 +16,4 @@ tags:
 - [[bloomline-dashboardsrccomponentsHeader.tsx]] - `imports` [EXTRACTED]
 - [[useHealth()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Client_and_Hooks
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/types/eventsts

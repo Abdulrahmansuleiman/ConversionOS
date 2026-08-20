@@ -1,18 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
-type: "code"
-community: "TypeScript Language"
-location: "L28"
+source_file: "bloomline-dashboard/package.json"
+type: "concept"
+community: "Community None"
+location: "L34"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/TypeScript_Language
+  - community/Community_None
 ---
 
 # typescript
 
 ## Connections
-- [[devDependencies_1]] - `contains` [EXTRACTED]
-- [[typescript_3]] - `imports` [EXTRACTED]
+- [[typescript]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Language
+#graphify/concept #graphify/EXTRACTED #community/Community_None

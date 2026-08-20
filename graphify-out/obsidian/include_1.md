@@ -1,18 +1,18 @@
 ---
-source_file: "launchops-portal/tsconfig.node.json"
+source_file: "bloomline-dashboard/tsconfig.node.json"
 type: "code"
-community: "Vite and TS Configs"
-location: "L19"
+community: "pipeline-dashboard/src/types/events.ts"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Vite_and_TS_Configs
+  - community/pipeline-dashboard/src/types/eventsts
 ---
 
 # include
 
 ## Connections
-- [[launchops-portaltsconfig.node.json]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardtsconfig.node.json]] - `contains` [EXTRACTED]
 - [[vite.config.ts]] - `extends` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Vite_and_TS_Configs
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/types/eventsts

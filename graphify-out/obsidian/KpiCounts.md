@@ -1,18 +1,17 @@
 ---
-source_file: "pipeline-dashboard/src/types/events.ts"
+source_file: "bloomline-dashboard/src/types/events.ts"
 type: "code"
-community: "Data Fetching Hooks"
+community: "bloomline-dashboard/src/types/events.ts"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Data_Fetching_Hooks
+  - community/bloomline-dashboard/src/types/eventsts
 ---
 
 # KpiCounts
 
 ## Connections
-- [[pipeline-dashboardsrctabsDashboardTab.tsx]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Data_Fetching_Hooks
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/types/eventsts

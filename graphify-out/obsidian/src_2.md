@@ -1,17 +1,17 @@
 ---
 source_file: "pipeline-dashboard/tsconfig.app.json"
 type: "concept"
-community: "Pipeline App TSConfig"
+community: "Performance Log — Builder Agent"
 location: "L25"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Pipeline_App_TSConfig
+  - community/Performance_Log__Builder_Agent
 ---
 
 # src
 
 ## Connections
-- [[include_5]] - `extends` [EXTRACTED]
+- [[include_4]] - `extends` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Pipeline_App_TSConfig
+#graphify/concept #graphify/EXTRACTED #community/Performance_Log__Builder_Agent

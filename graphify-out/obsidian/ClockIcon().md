@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/src/components/Header.tsx"
 type: "code"
-community: "Header and Testimonials"
+community: "Testimonials.tsx"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Testimonials
+  - community/Testimonialstsx
 ---
 
 # ClockIcon()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[launchops-portalsrccomponentsHeader.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Testimonials
+#graphify/code #graphify/EXTRACTED #community/Testimonialstsx

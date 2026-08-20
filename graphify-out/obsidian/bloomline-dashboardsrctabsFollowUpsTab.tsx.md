@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/FollowUpsTab.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # bloomline-dashboard/src/tabs/FollowUpsTab.tsx
@@ -17,7 +17,7 @@ tags:
 - [[CardSub_1]] - `imports` [EXTRACTED]
 - [[CardTitle_1]] - `imports` [EXTRACTED]
 - [[ChannelPill()_1]] - `imports` [EXTRACTED]
-- [[EmptyState()_1]] - `imports` [EXTRACTED]
+- [[EmptyState()]] - `imports` [EXTRACTED]
 - [[ErrorState()]] - `imports` [EXTRACTED]
 - [[FollowUpsTab()]] - `contains` [EXTRACTED]
 - [[SampleDataBadge()_1]] - `imports` [EXTRACTED]
@@ -34,8 +34,8 @@ tags:
 - [[bloomline-dashboardsrchooksuseEvents.ts]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrcutilsformat.ts]] - `imports_from` [EXTRACTED]
 - [[displayName()]] - `imports` [EXTRACTED]
-- [[formatDate()_1]] - `imports` [EXTRACTED]
+- [[formatDate()]] - `imports` [EXTRACTED]
 - [[formatDateTime()]] - `imports` [EXTRACTED]
 - [[useEvents()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

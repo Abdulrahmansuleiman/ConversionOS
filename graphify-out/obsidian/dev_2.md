@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/package.json"
 type: "code"
-community: "Project Scripts"
+community: "Invoice Template Skill"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Scripts
+  - community/Invoice_Template_Skill
 ---
 
 # dev
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scripts_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Scripts
+#graphify/code #graphify/EXTRACTED #community/Invoice_Template_Skill

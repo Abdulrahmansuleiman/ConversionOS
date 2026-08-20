@@ -18,7 +18,7 @@
 
 ## Relationships
 
-- [Dashboard UI Components](Dashboard_UI_Components.md) (2 shared connections)
+- [bloomline-dashboard/src/tabs/BookingsTab.tsx](bloomline-dashboard-src-tabs-BookingsTab.tsx.md) (2 shared connections)
 
 ## Source Files
 

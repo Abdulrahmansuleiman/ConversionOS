@@ -1,23 +1,27 @@
 ---
-source_file: "launchops-portal/src/components/ui.tsx"
+source_file: "bloomline-dashboard/src/components/EmptyState.tsx"
 type: "code"
-community: "Portal UI Components"
-location: "L181"
+community: "Non-fillable fields"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Portal_UI_Components
+  - community/Non-fillable_fields
 ---
 
 # EmptyState()
 
 ## Connections
-- [[Documents.tsx]] - `imports` [EXTRACTED]
-- [[Feedback.tsx]] - `imports` [EXTRACTED]
-- [[Overview.tsx]] - `imports` [EXTRACTED]
-- [[ProjectDetail.tsx]] - `imports` [EXTRACTED]
-- [[Projects.tsx]] - `imports` [EXTRACTED]
-- [[Testimonials.tsx]] - `imports` [EXTRACTED]
-- [[launchops-portalsrccomponentsui.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsCalendarGrid.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsEmptyState.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentschartsConversionDonut.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentschartsWeeklyTrend.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsCalendarTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsConversationsTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsDashboardTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsFollowUpsTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsHumanTransfersTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsSettingsTab.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Portal_UI_Components
+#graphify/code #graphify/EXTRACTED #community/Non-fillable_fields

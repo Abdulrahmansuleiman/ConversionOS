@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/tabs/CalendarTab.tsx"
+source_file: "pipeline-dashboard/src/tabs/CalendarTab.tsx"
 type: "code"
-community: "Calendar and Month Navigation"
+community: "Calendar Tab View"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_and_Month_Navigation
+  - community/Calendar_Tab_View
 ---
 
 # Padded
 
 ## Connections
-- [[bloomline-dashboardsrctabsCalendarTab.tsx]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrctabsCalendarTab.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_and_Month_Navigation
+#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View

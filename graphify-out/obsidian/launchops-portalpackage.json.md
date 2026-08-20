@@ -1,23 +1,23 @@
 ---
 source_file: "launchops-portal/package.json"
 type: "code"
-community: "Portal Package Config"
+community: "dependencies"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Portal_Package_Config
+  - community/dependencies
 ---
 
 # launchops-portal/package.json
 
 ## Connections
-- [[dependencies_1]] - `contains` [EXTRACTED]
+- [[dependencies]] - `contains` [EXTRACTED]
 - [[devDependencies_1]] - `contains` [EXTRACTED]
-- [[name_3]] - `contains` [EXTRACTED]
-- [[private_1]] - `contains` [EXTRACTED]
+- [[name_2]] - `contains` [EXTRACTED]
+- [[private]] - `contains` [EXTRACTED]
 - [[scripts_1]] - `contains` [EXTRACTED]
-- [[type_3]] - `contains` [EXTRACTED]
-- [[version_1]] - `contains` [EXTRACTED]
+- [[type_2]] - `contains` [EXTRACTED]
+- [[version]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Portal_Package_Config
+#graphify/code #graphify/EXTRACTED #community/dependencies

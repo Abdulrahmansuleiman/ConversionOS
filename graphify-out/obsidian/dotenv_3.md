@@ -1,19 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "concept"
-community: "Environment Variable Utility"
-location: "L15"
+community: "Community None"
+location: "L16"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Environment_Variable_Utility
+  - community/Community_None
 ---
 
 # dotenv
 
 ## Connections
-- [[dotenv]] - `imports` [EXTRACTED]
-- [[dotenv_1]] - `imports` [EXTRACTED]
 - [[dotenv_2]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Environment_Variable_Utility
+#graphify/concept #graphify/EXTRACTED #community/Community_None

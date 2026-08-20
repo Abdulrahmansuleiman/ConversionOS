@@ -1,12 +1,12 @@
 ---
-source_file: "pipeline-dashboard/src/types/changes.ts"
+source_file: "bloomline-dashboard/src/types/changes.ts"
 type: "code"
-community: "KPI Card Components"
+community: "bloomline-dashboard/src/components/KpiCard.tsx"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KPI_Card_Components
+  - community/bloomline-dashboard/src/components/KpiCardtsx
 ---
 
 # Change
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[KpiCardProps]] - `references` [EXTRACTED]
 - [[KpiData]] - `references` [EXTRACTED]
-- [[pipeline-dashboardsrccomponentsKpiCard.tsx]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrctypeschanges.ts]] - `contains` [EXTRACTED]
-- [[pipeline-dashboardsrctypesevents.ts]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsKpiCard.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctypeschanges.ts]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrctypesevents.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KPI_Card_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/components/KpiCardtsx

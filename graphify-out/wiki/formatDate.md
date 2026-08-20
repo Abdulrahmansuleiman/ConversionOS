@@ -2,7 +2,7 @@
 
 > God node · 15 connections · `launchops-portal/src/components/ui.tsx`
 
-**Community:** [Header and Testimonials](Header_and_Testimonials.md)
+**Community:** [Testimonials.tsx](Testimonials.tsx.md)
 
 ## Connections by Relation
 
@@ -16,14 +16,14 @@
 - Testimonials() `EXTRACTED`
 
 ### contains
-- launchops-portal/src/components/ui.tsx `EXTRACTED`
+- [launchops-portal/src/components/ui.tsx](launchops-portal-src-components-ui.tsx.md) `EXTRACTED`
 
 ### imports
 - ProjectDetail.tsx `EXTRACTED`
 - Overview.tsx `EXTRACTED`
-- Projects.tsx `EXTRACTED`
-- Testimonials.tsx `EXTRACTED`
-- Documents.tsx `EXTRACTED`
+- [Projects.tsx](Projects.tsx.md) `EXTRACTED`
+- [Testimonials.tsx](Testimonials.tsx.md) `EXTRACTED`
+- [Documents.tsx](Documents.tsx.md) `EXTRACTED`
 - Feedback.tsx `EXTRACTED`
 - launchops-portal/src/components/Header.tsx `EXTRACTED`
 

@@ -21,7 +21,7 @@
 - [Status and Badge Components](Status_and_Badge_Components.md) (13 shared connections)
 - [Calendar Tab View](Calendar_Tab_View.md) (7 shared connections)
 - [App Layout and Tabs](App_Layout_and_Tabs.md) (6 shared connections)
-- [Data Fetching Hooks](Data_Fetching_Hooks.md) (4 shared connections)
+- [pipeline-dashboard/src/api/client.ts](pipeline-dashboard-src-api-client.ts.md) (4 shared connections)
 - [Empty State Components](Empty_State_Components.md) (2 shared connections)
 - [Settings Form Components](Settings_Form_Components.md) (2 shared connections)
 

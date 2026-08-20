@@ -1,19 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "concept"
-community: "React DOM Library"
-location: "L18"
+community: "Community None"
+location: "L19"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/React_DOM_Library
+  - community/Community_None
 ---
 
 # react-dom
 
 ## Connections
-- [[react-dom]] - `imports` [EXTRACTED]
-- [[react-dom_1]] - `imports` [EXTRACTED]
 - [[react-dom_2]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/React_DOM_Library
+#graphify/concept #graphify/EXTRACTED #community/Community_None

@@ -1,17 +1,17 @@
 ---
-source_file: "pipeline-dashboard/src/components/ErrorState.tsx"
+source_file: "bloomline-dashboard/src/components/ErrorState.tsx"
 type: "code"
-community: "Settings Form Components"
+community: "bloomline-dashboard/src/api/client.ts"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Settings_Form_Components
+  - community/bloomline-dashboard/src/api/clientts
 ---
 
 # Message
 
 ## Connections
-- [[pipeline-dashboardsrccomponentsErrorState.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsErrorState.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Settings_Form_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/api/clientts

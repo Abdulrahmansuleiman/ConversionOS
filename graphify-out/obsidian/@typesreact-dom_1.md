@@ -1,18 +1,17 @@
 ---
-source_file: "bloomline-dashboard/package.json"
-type: "code"
-community: "React DOM Types"
-location: "L27"
+source_file: "launchops-portal/package.json"
+type: "concept"
+community: "@types/react-dom"
+location: "L25"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/React_DOM_Types
+  - community/types/react-dom
 ---
 
 # @types/react-dom
 
 ## Connections
-- [[@typesreact-dom_3]] - `imports` [EXTRACTED]
-- [[devDependencies]] - `contains` [EXTRACTED]
+- [[@typesreact-dom]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/React_DOM_Types
+#graphify/concept #graphify/EXTRACTED #community/types/react-dom

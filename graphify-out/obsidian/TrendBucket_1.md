@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/types/events.ts"
 type: "code"
-community: "Weekly Trend Charts"
+community: "Non-fillable fields"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Weekly_Trend_Charts
+  - community/Non-fillable_fields
 ---
 
 # TrendBucket
@@ -18,4 +18,4 @@ tags:
 - [[bloomline-dashboardsrchooksuseTrend.ts]] - `imports` [EXTRACTED]
 - [[bloomline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Weekly_Trend_Charts
+#graphify/code #graphify/EXTRACTED #community/Non-fillable_fields

@@ -18,15 +18,15 @@
 
 ## Relationships
 
-- [Project List Components](Project_List_Components.md) (5 shared connections)
-- [Header and Testimonials](Header_and_Testimonials.md) (5 shared connections)
+- [Projects.tsx](Projects.tsx.md) (5 shared connections)
+- [Testimonials.tsx](Testimonials.tsx.md) (5 shared connections)
 - [Sidebar Navigation](Sidebar_Navigation.md) (5 shared connections)
-- [Document Management View](Document_Management_View.md) (4 shared connections)
+- [Documents.tsx](Documents.tsx.md) (4 shared connections)
 - [Overview Dashboard View](Overview_Dashboard_View.md) (4 shared connections)
-- [Portal UI Components](Portal_UI_Components.md) (3 shared connections)
+- [launchops-portal/src/components/ui.tsx](launchops-portal-src-components-ui.tsx.md) (3 shared connections)
 - [Project Detail View](Project_Detail_View.md) (3 shared connections)
 - [Login Screen UI](Login_Screen_UI.md) (2 shared connections)
-- [Portal Theme and Styles](Portal_Theme_and_Styles.md) (2 shared connections)
+- [launchops-portal/src/theme.ts](launchops-portal-src-theme.ts.md) (2 shared connections)
 
 ## Source Files
 

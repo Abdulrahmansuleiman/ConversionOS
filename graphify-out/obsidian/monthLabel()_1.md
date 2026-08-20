@@ -1,21 +1,21 @@
 ---
-source_file: "pipeline-dashboard/src/utils/format.ts"
+source_file: "bloomline-dashboard/src/utils/format.ts"
 type: "code"
-community: "Calendar Tab View"
+community: "PDF Processing Advanced Reference"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_Tab_View
+  - community/PDF_Processing_Advanced_Reference
 ---
 
 # monthLabel()
 
 ## Connections
-- [[BookingsTab()_1]] - `calls` [EXTRACTED]
+- [[BookingsTab()]] - `calls` [EXTRACTED]
 - [[CalendarTab()_1]] - `calls` [EXTRACTED]
-- [[pipeline-dashboardsrctabsBookingsTab.tsx]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrctabsCalendarTab.tsx]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsCalendarTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View
+#graphify/code #graphify/EXTRACTED #community/PDF_Processing_Advanced_Reference

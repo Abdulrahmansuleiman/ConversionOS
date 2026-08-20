@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/charts/WeeklyTrend.tsx"
 type: "code"
-community: "Weekly Trend Charts"
+community: "Non-fillable fields"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Weekly_Trend_Charts
+  - community/Non-fillable_fields
 ---
 
 # WeeklyTrendProps
@@ -15,4 +15,4 @@ tags:
 - [[TrendBucket_1]] - `references` [EXTRACTED]
 - [[bloomline-dashboardsrccomponentschartsWeeklyTrend.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Weekly_Trend_Charts
+#graphify/code #graphify/EXTRACTED #community/Non-fillable_fields

@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/components/CalendarGrid.tsx"
+source_file: "pipeline-dashboard/src/components/CalendarGrid.tsx"
 type: "code"
-community: "Calendar and Month Navigation"
+community: "Calendar Tab View"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_and_Month_Navigation
+  - community/Calendar_Tab_View
 ---
 
 # DayCell
 
 ## Connections
-- [[bloomline-dashboardsrccomponentsCalendarGrid.tsx]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrccomponentsCalendarGrid.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_and_Month_Navigation
+#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View

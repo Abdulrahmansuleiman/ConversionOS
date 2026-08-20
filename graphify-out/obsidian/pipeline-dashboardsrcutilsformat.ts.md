@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[EventPayload]] - `imports` [EXTRACTED]
 - [[SpeedTrendChart.tsx]] - `imports_from` [EXTRACTED]
-- [[channelLabel()_1]] - `contains` [EXTRACTED]
+- [[channelLabel()]] - `contains` [EXTRACTED]
 - [[displayName()_1]] - `contains` [EXTRACTED]
 - [[formatDate()_2]] - `contains` [EXTRACTED]
 - [[formatDateTime()_1]] - `contains` [EXTRACTED]
 - [[formatDayKey()]] - `contains` [EXTRACTED]
-- [[formatTime()_1]] - `contains` [EXTRACTED]
-- [[monthLabel()_1]] - `contains` [EXTRACTED]
+- [[formatTime()]] - `contains` [EXTRACTED]
+- [[monthLabel()]] - `contains` [EXTRACTED]
 - [[pipeline-dashboardsrccomponentsCalendarGrid.tsx]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrccomponentschartsWeeklyTrend.tsx]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrctabsBookingsTab.tsx]] - `imports_from` [EXTRACTED]
@@ -30,6 +30,6 @@ tags:
 - [[pipeline-dashboardsrctabsHumanTransfersTab.tsx]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrctabsSettingsTab.tsx]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrctypesevents.ts]] - `imports_from` [EXTRACTED]
-- [[toMonthKey()_1]] - `contains` [EXTRACTED]
+- [[toMonthKey()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View

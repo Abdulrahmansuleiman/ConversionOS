@@ -1,18 +1,18 @@
 ---
 source_file: "bloomline-dashboard/tsconfig.app.json"
 type: "code"
-community: "Dashboard App TSConfig"
+community: "bloomline-dashboard/package.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_App_TSConfig
+  - community/bloomline-dashboard/packagejson
 ---
 
 # bloomline-dashboard/tsconfig.app.json
 
 ## Connections
 - [[compilerOptions]] - `contains` [EXTRACTED]
-- [[include_3]] - `contains` [EXTRACTED]
+- [[include]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_App_TSConfig
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/packagejson

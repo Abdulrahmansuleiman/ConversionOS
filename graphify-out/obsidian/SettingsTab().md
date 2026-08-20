@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/SettingsTab.tsx"
 type: "code"
-community: "Settings and Error States"
+community: "bloomline-dashboard/src/api/client.ts"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Settings_and_Error_States
+  - community/bloomline-dashboard/src/api/clientts
 ---
 
 # SettingsTab()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[bloomline-dashboardsrcApp.tsx]] - `imports` [EXTRACTED]
 - [[bloomline-dashboardsrctabsSettingsTab.tsx]] - `contains` [EXTRACTED]
-- [[formatDate()_1]] - `calls` [EXTRACTED]
+- [[formatDate()]] - `calls` [EXTRACTED]
 - [[useUsers()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Settings_and_Error_States
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/api/clientts

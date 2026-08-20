@@ -1,20 +1,20 @@
 ---
-source_file: "pipeline-dashboard/src/types/events.ts"
+source_file: "bloomline-dashboard/src/types/events.ts"
 type: "code"
-community: "Data Fetching Hooks"
+community: "bloomline-dashboard/src/types/events.ts"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Data_Fetching_Hooks
+  - community/bloomline-dashboard/src/types/eventsts
 ---
 
 # NormalizedEvent
 
 ## Connections
-- [[pipeline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrchooksuseEvents.ts]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrctabsBookingsTab.tsx]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrchooksuseEvents.ts]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Data_Fetching_Hooks
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/types/eventsts

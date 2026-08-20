@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[displayName()_1]] - `calls` [EXTRACTED]
 - [[formatDateTime()_1]] - `calls` [EXTRACTED]
-- [[monthLabel()_1]] - `calls` [EXTRACTED]
+- [[monthLabel()]] - `calls` [EXTRACTED]
 - [[pipeline-dashboardsrcApp.tsx]] - `imports` [EXTRACTED]
 - [[pipeline-dashboardsrctabsBookingsTab.tsx]] - `contains` [EXTRACTED]
 - [[toCalendarBooking()_1]] - `indirect_call` [INFERRED]
-- [[toMonthKey()_1]] - `calls` [EXTRACTED]
+- [[toMonthKey()]] - `calls` [EXTRACTED]
 - [[useEvents()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/App_Layout_and_Tabs

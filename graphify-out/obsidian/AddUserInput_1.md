@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/types/users.ts"
 type: "code"
-community: "API Client and Hooks"
+community: "bloomline-dashboard/src/types/events.ts"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Client_and_Hooks
+  - community/bloomline-dashboard/src/types/eventsts
 ---
 
 # AddUserInput
@@ -16,4 +16,4 @@ tags:
 - [[bloomline-dashboardsrchooksuseUsers.ts]] - `imports` [EXTRACTED]
 - [[bloomline-dashboardsrctypesusers.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Client_and_Hooks
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/types/eventsts

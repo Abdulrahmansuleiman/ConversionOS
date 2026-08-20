@@ -1,18 +1,18 @@
 ---
-source_file: "pipeline-dashboard/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "code"
-community: "Chart and Server Deps"
-location: "L29"
+community: "QA Categories"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Chart_and_Server_Deps
+  - community/QA_Categories
 ---
 
 # recharts
 
 ## Connections
-- [[dependencies_2]] - `contains` [EXTRACTED]
+- [[dependencies_1]] - `contains` [EXTRACTED]
 - [[recharts_3]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Chart_and_Server_Deps
+#graphify/code #graphify/EXTRACTED #community/QA_Categories

@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/hooks/useCalendar.ts"
 type: "code"
-community: "API Client and Hooks"
+community: "bloomline-dashboard/src/types/events.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Client_and_Hooks
+  - community/bloomline-dashboard/src/types/eventsts
 ---
 
 # bloomline-dashboard/src/hooks/useCalendar.ts
@@ -21,4 +21,4 @@ tags:
 - [[useCalendar()_1]] - `contains` [EXTRACTED]
 - [[useFetch()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Client_and_Hooks
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/types/eventsts

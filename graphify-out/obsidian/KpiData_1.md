@@ -1,20 +1,20 @@
 ---
-source_file: "bloomline-dashboard/src/types/events.ts"
+source_file: "pipeline-dashboard/src/types/events.ts"
 type: "code"
-community: "API Client and Hooks"
-location: "L43"
+community: "pipeline-dashboard/src/components/KpiCard.tsx"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Client_and_Hooks
+  - community/pipeline-dashboard/src/components/KpiCardtsx
 ---
 
 # KpiData
 
 ## Connections
 - [[Change_1]] - `references` [EXTRACTED]
-- [[bloomline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
-- [[bloomline-dashboardsrchooksuseKpis.ts]] - `imports` [EXTRACTED]
-- [[bloomline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
+- [[pipeline-dashboardsrchooksuseKpis.ts]] - `imports` [EXTRACTED]
+- [[pipeline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Client_and_Hooks
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/components/KpiCardtsx

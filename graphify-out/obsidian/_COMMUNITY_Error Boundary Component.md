@@ -19,7 +19,7 @@ members: 11
 - [[Props]] - code - bloomline-dashboard/src/components/ErrorBoundary.tsx
 - [[ReloadButton]] - code - bloomline-dashboard/src/components/ErrorBoundary.tsx
 - [[State]] - code - bloomline-dashboard/src/components/ErrorBoundary.tsx
-- [[Title_4]] - code - bloomline-dashboard/src/components/ErrorBoundary.tsx
+- [[Title_3]] - code - bloomline-dashboard/src/components/ErrorBoundary.tsx
 - [[bloomline-dashboardsrccomponentsErrorBoundary.tsx]] - code - bloomline-dashboard/src/components/ErrorBoundary.tsx
 
 ## Live Query (requires Dataview plugin)
@@ -30,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Dashboard UI Components]]
+- 2 edges to [[_COMMUNITY_bloomline-dashboardsrctabsBookingsTab.tsx]]
 
 ## Top bridge nodes
 - [[bloomline-dashboardsrccomponentsErrorBoundary.tsx]] - degree 8, connects to 1 community

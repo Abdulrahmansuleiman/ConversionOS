@@ -40,7 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Data Fetching Hooks]]
+- 8 edges to [[_COMMUNITY_pipeline-dashboardsrcapiclient.ts]]
 - 6 edges to [[_COMMUNITY_KPI Dashboard Tab]]
 - 4 edges to [[_COMMUNITY_Empty State Components]]
 - 3 edges to [[_COMMUNITY_Calendar Tab View]]

@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/charts/ConversionDonut.tsx"
 type: "code"
-community: "Chart and Toggle Components"
+community: "bloomline-dashboard/src/tabs/DashboardTab.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Chart_and_Toggle_Components
+  - community/bloomline-dashboard/src/tabs/DashboardTabtsx
 ---
 
 # bloomline-dashboard/src/components/charts/ConversionDonut.tsx
@@ -16,7 +16,7 @@ tags:
 - [[ConversionDonut()_1]] - `contains` [EXTRACTED]
 - [[ConversionDonutProps_1]] - `contains` [EXTRACTED]
 - [[DonutSegment_1]] - `contains` [EXTRACTED]
-- [[EmptyState()_1]] - `imports` [EXTRACTED]
+- [[EmptyState()]] - `imports` [EXTRACTED]
 - [[Legend_2]] - `contains` [EXTRACTED]
 - [[LegendCount_1]] - `contains` [EXTRACTED]
 - [[LegendDot_1]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[bloomline-dashboardsrctheme.ts]] - `imports_from` [EXTRACTED]
 - [[segmentColor()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Chart_and_Toggle_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/DashboardTabtsx

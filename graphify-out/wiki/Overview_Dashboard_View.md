@@ -34,12 +34,12 @@
 ## Relationships
 
 - [Portal API Client](Portal_API_Client.md) (4 shared connections)
-- [Header and Testimonials](Header_and_Testimonials.md) (4 shared connections)
-- [Portal Theme and Styles](Portal_Theme_and_Styles.md) (3 shared connections)
-- [Project List Components](Project_List_Components.md) (3 shared connections)
-- [Portal UI Components](Portal_UI_Components.md) (3 shared connections)
+- [Testimonials.tsx](Testimonials.tsx.md) (4 shared connections)
+- [launchops-portal/src/theme.ts](launchops-portal-src-theme.ts.md) (3 shared connections)
+- [Projects.tsx](Projects.tsx.md) (3 shared connections)
+- [launchops-portal/src/components/ui.tsx](launchops-portal-src-components-ui.tsx.md) (3 shared connections)
 - [Sidebar Navigation](Sidebar_Navigation.md) (2 shared connections)
-- [Document Management View](Document_Management_View.md) (1 shared connections)
+- [Documents.tsx](Documents.tsx.md) (1 shared connections)
 
 ## Source Files
 

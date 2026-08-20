@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/server/routes/calendar.js"
 type: "code"
-community: "Local File Storage"
+community: "pipeline-dashboard/server/app.js"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local_File_Storage
+  - community/pipeline-dashboard/server/appjs
 ---
 
 # calendarRouter()
@@ -15,4 +15,4 @@ tags:
 - [[pipeline-dashboardserverapp.js]] - `imports` [EXTRACTED]
 - [[pipeline-dashboardserverroutescalendar.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local_File_Storage
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/server/appjs

@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/theme.ts"
 type: "code"
-community: "Dashboard Theme Setup"
+community: "bloomline-dashboard/src/components/charts/WeeklyTrend.tsx"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Theme_Setup
+  - community/bloomline-dashboard/src/components/charts/WeeklyTrendtsx
 ---
 
 # Theme
@@ -21,4 +21,4 @@ tags:
 - [[bloomline-dashboardsrctabsDashboardTab.tsx]] - `imports` [EXTRACTED]
 - [[bloomline-dashboardsrctheme.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Theme_Setup
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/components/charts/WeeklyTrendtsx

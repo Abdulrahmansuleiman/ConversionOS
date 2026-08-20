@@ -10,11 +10,11 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[Option_1]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
-- [[TIMEFRAME_OPTIONS_1]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
-- [[TimeframeToggle()_1]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
-- [[TimeframeToggleProps_1]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
-- [[Toggle_2]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
+- [[Option]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
+- [[TIMEFRAME_OPTIONS]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
+- [[TimeframeToggle()]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
+- [[TimeframeToggleProps]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
+- [[Toggle_1]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
 - [[pipeline-dashboardsrccomponentsTimeframeToggle.tsx]] - code - pipeline-dashboard/src/components/TimeframeToggle.tsx
 
 ## Live Query (requires Dataview plugin)
@@ -25,10 +25,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Data Fetching Hooks]]
+- 3 edges to [[_COMMUNITY_pipeline-dashboardsrcapiclient.ts]]
 - 2 edges to [[_COMMUNITY_KPI Dashboard Tab]]
 
 ## Top bridge nodes
 - [[pipeline-dashboardsrccomponentsTimeframeToggle.tsx]] - degree 8, connects to 2 communities
-- [[TimeframeToggle()_1]] - degree 2, connects to 1 community
-- [[TimeframeToggleProps_1]] - degree 2, connects to 1 community
+- [[TimeframeToggle()]] - degree 2, connects to 1 community
+- [[TimeframeToggleProps]] - degree 2, connects to 1 community

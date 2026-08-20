@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[BookingChip_1]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
-- [[BookingTime_1]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
-- [[CalendarGrid()_1]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
+- [[BookingChip]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
+- [[BookingTime]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
+- [[CalendarGrid()]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
 - [[CalendarGridProps]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
-- [[CalendarTab()_1]] - code - pipeline-dashboard/src/tabs/CalendarTab.tsx
-- [[DayCell_1]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
-- [[DayHeader_1]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
-- [[DayNumber_1]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
+- [[CalendarTab()]] - code - pipeline-dashboard/src/tabs/CalendarTab.tsx
+- [[DayCell]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
+- [[DayHeader]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
+- [[DayNumber]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
 - [[EventPayload]] - code - pipeline-dashboard/src/types/events.ts
-- [[Grid_2]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
-- [[Padded_1]] - code - pipeline-dashboard/src/tabs/CalendarTab.tsx
-- [[WEEKDAYS_1]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
-- [[channelLabel()_1]] - code - pipeline-dashboard/src/utils/format.ts
-- [[formatTime()_1]] - code - pipeline-dashboard/src/utils/format.ts
-- [[monthLabel()_1]] - code - pipeline-dashboard/src/utils/format.ts
+- [[Grid_1]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
+- [[Padded]] - code - pipeline-dashboard/src/tabs/CalendarTab.tsx
+- [[WEEKDAYS]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
+- [[channelLabel()]] - code - pipeline-dashboard/src/utils/format.ts
+- [[formatTime()]] - code - pipeline-dashboard/src/utils/format.ts
+- [[monthLabel()]] - code - pipeline-dashboard/src/utils/format.ts
 - [[pipeline-dashboardsrccomponentsCalendarGrid.tsx]] - code - pipeline-dashboard/src/components/CalendarGrid.tsx
 - [[pipeline-dashboardsrctabsCalendarTab.tsx]] - code - pipeline-dashboard/src/tabs/CalendarTab.tsx
 - [[pipeline-dashboardsrcutilsformat.ts]] - code - pipeline-dashboard/src/utils/format.ts
-- [[toMonthKey()_1]] - code - pipeline-dashboard/src/utils/format.ts
+- [[toMonthKey()]] - code - pipeline-dashboard/src/utils/format.ts
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +39,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_App Layout and Tabs]]
-- 8 edges to [[_COMMUNITY_Data Fetching Hooks]]
+- 8 edges to [[_COMMUNITY_pipeline-dashboardsrcapiclient.ts]]
 - 8 edges to [[_COMMUNITY_Status and Badge Components]]
 - 7 edges to [[_COMMUNITY_Booking Tab Navigation]]
 - 4 edges to [[_COMMUNITY_Empty State Components]]
@@ -50,5 +50,5 @@ SORT file.name ASC
 - [[pipeline-dashboardsrctabsCalendarTab.tsx]] - degree 21, connects to 6 communities
 - [[pipeline-dashboardsrcutilsformat.ts]] - degree 19, connects to 6 communities
 - [[pipeline-dashboardsrccomponentsCalendarGrid.tsx]] - degree 18, connects to 4 communities
-- [[CalendarGrid()_1]] - degree 5, connects to 2 communities
-- [[CalendarTab()_1]] - degree 5, connects to 2 communities
+- [[CalendarGrid()]] - degree 5, connects to 2 communities
+- [[CalendarTab()]] - degree 5, connects to 2 communities

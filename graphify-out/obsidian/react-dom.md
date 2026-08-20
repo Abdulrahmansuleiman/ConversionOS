@@ -1,18 +1,18 @@
 ---
-source_file: "bloomline-dashboard/package.json"
+source_file: "launchops-portal/package.json"
 type: "code"
-community: "React DOM Library"
-location: "L19"
+community: "Frontend Design"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/React_DOM_Library
+  - community/Frontend_Design
 ---
 
 # react-dom
 
 ## Connections
 - [[dependencies]] - `contains` [EXTRACTED]
-- [[react-dom_3]] - `imports` [EXTRACTED]
+- [[react-dom_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/React_DOM_Library
+#graphify/code #graphify/EXTRACTED #community/Frontend_Design

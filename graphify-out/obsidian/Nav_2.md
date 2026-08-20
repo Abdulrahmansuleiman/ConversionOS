@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/components/Sidebar.tsx"
+source_file: "bloomline-dashboard/src/components/MonthNav.tsx"
 type: "code"
-community: "Dashboard Sidebar"
-location: "L79"
+community: "PDF Processing Advanced Reference"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Sidebar
+  - community/PDF_Processing_Advanced_Reference
 ---
 
 # Nav
 
 ## Connections
-- [[bloomline-dashboardsrccomponentsSidebar.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsMonthNav.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Sidebar
+#graphify/code #graphify/EXTRACTED #community/PDF_Processing_Advanced_Reference

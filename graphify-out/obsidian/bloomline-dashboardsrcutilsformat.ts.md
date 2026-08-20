@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/utils/format.ts"
 type: "code"
-community: "Calendar and Month Navigation"
+community: "PDF Processing Advanced Reference"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_and_Month_Navigation
+  - community/PDF_Processing_Advanced_Reference
 ---
 
 # bloomline-dashboard/src/utils/format.ts
@@ -22,13 +22,13 @@ tags:
 - [[bloomline-dashboardsrctabsHumanTransfersTab.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctabsSettingsTab.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctypesevents.ts]] - `imports_from` [EXTRACTED]
-- [[channelLabel()]] - `contains` [EXTRACTED]
+- [[channelLabel()_1]] - `contains` [EXTRACTED]
 - [[displayName()]] - `contains` [EXTRACTED]
-- [[formatDate()_1]] - `contains` [EXTRACTED]
+- [[formatDate()]] - `contains` [EXTRACTED]
 - [[formatDateTime()]] - `contains` [EXTRACTED]
 - [[formatDayKey()_1]] - `contains` [EXTRACTED]
-- [[formatTime()]] - `contains` [EXTRACTED]
-- [[monthLabel()]] - `contains` [EXTRACTED]
-- [[toMonthKey()]] - `contains` [EXTRACTED]
+- [[formatTime()_1]] - `contains` [EXTRACTED]
+- [[monthLabel()_1]] - `contains` [EXTRACTED]
+- [[toMonthKey()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_and_Month_Navigation
+#graphify/code #graphify/EXTRACTED #community/PDF_Processing_Advanced_Reference

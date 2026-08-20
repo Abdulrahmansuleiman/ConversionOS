@@ -18,7 +18,7 @@ members: 18
 - [[BuiltBy]] - code - bloomline-dashboard/src/components/Sidebar.tsx
 - [[Company]] - code - bloomline-dashboard/src/components/Sidebar.tsx
 - [[NAV_ITEMS]] - code - bloomline-dashboard/src/components/Sidebar.tsx
-- [[Nav_2]] - code - bloomline-dashboard/src/components/Sidebar.tsx
+- [[Nav_1]] - code - bloomline-dashboard/src/components/Sidebar.tsx
 - [[NavButton]] - code - bloomline-dashboard/src/components/Sidebar.tsx
 - [[Profile]] - code - bloomline-dashboard/src/components/Sidebar.tsx
 - [[ProfileMeta]] - code - bloomline-dashboard/src/components/Sidebar.tsx
@@ -37,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Dashboard UI Components]]
+- 3 edges to [[_COMMUNITY_bloomline-dashboardsrctabsBookingsTab.tsx]]
 
 ## Top bridge nodes
 - [[bloomline-dashboardsrccomponentsSidebar.tsx]] - degree 18, connects to 1 community

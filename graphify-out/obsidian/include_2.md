@@ -1,18 +1,18 @@
 ---
-source_file: "pipeline-dashboard/tsconfig.node.json"
+source_file: "launchops-portal/tsconfig.app.json"
 type: "code"
-community: "Vite and TS Configs"
-location: "L23"
+community: "Performance Log — Email Agent"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Vite_and_TS_Configs
+  - community/Performance_Log__Email_Agent
 ---
 
 # include
 
 ## Connections
-- [[pipeline-dashboardtsconfig.node.json]] - `contains` [EXTRACTED]
-- [[vite.config.ts]] - `extends` [EXTRACTED]
+- [[launchops-portaltsconfig.app.json]] - `contains` [EXTRACTED]
+- [[src_1]] - `extends` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Vite_and_TS_Configs
+#graphify/code #graphify/EXTRACTED #community/Performance_Log__Email_Agent

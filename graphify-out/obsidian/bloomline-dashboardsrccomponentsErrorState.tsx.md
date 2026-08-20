@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/ErrorState.tsx"
 type: "code"
-community: "Settings and Error States"
+community: "bloomline-dashboard/src/api/client.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Settings_and_Error_States
+  - community/bloomline-dashboard/src/api/clientts
 ---
 
 # bloomline-dashboard/src/components/ErrorState.tsx
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ErrorState()]] - `contains` [EXTRACTED]
 - [[ErrorStateProps]] - `contains` [EXTRACTED]
-- [[Message]] - `contains` [EXTRACTED]
+- [[Message_1]] - `contains` [EXTRACTED]
 - [[RetryButton]] - `contains` [EXTRACTED]
-- [[Wrapper]] - `contains` [EXTRACTED]
+- [[Wrapper_1]] - `contains` [EXTRACTED]
 - [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctabsCalendarTab.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctabsConversationsTab.tsx]] - `imports_from` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[bloomline-dashboardsrctabsHumanTransfersTab.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrctabsSettingsTab.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Settings_and_Error_States
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/api/clientts

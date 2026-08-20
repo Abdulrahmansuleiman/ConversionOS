@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/charts/ConversionDonut.tsx"
 type: "code"
-community: "Chart and Toggle Components"
+community: "bloomline-dashboard/src/tabs/DashboardTab.tsx"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Chart_and_Toggle_Components
+  - community/bloomline-dashboard/src/tabs/DashboardTabtsx
 ---
 
 # DonutSegment
@@ -15,4 +15,4 @@ tags:
 - [[bloomline-dashboardsrccomponentschartsConversionDonut.tsx]] - `contains` [EXTRACTED]
 - [[bloomline-dashboardsrctabsDashboardTab.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Chart_and_Toggle_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/DashboardTabtsx

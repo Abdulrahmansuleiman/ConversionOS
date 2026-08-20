@@ -15,14 +15,14 @@
       }
     },
     {
-      "query": "tag:#community/Local_File_Storage",
+      "query": "tag:#community/pipeline-dashboard/server/appjs",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Dashboard_UI_Components",
+      "query": "tag:#community/bloomline-dashboard/src/tabs/BookingsTabtsx",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -36,7 +36,7 @@
       }
     },
     {
-      "query": "tag:#community/API_Client_and_Hooks",
+      "query": "tag:#community/bloomline-dashboard/src/types/eventsts",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -50,7 +50,7 @@
       }
     },
     {
-      "query": "tag:#community/Chart_and_Toggle_Components",
+      "query": "tag:#community/bloomline-dashboard/src/tabs/DashboardTabtsx",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -71,7 +71,7 @@
       }
     },
     {
-      "query": "tag:#community/Portal_UI_Components",
+      "query": "tag:#community/launchops-portal/src/components/uitsx",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -85,7 +85,7 @@
       }
     },
     {
-      "query": "tag:#community/Data_Fetching_Hooks",
+      "query": "tag:#community/pipeline-dashboard/src/api/clientts",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -99,14 +99,14 @@
       }
     },
     {
-      "query": "tag:#community/Calendar_and_Month_Navigation",
+      "query": "tag:#community/PDF_Processing_Advanced_Reference",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Header_and_Testimonials",
+      "query": "tag:#community/Testimonialstsx",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -141,14 +141,14 @@
       }
     },
     {
-      "query": "tag:#community/KPI_Card_Components",
+      "query": "tag:#community/pipeline-dashboard/src/components/KpiCardtsx",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/KPI_Calculation_Logic",
+      "query": "tag:#community/Proposal_Writer",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -169,56 +169,56 @@
       }
     },
     {
-      "query": "tag:#community/Settings_and_Error_States",
+      "query": "tag:#community/bloomline-dashboard/src/api/clientts",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/TypeScript_Compiler_Config",
+      "query": "tag:#community/compilerOptions",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/TypeScript_Library_Config",
+      "query": "tag:#community/compilerOptions",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/TypeScript_JSX_Config",
+      "query": "tag:#community/compilerOptions",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/TypeScript_Module_Config",
+      "query": "tag:#community/compilerOptions",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/TypeScript_Strict_Config",
+      "query": "tag:#community/compilerOptions",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/TypeScript_Base_Config",
+      "query": "tag:#community/compilerOptions",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Project_List_Components",
+      "query": "tag:#community/Projectstsx",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -239,21 +239,21 @@
       }
     },
     {
-      "query": "tag:#community/Linting_and_Dev_Tools",
+      "query": "tag:#community/devDependencies",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Document_Management_View",
+      "query": "tag:#community/Documentstsx",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Header_and_Dev_Badges",
+      "query": "tag:#community/pipeline-dashboard/src/components/Headertsx",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -288,14 +288,14 @@
       }
     },
     {
-      "query": "tag:#community/Weekly_Trend_Charts",
+      "query": "tag:#community/Non-fillable_fields",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/KPI_Change_Tracking",
+      "query": "tag:#community/bloomline-dashboard/src/components/KpiCardtsx",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -316,14 +316,14 @@
       }
     },
     {
-      "query": "tag:#community/Dashboard_Package_Config",
+      "query": "tag:#community/scripts",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Portal_Package_Config",
+      "query": "tag:#community/dependencies",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -358,7 +358,7 @@
       }
     },
     {
-      "query": "tag:#community/Portal_Theme_and_Styles",
+      "query": "tag:#community/launchops-portal/src/themets",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -386,7 +386,7 @@
       }
     },
     {
-      "query": "tag:#community/TypeScript_DOM_Libs",
+      "query": "tag:#community/Changelog",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -400,28 +400,28 @@
       }
     },
     {
-      "query": "tag:#community/Core_Web_Dependencies",
+      "query": "tag:#community/dependencies",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/Chart_and_Server_Deps",
+      "query": "tag:#community/QA_Categories",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Dashboard_Theme_Setup",
+      "query": "tag:#community/bloomline-dashboard/src/components/charts/WeeklyTrendtsx",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Dashboard_Header",
+      "query": "tag:#community/bloomline-dashboard/src/components/Headertsx",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -442,14 +442,14 @@
       }
     },
     {
-      "query": "tag:#community/Supabase_Integration",
+      "query": "tag:#community/dependencies",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/Vite_Dev_Dependencies",
+      "query": "tag:#community/Process",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -463,7 +463,7 @@
       }
     },
     {
-      "query": "tag:#community/Vite_and_TS_Configs",
+      "query": "tag:#community/pipeline-dashboard/src/types/eventsts",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -477,7 +477,7 @@
       }
     },
     {
-      "query": "tag:#community/Project_Scripts",
+      "query": "tag:#community/Invoice_Template_Skill",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -505,7 +505,7 @@
       }
     },
     {
-      "query": "tag:#community/React_DOM_Types",
+      "query": "tag:#community/types/react-dom",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -540,49 +540,49 @@
       }
     },
     {
-      "query": "tag:#community/Pipeline_Package_Metadata",
+      "query": "tag:#community/bloomline-dashboard/src/components/charts/ConversionDonuttsx",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/Environment_Variable_Utility",
+      "query": "tag:#community/Process",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/React_DOM_Library",
+      "query": "tag:#community/Frontend_Design",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/React_Icons_Library",
+      "query": "tag:#community/feedback-issue-templatemd",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/React_Type_Definitions",
+      "query": "tag:#community/types/react",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/TypeScript_Language",
+      "query": "tag:#community/Pipeline__Agent_Report_Dashboard",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Vite_React_Plugin",
+      "query": "tag:#community/bloomline-dashboard/src/components/TimeframeToggletsx",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -610,7 +610,7 @@
       }
     },
     {
-      "query": "tag:#community/Dashboard_App_TSConfig",
+      "query": "tag:#community/bloomline-dashboard/packagejson",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -624,7 +624,7 @@
       }
     },
     {
-      "query": "tag:#community/Portal_App_TSConfig",
+      "query": "tag:#community/Performance_Log__Email_Agent",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -652,7 +652,7 @@
       }
     },
     {
-      "query": "tag:#community/Pipeline_App_TSConfig",
+      "query": "tag:#community/Performance_Log__Builder_Agent",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -852,6 +852,41 @@
       "color": {
         "a": 1,
         "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Performance_Log__Infrastructure_Agent",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Performance_Store",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/eslint",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/vite",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/feedbackmd",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
       }
     }
   ]

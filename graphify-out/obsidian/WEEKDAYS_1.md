@@ -1,17 +1,17 @@
 ---
-source_file: "pipeline-dashboard/src/components/CalendarGrid.tsx"
+source_file: "bloomline-dashboard/src/components/CalendarGrid.tsx"
 type: "code"
-community: "Calendar Tab View"
+community: "PDF Processing Advanced Reference"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_Tab_View
+  - community/PDF_Processing_Advanced_Reference
 ---
 
 # WEEKDAYS
 
 ## Connections
-- [[pipeline-dashboardsrccomponentsCalendarGrid.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsCalendarGrid.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View
+#graphify/code #graphify/EXTRACTED #community/PDF_Processing_Advanced_Reference

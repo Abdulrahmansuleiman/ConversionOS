@@ -1,18 +1,17 @@
 ---
 source_file: "launchops-portal/package.json"
-type: "code"
-community: "Environment Variable Utility"
+type: "concept"
+community: "Process"
 location: "L15"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Environment_Variable_Utility
+  - community/Process
 ---
 
 # dotenv
 
 ## Connections
-- [[dependencies_1]] - `contains` [EXTRACTED]
-- [[dotenv_3]] - `imports` [EXTRACTED]
+- [[dotenv]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Environment_Variable_Utility
+#graphify/concept #graphify/EXTRACTED #community/Process

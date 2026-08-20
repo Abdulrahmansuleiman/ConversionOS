@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ErrorState()_1]] - `contains` [EXTRACTED]
 - [[ErrorStateProps_1]] - `contains` [EXTRACTED]
-- [[Message_1]] - `contains` [EXTRACTED]
+- [[Message_2]] - `contains` [EXTRACTED]
 - [[RetryButton_1]] - `contains` [EXTRACTED]
-- [[Wrapper_1]] - `contains` [EXTRACTED]
+- [[Wrapper_2]] - `contains` [EXTRACTED]
 - [[pipeline-dashboardsrctabsBookingsTab.tsx]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrctabsCalendarTab.tsx]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrctabsConversationsTab.tsx]] - `imports_from` [EXTRACTED]

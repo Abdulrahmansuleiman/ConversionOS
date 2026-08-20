@@ -1,20 +1,20 @@
 ---
-source_file: "launchops-portal/tsconfig.app.json"
+source_file: "pipeline-dashboard/tsconfig.app.json"
 type: "code"
-community: "TypeScript DOM Libs"
+community: "Changelog"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_DOM_Libs
+  - community/Changelog
 ---
 
 # lib
 
 ## Connections
-- [[DOM_1]] - `extends` [EXTRACTED]
-- [[DOM.Iterable]] - `extends` [EXTRACTED]
-- [[ES2022]] - `extends` [EXTRACTED]
-- [[compilerOptions_2]] - `contains` [EXTRACTED]
+- [[DOM_2]] - `extends` [EXTRACTED]
+- [[DOM.Iterable_2]] - `extends` [EXTRACTED]
+- [[ES2020_1]] - `extends` [EXTRACTED]
+- [[compilerOptions_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_DOM_Libs
+#graphify/code #graphify/EXTRACTED #community/Changelog

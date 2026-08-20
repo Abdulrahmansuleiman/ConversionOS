@@ -1,30 +1,30 @@
 ---
 source_file: "pipeline-dashboard/src/types/events.ts"
 type: "code"
-community: "Data Fetching Hooks"
+community: "pipeline-dashboard/src/api/client.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Data_Fetching_Hooks
+  - community/pipeline-dashboard/src/api/clientts
 ---
 
 # pipeline-dashboard/src/types/events.ts
 
 ## Connections
 - [[CalendarBooking]] - `contains` [EXTRACTED]
-- [[Change]] - `imports` [EXTRACTED]
+- [[Change_1]] - `imports` [EXTRACTED]
 - [[EventPayload]] - `contains` [EXTRACTED]
-- [[EventType]] - `contains` [EXTRACTED]
-- [[Health]] - `contains` [EXTRACTED]
-- [[KpiCounts]] - `contains` [EXTRACTED]
-- [[KpiData]] - `contains` [EXTRACTED]
-- [[KpiKey]] - `contains` [EXTRACTED]
-- [[NormalizedEvent]] - `contains` [EXTRACTED]
+- [[EventType_1]] - `contains` [EXTRACTED]
+- [[Health_1]] - `contains` [EXTRACTED]
+- [[KpiCounts_1]] - `contains` [EXTRACTED]
+- [[KpiData_1]] - `contains` [EXTRACTED]
+- [[KpiKey_1]] - `contains` [EXTRACTED]
+- [[NormalizedEvent_1]] - `contains` [EXTRACTED]
 - [[SpeedBucket]] - `contains` [EXTRACTED]
 - [[SpeedTrendChart.tsx]] - `imports_from` [EXTRACTED]
 - [[Timeframe]] - `contains` [EXTRACTED]
-- [[TopLead]] - `contains` [EXTRACTED]
+- [[TopLead_1]] - `contains` [EXTRACTED]
 - [[TrendBucket]] - `contains` [EXTRACTED]
 - [[pipeline-dashboardsrcapiclient.ts]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrccomponentsCalendarGrid.tsx]] - `imports_from` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[pipeline-dashboardsrcutilsformat.ts]] - `imports_from` [EXTRACTED]
 - [[useSpeedTrend.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Data_Fetching_Hooks
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/api/clientts

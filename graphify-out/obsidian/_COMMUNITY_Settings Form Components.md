@@ -18,12 +18,12 @@ members: 16
 - [[Form_1]] - code - pipeline-dashboard/src/tabs/SettingsTab.tsx
 - [[Input_1]] - code - pipeline-dashboard/src/tabs/SettingsTab.tsx
 - [[Layout_1]] - code - pipeline-dashboard/src/tabs/SettingsTab.tsx
-- [[Message_1]] - code - pipeline-dashboard/src/components/ErrorState.tsx
+- [[Message_2]] - code - pipeline-dashboard/src/components/ErrorState.tsx
 - [[Pill_1]] - code - pipeline-dashboard/src/components/ui.tsx
 - [[RetryButton_1]] - code - pipeline-dashboard/src/components/ErrorState.tsx
 - [[RoleHint_1]] - code - pipeline-dashboard/src/tabs/SettingsTab.tsx
 - [[SubmitButton_1]] - code - pipeline-dashboard/src/tabs/SettingsTab.tsx
-- [[Wrapper_1]] - code - pipeline-dashboard/src/components/ErrorState.tsx
+- [[Wrapper_2]] - code - pipeline-dashboard/src/components/ErrorState.tsx
 - [[pipeline-dashboardsrccomponentsErrorState.tsx]] - code - pipeline-dashboard/src/components/ErrorState.tsx
 - [[pipeline-dashboardsrctabsSettingsTab.tsx]] - code - pipeline-dashboard/src/tabs/SettingsTab.tsx
 
@@ -36,7 +36,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 16 edges to [[_COMMUNITY_Status and Badge Components]]
-- 4 edges to [[_COMMUNITY_Data Fetching Hooks]]
+- 4 edges to [[_COMMUNITY_pipeline-dashboardsrcapiclient.ts]]
 - 3 edges to [[_COMMUNITY_Calendar Tab View]]
 - 3 edges to [[_COMMUNITY_App Layout and Tabs]]
 - 2 edges to [[_COMMUNITY_Booking Tab Navigation]]

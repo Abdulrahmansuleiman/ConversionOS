@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/package.json"
 type: "concept"
-community: "Linting and Dev Tools"
+community: "devDependencies"
 location: "L32"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Linting_and_Dev_Tools
+  - community/devDependencies
 ---
 
 # eslint-plugin-react-refresh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[eslint-plugin-react-refresh]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Linting_and_Dev_Tools
+#graphify/concept #graphify/EXTRACTED #community/devDependencies

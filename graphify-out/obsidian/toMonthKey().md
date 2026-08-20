@@ -1,21 +1,21 @@
 ---
-source_file: "bloomline-dashboard/src/utils/format.ts"
+source_file: "pipeline-dashboard/src/utils/format.ts"
 type: "code"
-community: "Calendar and Month Navigation"
+community: "Calendar Tab View"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_and_Month_Navigation
+  - community/Calendar_Tab_View
 ---
 
 # toMonthKey()
 
 ## Connections
-- [[BookingsTab()]] - `calls` [EXTRACTED]
+- [[BookingsTab()_1]] - `calls` [EXTRACTED]
 - [[CalendarTab()]] - `calls` [EXTRACTED]
-- [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `imports` [EXTRACTED]
-- [[bloomline-dashboardsrctabsCalendarTab.tsx]] - `imports` [EXTRACTED]
-- [[bloomline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrctabsBookingsTab.tsx]] - `imports` [EXTRACTED]
+- [[pipeline-dashboardsrctabsCalendarTab.tsx]] - `imports` [EXTRACTED]
+- [[pipeline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_and_Month_Navigation
+#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View

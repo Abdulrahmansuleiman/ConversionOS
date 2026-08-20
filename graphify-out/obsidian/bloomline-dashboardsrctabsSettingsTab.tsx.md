@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/SettingsTab.tsx"
 type: "code"
-community: "Settings and Error States"
+community: "bloomline-dashboard/src/api/client.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Settings_and_Error_States
+  - community/bloomline-dashboard/src/api/clientts
 ---
 
 # bloomline-dashboard/src/tabs/SettingsTab.tsx
@@ -17,7 +17,7 @@ tags:
 - [[CardHeader_1]] - `imports` [EXTRACTED]
 - [[CardSub_1]] - `imports` [EXTRACTED]
 - [[CardTitle_1]] - `imports` [EXTRACTED]
-- [[EmptyState()_1]] - `imports` [EXTRACTED]
+- [[EmptyState()]] - `imports` [EXTRACTED]
 - [[ErrorBox]] - `contains` [EXTRACTED]
 - [[ErrorState()]] - `imports` [EXTRACTED]
 - [[Field]] - `contains` [EXTRACTED]
@@ -40,7 +40,7 @@ tags:
 - [[bloomline-dashboardsrccomponentsui.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrchooksuseUsers.ts]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrcutilsformat.ts]] - `imports_from` [EXTRACTED]
-- [[formatDate()_1]] - `imports` [EXTRACTED]
+- [[formatDate()]] - `imports` [EXTRACTED]
 - [[useUsers()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Settings_and_Error_States
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/api/clientts

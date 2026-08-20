@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/src/theme.ts"
 type: "code"
-community: "Portal Theme and Styles"
+community: "launchops-portal/src/theme.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Portal_Theme_and_Styles
+  - community/launchops-portal/src/themets
 ---
 
 # launchops-portal/src/theme.ts
@@ -31,4 +31,4 @@ tags:
 - [[projectStatusColor]] - `contains` [EXTRACTED]
 - [[theme_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Portal_Theme_and_Styles
+#graphify/code #graphify/EXTRACTED #community/launchops-portal/src/themets

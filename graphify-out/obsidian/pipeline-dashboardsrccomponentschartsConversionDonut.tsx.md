@@ -12,7 +12,7 @@ tags:
 # pipeline-dashboard/src/components/charts/ConversionDonut.tsx
 
 ## Connections
-- [[ChartWrap_3]] - `contains` [EXTRACTED]
+- [[ChartWrap_2]] - `contains` [EXTRACTED]
 - [[ConversionDonut()]] - `contains` [EXTRACTED]
 - [[ConversionDonutProps]] - `contains` [EXTRACTED]
 - [[DonutSegment]] - `contains` [EXTRACTED]

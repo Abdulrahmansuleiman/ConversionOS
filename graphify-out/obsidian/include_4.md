@@ -1,18 +1,18 @@
 ---
-source_file: "launchops-portal/tsconfig.app.json"
+source_file: "pipeline-dashboard/tsconfig.app.json"
 type: "code"
-community: "Portal App TSConfig"
-location: "L21"
+community: "Performance Log — Builder Agent"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Portal_App_TSConfig
+  - community/Performance_Log__Builder_Agent
 ---
 
 # include
 
 ## Connections
-- [[launchops-portaltsconfig.app.json]] - `contains` [EXTRACTED]
-- [[src_1]] - `extends` [EXTRACTED]
+- [[pipeline-dashboardtsconfig.app.json]] - `contains` [EXTRACTED]
+- [[src_2]] - `extends` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Portal_App_TSConfig
+#graphify/code #graphify/EXTRACTED #community/Performance_Log__Builder_Agent

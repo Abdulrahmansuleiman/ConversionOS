@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/src/views/Projects.tsx"
 type: "code"
-community: "Project List Components"
+community: "Projects.tsx"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_List_Components
+  - community/Projectstsx
 ---
 
 # GoBtn
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Projects.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_List_Components
+#graphify/code #graphify/EXTRACTED #community/Projectstsx

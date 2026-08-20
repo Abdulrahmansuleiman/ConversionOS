@@ -1,19 +1,19 @@
 ---
 source_file: "launchops-portal/src/views/Feedback.tsx"
 type: "code"
-community: "Header and Testimonials"
+community: "Testimonials.tsx"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Testimonials
+  - community/Testimonialstsx
 ---
 
 # Feedback()
 
 ## Connections
 - [[Feedback.tsx]] - `contains` [EXTRACTED]
-- [[formatDate()]] - `calls` [EXTRACTED]
+- [[formatDate()_1]] - `calls` [EXTRACTED]
 - [[launchops-portalsrcApp.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Testimonials
+#graphify/code #graphify/EXTRACTED #community/Testimonialstsx

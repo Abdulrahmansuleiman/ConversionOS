@@ -1,30 +1,41 @@
 # compilerOptions
 
-> God node · 18 connections · `bloomline-dashboard/tsconfig.app.json`
+> 17 nodes · cohesion 0.12
 
-**Community:** [TypeScript Compiler Config](TypeScript_Compiler_Config.md)
+## Key Concepts
 
-## Connections by Relation
+- **compilerOptions** (18 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **allowImportingTsExtensions** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **jsx** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **module** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **moduleDetection** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **moduleResolution** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **noEmit** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **noFallthroughCasesInSwitch** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **noUncheckedSideEffectImports** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **noUnusedLocals** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **noUnusedParameters** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **skipLibCheck** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **strict** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **target** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **tsBuildInfoFile** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **useDefineForClassFields** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
+- **verbatimModuleSyntax** (1 connections) — `bloomline-dashboard/tsconfig.app.json`
 
-### contains
-- lib `EXTRACTED`
-- bloomline-dashboard/tsconfig.app.json `EXTRACTED`
-- moduleResolution `EXTRACTED`
-- allowImportingTsExtensions `EXTRACTED`
-- verbatimModuleSyntax `EXTRACTED`
-- moduleDetection `EXTRACTED`
-- noEmit `EXTRACTED`
-- jsx `EXTRACTED`
-- strict `EXTRACTED`
-- noUnusedLocals `EXTRACTED`
-- noUnusedParameters `EXTRACTED`
-- noFallthroughCasesInSwitch `EXTRACTED`
-- noUncheckedSideEffectImports `EXTRACTED`
-- tsBuildInfoFile `EXTRACTED`
-- target `EXTRACTED`
-- useDefineForClassFields `EXTRACTED`
-- module `EXTRACTED`
-- skipLibCheck `EXTRACTED`
+## Relationships
+
+- [bloomline-dashboard/package.json](bloomline-dashboard-package.json.md) (1 shared connections)
+- [Changelog](Changelog.md) (1 shared connections)
+
+## Source Files
+
+- `bloomline-dashboard/tsconfig.app.json`
+
+## Audit Trail
+
+- EXTRACTED: 18 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
 
 ---
 

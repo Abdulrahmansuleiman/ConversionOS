@@ -1,19 +1,19 @@
 ---
 source_file: "bloomline-dashboard/src/utils/format.ts"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # displayName()
 
 ## Connections
 - [[BookingsTab()]] - `calls` [EXTRACTED]
-- [[CalendarGrid()]] - `calls` [EXTRACTED]
+- [[CalendarGrid()_1]] - `calls` [EXTRACTED]
 - [[ConversationsTab()]] - `calls` [EXTRACTED]
 - [[FollowUpsTab()]] - `calls` [EXTRACTED]
 - [[HumanTransfersTab()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[bloomline-dashboardsrctabsHumanTransfersTab.tsx]] - `imports` [EXTRACTED]
 - [[bloomline-dashboardsrcutilsformat.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

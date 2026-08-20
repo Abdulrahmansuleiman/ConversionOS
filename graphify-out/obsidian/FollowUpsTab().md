@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/FollowUpsTab.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # FollowUpsTab()
@@ -15,8 +15,8 @@ tags:
 - [[bloomline-dashboardsrcApp.tsx]] - `imports` [EXTRACTED]
 - [[bloomline-dashboardsrctabsFollowUpsTab.tsx]] - `contains` [EXTRACTED]
 - [[displayName()]] - `calls` [EXTRACTED]
-- [[formatDate()_1]] - `calls` [EXTRACTED]
+- [[formatDate()]] - `calls` [EXTRACTED]
 - [[formatDateTime()]] - `calls` [EXTRACTED]
 - [[useEvents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

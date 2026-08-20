@@ -21,7 +21,7 @@
 
 ## Relationships
 
-- [Portal Theme and Styles](Portal_Theme_and_Styles.md) (2 shared connections)
+- [launchops-portal/src/theme.ts](launchops-portal-src-theme.ts.md) (2 shared connections)
 - [Portal API Client](Portal_API_Client.md) (2 shared connections)
 
 ## Source Files

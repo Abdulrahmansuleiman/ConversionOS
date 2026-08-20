@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/src/theme.ts"
 type: "code"
-community: "Portal Theme and Styles"
+community: "launchops-portal/src/theme.ts"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Portal_Theme_and_Styles
+  - community/launchops-portal/src/themets
 ---
 
 # ASSET_TYPES
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[launchops-portalsrctheme.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Portal_Theme_and_Styles
+#graphify/code #graphify/EXTRACTED #community/launchops-portal/src/themets

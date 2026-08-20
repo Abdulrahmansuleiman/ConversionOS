@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # toCalendarBooking()
@@ -15,4 +15,4 @@ tags:
 - [[BookingsTab()]] - `indirect_call` [INFERRED]
 - [[bloomline-dashboardsrctabsBookingsTab.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

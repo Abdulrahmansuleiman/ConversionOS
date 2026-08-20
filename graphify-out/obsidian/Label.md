@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/components/MonthNav.tsx"
+source_file: "pipeline-dashboard/src/components/KpiCard.tsx"
 type: "code"
-community: "Calendar and Month Navigation"
-location: "L38"
+community: "pipeline-dashboard/src/components/KpiCard.tsx"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_and_Month_Navigation
+  - community/pipeline-dashboard/src/components/KpiCardtsx
 ---
 
 # Label
 
 ## Connections
-- [[bloomline-dashboardsrccomponentsMonthNav.tsx]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrccomponentsKpiCard.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_and_Month_Navigation
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/components/KpiCardtsx

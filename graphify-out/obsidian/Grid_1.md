@@ -1,17 +1,17 @@
 ---
-source_file: "launchops-portal/src/views/Testimonials.tsx"
+source_file: "pipeline-dashboard/src/components/CalendarGrid.tsx"
 type: "code"
-community: "Header and Testimonials"
-location: "L107"
+community: "Calendar Tab View"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Testimonials
+  - community/Calendar_Tab_View
 ---
 
 # Grid
 
 ## Connections
-- [[Testimonials.tsx]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrccomponentsCalendarGrid.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Testimonials
+#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View

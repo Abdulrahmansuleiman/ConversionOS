@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/src/api/client.ts"
 type: "code"
-community: "Data Fetching Hooks"
+community: "pipeline-dashboard/src/api/client.ts"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Data_Fetching_Hooks
+  - community/pipeline-dashboard/src/api/clientts
 ---
 
 # .constructor()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApiError]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Data_Fetching_Hooks
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/api/clientts

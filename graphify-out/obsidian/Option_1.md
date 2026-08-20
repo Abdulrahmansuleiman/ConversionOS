@@ -1,17 +1,17 @@
 ---
-source_file: "pipeline-dashboard/src/components/TimeframeToggle.tsx"
+source_file: "bloomline-dashboard/src/components/TimeframeToggle.tsx"
 type: "code"
-community: "Timeframe Toggle Component"
+community: "bloomline-dashboard/src/tabs/DashboardTab.tsx"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Timeframe_Toggle_Component
+  - community/bloomline-dashboard/src/tabs/DashboardTabtsx
 ---
 
 # Option
 
 ## Connections
-- [[pipeline-dashboardsrccomponentsTimeframeToggle.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsTimeframeToggle.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Timeframe_Toggle_Component
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/DashboardTabtsx

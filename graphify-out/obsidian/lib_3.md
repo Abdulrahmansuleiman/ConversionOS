@@ -1,20 +1,18 @@
 ---
-source_file: "bloomline-dashboard/tsconfig.app.json"
+source_file: "launchops-portal/tsconfig.node.json"
 type: "code"
-community: "TypeScript DOM Libs"
-location: "L6"
+community: "compilerOptions"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_DOM_Libs
+  - community/compilerOptions
 ---
 
 # lib
 
 ## Connections
-- [[DOM]] - `extends` [EXTRACTED]
-- [[DOM.Iterable]] - `extends` [EXTRACTED]
-- [[ES2020]] - `extends` [EXTRACTED]
-- [[compilerOptions]] - `contains` [EXTRACTED]
+- [[ES2023_1]] - `extends` [EXTRACTED]
+- [[compilerOptions_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_DOM_Libs
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

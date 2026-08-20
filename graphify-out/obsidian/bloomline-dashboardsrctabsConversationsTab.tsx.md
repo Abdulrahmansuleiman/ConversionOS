@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/tabs/ConversationsTab.tsx"
 type: "code"
-community: "Dashboard UI Components"
+community: "bloomline-dashboard/src/tabs/BookingsTab.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_UI_Components
+  - community/bloomline-dashboard/src/tabs/BookingsTabtsx
 ---
 
 # bloomline-dashboard/src/tabs/ConversationsTab.tsx
@@ -18,7 +18,7 @@ tags:
 - [[CardTitle_1]] - `imports` [EXTRACTED]
 - [[ChannelPill()_1]] - `imports` [EXTRACTED]
 - [[ConversationsTab()]] - `contains` [EXTRACTED]
-- [[EmptyState()_1]] - `imports` [EXTRACTED]
+- [[EmptyState()]] - `imports` [EXTRACTED]
 - [[ErrorState()]] - `imports` [EXTRACTED]
 - [[SampleDataBadge()_1]] - `imports` [EXTRACTED]
 - [[StatusPill()_1]] - `imports` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[formatDateTime()]] - `imports` [EXTRACTED]
 - [[useEvents()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_UI_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/tabs/BookingsTabtsx

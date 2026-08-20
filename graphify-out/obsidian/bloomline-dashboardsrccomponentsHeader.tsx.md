@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/Header.tsx"
 type: "code"
-community: "Dashboard Header"
+community: "bloomline-dashboard/src/components/Header.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Header
+  - community/bloomline-dashboard/src/components/Headertsx
 ---
 
 # bloomline-dashboard/src/components/Header.tsx
@@ -24,4 +24,4 @@ tags:
 - [[bloomline-dashboardsrcApp.tsx]] - `imports_from` [EXTRACTED]
 - [[bloomline-dashboardsrccomponentsDevModeBadge.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Header
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/components/Headertsx

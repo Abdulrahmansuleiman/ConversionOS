@@ -1,19 +1,19 @@
 ---
-source_file: "bloomline-dashboard/src/types/events.ts"
+source_file: "pipeline-dashboard/src/types/events.ts"
 type: "code"
-community: "API Client and Hooks"
-location: "L70"
+community: "pipeline-dashboard/src/components/Header.tsx"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Client_and_Hooks
+  - community/pipeline-dashboard/src/components/Headertsx
 ---
 
 # Health
 
 ## Connections
-- [[bloomline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
-- [[bloomline-dashboardsrchooksuseHealth.ts]] - `imports` [EXTRACTED]
-- [[bloomline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
+- [[pipeline-dashboardsrchooksuseHealth.ts]] - `imports` [EXTRACTED]
+- [[pipeline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Client_and_Hooks
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/components/Headertsx

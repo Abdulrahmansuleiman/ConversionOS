@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Overview.tsx]] - `contains` [EXTRACTED]
-- [[formatDate()]] - `calls` [EXTRACTED]
+- [[formatDate()_1]] - `calls` [EXTRACTED]
 - [[launchSub()]] - `calls` [EXTRACTED]
 - [[launchops-portalsrcApp.tsx]] - `imports` [EXTRACTED]
 - [[nextLaunch()]] - `calls` [EXTRACTED]

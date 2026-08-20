@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/components/CalendarGrid.tsx"
+source_file: "launchops-portal/src/views/Testimonials.tsx"
 type: "code"
-community: "Calendar and Month Navigation"
-location: "L17"
+community: "Testimonials.tsx"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_and_Month_Navigation
+  - community/Testimonialstsx
 ---
 
 # Grid
 
 ## Connections
-- [[bloomline-dashboardsrccomponentsCalendarGrid.tsx]] - `contains` [EXTRACTED]
+- [[Testimonials.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_and_Month_Navigation
+#graphify/code #graphify/EXTRACTED #community/Testimonialstsx

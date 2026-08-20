@@ -1,17 +1,17 @@
 ---
-source_file: "launchops-portal/src/components/Header.tsx"
+source_file: "bloomline-dashboard/src/components/EmptyState.tsx"
 type: "code"
-community: "Header and Testimonials"
-location: "L38"
+community: "Non-fillable fields"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Testimonials
+  - community/Non-fillable_fields
 ---
 
 # Title
 
 ## Connections
-- [[launchops-portalsrccomponentsHeader.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrccomponentsEmptyState.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Testimonials
+#graphify/code #graphify/EXTRACTED #community/Non-fillable_fields

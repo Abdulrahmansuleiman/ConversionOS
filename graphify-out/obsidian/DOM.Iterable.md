@@ -1,19 +1,17 @@
 ---
-source_file: "launchops-portal/tsconfig.app.json"
+source_file: "bloomline-dashboard/tsconfig.app.json"
 type: "concept"
-community: "TypeScript DOM Libs"
+community: "Community None"
 location: "L6"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TypeScript_DOM_Libs
+  - community/Community_None
 ---
 
 # DOM.Iterable
 
 ## Connections
-- [[lib_3]] - `extends` [EXTRACTED]
-- [[lib_4]] - `extends` [EXTRACTED]
-- [[lib_5]] - `extends` [EXTRACTED]
+- [[lib]] - `extends` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TypeScript_DOM_Libs
+#graphify/concept #graphify/EXTRACTED #community/Community_None

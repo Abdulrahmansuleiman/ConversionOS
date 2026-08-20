@@ -28,7 +28,7 @@
 
 ## Relationships
 
-- [Data Fetching Hooks](Data_Fetching_Hooks.md) (8 shared connections)
+- [pipeline-dashboard/src/api/client.ts](pipeline-dashboard-src-api-client.ts.md) (8 shared connections)
 - [KPI Dashboard Tab](KPI_Dashboard_Tab.md) (6 shared connections)
 - [Empty State Components](Empty_State_Components.md) (4 shared connections)
 - [Calendar Tab View](Calendar_Tab_View.md) (3 shared connections)

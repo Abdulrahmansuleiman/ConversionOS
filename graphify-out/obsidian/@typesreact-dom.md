@@ -1,18 +1,18 @@
 ---
 source_file: "launchops-portal/package.json"
 type: "code"
-community: "Vite Dev Dependencies"
+community: "Process"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Vite_Dev_Dependencies
+  - community/Process
 ---
 
 # @types/react-dom
 
 ## Connections
-- [[@typesreact-dom_3]] - `imports` [EXTRACTED]
+- [[@typesreact-dom_1]] - `imports` [EXTRACTED]
 - [[devDependencies_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Vite_Dev_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Process

@@ -1,0 +1,28 @@
+---
+type: community
+cohesion: 0.67
+members: 3
+---
+
+# Performance Log — Builder Agent
+
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
+
+## Members
+- [[include_4]] - code - pipeline-dashboard/tsconfig.app.json
+- [[pipeline-dashboardtsconfig.app.json]] - code - pipeline-dashboard/tsconfig.app.json
+- [[src_2]] - concept - pipeline-dashboard/tsconfig.app.json
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Performance_Log__Builder_Agent
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_compilerOptions_4]]
+
+## Top bridge nodes
+- [[pipeline-dashboardtsconfig.app.json]] - degree 2, connects to 1 community

@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/components/charts/WeeklyTrend.tsx"
+source_file: "pipeline-dashboard/src/components/charts/ConversionDonut.tsx"
 type: "code"
-community: "Weekly Trend Charts"
-location: "L16"
+community: "Conversion Donut Chart"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Weekly_Trend_Charts
+  - community/Conversion_Donut_Chart
 ---
 
 # ChartWrap
 
 ## Connections
-- [[bloomline-dashboardsrccomponentschartsWeeklyTrend.tsx]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrccomponentschartsConversionDonut.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Weekly_Trend_Charts
+#graphify/code #graphify/EXTRACTED #community/Conversion_Donut_Chart

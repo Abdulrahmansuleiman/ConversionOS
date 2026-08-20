@@ -1,18 +1,17 @@
 ---
 source_file: "launchops-portal/package.json"
-type: "code"
-community: "React Icons Library"
+type: "concept"
+community: "feedback-issue-template.md"
 location: "L19"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/React_Icons_Library
+  - community/feedback-issue-templatemd
 ---
 
 # react-icons
 
 ## Connections
-- [[dependencies_1]] - `contains` [EXTRACTED]
-- [[react-icons_3]] - `imports` [EXTRACTED]
+- [[react-icons]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/React_Icons_Library
+#graphify/concept #graphify/EXTRACTED #community/feedback-issue-templatemd

@@ -33,13 +33,13 @@
 
 ## Relationships
 
-- [Portal Theme and Styles](Portal_Theme_and_Styles.md) (5 shared connections)
-- [Portal UI Components](Portal_UI_Components.md) (4 shared connections)
+- [launchops-portal/src/theme.ts](launchops-portal-src-theme.ts.md) (5 shared connections)
+- [launchops-portal/src/components/ui.tsx](launchops-portal-src-components-ui.tsx.md) (4 shared connections)
 - [Portal API Client](Portal_API_Client.md) (3 shared connections)
-- [Header and Testimonials](Header_and_Testimonials.md) (3 shared connections)
+- [Testimonials.tsx](Testimonials.tsx.md) (3 shared connections)
 - [Sidebar Navigation](Sidebar_Navigation.md) (3 shared connections)
-- [Project List Components](Project_List_Components.md) (2 shared connections)
-- [Document Management View](Document_Management_View.md) (1 shared connections)
+- [Projects.tsx](Projects.tsx.md) (2 shared connections)
+- [Documents.tsx](Documents.tsx.md) (1 shared connections)
 
 ## Source Files
 

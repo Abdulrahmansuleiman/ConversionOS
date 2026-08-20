@@ -12,7 +12,7 @@ members: 14
 ## Members
 - [[Button]] - code - launchops-portal/src/components/LoginScreen.tsx
 - [[Error]] - code - launchops-portal/src/components/LoginScreen.tsx
-- [[Eyebrow_1]] - code - launchops-portal/src/components/LoginScreen.tsx
+- [[Eyebrow]] - code - launchops-portal/src/components/LoginScreen.tsx
 - [[Foot]] - code - launchops-portal/src/components/LoginScreen.tsx
 - [[Form_2]] - code - launchops-portal/src/components/LoginScreen.tsx
 - [[Input_2]] - code - launchops-portal/src/components/LoginScreen.tsx
@@ -21,7 +21,7 @@ members: 14
 - [[Logo]] - code - launchops-portal/src/components/LoginScreen.tsx
 - [[LogoMark_1]] - code - launchops-portal/src/components/LoginScreen.tsx
 - [[Panel]] - code - launchops-portal/src/components/LoginScreen.tsx
-- [[Sub_1]] - code - launchops-portal/src/components/LoginScreen.tsx
+- [[Sub]] - code - launchops-portal/src/components/LoginScreen.tsx
 - [[Title_2]] - code - launchops-portal/src/components/LoginScreen.tsx
 - [[Wrap]] - code - launchops-portal/src/components/LoginScreen.tsx
 
@@ -34,7 +34,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Portal API Client]]
-- 2 edges to [[_COMMUNITY_Portal Theme and Styles]]
+- 2 edges to [[_COMMUNITY_launchops-portalsrctheme.ts]]
 
 ## Top bridge nodes
 - [[LoginScreen.tsx]] - degree 16, connects to 2 communities

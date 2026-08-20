@@ -1,18 +1,18 @@
 ---
 source_file: "pipeline-dashboard/tsconfig.node.json"
 type: "code"
-community: "Vite and TS Configs"
+community: "pipeline-dashboard/src/types/events.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Vite_and_TS_Configs
+  - community/pipeline-dashboard/src/types/eventsts
 ---
 
 # pipeline-dashboard/tsconfig.node.json
 
 ## Connections
 - [[compilerOptions_5]] - `contains` [EXTRACTED]
-- [[include_2]] - `contains` [EXTRACTED]
+- [[include_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Vite_and_TS_Configs
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/types/eventsts

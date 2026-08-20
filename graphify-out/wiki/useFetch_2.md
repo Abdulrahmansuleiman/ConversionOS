@@ -2,7 +2,7 @@
 
 > God node · 15 connections · `bloomline-dashboard/src/hooks/useFetch.ts`
 
-**Community:** [API Client and Hooks](API_Client_and_Hooks.md)
+**Community:** [bloomline-dashboard/src/types/events.ts](bloomline-dashboard-src-types-events.ts.md)
 
 ## Connections by Relation
 

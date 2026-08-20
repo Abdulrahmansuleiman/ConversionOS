@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/server/store.js"
 type: "code"
-community: "Local File Storage"
+community: "pipeline-dashboard/server/app.js"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local_File_Storage
+  - community/pipeline-dashboard/server/appjs
 ---
 
 # createStore()
@@ -19,4 +19,4 @@ tags:
 - [[pipeline-dashboardserverseed-sample.js]] - `imports` [EXTRACTED]
 - [[pipeline-dashboardserverstore.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local_File_Storage
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/server/appjs

@@ -1,17 +1,17 @@
 ---
-source_file: "launchops-portal/src/components/LoginScreen.tsx"
+source_file: "launchops-portal/src/components/Header.tsx"
 type: "code"
-community: "Login Screen UI"
-location: "L104"
+community: "Testimonials.tsx"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Login_Screen_UI
+  - community/Testimonialstsx
 ---
 
 # Sub
 
 ## Connections
-- [[LoginScreen.tsx]] - `contains` [EXTRACTED]
+- [[launchops-portalsrccomponentsHeader.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Login_Screen_UI
+#graphify/code #graphify/EXTRACTED #community/Testimonialstsx

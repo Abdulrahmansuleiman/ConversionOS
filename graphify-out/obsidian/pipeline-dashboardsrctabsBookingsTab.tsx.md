@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[BookingsTab()_1]] - `contains` [EXTRACTED]
 - [[CalendarBooking]] - `imports` [EXTRACTED]
-- [[CalendarGrid()_1]] - `imports` [EXTRACTED]
+- [[CalendarGrid()]] - `imports` [EXTRACTED]
 - [[Card_1]] - `imports` [EXTRACTED]
 - [[CardHeader]] - `imports` [EXTRACTED]
 - [[CardSub]] - `imports` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[EmptyState()_2]] - `imports` [EXTRACTED]
 - [[ErrorState()_1]] - `imports` [EXTRACTED]
 - [[MonthNav()_1]] - `imports` [EXTRACTED]
-- [[NormalizedEvent]] - `imports` [EXTRACTED]
+- [[NormalizedEvent_1]] - `imports` [EXTRACTED]
 - [[SampleDataBadge()]] - `imports` [EXTRACTED]
 - [[StatusPill()]] - `imports` [EXTRACTED]
 - [[Table_1]] - `imports` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[ViewToggle_1]] - `contains` [EXTRACTED]
 - [[displayName()_1]] - `imports` [EXTRACTED]
 - [[formatDateTime()_1]] - `imports` [EXTRACTED]
-- [[monthLabel()_1]] - `imports` [EXTRACTED]
+- [[monthLabel()]] - `imports` [EXTRACTED]
 - [[pipeline-dashboardsrcApp.tsx]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrccomponentsCalendarGrid.tsx]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrccomponentsEmptyState.tsx]] - `imports_from` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[pipeline-dashboardsrctypesevents.ts]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrcutilsformat.ts]] - `imports_from` [EXTRACTED]
 - [[toCalendarBooking()_1]] - `contains` [EXTRACTED]
-- [[toMonthKey()_1]] - `imports` [EXTRACTED]
+- [[toMonthKey()]] - `imports` [EXTRACTED]
 - [[useEvents()_1]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Booking_Tab_Navigation

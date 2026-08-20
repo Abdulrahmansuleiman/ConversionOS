@@ -1,18 +1,18 @@
 ---
-source_file: "bloomline-dashboard/package.json"
+source_file: "launchops-portal/package.json"
 type: "code"
-community: "Environment Variable Utility"
-location: "L16"
+community: "Process"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Environment_Variable_Utility
+  - community/Process
 ---
 
 # dotenv
 
 ## Connections
 - [[dependencies]] - `contains` [EXTRACTED]
-- [[dotenv_3]] - `imports` [EXTRACTED]
+- [[dotenv_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Environment_Variable_Utility
+#graphify/code #graphify/EXTRACTED #community/Process

@@ -914,7 +914,7 @@
     {
       "id": "g2",
       "type": "group",
-      "label": "Local File Storage",
+      "label": "pipeline-dashboard/server/app.js",
       "x": 3460,
       "y": 0,
       "width": 1540,
@@ -1293,7 +1293,7 @@
     {
       "id": "g3",
       "type": "group",
-      "label": "Dashboard UI Components",
+      "label": "bloomline-dashboard/src/tabs/BookingsTab.tsx",
       "x": 5080,
       "y": 0,
       "width": 1540,
@@ -1609,7 +1609,7 @@
     {
       "id": "n_bloomline_dashboard_src_utils_format_formatdate",
       "type": "file",
-      "file": "formatDate()_1.md",
+      "file": "formatDate().md",
       "x": 6300,
       "y": 400,
       "width": 180,
@@ -2015,7 +2015,7 @@
     {
       "id": "g5",
       "type": "group",
-      "label": "API Client and Hooks",
+      "label": "bloomline-dashboard/src/types/events.ts",
       "x": 8320,
       "y": 0,
       "width": 1540,
@@ -2115,7 +2115,7 @@
     {
       "id": "n_bloomline_dashboard_src_types_events_eventtype",
       "type": "file",
-      "file": "EventType_1.md",
+      "file": "EventType.md",
       "x": 8940,
       "y": 160,
       "width": 180,
@@ -2133,7 +2133,7 @@
     {
       "id": "n_bloomline_dashboard_src_types_events_health",
       "type": "file",
-      "file": "Health_1.md",
+      "file": "Health.md",
       "x": 9340,
       "y": 160,
       "width": 180,
@@ -2142,7 +2142,7 @@
     {
       "id": "n_bloomline_dashboard_src_types_events_kpicounts",
       "type": "file",
-      "file": "KpiCounts_1.md",
+      "file": "KpiCounts.md",
       "x": 9540,
       "y": 160,
       "width": 180,
@@ -2151,7 +2151,7 @@
     {
       "id": "n_bloomline_dashboard_src_types_events_kpidata",
       "type": "file",
-      "file": "KpiData_1.md",
+      "file": "KpiData.md",
       "x": 8340,
       "y": 240,
       "width": 180,
@@ -2160,7 +2160,7 @@
     {
       "id": "n_bloomline_dashboard_src_types_events_kpikey",
       "type": "file",
-      "file": "KpiKey_1.md",
+      "file": "KpiKey.md",
       "x": 8540,
       "y": 240,
       "width": 180,
@@ -2169,7 +2169,7 @@
     {
       "id": "n_bloomline_dashboard_src_types_events_normalizedevent",
       "type": "file",
-      "file": "NormalizedEvent_1.md",
+      "file": "NormalizedEvent.md",
       "x": 8740,
       "y": 240,
       "width": 180,
@@ -2187,7 +2187,7 @@
     {
       "id": "n_bloomline_dashboard_src_types_events_toplead",
       "type": "file",
-      "file": "TopLead_1.md",
+      "file": "TopLead.md",
       "x": 9140,
       "y": 240,
       "width": 180,
@@ -2719,7 +2719,7 @@
     {
       "id": "g7",
       "type": "group",
-      "label": "Chart and Toggle Components",
+      "label": "bloomline-dashboard/src/tabs/DashboardTab.tsx",
       "x": 11560,
       "y": 0,
       "width": 1540,
@@ -2927,7 +2927,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_timeframetoggle_option",
       "type": "file",
-      "file": "Option.md",
+      "file": "Option_1.md",
       "x": 11780,
       "y": 320,
       "width": 180,
@@ -2963,7 +2963,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_timeframetoggle_timeframe_options",
       "type": "file",
-      "file": "TIMEFRAME_OPTIONS.md",
+      "file": "TIMEFRAME_OPTIONS_1.md",
       "x": 12580,
       "y": 320,
       "width": 180,
@@ -2972,7 +2972,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_timeframetoggle_timeframetoggle",
       "type": "file",
-      "file": "TimeframeToggle().md",
+      "file": "TimeframeToggle()_1.md",
       "x": 12780,
       "y": 320,
       "width": 180,
@@ -2981,7 +2981,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_timeframetoggle_timeframetoggleprops",
       "type": "file",
-      "file": "TimeframeToggleProps.md",
+      "file": "TimeframeToggleProps_1.md",
       "x": 11580,
       "y": 400,
       "width": 180,
@@ -2990,7 +2990,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_timeframetoggle_toggle",
       "type": "file",
-      "file": "Toggle_1.md",
+      "file": "Toggle_2.md",
       "x": 11780,
       "y": 400,
       "width": 180,
@@ -3694,7 +3694,7 @@
     {
       "id": "g10",
       "type": "group",
-      "label": "Portal UI Components",
+      "label": "launchops-portal/src/components/ui.tsx",
       "x": 16200,
       "y": 0,
       "width": 1320,
@@ -3767,7 +3767,7 @@
     {
       "id": "n_launchops_portal_src_components_ui_emptystate",
       "type": "file",
-      "file": "EmptyState().md",
+      "file": "EmptyState()_1.md",
       "x": 16420,
       "y": 160,
       "width": 180,
@@ -4218,7 +4218,7 @@
     {
       "id": "g12",
       "type": "group",
-      "label": "Data Fetching Hooks",
+      "label": "pipeline-dashboard/src/api/client.ts",
       "x": 0,
       "y": 900,
       "width": 1320,
@@ -4282,7 +4282,7 @@
     {
       "id": "n_pipeline_dashboard_src_types_events_eventtype",
       "type": "file",
-      "file": "EventType.md",
+      "file": "EventType_1.md",
       "x": 20,
       "y": 1060,
       "width": 180,
@@ -4300,7 +4300,7 @@
     {
       "id": "n_pipeline_dashboard_src_types_events_kpicounts",
       "type": "file",
-      "file": "KpiCounts.md",
+      "file": "KpiCounts_1.md",
       "x": 420,
       "y": 1060,
       "width": 180,
@@ -4309,7 +4309,7 @@
     {
       "id": "n_pipeline_dashboard_src_types_events_kpikey",
       "type": "file",
-      "file": "KpiKey.md",
+      "file": "KpiKey_1.md",
       "x": 620,
       "y": 1060,
       "width": 180,
@@ -4318,7 +4318,7 @@
     {
       "id": "n_pipeline_dashboard_src_types_events_normalizedevent",
       "type": "file",
-      "file": "NormalizedEvent.md",
+      "file": "NormalizedEvent_1.md",
       "x": 820,
       "y": 1060,
       "width": 180,
@@ -4336,7 +4336,7 @@
     {
       "id": "n_pipeline_dashboard_src_types_events_toplead",
       "type": "file",
-      "file": "TopLead.md",
+      "file": "TopLead_1.md",
       "x": 20,
       "y": 1140,
       "width": 180,
@@ -4769,7 +4769,7 @@
     {
       "id": "g14",
       "type": "group",
-      "label": "Calendar and Month Navigation",
+      "label": "PDF Processing Advanced Reference",
       "x": 3460,
       "y": 900,
       "width": 1100,
@@ -4788,7 +4788,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_calendargrid_bookingchip",
       "type": "file",
-      "file": "BookingChip.md",
+      "file": "BookingChip_1.md",
       "x": 3680,
       "y": 980,
       "width": 180,
@@ -4797,7 +4797,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_calendargrid_bookingtime",
       "type": "file",
-      "file": "BookingTime.md",
+      "file": "BookingTime_1.md",
       "x": 3880,
       "y": 980,
       "width": 180,
@@ -4806,7 +4806,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_calendargrid_calendargrid",
       "type": "file",
-      "file": "CalendarGrid().md",
+      "file": "CalendarGrid()_1.md",
       "x": 4080,
       "y": 980,
       "width": 180,
@@ -4815,7 +4815,7 @@
     {
       "id": "n_bloomline_dashboard_src_tabs_calendartab_calendartab",
       "type": "file",
-      "file": "CalendarTab().md",
+      "file": "CalendarTab()_1.md",
       "x": 4280,
       "y": 980,
       "width": 180,
@@ -4824,7 +4824,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_calendargrid_daycell",
       "type": "file",
-      "file": "DayCell.md",
+      "file": "DayCell_1.md",
       "x": 3480,
       "y": 1060,
       "width": 180,
@@ -4833,7 +4833,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_calendargrid_dayheader",
       "type": "file",
-      "file": "DayHeader.md",
+      "file": "DayHeader_1.md",
       "x": 3680,
       "y": 1060,
       "width": 180,
@@ -4842,7 +4842,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_calendargrid_daynumber",
       "type": "file",
-      "file": "DayNumber.md",
+      "file": "DayNumber_1.md",
       "x": 3880,
       "y": 1060,
       "width": 180,
@@ -4851,7 +4851,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_calendargrid_grid",
       "type": "file",
-      "file": "Grid.md",
+      "file": "Grid_2.md",
       "x": 4080,
       "y": 1060,
       "width": 180,
@@ -4860,7 +4860,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_monthnav_label",
       "type": "file",
-      "file": "Label.md",
+      "file": "Label_1.md",
       "x": 4280,
       "y": 1060,
       "width": 180,
@@ -4887,7 +4887,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_monthnav_nav",
       "type": "file",
-      "file": "Nav_1.md",
+      "file": "Nav_2.md",
       "x": 3880,
       "y": 1140,
       "width": 180,
@@ -4896,7 +4896,7 @@
     {
       "id": "n_bloomline_dashboard_src_tabs_calendartab_padded",
       "type": "file",
-      "file": "Padded.md",
+      "file": "Padded_1.md",
       "x": 4080,
       "y": 1140,
       "width": 180,
@@ -4905,7 +4905,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_calendargrid_weekdays",
       "type": "file",
-      "file": "WEEKDAYS.md",
+      "file": "WEEKDAYS_1.md",
       "x": 4280,
       "y": 1140,
       "width": 180,
@@ -4950,7 +4950,7 @@
     {
       "id": "n_bloomline_dashboard_src_utils_format_channellabel",
       "type": "file",
-      "file": "channelLabel().md",
+      "file": "channelLabel()_1.md",
       "x": 4280,
       "y": 1220,
       "width": 180,
@@ -4959,7 +4959,7 @@
     {
       "id": "n_bloomline_dashboard_src_utils_format_formattime",
       "type": "file",
-      "file": "formatTime().md",
+      "file": "formatTime()_1.md",
       "x": 3480,
       "y": 1300,
       "width": 180,
@@ -4968,7 +4968,7 @@
     {
       "id": "n_bloomline_dashboard_src_utils_format_monthlabel",
       "type": "file",
-      "file": "monthLabel().md",
+      "file": "monthLabel()_1.md",
       "x": 3680,
       "y": 1300,
       "width": 180,
@@ -4977,7 +4977,7 @@
     {
       "id": "n_bloomline_dashboard_src_utils_format_tomonthkey",
       "type": "file",
-      "file": "toMonthKey().md",
+      "file": "toMonthKey()_1.md",
       "x": 3880,
       "y": 1300,
       "width": 180,
@@ -4995,7 +4995,7 @@
     {
       "id": "g15",
       "type": "group",
-      "label": "Header and Testimonials",
+      "label": "Testimonials.tsx",
       "x": 5080,
       "y": 900,
       "width": 1100,
@@ -5077,7 +5077,7 @@
     {
       "id": "n_launchops_portal_src_components_header_eyebrow",
       "type": "file",
-      "file": "Eyebrow.md",
+      "file": "Eyebrow_1.md",
       "x": 5700,
       "y": 1060,
       "width": 180,
@@ -5095,7 +5095,7 @@
     {
       "id": "n_launchops_portal_src_views_testimonials_grid",
       "type": "file",
-      "file": "Grid_1.md",
+      "file": "Grid.md",
       "x": 5100,
       "y": 1140,
       "width": 180,
@@ -5104,7 +5104,7 @@
     {
       "id": "n_launchops_portal_src_components_header_head",
       "type": "file",
-      "file": "Head.md",
+      "file": "Head_1.md",
       "x": 5300,
       "y": 1140,
       "width": 180,
@@ -5149,7 +5149,7 @@
     {
       "id": "n_launchops_portal_src_components_header_sub",
       "type": "file",
-      "file": "Sub.md",
+      "file": "Sub_1.md",
       "x": 5300,
       "y": 1220,
       "width": 180,
@@ -5176,7 +5176,7 @@
     {
       "id": "n_launchops_portal_src_components_header_title",
       "type": "file",
-      "file": "Title.md",
+      "file": "Title_4.md",
       "x": 5900,
       "y": 1220,
       "width": 180,
@@ -5203,7 +5203,7 @@
     {
       "id": "n_launchops_portal_src_components_ui_formatdate",
       "type": "file",
-      "file": "formatDate().md",
+      "file": "formatDate()_1.md",
       "x": 5500,
       "y": 1300,
       "width": 180,
@@ -6071,7 +6071,7 @@
     {
       "id": "g20",
       "type": "group",
-      "label": "KPI Card Components",
+      "label": "pipeline-dashboard/src/components/KpiCard.tsx",
       "x": 13180,
       "y": 900,
       "width": 880,
@@ -6090,7 +6090,7 @@
     {
       "id": "n_pipeline_dashboard_src_types_changes_change",
       "type": "file",
-      "file": "Change.md",
+      "file": "Change_1.md",
       "x": 13400,
       "y": 980,
       "width": 180,
@@ -6099,7 +6099,7 @@
     {
       "id": "n_pipeline_dashboard_src_types_changes_changelabel",
       "type": "file",
-      "file": "ChangeLabel.md",
+      "file": "ChangeLabel_1.md",
       "x": 13600,
       "y": 980,
       "width": 180,
@@ -6126,7 +6126,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_kpicard_kpicardprops",
       "type": "file",
-      "file": "KpiCardProps.md",
+      "file": "KpiCardProps_1.md",
       "x": 13400,
       "y": 1060,
       "width": 180,
@@ -6135,7 +6135,7 @@
     {
       "id": "n_pipeline_dashboard_src_types_events_kpidata",
       "type": "file",
-      "file": "KpiData.md",
+      "file": "KpiData_1.md",
       "x": 13600,
       "y": 1060,
       "width": 180,
@@ -6144,7 +6144,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_kpicard_label",
       "type": "file",
-      "file": "Label_1.md",
+      "file": "Label.md",
       "x": 13800,
       "y": 1060,
       "width": 180,
@@ -6216,7 +6216,7 @@
     {
       "id": "g21",
       "type": "group",
-      "label": "KPI Calculation Logic",
+      "label": "Proposal Writer",
       "x": 14800,
       "y": 900,
       "width": 1100,
@@ -6407,7 +6407,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_calendargrid_bookingchip",
       "type": "file",
-      "file": "BookingChip_1.md",
+      "file": "BookingChip.md",
       "x": 16220,
       "y": 980,
       "width": 180,
@@ -6416,7 +6416,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_calendargrid_bookingtime",
       "type": "file",
-      "file": "BookingTime_1.md",
+      "file": "BookingTime.md",
       "x": 16420,
       "y": 980,
       "width": 180,
@@ -6425,7 +6425,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_calendargrid_calendargrid",
       "type": "file",
-      "file": "CalendarGrid()_1.md",
+      "file": "CalendarGrid().md",
       "x": 16620,
       "y": 980,
       "width": 180,
@@ -6443,7 +6443,7 @@
     {
       "id": "n_pipeline_dashboard_src_tabs_calendartab_calendartab",
       "type": "file",
-      "file": "CalendarTab()_1.md",
+      "file": "CalendarTab().md",
       "x": 17020,
       "y": 980,
       "width": 180,
@@ -6452,7 +6452,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_calendargrid_daycell",
       "type": "file",
-      "file": "DayCell_1.md",
+      "file": "DayCell.md",
       "x": 16220,
       "y": 1060,
       "width": 180,
@@ -6461,7 +6461,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_calendargrid_dayheader",
       "type": "file",
-      "file": "DayHeader_1.md",
+      "file": "DayHeader.md",
       "x": 16420,
       "y": 1060,
       "width": 180,
@@ -6470,7 +6470,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_calendargrid_daynumber",
       "type": "file",
-      "file": "DayNumber_1.md",
+      "file": "DayNumber.md",
       "x": 16620,
       "y": 1060,
       "width": 180,
@@ -6488,7 +6488,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_calendargrid_grid",
       "type": "file",
-      "file": "Grid_2.md",
+      "file": "Grid_1.md",
       "x": 17020,
       "y": 1060,
       "width": 180,
@@ -6497,7 +6497,7 @@
     {
       "id": "n_pipeline_dashboard_src_tabs_calendartab_padded",
       "type": "file",
-      "file": "Padded_1.md",
+      "file": "Padded.md",
       "x": 16220,
       "y": 1140,
       "width": 180,
@@ -6506,7 +6506,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_calendargrid_weekdays",
       "type": "file",
-      "file": "WEEKDAYS_1.md",
+      "file": "WEEKDAYS.md",
       "x": 16420,
       "y": 1140,
       "width": 180,
@@ -6515,7 +6515,7 @@
     {
       "id": "n_pipeline_dashboard_src_utils_format_channellabel",
       "type": "file",
-      "file": "channelLabel()_1.md",
+      "file": "channelLabel().md",
       "x": 16620,
       "y": 1140,
       "width": 180,
@@ -6524,7 +6524,7 @@
     {
       "id": "n_pipeline_dashboard_src_utils_format_formattime",
       "type": "file",
-      "file": "formatTime()_1.md",
+      "file": "formatTime().md",
       "x": 16820,
       "y": 1140,
       "width": 180,
@@ -6533,7 +6533,7 @@
     {
       "id": "n_pipeline_dashboard_src_utils_format_monthlabel",
       "type": "file",
-      "file": "monthLabel()_1.md",
+      "file": "monthLabel().md",
       "x": 17020,
       "y": 1140,
       "width": 180,
@@ -6569,7 +6569,7 @@
     {
       "id": "n_pipeline_dashboard_src_utils_format_tomonthkey",
       "type": "file",
-      "file": "toMonthKey()_1.md",
+      "file": "toMonthKey().md",
       "x": 16820,
       "y": 1220,
       "width": 180,
@@ -6660,7 +6660,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_sidebar_nav",
       "type": "file",
-      "file": "Nav_2.md",
+      "file": "Nav_1.md",
       "x": 18220,
       "y": 1060,
       "width": 180,
@@ -6750,7 +6750,7 @@
     {
       "id": "g24",
       "type": "group",
-      "label": "Settings and Error States",
+      "label": "bloomline-dashboard/src/api/client.ts",
       "x": 0,
       "y": 1700,
       "width": 1100,
@@ -6823,7 +6823,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_errorstate_message",
       "type": "file",
-      "file": "Message.md",
+      "file": "Message_1.md",
       "x": 420,
       "y": 1860,
       "width": 180,
@@ -6877,7 +6877,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_errorstate_wrapper",
       "type": "file",
-      "file": "Wrapper.md",
+      "file": "Wrapper_1.md",
       "x": 620,
       "y": 1940,
       "width": 180,
@@ -6913,7 +6913,7 @@
     {
       "id": "g25",
       "type": "group",
-      "label": "TypeScript Compiler Config",
+      "label": "compilerOptions",
       "x": 1840,
       "y": 1700,
       "width": 1100,
@@ -7076,7 +7076,7 @@
     {
       "id": "g26",
       "type": "group",
-      "label": "TypeScript Library Config",
+      "label": "compilerOptions",
       "x": 3460,
       "y": 1700,
       "width": 1100,
@@ -7113,7 +7113,7 @@
     {
       "id": "n_bloomline_dashboard_tsconfig_node_compileroptions_lib",
       "type": "file",
-      "file": "lib.md",
+      "file": "lib_1.md",
       "x": 4080,
       "y": 1780,
       "width": 180,
@@ -7239,7 +7239,7 @@
     {
       "id": "g27",
       "type": "group",
-      "label": "TypeScript JSX Config",
+      "label": "compilerOptions",
       "x": 5080,
       "y": 1700,
       "width": 1100,
@@ -7402,7 +7402,7 @@
     {
       "id": "g28",
       "type": "group",
-      "label": "TypeScript Module Config",
+      "label": "compilerOptions",
       "x": 6700,
       "y": 1700,
       "width": 1100,
@@ -7439,7 +7439,7 @@
     {
       "id": "n_launchops_portal_tsconfig_node_compileroptions_lib",
       "type": "file",
-      "file": "lib_1.md",
+      "file": "lib_3.md",
       "x": 7320,
       "y": 1780,
       "width": 180,
@@ -7565,7 +7565,7 @@
     {
       "id": "g29",
       "type": "group",
-      "label": "TypeScript Strict Config",
+      "label": "compilerOptions",
       "x": 8320,
       "y": 1700,
       "width": 1100,
@@ -7728,7 +7728,7 @@
     {
       "id": "g30",
       "type": "group",
-      "label": "TypeScript Base Config",
+      "label": "compilerOptions",
       "x": 9940,
       "y": 1700,
       "width": 1100,
@@ -7765,7 +7765,7 @@
     {
       "id": "n_pipeline_dashboard_tsconfig_node_compileroptions_lib",
       "type": "file",
-      "file": "lib_2.md",
+      "file": "lib_5.md",
       "x": 10560,
       "y": 1780,
       "width": 180,
@@ -7891,7 +7891,7 @@
     {
       "id": "g31",
       "type": "group",
-      "label": "Project List Components",
+      "label": "Projects.tsx",
       "x": 11560,
       "y": 1700,
       "width": 880,
@@ -8127,7 +8127,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_errorstate_message",
       "type": "file",
-      "file": "Message_1.md",
+      "file": "Message_2.md",
       "x": 13200,
       "y": 1940,
       "width": 180,
@@ -8172,7 +8172,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_errorstate_wrapper",
       "type": "file",
-      "file": "Wrapper_1.md",
+      "file": "Wrapper_2.md",
       "x": 13400,
       "y": 2020,
       "width": 180,
@@ -8353,7 +8353,7 @@
     {
       "id": "g34",
       "type": "group",
-      "label": "Linting and Dev Tools",
+      "label": "devDependencies",
       "x": 16200,
       "y": 1700,
       "width": 880,
@@ -8498,7 +8498,7 @@
     {
       "id": "g35",
       "type": "group",
-      "label": "Document Management View",
+      "label": "Documents.tsx",
       "x": 17600,
       "y": 1700,
       "width": 880,
@@ -8553,7 +8553,7 @@
     {
       "id": "n_launchops_portal_src_views_documents_head",
       "type": "file",
-      "file": "Head_1.md",
+      "file": "Head.md",
       "x": 17820,
       "y": 1860,
       "width": 180,
@@ -8643,7 +8643,7 @@
     {
       "id": "g36",
       "type": "group",
-      "label": "Header and Dev Badges",
+      "label": "pipeline-dashboard/src/components/Header.tsx",
       "x": 0,
       "y": 2300,
       "width": 880,
@@ -8707,7 +8707,7 @@
     {
       "id": "n_pipeline_dashboard_src_types_events_health",
       "type": "file",
-      "file": "Health.md",
+      "file": "Health_1.md",
       "x": 420,
       "y": 2460,
       "width": 180,
@@ -9097,7 +9097,7 @@
     {
       "id": "n_launchops_portal_src_components_loginscreen_eyebrow",
       "type": "file",
-      "file": "Eyebrow_1.md",
+      "file": "Eyebrow.md",
       "x": 5500,
       "y": 2380,
       "width": 180,
@@ -9178,7 +9178,7 @@
     {
       "id": "n_launchops_portal_src_components_loginscreen_sub",
       "type": "file",
-      "file": "Sub_1.md",
+      "file": "Sub.md",
       "x": 5700,
       "y": 2540,
       "width": 180,
@@ -9341,7 +9341,7 @@
     {
       "id": "g41",
       "type": "group",
-      "label": "Weekly Trend Charts",
+      "label": "Non-fillable fields",
       "x": 8320,
       "y": 2300,
       "width": 880,
@@ -9351,7 +9351,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_charts_weeklytrend_chartwrap",
       "type": "file",
-      "file": "ChartWrap_2.md",
+      "file": "ChartWrap_3.md",
       "x": 8340,
       "y": 2380,
       "width": 180,
@@ -9360,7 +9360,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_emptystate_emptystate",
       "type": "file",
-      "file": "EmptyState()_1.md",
+      "file": "EmptyState().md",
       "x": 8540,
       "y": 2380,
       "width": 180,
@@ -9387,7 +9387,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_emptystate_message",
       "type": "file",
-      "file": "Message_2.md",
+      "file": "Message.md",
       "x": 8340,
       "y": 2460,
       "width": 180,
@@ -9396,7 +9396,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_emptystate_title",
       "type": "file",
-      "file": "Title_3.md",
+      "file": "Title.md",
       "x": 8540,
       "y": 2460,
       "width": 180,
@@ -9432,7 +9432,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_emptystate_wrapper",
       "type": "file",
-      "file": "Wrapper_2.md",
+      "file": "Wrapper.md",
       "x": 8540,
       "y": 2540,
       "width": 180,
@@ -9468,7 +9468,7 @@
     {
       "id": "g42",
       "type": "group",
-      "label": "KPI Change Tracking",
+      "label": "bloomline-dashboard/src/components/KpiCard.tsx",
       "x": 9940,
       "y": 2300,
       "width": 880,
@@ -9487,7 +9487,7 @@
     {
       "id": "n_bloomline_dashboard_src_types_changes_change",
       "type": "file",
-      "file": "Change_1.md",
+      "file": "Change.md",
       "x": 10160,
       "y": 2380,
       "width": 180,
@@ -9496,7 +9496,7 @@
     {
       "id": "n_bloomline_dashboard_src_types_changes_changelabel",
       "type": "file",
-      "file": "ChangeLabel_1.md",
+      "file": "ChangeLabel.md",
       "x": 10360,
       "y": 2380,
       "width": 180,
@@ -9523,7 +9523,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_kpicard_kpicardprops",
       "type": "file",
-      "file": "KpiCardProps_1.md",
+      "file": "KpiCardProps.md",
       "x": 10160,
       "y": 2460,
       "width": 180,
@@ -9849,7 +9849,7 @@
     {
       "id": "g45",
       "type": "group",
-      "label": "Dashboard Package Config",
+      "label": "scripts",
       "x": 14800,
       "y": 2300,
       "width": 880,
@@ -9904,7 +9904,7 @@
     {
       "id": "n_bloomline_dashboard_package_name",
       "type": "file",
-      "file": "name_2.md",
+      "file": "name_4.md",
       "x": 15020,
       "y": 2460,
       "width": 180,
@@ -9922,7 +9922,7 @@
     {
       "id": "n_bloomline_dashboard_package_private",
       "type": "file",
-      "file": "private.md",
+      "file": "private_2.md",
       "x": 15420,
       "y": 2460,
       "width": 180,
@@ -9949,7 +9949,7 @@
     {
       "id": "n_bloomline_dashboard_package_type",
       "type": "file",
-      "file": "type_2.md",
+      "file": "type_4.md",
       "x": 15220,
       "y": 2540,
       "width": 180,
@@ -9958,7 +9958,7 @@
     {
       "id": "n_bloomline_dashboard_package_version",
       "type": "file",
-      "file": "version.md",
+      "file": "version_2.md",
       "x": 15420,
       "y": 2540,
       "width": 180,
@@ -9967,7 +9967,7 @@
     {
       "id": "g46",
       "type": "group",
-      "label": "Portal Package Config",
+      "label": "dependencies",
       "x": 16200,
       "y": 2300,
       "width": 880,
@@ -10022,7 +10022,7 @@
     {
       "id": "n_launchops_portal_package_name",
       "type": "file",
-      "file": "name_3.md",
+      "file": "name_2.md",
       "x": 16420,
       "y": 2460,
       "width": 180,
@@ -10040,7 +10040,7 @@
     {
       "id": "n_launchops_portal_package_private",
       "type": "file",
-      "file": "private_1.md",
+      "file": "private.md",
       "x": 16820,
       "y": 2460,
       "width": 180,
@@ -10067,7 +10067,7 @@
     {
       "id": "n_launchops_portal_package_type",
       "type": "file",
-      "file": "type_3.md",
+      "file": "type_2.md",
       "x": 16620,
       "y": 2540,
       "width": 180,
@@ -10076,7 +10076,7 @@
     {
       "id": "n_launchops_portal_package_version",
       "type": "file",
-      "file": "version_1.md",
+      "file": "version.md",
       "x": 16820,
       "y": 2540,
       "width": 180,
@@ -10412,7 +10412,7 @@
     {
       "id": "n_bloomline_dashboard_src_components_errorboundary_title",
       "type": "file",
-      "file": "Title_4.md",
+      "file": "Title_3.md",
       "x": 2060,
       "y": 3140,
       "width": 180,
@@ -10539,7 +10539,7 @@
     {
       "id": "g51",
       "type": "group",
-      "label": "Portal Theme and Styles",
+      "label": "launchops-portal/src/theme.ts",
       "x": 5080,
       "y": 2900,
       "width": 880,
@@ -10975,7 +10975,7 @@
     {
       "id": "g55",
       "type": "group",
-      "label": "TypeScript DOM Libs",
+      "label": "Changelog",
       "x": 11560,
       "y": 2900,
       "width": 880,
@@ -11012,7 +11012,7 @@
     {
       "id": "n_launchops_portal_tsconfig_app_json_ref_dom_iterable",
       "type": "file",
-      "file": "DOM.Iterable.md",
+      "file": "DOM.Iterable_1.md",
       "x": 12180,
       "y": 2980,
       "width": 180,
@@ -11048,7 +11048,7 @@
     {
       "id": "n_bloomline_dashboard_tsconfig_app_compileroptions_lib",
       "type": "file",
-      "file": "lib_3.md",
+      "file": "lib.md",
       "x": 12180,
       "y": 3060,
       "width": 180,
@@ -11057,7 +11057,7 @@
     {
       "id": "n_launchops_portal_tsconfig_app_compileroptions_lib",
       "type": "file",
-      "file": "lib_4.md",
+      "file": "lib_2.md",
       "x": 11580,
       "y": 3140,
       "width": 180,
@@ -11066,7 +11066,7 @@
     {
       "id": "n_pipeline_dashboard_tsconfig_app_compileroptions_lib",
       "type": "file",
-      "file": "lib_5.md",
+      "file": "lib_4.md",
       "x": 11780,
       "y": 3140,
       "width": 180,
@@ -11085,7 +11085,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_charts_conversiondonut_chartwrap",
       "type": "file",
-      "file": "ChartWrap_3.md",
+      "file": "ChartWrap_2.md",
       "x": 13200,
       "y": 2980,
       "width": 180,
@@ -11175,7 +11175,7 @@
     {
       "id": "g57",
       "type": "group",
-      "label": "Core Web Dependencies",
+      "label": "dependencies",
       "x": 14800,
       "y": 2900,
       "width": 660,
@@ -11185,7 +11185,7 @@
     {
       "id": "n_bloomline_dashboard_package_dependencies",
       "type": "file",
-      "file": "dependencies.md",
+      "file": "dependencies_1.md",
       "x": 14820,
       "y": 2980,
       "width": 180,
@@ -11194,7 +11194,7 @@
     {
       "id": "n_bloomline_dashboard_package_dependencies_express",
       "type": "file",
-      "file": "express.md",
+      "file": "express_2.md",
       "x": 15020,
       "y": 2980,
       "width": 180,
@@ -11203,7 +11203,7 @@
     {
       "id": "n_bloomline_dashboard_package_json_express",
       "type": "file",
-      "file": "express_1.md",
+      "file": "express_3.md",
       "x": 15220,
       "y": 2980,
       "width": 180,
@@ -11212,7 +11212,7 @@
     {
       "id": "n_bloomline_dashboard_package_dependencies_react",
       "type": "file",
-      "file": "react.md",
+      "file": "react_2.md",
       "x": 14820,
       "y": 3060,
       "width": 180,
@@ -11221,7 +11221,7 @@
     {
       "id": "n_bloomline_dashboard_package_json_react",
       "type": "file",
-      "file": "react_1.md",
+      "file": "react_3.md",
       "x": 15020,
       "y": 3060,
       "width": 180,
@@ -11230,7 +11230,7 @@
     {
       "id": "n_bloomline_dashboard_package_dependencies_styled_components",
       "type": "file",
-      "file": "styled-components_1.md",
+      "file": "styled-components_3.md",
       "x": 15220,
       "y": 3060,
       "width": 180,
@@ -11239,7 +11239,7 @@
     {
       "id": "n_launchops_portal_package_dependencies_styled_components",
       "type": "file",
-      "file": "styled-components_2.md",
+      "file": "styled-components_1.md",
       "x": 14820,
       "y": 3140,
       "width": 180,
@@ -11248,7 +11248,7 @@
     {
       "id": "n_launchops_portal_package_json_styled_components",
       "type": "file",
-      "file": "styled-components_4.md",
+      "file": "styled-components_2.md",
       "x": 15020,
       "y": 3140,
       "width": 180,
@@ -11257,7 +11257,7 @@
     {
       "id": "n_pipeline_dashboard_package_dependencies_styled_components",
       "type": "file",
-      "file": "styled-components_3.md",
+      "file": "styled-components_6.md",
       "x": 15220,
       "y": 3140,
       "width": 180,
@@ -11266,7 +11266,7 @@
     {
       "id": "g58",
       "type": "group",
-      "label": "Chart and Server Deps",
+      "label": "QA Categories",
       "x": 16200,
       "y": 2900,
       "width": 660,
@@ -11276,7 +11276,7 @@
     {
       "id": "n_launchops_portal_package_dependencies",
       "type": "file",
-      "file": "dependencies_1.md",
+      "file": "dependencies.md",
       "x": 16220,
       "y": 2980,
       "width": 180,
@@ -11285,7 +11285,7 @@
     {
       "id": "n_launchops_portal_package_dependencies_express",
       "type": "file",
-      "file": "express_2.md",
+      "file": "express.md",
       "x": 16420,
       "y": 2980,
       "width": 180,
@@ -11294,7 +11294,7 @@
     {
       "id": "n_launchops_portal_package_json_express",
       "type": "file",
-      "file": "express_3.md",
+      "file": "express_1.md",
       "x": 16620,
       "y": 2980,
       "width": 180,
@@ -11303,7 +11303,7 @@
     {
       "id": "n_launchops_portal_package_dependencies_react",
       "type": "file",
-      "file": "react_2.md",
+      "file": "react.md",
       "x": 16220,
       "y": 3060,
       "width": 180,
@@ -11312,7 +11312,7 @@
     {
       "id": "n_launchops_portal_package_json_react",
       "type": "file",
-      "file": "react_3.md",
+      "file": "react_1.md",
       "x": 16420,
       "y": 3060,
       "width": 180,
@@ -11321,7 +11321,7 @@
     {
       "id": "n_bloomline_dashboard_package_dependencies_recharts",
       "type": "file",
-      "file": "recharts.md",
+      "file": "recharts_2.md",
       "x": 16620,
       "y": 3060,
       "width": 180,
@@ -11330,7 +11330,7 @@
     {
       "id": "n_launchops_portal_package_dependencies_recharts",
       "type": "file",
-      "file": "recharts_1.md",
+      "file": "recharts.md",
       "x": 16220,
       "y": 3140,
       "width": 180,
@@ -11339,7 +11339,7 @@
     {
       "id": "n_launchops_portal_package_json_recharts",
       "type": "file",
-      "file": "recharts_3.md",
+      "file": "recharts_1.md",
       "x": 16420,
       "y": 3140,
       "width": 180,
@@ -11348,7 +11348,7 @@
     {
       "id": "n_pipeline_dashboard_package_dependencies_recharts",
       "type": "file",
-      "file": "recharts_2.md",
+      "file": "recharts_4.md",
       "x": 16620,
       "y": 3140,
       "width": 180,
@@ -11357,7 +11357,7 @@
     {
       "id": "g59",
       "type": "group",
-      "label": "Dashboard Theme Setup",
+      "label": "bloomline-dashboard/src/components/charts/WeeklyTrend.tsx",
       "x": 17600,
       "y": 2900,
       "width": 660,
@@ -11448,7 +11448,7 @@
     {
       "id": "g60",
       "type": "group",
-      "label": "Dashboard Header",
+      "label": "bloomline-dashboard/src/components/Header.tsx",
       "x": 0,
       "y": 3400,
       "width": 660,
@@ -11721,7 +11721,7 @@
     {
       "id": "g63",
       "type": "group",
-      "label": "Supabase Integration",
+      "label": "dependencies",
       "x": 5080,
       "y": 3400,
       "width": 660,
@@ -11740,7 +11740,7 @@
     {
       "id": "n_pipeline_dashboard_package_dependencies_supabase_supabase_js",
       "type": "file",
-      "file": "@supabasesupabase-js_1.md",
+      "file": "@supabasesupabase-js_2.md",
       "x": 5300,
       "y": 3480,
       "width": 180,
@@ -11749,7 +11749,7 @@
     {
       "id": "n_pipeline_dashboard_package_json_supabase_supabase_js",
       "type": "file",
-      "file": "@supabasesupabase-js_2.md",
+      "file": "@supabasesupabase-js_3.md",
       "x": 5500,
       "y": 3480,
       "width": 180,
@@ -11803,7 +11803,7 @@
     {
       "id": "g64",
       "type": "group",
-      "label": "Vite Dev Dependencies",
+      "label": "Process",
       "x": 6700,
       "y": 3400,
       "width": 660,
@@ -11831,7 +11831,7 @@
     {
       "id": "n_launchops_portal_package_devdependencies_concurrently",
       "type": "file",
-      "file": "concurrently_1.md",
+      "file": "concurrently_2.md",
       "x": 7120,
       "y": 3480,
       "width": 180,
@@ -11849,7 +11849,7 @@
     {
       "id": "n_pipeline_dashboard_package_devdependencies_concurrently",
       "type": "file",
-      "file": "concurrently_2.md",
+      "file": "concurrently_4.md",
       "x": 6920,
       "y": 3560,
       "width": 180,
@@ -11958,7 +11958,7 @@
     {
       "id": "g66",
       "type": "group",
-      "label": "Vite and TS Configs",
+      "label": "pipeline-dashboard/src/types/events.ts",
       "x": 9940,
       "y": 3400,
       "width": 660,
@@ -11977,7 +11977,7 @@
     {
       "id": "n_bloomline_dashboard_tsconfig_node_include",
       "type": "file",
-      "file": "include.md",
+      "file": "include_1.md",
       "x": 10160,
       "y": 3480,
       "width": 180,
@@ -11986,7 +11986,7 @@
     {
       "id": "n_launchops_portal_tsconfig_node_include",
       "type": "file",
-      "file": "include_1.md",
+      "file": "include_3.md",
       "x": 10360,
       "y": 3480,
       "width": 180,
@@ -11995,7 +11995,7 @@
     {
       "id": "n_pipeline_dashboard_tsconfig_node_include",
       "type": "file",
-      "file": "include_2.md",
+      "file": "include_5.md",
       "x": 9960,
       "y": 3560,
       "width": 180,
@@ -12022,7 +12022,7 @@
     {
       "id": "n_launchops_portal_tsconfig_node_json_ref_vite_config_ts",
       "type": "file",
-      "file": "vite.config.ts.md",
+      "file": "vite.config.ts_1.md",
       "x": 9960,
       "y": 3640,
       "width": 180,
@@ -12104,7 +12104,7 @@
     {
       "id": "g68",
       "type": "group",
-      "label": "Project Scripts",
+      "label": "Invoice Template Skill",
       "x": 13180,
       "y": 3400,
       "width": 660,
@@ -12396,7 +12396,7 @@
     {
       "id": "g72",
       "type": "group",
-      "label": "React DOM Types",
+      "label": "@types/react-dom",
       "x": 0,
       "y": 3900,
       "width": 660,
@@ -12406,7 +12406,7 @@
     {
       "id": "n_bloomline_dashboard_package_devdependencies_types_react_dom",
       "type": "file",
-      "file": "@typesreact-dom_1.md",
+      "file": "@typesreact-dom_4.md",
       "x": 20,
       "y": 3980,
       "width": 180,
@@ -12415,7 +12415,7 @@
     {
       "id": "n_launchops_portal_package_json_types_react_dom",
       "type": "file",
-      "file": "@typesreact-dom_3.md",
+      "file": "@typesreact-dom_1.md",
       "x": 220,
       "y": 3980,
       "width": 180,
@@ -12470,7 +12470,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_timeframetoggle_option",
       "type": "file",
-      "file": "Option_1.md",
+      "file": "Option.md",
       "x": 1860,
       "y": 3980,
       "width": 180,
@@ -12479,7 +12479,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_timeframetoggle_timeframe_options",
       "type": "file",
-      "file": "TIMEFRAME_OPTIONS_1.md",
+      "file": "TIMEFRAME_OPTIONS.md",
       "x": 2060,
       "y": 3980,
       "width": 180,
@@ -12488,7 +12488,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_timeframetoggle_timeframetoggle",
       "type": "file",
-      "file": "TimeframeToggle()_1.md",
+      "file": "TimeframeToggle().md",
       "x": 2260,
       "y": 3980,
       "width": 180,
@@ -12497,7 +12497,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_timeframetoggle_timeframetoggleprops",
       "type": "file",
-      "file": "TimeframeToggleProps_1.md",
+      "file": "TimeframeToggleProps.md",
       "x": 1860,
       "y": 4060,
       "width": 180,
@@ -12506,7 +12506,7 @@
     {
       "id": "n_pipeline_dashboard_src_components_timeframetoggle_toggle",
       "type": "file",
-      "file": "Toggle_2.md",
+      "file": "Toggle_1.md",
       "x": 2060,
       "y": 4060,
       "width": 180,
@@ -12707,7 +12707,7 @@
     {
       "id": "g77",
       "type": "group",
-      "label": "Pipeline Package Metadata",
+      "label": "bloomline-dashboard/src/components/charts/ConversionDonut.tsx",
       "x": 8320,
       "y": 3900,
       "width": 660,
@@ -12717,7 +12717,7 @@
     {
       "id": "n_pipeline_dashboard_package_name",
       "type": "file",
-      "file": "name_4.md",
+      "file": "name_3.md",
       "x": 8340,
       "y": 3980,
       "width": 180,
@@ -12735,7 +12735,7 @@
     {
       "id": "n_pipeline_dashboard_package_private",
       "type": "file",
-      "file": "private_2.md",
+      "file": "private_1.md",
       "x": 8740,
       "y": 3980,
       "width": 180,
@@ -12744,7 +12744,7 @@
     {
       "id": "n_pipeline_dashboard_package_type",
       "type": "file",
-      "file": "type_4.md",
+      "file": "type_3.md",
       "x": 8340,
       "y": 4060,
       "width": 180,
@@ -12753,7 +12753,7 @@
     {
       "id": "n_pipeline_dashboard_package_version",
       "type": "file",
-      "file": "version_2.md",
+      "file": "version_1.md",
       "x": 8540,
       "y": 4060,
       "width": 180,
@@ -12762,7 +12762,7 @@
     {
       "id": "g78",
       "type": "group",
-      "label": "Environment Variable Utility",
+      "label": "Process",
       "x": 9940,
       "y": 3900,
       "width": 600,
@@ -12772,7 +12772,7 @@
     {
       "id": "n_bloomline_dashboard_package_dependencies_dotenv",
       "type": "file",
-      "file": "dotenv.md",
+      "file": "dotenv_2.md",
       "x": 9960,
       "y": 3980,
       "width": 180,
@@ -12781,7 +12781,7 @@
     {
       "id": "n_launchops_portal_package_dependencies_dotenv",
       "type": "file",
-      "file": "dotenv_1.md",
+      "file": "dotenv.md",
       "x": 10160,
       "y": 3980,
       "width": 180,
@@ -12790,7 +12790,7 @@
     {
       "id": "n_launchops_portal_package_json_dotenv",
       "type": "file",
-      "file": "dotenv_3.md",
+      "file": "dotenv_1.md",
       "x": 9960,
       "y": 4060,
       "width": 180,
@@ -12799,7 +12799,7 @@
     {
       "id": "n_pipeline_dashboard_package_dependencies_dotenv",
       "type": "file",
-      "file": "dotenv_2.md",
+      "file": "dotenv_4.md",
       "x": 10160,
       "y": 4060,
       "width": 180,
@@ -12808,7 +12808,7 @@
     {
       "id": "g79",
       "type": "group",
-      "label": "React DOM Library",
+      "label": "Frontend Design",
       "x": 11560,
       "y": 3900,
       "width": 600,
@@ -12818,7 +12818,7 @@
     {
       "id": "n_bloomline_dashboard_package_dependencies_react_dom",
       "type": "file",
-      "file": "react-dom.md",
+      "file": "react-dom_2.md",
       "x": 11580,
       "y": 3980,
       "width": 180,
@@ -12827,7 +12827,7 @@
     {
       "id": "n_launchops_portal_package_dependencies_react_dom",
       "type": "file",
-      "file": "react-dom_1.md",
+      "file": "react-dom.md",
       "x": 11780,
       "y": 3980,
       "width": 180,
@@ -12836,7 +12836,7 @@
     {
       "id": "n_launchops_portal_package_json_react_dom",
       "type": "file",
-      "file": "react-dom_3.md",
+      "file": "react-dom_1.md",
       "x": 11580,
       "y": 4060,
       "width": 180,
@@ -12845,7 +12845,7 @@
     {
       "id": "n_pipeline_dashboard_package_dependencies_react_dom",
       "type": "file",
-      "file": "react-dom_2.md",
+      "file": "react-dom_4.md",
       "x": 11780,
       "y": 4060,
       "width": 180,
@@ -12854,7 +12854,7 @@
     {
       "id": "g80",
       "type": "group",
-      "label": "React Icons Library",
+      "label": "feedback-issue-template.md",
       "x": 13180,
       "y": 3900,
       "width": 600,
@@ -12864,7 +12864,7 @@
     {
       "id": "n_bloomline_dashboard_package_dependencies_react_icons",
       "type": "file",
-      "file": "react-icons.md",
+      "file": "react-icons_2.md",
       "x": 13200,
       "y": 3980,
       "width": 180,
@@ -12873,7 +12873,7 @@
     {
       "id": "n_launchops_portal_package_dependencies_react_icons",
       "type": "file",
-      "file": "react-icons_1.md",
+      "file": "react-icons.md",
       "x": 13400,
       "y": 3980,
       "width": 180,
@@ -12882,7 +12882,7 @@
     {
       "id": "n_launchops_portal_package_json_react_icons",
       "type": "file",
-      "file": "react-icons_3.md",
+      "file": "react-icons_1.md",
       "x": 13200,
       "y": 4060,
       "width": 180,
@@ -12891,7 +12891,7 @@
     {
       "id": "n_pipeline_dashboard_package_dependencies_react_icons",
       "type": "file",
-      "file": "react-icons_2.md",
+      "file": "react-icons_4.md",
       "x": 13400,
       "y": 4060,
       "width": 180,
@@ -12900,7 +12900,7 @@
     {
       "id": "g81",
       "type": "group",
-      "label": "React Type Definitions",
+      "label": "@types/react",
       "x": 14800,
       "y": 3900,
       "width": 600,
@@ -12910,7 +12910,7 @@
     {
       "id": "n_bloomline_dashboard_package_devdependencies_types_react",
       "type": "file",
-      "file": "@typesreact.md",
+      "file": "@typesreact_4.md",
       "x": 14820,
       "y": 3980,
       "width": 180,
@@ -12919,7 +12919,7 @@
     {
       "id": "n_launchops_portal_package_devdependencies_types_react",
       "type": "file",
-      "file": "@typesreact_1.md",
+      "file": "@typesreact.md",
       "x": 15020,
       "y": 3980,
       "width": 180,
@@ -12928,7 +12928,7 @@
     {
       "id": "n_launchops_portal_package_json_types_react",
       "type": "file",
-      "file": "@typesreact_3.md",
+      "file": "@typesreact_1.md",
       "x": 14820,
       "y": 4060,
       "width": 180,
@@ -12946,7 +12946,7 @@
     {
       "id": "g82",
       "type": "group",
-      "label": "TypeScript Language",
+      "label": "Pipeline \u2014 Agent Report Dashboard",
       "x": 16200,
       "y": 3900,
       "width": 600,
@@ -12965,7 +12965,7 @@
     {
       "id": "n_launchops_portal_package_devdependencies_typescript",
       "type": "file",
-      "file": "typescript_1.md",
+      "file": "typescript_2.md",
       "x": 16420,
       "y": 3980,
       "width": 180,
@@ -12983,7 +12983,7 @@
     {
       "id": "n_pipeline_dashboard_package_devdependencies_typescript",
       "type": "file",
-      "file": "typescript_2.md",
+      "file": "typescript_4.md",
       "x": 16420,
       "y": 4060,
       "width": 180,
@@ -12992,7 +12992,7 @@
     {
       "id": "g83",
       "type": "group",
-      "label": "Vite React Plugin",
+      "label": "bloomline-dashboard/src/components/TimeframeToggle.tsx",
       "x": 17600,
       "y": 3900,
       "width": 600,
@@ -13011,7 +13011,7 @@
     {
       "id": "n_launchops_portal_package_devdependencies_vitejs_plugin_react",
       "type": "file",
-      "file": "@vitejsplugin-react_1.md",
+      "file": "@vitejsplugin-react_2.md",
       "x": 17820,
       "y": 3980,
       "width": 180,
@@ -13029,7 +13029,7 @@
     {
       "id": "n_pipeline_dashboard_package_devdependencies_vitejs_plugin_react",
       "type": "file",
-      "file": "@vitejsplugin-react_2.md",
+      "file": "@vitejsplugin-react_4.md",
       "x": 17820,
       "y": 4060,
       "width": 180,
@@ -13167,7 +13167,7 @@
     {
       "id": "g87",
       "type": "group",
-      "label": "Dashboard App TSConfig",
+      "label": "bloomline-dashboard/package.json",
       "x": 5080,
       "y": 4380,
       "width": 600,
@@ -13186,7 +13186,7 @@
     {
       "id": "n_bloomline_dashboard_tsconfig_app_include",
       "type": "file",
-      "file": "include_3.md",
+      "file": "include.md",
       "x": 5300,
       "y": 4460,
       "width": 180,
@@ -13241,7 +13241,7 @@
     {
       "id": "g89",
       "type": "group",
-      "label": "Portal App TSConfig",
+      "label": "Performance Log \u2014 Email Agent",
       "x": 8320,
       "y": 4380,
       "width": 600,
@@ -13251,7 +13251,7 @@
     {
       "id": "n_launchops_portal_tsconfig_app_include",
       "type": "file",
-      "file": "include_4.md",
+      "file": "include_2.md",
       "x": 8340,
       "y": 4460,
       "width": 180,
@@ -13389,7 +13389,7 @@
     {
       "id": "g93",
       "type": "group",
-      "label": "Pipeline App TSConfig",
+      "label": "Performance Log \u2014 Builder Agent",
       "x": 14800,
       "y": 4380,
       "width": 600,
@@ -13399,7 +13399,7 @@
     {
       "id": "n_pipeline_dashboard_tsconfig_app_include",
       "type": "file",
-      "file": "include_5.md",
+      "file": "include_4.md",
       "x": 14820,
       "y": 4460,
       "width": 180,
@@ -14093,60 +14093,6 @@
       "label": "contains [EXTRACTED]"
     },
     {
-      "id": "e_pipeline_dashboard_src_types_events_eventtype_pipeline_dashboard_src_types_events",
-      "fromNode": "n_pipeline_dashboard_src_types_events_eventtype",
-      "toNode": "n_pipeline_dashboard_src_types_events",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_kpicounts_pipeline_dashboard_src_tabs_dashboardtab",
-      "fromNode": "n_pipeline_dashboard_src_types_events_kpicounts",
-      "toNode": "n_pipeline_dashboard_src_tabs_dashboardtab",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_kpicounts_pipeline_dashboard_src_types_events",
-      "fromNode": "n_pipeline_dashboard_src_types_events_kpicounts",
-      "toNode": "n_pipeline_dashboard_src_types_events",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_kpikey_pipeline_dashboard_src_tabs_dashboardtab",
-      "fromNode": "n_pipeline_dashboard_src_types_events_kpikey",
-      "toNode": "n_pipeline_dashboard_src_tabs_dashboardtab",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_kpikey_pipeline_dashboard_src_types_events",
-      "fromNode": "n_pipeline_dashboard_src_types_events_kpikey",
-      "toNode": "n_pipeline_dashboard_src_types_events",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_normalizedevent_pipeline_dashboard_src_api_client",
-      "fromNode": "n_pipeline_dashboard_src_types_events_normalizedevent",
-      "toNode": "n_pipeline_dashboard_src_api_client",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_normalizedevent_pipeline_dashboard_src_hooks_useevents",
-      "fromNode": "n_pipeline_dashboard_src_types_events_normalizedevent",
-      "toNode": "n_pipeline_dashboard_src_hooks_useevents",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_normalizedevent_pipeline_dashboard_src_tabs_bookingstab",
-      "fromNode": "n_pipeline_dashboard_src_types_events_normalizedevent",
-      "toNode": "n_pipeline_dashboard_src_tabs_bookingstab",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_normalizedevent_pipeline_dashboard_src_types_events",
-      "fromNode": "n_pipeline_dashboard_src_types_events_normalizedevent",
-      "toNode": "n_pipeline_dashboard_src_types_events",
-      "label": "contains [EXTRACTED]"
-    },
-    {
       "id": "e_pipeline_dashboard_src_types_events_timeframe_pipeline_dashboard_src_components_timeframetoggle_timeframetoggleprops",
       "fromNode": "n_pipeline_dashboard_src_types_events_timeframe",
       "toNode": "n_pipeline_dashboard_src_components_timeframetoggle_timeframetoggleprops",
@@ -14203,24 +14149,6 @@
     {
       "id": "e_pipeline_dashboard_src_types_events_timeframe_pipeline_dashboard_src_types_events",
       "fromNode": "n_pipeline_dashboard_src_types_events_timeframe",
-      "toNode": "n_pipeline_dashboard_src_types_events",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_toplead_pipeline_dashboard_src_api_client",
-      "fromNode": "n_pipeline_dashboard_src_types_events_toplead",
-      "toNode": "n_pipeline_dashboard_src_api_client",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_toplead_pipeline_dashboard_src_hooks_usetopleads",
-      "fromNode": "n_pipeline_dashboard_src_types_events_toplead",
-      "toNode": "n_pipeline_dashboard_src_hooks_usetopleads",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_toplead_pipeline_dashboard_src_types_events",
-      "fromNode": "n_pipeline_dashboard_src_types_events_toplead",
       "toNode": "n_pipeline_dashboard_src_types_events",
       "label": "contains [EXTRACTED]"
     },
@@ -14378,12 +14306,6 @@
       "id": "e_launchops_portal_src_types_index_view_launchops_portal_src_types_index",
       "fromNode": "n_launchops_portal_src_types_index_view",
       "toNode": "n_launchops_portal_src_types_index",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_components_monthnav_monthnavprops_bloomline_dashboard_src_components_monthnav",
-      "fromNode": "n_bloomline_dashboard_src_components_monthnav_monthnavprops",
-      "toNode": "n_bloomline_dashboard_src_components_monthnav",
       "label": "contains [EXTRACTED]"
     },
     {
@@ -14549,66 +14471,6 @@
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_pipeline_dashboard_src_components_kpicard_kpicardprops_pipeline_dashboard_src_types_changes_change",
-      "fromNode": "n_pipeline_dashboard_src_components_kpicard_kpicardprops",
-      "toNode": "n_pipeline_dashboard_src_types_changes_change",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_components_kpicard_kpicardprops_pipeline_dashboard_src_components_kpicard",
-      "fromNode": "n_pipeline_dashboard_src_components_kpicard_kpicardprops",
-      "toNode": "n_pipeline_dashboard_src_components_kpicard",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_changes_change_pipeline_dashboard_src_types_events_kpidata",
-      "fromNode": "n_pipeline_dashboard_src_types_changes_change",
-      "toNode": "n_pipeline_dashboard_src_types_events_kpidata",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_changes_change_pipeline_dashboard_src_components_kpicard",
-      "fromNode": "n_pipeline_dashboard_src_types_changes_change",
-      "toNode": "n_pipeline_dashboard_src_components_kpicard",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_changes_change_pipeline_dashboard_src_types_events",
-      "fromNode": "n_pipeline_dashboard_src_types_changes_change",
-      "toNode": "n_pipeline_dashboard_src_types_events",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_changes_change_pipeline_dashboard_src_types_changes",
-      "fromNode": "n_pipeline_dashboard_src_types_changes_change",
-      "toNode": "n_pipeline_dashboard_src_types_changes",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_changes_changelabel_pipeline_dashboard_src_types_changes",
-      "fromNode": "n_pipeline_dashboard_src_types_changes_changelabel",
-      "toNode": "n_pipeline_dashboard_src_types_changes",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_kpidata_pipeline_dashboard_src_api_client",
-      "fromNode": "n_pipeline_dashboard_src_types_events_kpidata",
-      "toNode": "n_pipeline_dashboard_src_api_client",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_kpidata_pipeline_dashboard_src_hooks_usekpis",
-      "fromNode": "n_pipeline_dashboard_src_types_events_kpidata",
-      "toNode": "n_pipeline_dashboard_src_hooks_usekpis",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_kpidata_pipeline_dashboard_src_types_events",
-      "fromNode": "n_pipeline_dashboard_src_types_events_kpidata",
-      "toNode": "n_pipeline_dashboard_src_types_events",
-      "label": "contains [EXTRACTED]"
-    },
-    {
       "id": "e_pipeline_dashboard_src_components_calendargrid_calendargridprops_pipeline_dashboard_src_components_calendargrid",
       "fromNode": "n_pipeline_dashboard_src_components_calendargrid_calendargridprops",
       "toNode": "n_pipeline_dashboard_src_components_calendargrid",
@@ -14645,9 +14507,93 @@
       "label": "contains [EXTRACTED]"
     },
     {
+      "id": "e_bloomline_dashboard_src_api_client_apierror_bloomline_dashboard_src_hooks_useusers",
+      "fromNode": "n_bloomline_dashboard_src_api_client_apierror",
+      "toNode": "n_bloomline_dashboard_src_hooks_useusers",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_api_client_apierror_bloomline_dashboard_src_tabs_settingstab",
+      "fromNode": "n_bloomline_dashboard_src_api_client_apierror",
+      "toNode": "n_bloomline_dashboard_src_tabs_settingstab",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_api_client_apierror_bloomline_dashboard_src_api_client",
+      "fromNode": "n_bloomline_dashboard_src_api_client_apierror",
+      "toNode": "n_bloomline_dashboard_src_api_client",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_api_client_apierror_bloomline_dashboard_src_api_client_apierror_constructor",
+      "fromNode": "n_bloomline_dashboard_src_api_client_apierror",
+      "toNode": "n_bloomline_dashboard_src_api_client_apierror_constructor",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_users_adduserinput_bloomline_dashboard_src_api_client",
+      "fromNode": "n_bloomline_dashboard_src_types_users_adduserinput",
+      "toNode": "n_bloomline_dashboard_src_api_client",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_users_adduserinput_bloomline_dashboard_src_hooks_useusers",
+      "fromNode": "n_bloomline_dashboard_src_types_users_adduserinput",
+      "toNode": "n_bloomline_dashboard_src_hooks_useusers",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_users_adduserinput_bloomline_dashboard_src_types_users",
+      "fromNode": "n_bloomline_dashboard_src_types_users_adduserinput",
+      "toNode": "n_bloomline_dashboard_src_types_users",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_users_dashboarduser_bloomline_dashboard_src_api_client",
+      "fromNode": "n_bloomline_dashboard_src_types_users_dashboarduser",
+      "toNode": "n_bloomline_dashboard_src_api_client",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_users_dashboarduser_bloomline_dashboard_src_hooks_useusers",
+      "fromNode": "n_bloomline_dashboard_src_types_users_dashboarduser",
+      "toNode": "n_bloomline_dashboard_src_hooks_useusers",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_users_dashboarduser_bloomline_dashboard_src_types_users",
+      "fromNode": "n_bloomline_dashboard_src_types_users_dashboarduser",
+      "toNode": "n_bloomline_dashboard_src_types_users",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_components_calendargrid_calendargridprops_bloomline_dashboard_src_types_events_calendarbooking",
+      "fromNode": "n_bloomline_dashboard_src_components_calendargrid_calendargridprops",
+      "toNode": "n_bloomline_dashboard_src_types_events_calendarbooking",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_components_calendargrid_calendargridprops_bloomline_dashboard_src_components_calendargrid",
+      "fromNode": "n_bloomline_dashboard_src_components_calendargrid_calendargridprops",
+      "toNode": "n_bloomline_dashboard_src_components_calendargrid",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_components_emptystate_emptystateprops_bloomline_dashboard_src_components_emptystate",
+      "fromNode": "n_bloomline_dashboard_src_components_emptystate_emptystateprops",
+      "toNode": "n_bloomline_dashboard_src_components_emptystate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
       "id": "e_bloomline_dashboard_src_components_errorstate_errorstateprops_bloomline_dashboard_src_components_errorstate",
       "fromNode": "n_bloomline_dashboard_src_components_errorstate_errorstateprops",
       "toNode": "n_bloomline_dashboard_src_components_errorstate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_components_monthnav_monthnavprops_bloomline_dashboard_src_components_monthnav",
+      "fromNode": "n_bloomline_dashboard_src_components_monthnav_monthnavprops",
+      "toNode": "n_bloomline_dashboard_src_components_monthnav",
       "label": "contains [EXTRACTED]"
     },
     {
@@ -14672,24 +14618,6 @@
       "id": "e_pipeline_dashboard_src_components_sidebar_sidebarprops_pipeline_dashboard_src_components_sidebar",
       "fromNode": "n_pipeline_dashboard_src_components_sidebar_sidebarprops",
       "toNode": "n_pipeline_dashboard_src_components_sidebar",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_health_pipeline_dashboard_src_api_client",
-      "fromNode": "n_pipeline_dashboard_src_types_events_health",
-      "toNode": "n_pipeline_dashboard_src_api_client",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_health_pipeline_dashboard_src_hooks_usehealth",
-      "fromNode": "n_pipeline_dashboard_src_types_events_health",
-      "toNode": "n_pipeline_dashboard_src_hooks_usehealth",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_pipeline_dashboard_src_types_events_health_pipeline_dashboard_src_types_events",
-      "fromNode": "n_pipeline_dashboard_src_types_events_health",
-      "toNode": "n_pipeline_dashboard_src_types_events",
       "label": "contains [EXTRACTED]"
     },
     {
@@ -14765,48 +14693,6 @@
       "label": "contains [EXTRACTED]"
     },
     {
-      "id": "e_bloomline_dashboard_src_components_charts_weeklytrend_weeklytrendprops_bloomline_dashboard_src_types_events_trendbucket",
-      "fromNode": "n_bloomline_dashboard_src_components_charts_weeklytrend_weeklytrendprops",
-      "toNode": "n_bloomline_dashboard_src_types_events_trendbucket",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_components_charts_weeklytrend_weeklytrendprops_bloomline_dashboard_src_components_charts_weeklytrend",
-      "fromNode": "n_bloomline_dashboard_src_components_charts_weeklytrend_weeklytrendprops",
-      "toNode": "n_bloomline_dashboard_src_components_charts_weeklytrend",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_components_emptystate_emptystateprops_bloomline_dashboard_src_components_emptystate",
-      "fromNode": "n_bloomline_dashboard_src_components_emptystate_emptystateprops",
-      "toNode": "n_bloomline_dashboard_src_components_emptystate",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_events_trendbucket_bloomline_dashboard_src_api_client",
-      "fromNode": "n_bloomline_dashboard_src_types_events_trendbucket",
-      "toNode": "n_bloomline_dashboard_src_api_client",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_events_trendbucket_bloomline_dashboard_src_components_charts_weeklytrend",
-      "fromNode": "n_bloomline_dashboard_src_types_events_trendbucket",
-      "toNode": "n_bloomline_dashboard_src_components_charts_weeklytrend",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_events_trendbucket_bloomline_dashboard_src_hooks_usetrend",
-      "fromNode": "n_bloomline_dashboard_src_types_events_trendbucket",
-      "toNode": "n_bloomline_dashboard_src_hooks_usetrend",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_events_trendbucket_bloomline_dashboard_src_types_events",
-      "fromNode": "n_bloomline_dashboard_src_types_events_trendbucket",
-      "toNode": "n_bloomline_dashboard_src_types_events",
-      "label": "contains [EXTRACTED]"
-    },
-    {
       "id": "e_bloomline_dashboard_src_components_kpicard_kpicardprops_bloomline_dashboard_src_types_changes_change",
       "fromNode": "n_bloomline_dashboard_src_components_kpicard_kpicardprops",
       "toNode": "n_bloomline_dashboard_src_types_changes_change",
@@ -14849,6 +14735,24 @@
       "label": "contains [EXTRACTED]"
     },
     {
+      "id": "e_bloomline_dashboard_src_types_events_kpidata_bloomline_dashboard_src_api_client",
+      "fromNode": "n_bloomline_dashboard_src_types_events_kpidata",
+      "toNode": "n_bloomline_dashboard_src_api_client",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_events_kpidata_bloomline_dashboard_src_hooks_usekpis",
+      "fromNode": "n_bloomline_dashboard_src_types_events_kpidata",
+      "toNode": "n_bloomline_dashboard_src_hooks_usekpis",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_events_kpidata_bloomline_dashboard_src_types_events",
+      "fromNode": "n_bloomline_dashboard_src_types_events_kpidata",
+      "toNode": "n_bloomline_dashboard_src_types_events",
+      "label": "contains [EXTRACTED]"
+    },
+    {
       "id": "e_bloomline_dashboard_src_components_errorboundary_errorboundary_bloomline_dashboard_src_app",
       "fromNode": "n_bloomline_dashboard_src_components_errorboundary_errorboundary",
       "toNode": "n_bloomline_dashboard_src_app",
@@ -14888,42 +14792,6 @@
       "id": "e_bloomline_dashboard_src_components_errorboundary_state_bloomline_dashboard_src_components_errorboundary",
       "fromNode": "n_bloomline_dashboard_src_components_errorboundary_state",
       "toNode": "n_bloomline_dashboard_src_components_errorboundary",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_api_client_apierror_bloomline_dashboard_src_hooks_useusers",
-      "fromNode": "n_bloomline_dashboard_src_api_client_apierror",
-      "toNode": "n_bloomline_dashboard_src_hooks_useusers",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_api_client_apierror_bloomline_dashboard_src_tabs_settingstab",
-      "fromNode": "n_bloomline_dashboard_src_api_client_apierror",
-      "toNode": "n_bloomline_dashboard_src_tabs_settingstab",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_api_client_apierror_bloomline_dashboard_src_api_client",
-      "fromNode": "n_bloomline_dashboard_src_api_client_apierror",
-      "toNode": "n_bloomline_dashboard_src_api_client",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_api_client_apierror_bloomline_dashboard_src_api_client_apierror_constructor",
-      "fromNode": "n_bloomline_dashboard_src_api_client_apierror",
-      "toNode": "n_bloomline_dashboard_src_api_client_apierror_constructor",
-      "label": "method [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_components_calendargrid_calendargridprops_bloomline_dashboard_src_types_events_calendarbooking",
-      "fromNode": "n_bloomline_dashboard_src_components_calendargrid_calendargridprops",
-      "toNode": "n_bloomline_dashboard_src_types_events_calendarbooking",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_components_calendargrid_calendargridprops_bloomline_dashboard_src_components_calendargrid",
-      "fromNode": "n_bloomline_dashboard_src_components_calendargrid_calendargridprops",
-      "toNode": "n_bloomline_dashboard_src_components_calendargrid",
       "label": "contains [EXTRACTED]"
     },
     {
@@ -14981,44 +14849,8 @@
       "label": "contains [EXTRACTED]"
     },
     {
-      "id": "e_bloomline_dashboard_src_types_events_health_bloomline_dashboard_src_api_client",
-      "fromNode": "n_bloomline_dashboard_src_types_events_health",
-      "toNode": "n_bloomline_dashboard_src_api_client",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_events_health_bloomline_dashboard_src_hooks_usehealth",
-      "fromNode": "n_bloomline_dashboard_src_types_events_health",
-      "toNode": "n_bloomline_dashboard_src_hooks_usehealth",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_events_health_bloomline_dashboard_src_types_events",
-      "fromNode": "n_bloomline_dashboard_src_types_events_health",
-      "toNode": "n_bloomline_dashboard_src_types_events",
-      "label": "contains [EXTRACTED]"
-    },
-    {
       "id": "e_bloomline_dashboard_src_types_events_kpicounts_bloomline_dashboard_src_types_events",
       "fromNode": "n_bloomline_dashboard_src_types_events_kpicounts",
-      "toNode": "n_bloomline_dashboard_src_types_events",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_events_kpidata_bloomline_dashboard_src_api_client",
-      "fromNode": "n_bloomline_dashboard_src_types_events_kpidata",
-      "toNode": "n_bloomline_dashboard_src_api_client",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_events_kpidata_bloomline_dashboard_src_hooks_usekpis",
-      "fromNode": "n_bloomline_dashboard_src_types_events_kpidata",
-      "toNode": "n_bloomline_dashboard_src_hooks_usekpis",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_events_kpidata_bloomline_dashboard_src_types_events",
-      "fromNode": "n_bloomline_dashboard_src_types_events_kpidata",
       "toNode": "n_bloomline_dashboard_src_types_events",
       "label": "contains [EXTRACTED]"
     },
@@ -15131,42 +14963,6 @@
       "label": "contains [EXTRACTED]"
     },
     {
-      "id": "e_bloomline_dashboard_src_types_users_adduserinput_bloomline_dashboard_src_api_client",
-      "fromNode": "n_bloomline_dashboard_src_types_users_adduserinput",
-      "toNode": "n_bloomline_dashboard_src_api_client",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_users_adduserinput_bloomline_dashboard_src_hooks_useusers",
-      "fromNode": "n_bloomline_dashboard_src_types_users_adduserinput",
-      "toNode": "n_bloomline_dashboard_src_hooks_useusers",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_users_adduserinput_bloomline_dashboard_src_types_users",
-      "fromNode": "n_bloomline_dashboard_src_types_users_adduserinput",
-      "toNode": "n_bloomline_dashboard_src_types_users",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_users_dashboarduser_bloomline_dashboard_src_api_client",
-      "fromNode": "n_bloomline_dashboard_src_types_users_dashboarduser",
-      "toNode": "n_bloomline_dashboard_src_api_client",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_users_dashboarduser_bloomline_dashboard_src_hooks_useusers",
-      "fromNode": "n_bloomline_dashboard_src_types_users_dashboarduser",
-      "toNode": "n_bloomline_dashboard_src_hooks_useusers",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_bloomline_dashboard_src_types_users_dashboarduser_bloomline_dashboard_src_types_users",
-      "fromNode": "n_bloomline_dashboard_src_types_users_dashboarduser",
-      "toNode": "n_bloomline_dashboard_src_types_users",
-      "label": "contains [EXTRACTED]"
-    },
-    {
       "id": "e_launchops_portal_src_api_client_unauthorizederror_launchops_portal_src_api_client",
       "fromNode": "n_launchops_portal_src_api_client_unauthorizederror",
       "toNode": "n_launchops_portal_src_api_client",
@@ -15200,6 +14996,210 @@
       "id": "e_pipeline_dashboard_src_components_errorboundary_errorboundary_pipeline_dashboard_src_components_errorboundary_errorboundary_getderivedstatefromerror",
       "fromNode": "n_pipeline_dashboard_src_components_errorboundary_errorboundary",
       "toNode": "n_pipeline_dashboard_src_components_errorboundary_errorboundary_getderivedstatefromerror",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_pipeline_dashboard_src_components_errorboundary_errorboundary_pipeline_dashboard_src_components_errorboundary_errorboundary_componentdidcatch",
+      "fromNode": "n_pipeline_dashboard_src_components_errorboundary_errorboundary",
+      "toNode": "n_pipeline_dashboard_src_components_errorboundary_errorboundary_componentdidcatch",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_pipeline_dashboard_src_components_errorboundary_errorboundary_pipeline_dashboard_src_components_errorboundary_errorboundary_render",
+      "fromNode": "n_pipeline_dashboard_src_components_errorboundary_errorboundary",
+      "toNode": "n_pipeline_dashboard_src_components_errorboundary_errorboundary_render",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_pipeline_dashboard_src_components_errorboundary_props_pipeline_dashboard_src_components_errorboundary",
+      "fromNode": "n_pipeline_dashboard_src_components_errorboundary_props",
+      "toNode": "n_pipeline_dashboard_src_components_errorboundary",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_pipeline_dashboard_src_components_errorboundary_state_pipeline_dashboard_src_components_errorboundary",
+      "fromNode": "n_pipeline_dashboard_src_components_errorboundary_state",
+      "toNode": "n_pipeline_dashboard_src_components_errorboundary",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_pipeline_dashboard_src_components_monthnav_monthnavprops_pipeline_dashboard_src_components_monthnav",
+      "fromNode": "n_pipeline_dashboard_src_components_monthnav_monthnavprops",
+      "toNode": "n_pipeline_dashboard_src_components_monthnav",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_pipeline_dashboard_src_tabs_bookingstab_view_pipeline_dashboard_src_tabs_bookingstab",
+      "fromNode": "n_pipeline_dashboard_src_tabs_bookingstab_view",
+      "toNode": "n_pipeline_dashboard_src_tabs_bookingstab",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_pipeline_dashboard_src_components_charts_conversiondonut_conversiondonutprops_pipeline_dashboard_src_components_charts_conversiondonut",
+      "fromNode": "n_pipeline_dashboard_src_components_charts_conversiondonut_conversiondonutprops",
+      "toNode": "n_pipeline_dashboard_src_components_charts_conversiondonut",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_pipeline_dashboard_src_components_charts_conversiondonut_donutsegment_pipeline_dashboard_src_tabs_dashboardtab",
+      "fromNode": "n_pipeline_dashboard_src_components_charts_conversiondonut_donutsegment",
+      "toNode": "n_pipeline_dashboard_src_tabs_dashboardtab",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_pipeline_dashboard_src_components_charts_conversiondonut_donutsegment_pipeline_dashboard_src_components_charts_conversiondonut",
+      "fromNode": "n_pipeline_dashboard_src_components_charts_conversiondonut_donutsegment",
+      "toNode": "n_pipeline_dashboard_src_components_charts_conversiondonut",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_components_charts_weeklytrend_weeklytrendprops_bloomline_dashboard_src_types_events_trendbucket",
+      "fromNode": "n_bloomline_dashboard_src_components_charts_weeklytrend_weeklytrendprops",
+      "toNode": "n_bloomline_dashboard_src_types_events_trendbucket",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_components_charts_weeklytrend_weeklytrendprops_bloomline_dashboard_src_components_charts_weeklytrend",
+      "fromNode": "n_bloomline_dashboard_src_components_charts_weeklytrend_weeklytrendprops",
+      "toNode": "n_bloomline_dashboard_src_components_charts_weeklytrend",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_styled_d_defaulttheme_bloomline_dashboard_src_theme_theme",
+      "fromNode": "n_bloomline_dashboard_src_styled_d_defaulttheme",
+      "toNode": "n_bloomline_dashboard_src_theme_theme",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_styled_d_defaulttheme_bloomline_dashboard_src_styled_d",
+      "fromNode": "n_bloomline_dashboard_src_styled_d_defaulttheme",
+      "toNode": "n_bloomline_dashboard_src_styled_d",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_theme_theme_bloomline_dashboard_src_components_charts_conversiondonut",
+      "fromNode": "n_bloomline_dashboard_src_theme_theme",
+      "toNode": "n_bloomline_dashboard_src_components_charts_conversiondonut",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_theme_theme_bloomline_dashboard_src_components_charts_weeklytrend",
+      "fromNode": "n_bloomline_dashboard_src_theme_theme",
+      "toNode": "n_bloomline_dashboard_src_components_charts_weeklytrend",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_theme_theme_bloomline_dashboard_src_components_ui",
+      "fromNode": "n_bloomline_dashboard_src_theme_theme",
+      "toNode": "n_bloomline_dashboard_src_components_ui",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_theme_theme_bloomline_dashboard_src_main",
+      "fromNode": "n_bloomline_dashboard_src_theme_theme",
+      "toNode": "n_bloomline_dashboard_src_main",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_theme_theme_bloomline_dashboard_src_styled_d",
+      "fromNode": "n_bloomline_dashboard_src_theme_theme",
+      "toNode": "n_bloomline_dashboard_src_styled_d",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_theme_theme_bloomline_dashboard_src_tabs_dashboardtab",
+      "fromNode": "n_bloomline_dashboard_src_theme_theme",
+      "toNode": "n_bloomline_dashboard_src_tabs_dashboardtab",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_theme_theme_bloomline_dashboard_src_theme",
+      "fromNode": "n_bloomline_dashboard_src_theme_theme",
+      "toNode": "n_bloomline_dashboard_src_theme",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_events_trendbucket_bloomline_dashboard_src_api_client",
+      "fromNode": "n_bloomline_dashboard_src_types_events_trendbucket",
+      "toNode": "n_bloomline_dashboard_src_api_client",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_events_trendbucket_bloomline_dashboard_src_components_charts_weeklytrend",
+      "fromNode": "n_bloomline_dashboard_src_types_events_trendbucket",
+      "toNode": "n_bloomline_dashboard_src_components_charts_weeklytrend",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_events_trendbucket_bloomline_dashboard_src_hooks_usetrend",
+      "fromNode": "n_bloomline_dashboard_src_types_events_trendbucket",
+      "toNode": "n_bloomline_dashboard_src_hooks_usetrend",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_bloomline_dashboard_src_types_events_trendbucket_bloomline_dashboard_src_types_events",
+      "fromNode": "n_bloomline_dashboard_src_types_events_trendbucket",
+      "toNode": "n_bloomline_dashboard_src_types_events",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_sectionheading_clients_bloomline_apparel_build_contract_build_story",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_sectionheading",
+      "toNode": "n_clients_bloomline_apparel_build_contract_build_story",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_sectionheading_clients_bloomline_apparel_build_contract",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_sectionheading",
+      "toNode": "n_clients_bloomline_apparel_build_contract",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_sectionheading_flowable",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_sectionheading",
+      "toNode": "n_flowable",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_sectionheading_clients_bloomline_apparel_build_contract_sectionheading_init",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_sectionheading",
+      "toNode": "n_clients_bloomline_apparel_build_contract_sectionheading_init",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_sectionheading_clients_bloomline_apparel_build_contract_sectionheading_draw",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_sectionheading",
+      "toNode": "n_clients_bloomline_apparel_build_contract_sectionheading_draw",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_sectionheading_clients_bloomline_apparel_build_contract_rationale_196",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_sectionheading",
+      "toNode": "n_clients_bloomline_apparel_build_contract_rationale_196",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_signatureblock_clients_bloomline_apparel_build_contract_build_story",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_signatureblock",
+      "toNode": "n_clients_bloomline_apparel_build_contract_build_story",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_signatureblock_clients_bloomline_apparel_build_contract",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_signatureblock",
+      "toNode": "n_clients_bloomline_apparel_build_contract",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_signatureblock_flowable",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_signatureblock",
+      "toNode": "n_flowable",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_clients_bloomline_apparel_build_contract_signatureblock_clients_bloomline_apparel_build_contract_signatureblock_init",
+      "fromNode": "n_clients_bloomline_apparel_build_contract_signatureblock",
+      "toNode": "n_clients_bloomline_apparel_build_contract_signatureblock_init",
       "label": "method [EXTRACTED]"
     }
   ]

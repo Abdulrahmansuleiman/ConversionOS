@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/server/routes/events.js"
 type: "code"
-community: "KPI Calculation Logic"
+community: "Proposal Writer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KPI_Calculation_Logic
+  - community/Proposal_Writer
 ---
 
 # pipeline-dashboard/server/routes/events.js
@@ -23,4 +23,4 @@ tags:
 - [[resolveWindow()_1]] - `imports` [EXTRACTED]
 - [[topLeads()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KPI_Calculation_Logic
+#graphify/code #graphify/EXTRACTED #community/Proposal_Writer

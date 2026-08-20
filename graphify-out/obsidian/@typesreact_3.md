@@ -1,19 +1,17 @@
 ---
-source_file: "launchops-portal/package.json"
+source_file: "pipeline-dashboard/package.json"
 type: "concept"
-community: "React Type Definitions"
-location: "L24"
+community: "Community None"
+location: "L15"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/React_Type_Definitions
+  - community/Community_None
 ---
 
 # @types/react
 
 ## Connections
-- [[@typesreact]] - `imports` [EXTRACTED]
-- [[@typesreact_1]] - `imports` [EXTRACTED]
 - [[@typesreact_2]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/React_Type_Definitions
+#graphify/concept #graphify/EXTRACTED #community/Community_None

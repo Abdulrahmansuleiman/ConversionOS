@@ -1,18 +1,18 @@
 ---
-source_file: "pipeline-dashboard/package.json"
+source_file: "bloomline-dashboard/package.json"
 type: "code"
-community: "React DOM Library"
-location: "L27"
+community: "Frontend Design"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/React_DOM_Library
+  - community/Frontend_Design
 ---
 
 # react-dom
 
 ## Connections
-- [[dependencies_2]] - `contains` [EXTRACTED]
+- [[dependencies_1]] - `contains` [EXTRACTED]
 - [[react-dom_3]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/React_DOM_Library
+#graphify/code #graphify/EXTRACTED #community/Frontend_Design

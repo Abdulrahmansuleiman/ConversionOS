@@ -2,7 +2,7 @@
 
 > God node · 17 connections · `pipeline-dashboard/src/hooks/useFetch.ts`
 
-**Community:** [Data Fetching Hooks](Data_Fetching_Hooks.md)
+**Community:** [pipeline-dashboard/src/api/client.ts](pipeline-dashboard-src-api-client.ts.md)
 
 ## Connections by Relation
 

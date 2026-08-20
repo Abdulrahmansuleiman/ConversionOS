@@ -1,12 +1,12 @@
 ---
 source_file: "launchops-portal/tsconfig.app.json"
 type: "code"
-community: "TypeScript JSX Config"
+community: "compilerOptions"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_JSX_Config
+  - community/compilerOptions
 ---
 
 # compilerOptions
@@ -15,7 +15,7 @@ tags:
 - [[allowImportingTsExtensions_2]] - `contains` [EXTRACTED]
 - [[jsx_1]] - `contains` [EXTRACTED]
 - [[launchops-portaltsconfig.app.json]] - `contains` [EXTRACTED]
-- [[lib_4]] - `contains` [EXTRACTED]
+- [[lib_2]] - `contains` [EXTRACTED]
 - [[module_2]] - `contains` [EXTRACTED]
 - [[moduleDetection_2]] - `contains` [EXTRACTED]
 - [[moduleResolution_2]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[useDefineForClassFields_1]] - `contains` [EXTRACTED]
 - [[verbatimModuleSyntax_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_JSX_Config
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

@@ -13,7 +13,7 @@
 
 ## Relationships
 
-- [Data Fetching Hooks](Data_Fetching_Hooks.md) (3 shared connections)
+- [pipeline-dashboard/src/api/client.ts](pipeline-dashboard-src-api-client.ts.md) (3 shared connections)
 - [KPI Dashboard Tab](KPI_Dashboard_Tab.md) (2 shared connections)
 
 ## Source Files

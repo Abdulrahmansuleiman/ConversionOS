@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[App()]] - `contains` [EXTRACTED]
 - [[BookingsTab()_1]] - `imports` [EXTRACTED]
-- [[CalendarTab()_1]] - `imports` [EXTRACTED]
+- [[CalendarTab()]] - `imports` [EXTRACTED]
 - [[Content_1]] - `contains` [EXTRACTED]
 - [[ConversationsTab()_1]] - `imports` [EXTRACTED]
 - [[DashboardTab()]] - `imports` [EXTRACTED]

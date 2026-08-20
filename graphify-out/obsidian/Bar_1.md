@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/Header.tsx"
 type: "code"
-community: "Dashboard Header"
+community: "bloomline-dashboard/src/components/Header.tsx"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Header
+  - community/bloomline-dashboard/src/components/Headertsx
 ---
 
 # Bar
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[bloomline-dashboardsrccomponentsHeader.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Header
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/components/Headertsx

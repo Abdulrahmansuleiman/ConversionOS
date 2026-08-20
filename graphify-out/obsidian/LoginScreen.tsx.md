@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Button]] - `contains` [EXTRACTED]
 - [[Error]] - `contains` [EXTRACTED]
-- [[Eyebrow_1]] - `contains` [EXTRACTED]
+- [[Eyebrow]] - `contains` [EXTRACTED]
 - [[Foot]] - `contains` [EXTRACTED]
 - [[Form_2]] - `contains` [EXTRACTED]
 - [[Input_2]] - `contains` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[Logo]] - `contains` [EXTRACTED]
 - [[LogoMark_1]] - `contains` [EXTRACTED]
 - [[Panel]] - `contains` [EXTRACTED]
-- [[Sub_1]] - `contains` [EXTRACTED]
+- [[Sub]] - `contains` [EXTRACTED]
 - [[Title_2]] - `contains` [EXTRACTED]
 - [[Wrap]] - `contains` [EXTRACTED]
 - [[launchops-portalsrcApp.tsx]] - `imports_from` [EXTRACTED]

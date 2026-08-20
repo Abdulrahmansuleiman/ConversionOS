@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/charts/WeeklyTrend.tsx"
 type: "code"
-community: "Weekly Trend Charts"
+community: "Non-fillable fields"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Weekly_Trend_Charts
+  - community/Non-fillable_fields
 ---
 
 # WeeklyTrend()
@@ -16,4 +16,4 @@ tags:
 - [[bloomline-dashboardsrctabsDashboardTab.tsx]] - `imports` [EXTRACTED]
 - [[formatDayKey()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Weekly_Trend_Charts
+#graphify/code #graphify/EXTRACTED #community/Non-fillable_fields

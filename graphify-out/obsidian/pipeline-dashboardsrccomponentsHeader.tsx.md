@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/src/components/Header.tsx"
 type: "code"
-community: "Header and Dev Badges"
+community: "pipeline-dashboard/src/components/Header.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_and_Dev_Badges
+  - community/pipeline-dashboard/src/components/Headertsx
 ---
 
 # pipeline-dashboard/src/components/Header.tsx
@@ -24,4 +24,4 @@ tags:
 - [[pipeline-dashboardsrcApp.tsx]] - `imports_from` [EXTRACTED]
 - [[pipeline-dashboardsrccomponentsDevModeBadge.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_and_Dev_Badges
+#graphify/code #graphify/EXTRACTED #community/pipeline-dashboard/src/components/Headertsx

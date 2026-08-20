@@ -1,17 +1,17 @@
 ---
-source_file: "pipeline-dashboard/src/tabs/CalendarTab.tsx"
+source_file: "bloomline-dashboard/src/tabs/CalendarTab.tsx"
 type: "code"
-community: "Calendar Tab View"
+community: "PDF Processing Advanced Reference"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_Tab_View
+  - community/PDF_Processing_Advanced_Reference
 ---
 
 # Padded
 
 ## Connections
-- [[pipeline-dashboardsrctabsCalendarTab.tsx]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrctabsCalendarTab.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_Tab_View
+#graphify/code #graphify/EXTRACTED #community/PDF_Processing_Advanced_Reference

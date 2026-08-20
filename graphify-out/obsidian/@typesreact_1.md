@@ -1,18 +1,17 @@
 ---
 source_file: "launchops-portal/package.json"
-type: "code"
-community: "React Type Definitions"
+type: "concept"
+community: "@types/react"
 location: "L24"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/React_Type_Definitions
+  - community/types/react
 ---
 
 # @types/react
 
 ## Connections
-- [[@typesreact_3]] - `imports` [EXTRACTED]
-- [[devDependencies_1]] - `contains` [EXTRACTED]
+- [[@typesreact]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/React_Type_Definitions
+#graphify/concept #graphify/EXTRACTED #community/types/react

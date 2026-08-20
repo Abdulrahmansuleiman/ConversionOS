@@ -1,17 +1,17 @@
 ---
-source_file: "bloomline-dashboard/src/components/EmptyState.tsx"
+source_file: "pipeline-dashboard/src/components/ErrorState.tsx"
 type: "code"
-community: "Weekly Trend Charts"
-location: "L14"
+community: "Settings Form Components"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Weekly_Trend_Charts
+  - community/Settings_Form_Components
 ---
 
 # Wrapper
 
 ## Connections
-- [[bloomline-dashboardsrccomponentsEmptyState.tsx]] - `contains` [EXTRACTED]
+- [[pipeline-dashboardsrccomponentsErrorState.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Weekly_Trend_Charts
+#graphify/code #graphify/EXTRACTED #community/Settings_Form_Components

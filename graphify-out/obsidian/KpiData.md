@@ -1,20 +1,20 @@
 ---
-source_file: "pipeline-dashboard/src/types/events.ts"
+source_file: "bloomline-dashboard/src/types/events.ts"
 type: "code"
-community: "KPI Card Components"
-location: "L47"
+community: "bloomline-dashboard/src/types/events.ts"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KPI_Card_Components
+  - community/bloomline-dashboard/src/types/eventsts
 ---
 
 # KpiData
 
 ## Connections
 - [[Change]] - `references` [EXTRACTED]
-- [[pipeline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrchooksuseKpis.ts]] - `imports` [EXTRACTED]
-- [[pipeline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
+- [[bloomline-dashboardsrcapiclient.ts]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrchooksuseKpis.ts]] - `imports` [EXTRACTED]
+- [[bloomline-dashboardsrctypesevents.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KPI_Card_Components
+#graphify/code #graphify/EXTRACTED #community/bloomline-dashboard/src/types/eventsts

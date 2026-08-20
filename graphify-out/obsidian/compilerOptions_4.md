@@ -1,12 +1,12 @@
 ---
 source_file: "pipeline-dashboard/tsconfig.app.json"
 type: "code"
-community: "TypeScript Strict Config"
+community: "compilerOptions"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Strict_Config
+  - community/compilerOptions
 ---
 
 # compilerOptions
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[allowImportingTsExtensions_4]] - `contains` [EXTRACTED]
 - [[jsx_2]] - `contains` [EXTRACTED]
-- [[lib_5]] - `contains` [EXTRACTED]
+- [[lib_4]] - `contains` [EXTRACTED]
 - [[module_4]] - `contains` [EXTRACTED]
 - [[moduleDetection_4]] - `contains` [EXTRACTED]
 - [[moduleResolution_4]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[useDefineForClassFields_2]] - `contains` [EXTRACTED]
 - [[verbatimModuleSyntax_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Strict_Config
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

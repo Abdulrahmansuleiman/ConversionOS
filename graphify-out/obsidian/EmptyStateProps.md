@@ -1,12 +1,12 @@
 ---
 source_file: "bloomline-dashboard/src/components/EmptyState.tsx"
 type: "code"
-community: "Weekly Trend Charts"
+community: "Non-fillable fields"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Weekly_Trend_Charts
+  - community/Non-fillable_fields
 ---
 
 # EmptyStateProps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[bloomline-dashboardsrccomponentsEmptyState.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Weekly_Trend_Charts
+#graphify/code #graphify/EXTRACTED #community/Non-fillable_fields

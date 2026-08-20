@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[BookingsTab()_1]] - `calls` [EXTRACTED]
-- [[CalendarGrid()_1]] - `calls` [EXTRACTED]
+- [[CalendarGrid()]] - `calls` [EXTRACTED]
 - [[ConversationsTab()_1]] - `calls` [EXTRACTED]
 - [[FollowUpsTab()_1]] - `calls` [EXTRACTED]
 - [[HumanTransfersTab()_1]] - `calls` [EXTRACTED]
