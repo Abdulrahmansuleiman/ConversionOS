@@ -1,8 +1,7 @@
 # Graph Report - onboarding-agent  (2026-08-20)
 
 ## Corpus Check
-- 232 files · ~368,613 words
-- Verdict: corpus is large enough that graph structure adds value.
+- cluster-only mode — file stats not available
 
 ## Summary
 - 1631 nodes · 2538 edges · 121 communities (93 shown, 28 thin omitted)
@@ -501,20 +500,20 @@ Cohesion: 0.50
 Nodes (3): How it works, Performance Store, Rules
 
 ## Knowledge Gaps
-- **831 isolated node(s):** `Standards (always do)`, `2026-08-20 — LaunchOps portal (Notion-backed ops hub)`, `FetchState`, `Asset`, `Tone` (+826 more)
+- **831 isolated node(s):** `FetchState`, `Asset`, `EmptyStateProps`, `ErrorStateProps`, `MonthNavProps` (+826 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **28 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ApiError` connect `pipeline-dashboard/src/api/client.ts` to `pipeline-dashboard/src/tabs/BookingsTab.tsx`?**
+- **Why does `ErrorBoundary` connect `pipeline-dashboard/src/components/ErrorBoundary.tsx` to `pipeline-dashboard/src/tabs/BookingsTab.tsx`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `ErrorBoundary` connect `bloomline-dashboard/src/components/ErrorBoundary.tsx` to `bloomline-dashboard/src/tabs/BookingsTab.tsx`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `theme` connect `launchops-portal/src/theme.ts` to `Documents.tsx`, `LoginScreen.tsx`, `ProjectDetail.tsx`, `launchops-portal/src/components/ui.tsx`, `Overview.tsx`, `launchops-portal/src/components/Sidebar.tsx`, `Testimonials.tsx`, `Projects.tsx`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `devDependencies` to `@types/react-dom`, `eslint-plugin-react-refresh`, `bloomline-dashboard/package.json`, `eslint`, `vite`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `Standards (always do)`, `2026-08-20 — LaunchOps portal (Notion-backed ops hub)`, `FetchState` to the rest of the system?**
+- **What connects `FetchState`, `Asset`, `EmptyStateProps` to the rest of the system?**
   _831 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `bloomline-dashboard/server/index.js` be split into smaller, more focused modules?**
   _Cohesion score 0.062409288824383166 - nodes in this community are weakly interconnected._
