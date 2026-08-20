@@ -269,12 +269,19 @@ GHL `contact_id`) computed from **real webhook events only**:
 ### 7.3 Notion project store + LaunchOps portal
 
 **Client/project operations data lives in Notion, not the dashboard.** The portal
-(`launchops-portal/`) is the internal ops hub: it reads everything from five Notion
+(`launchops-portal/`) is the internal ops hub: it reads everything from six Notion
 databases under the **LaunchOps HQ** page via a server-side token (`NOTION_TOKEN` in `.env`).
 The store file `docs/notion-store.json` (copied to `launchops-portal/notion-store.json`)
 maps database names → ids. Full model, API-version rules, and the per-client feedback
 form workflow live in the **`notion-project-store` skill** (`.opencode/.agents/skills/notion-project-store`).
 Load it before touching any portal/Notion project data.
+
+**Client documents live in Notion, never in repo folders.** Every client-facing PDF
+(proposal, contract, invoice, receipt) is stored in the **Client Documents** database
+via `scripts/notion-upload-document.mjs` (Notion file-upload flow) and surfaced in the
+portal **Documents** tab. No `clients/<name>/documents/` folders — generated PDFs go to
+temp and are deleted after upload/email. "Amount paid" = invoice flipped to
+`Status: Paid` + `Paid Date` + `Payment Method`.
 
 Non-negotiable Notion rules (learned the hard way — see skill for details):
 

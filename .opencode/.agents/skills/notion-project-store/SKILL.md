@@ -5,7 +5,7 @@ description: Interact with the LaunchOps HQ Notion project store — the single 
 # Notion Project Store (LaunchOps HQ)
 
 The portal's data lives in Notion, under the **LaunchOps HQ** page
-(`3c263684-59d9-8051-82e7-f2c189d18111`). Five databases hold everything:
+(`3c263684-59d9-8051-82e7-f2c189d18111`). Six databases hold everything:
 
 | Database | Title property | Purpose |
 |---|---|---|
@@ -14,6 +14,36 @@ The portal's data lives in Notion, under the **LaunchOps HQ** page
 | `Build Assets` | `Asset` | AI persona prompt, build spec, workflow, dashboard URL |
 | `Client Feedback` | `Feedback` | Per-client form responses |
 | `Testimonials` | `Quote` | Approved client quotes for the portal |
+| `Client Documents` | `Name` | Client-facing PDFs (proposal, contract, invoice, receipt) + payment status |
+
+## Client document storage (canonical, no local folders)
+
+Every client-facing PDF (proposal, contract, invoice, receipt) is stored **in
+Notion only** — never in `clients/<name>/documents/` or any repo folder, no matter
+how many clients exist. Generated PDFs go to a temp dir and are deleted after
+upload/email. The **Client Documents** database is the single record: document,
+amount, status, paid date, payment method, and the attached file.
+
+Use `scripts/notion-upload-document.mjs` to store a PDF:
+
+```
+node scripts/notion-upload-document.mjs \
+  --file <path.pdf> --client-name "Bloomline Apparel" \
+  --title "Invoice - Bloomline Apparel" --type Invoice \
+  --amount 750 --date 2026-08-20 --status Sent --method Stripe \
+  [--notes "..."] [--paid-date 2026-08-22]
+```
+
+- `--client-name` is matched against the `Projects` database and converted to the
+  `Client` relation; `--client-id` accepts a raw page id instead.
+- The script uses the Notion **file-upload flow**: `POST /v1/file_uploads`
+  (`mode: single_part`) → send bytes to the returned `upload_url` with
+  **method POST**, `Notion-Version: 2026-03-11`, and a multipart `FormData`
+  `file` field → poll `GET /v1/file_uploads/{id}` until `uploaded` → create the
+  page with the `file_upload` attached to the `File` property plus a `pdf` block.
+  (The send endpoint is **POST**, not PUT — PUT returns `400 invalid_request_url`.)
+- "Amount paid" is not a separate entry: it's the invoice row flipped to
+  `Status = Paid` + `Paid Date` + `Payment Method`.
 
 ## Where the wiring lives
 
@@ -22,7 +52,7 @@ The portal's data lives in Notion, under the **LaunchOps HQ** page
   data-source ids. The portal loads the copy at runtime.
 - **Portal backend** — `launchops-portal/server/notion.js` reads every endpoint
   through the store; `server/routes.js` exposes `/api/*` endpoints.
-- **Init script** — `scripts/notion-init.js` creates the 5 databases idempotently
+- **Init script** — `scripts/notion-init.js` creates the 6 databases idempotently
   (keyed off the store file). Always uses API version `2022-06-28` for creation.
 - **Seed script** — `scripts/notion-seed.js` seeds a client from
   `clients/<client>/facts.json` (project + roadmap + assets) into Notion.
@@ -84,4 +114,6 @@ Before calling a portal/dashboard build complete:
 - `GET /api/projects/<id>` returns the project + milestones sorted by phase +
   assets.
 - `GET /api/feedback` and `/api/testimonials` return arrays (may be empty).
+- `GET /api/documents` returns the client document rows with `projectName` resolved
+  and a `file` object (`{name,url}`) for the download link (may be empty).
 - The frontend login gate accepts `PORTAL_PASSWORD` from `.env`.
