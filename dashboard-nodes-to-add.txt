@@ -1,0 +1,72 @@
+N8N DASHBOARD NODES — JSON TO COPY (simple, paste straight in)
+==============================================================
+
+FOR EVERY NODE (all 3):
+  1. Add an "HTTP Request" node.
+  2. Method:  POST
+  3. URL:     https://pipeline-dash-seven.vercel.app/api/webhook/events
+  4. Send Body: ON
+  5. Body Content Type: JSON
+  6. Specify Body: Using JSON   <-- the tab labelled "JSON" (NOT "Using Parameters")
+  7. Paste that node's JSON below straight into the body box (n8n fills the {{ }} itself).
+  8. Click SAVE (Ctrl/Cmd+S) — n8n only runs the SAVED version.
+
+===========================================================
+NODE 1 — DASHBOARD - CONVERSATION   (event_type conversation_started)
+connect AFTER the intro lane's HTTP Request
+===========================================================
+{
+  "event_type": "conversation_started",
+  "client_id": "{{ $('Set Contact ID').item.json['Contact ID'] }}",
+  "payload": {
+    "lead_name": "{{ $('Webhook').item.json.body.first_name }}",
+    "company_name": "{{ $('Webhook').item.json.body.company_name }}", #this part is optional 
+    "channel": "{{ $('Webhook').item.json.body.tags }}"
+  }
+}
+
+===========================================================
+NODE 2 — DASHBOARD - HANDOVER   (event_type handed_off_to_human)
+connect AFTER HTTP Request2 (the Human branch of Classify (Human/AI))
+===========================================================
+{
+  "event_type": "handed_off_to_human",
+  "client_id": "{{ $('Set Contact ID').item.json['Contact ID'] }}",
+  "payload": {
+    "lead_name": "{{ $('Webhook').item.json.body.first_name }}"
+  }
+}
+
+===========================================================
+NODE 3 — DASHBOARD - FOLLOW UP   (event_type follow_up_triggered)
+connect AFTER HTTP Request3 (follow-up lane)
+===========================================================
+{
+  "event_type": "follow_up_triggered",
+  "client_id": "{{ $('Set Contact ID').item.json['Contact ID'] }}",
+  "payload": {
+    "lead_name": "{{ $('Webhook').item.json.body.first_name }}",
+    "suggested": "{{ $json.output.suggestedFollowUp }}"
+  }
+}
+
+===========================================================
+NODE 4 — DASHBOARD - BOOKING   (event_type booking_made) — add when the
+GHL booking trigger exists. Same URL + config as the others.
+===========================================================
+{
+  "event_type": "booking_made",
+  "client_id": "{{ $('Set Contact ID').item.json['Contact ID'] }}",
+  "payload": {
+    "lead_name": "{{ $('Webhook').item.json.body.first_name }}"
+  }
+}
+
+===========================================================
+IF IT FAILS:
+- 400 "event_type is required" = "Specify Body" is on "Using Parameters".
+  Switch it to "Using JSON".
+- Saved row shows literal {{ $('Webhook')... }} text = the body field is not
+  resolving expressions. Click the "fx" (Add Expression) button on the Body
+  field, or re-paste the JSON with step 6 set to "Using JSON".
+- Events never arrive = you didn't SAVE the workflow after adding the node.

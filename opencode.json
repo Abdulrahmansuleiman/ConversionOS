@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "leader",
+  "instructions": ["AGENTS.md"],
+  "skills": {
+    "paths": [".opencode/.agents/skills"]
+  },
+  "mcp": {
+    "notion": {
+      "type": "local",
+      "command": ["npx", "-y", "@notionhq/notion-mcp-server"],
+      "environment": {
+        "NOTION_API_TOKEN": "{env:NOTION_TOKEN}"
+      },
+      "enabled": true
+    },
+    "canva": {
+      "type": "local",
+      "command": ["npx", "-y", "@canva/cli@latest", "mcp"],
+      "enabled": true
+    }
+  }
+}

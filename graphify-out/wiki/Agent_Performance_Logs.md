@@ -1,0 +1,25 @@
+# Agent Performance Logs
+
+> 1 nodes · cohesion 1.00
+
+## Key Concepts
+
+- **Proposal Agent Performance Log** (0 connections) — `docs/performance/proposal.md`
+
+## Relationships
+
+- No strong cross-community connections detected
+
+## Source Files
+
+- `docs/performance/proposal.md`
+
+## Audit Trail
+
+- EXTRACTED: 0 (0%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [index](index.md) to navigate.*

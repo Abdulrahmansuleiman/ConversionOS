@@ -1,0 +1,29 @@
+# Secrets — never commit
+.env
+
+# Node
+node_modules/
+dist/
+.next/
+out/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Graphify knowledge graph — keep graph.json committed (map stays in repo),
+# but never commit per-run cost tracking, the volatile AST cache, or auto-backups
+graphify-out/cost.json
+graphify-out/cache/
+graphify-out/2026-*/
+
+# pipeline-dashboard is its own git repo (embedded) — keep it out of this repo
+pipeline-dashboard/

@@ -1,0 +1,17 @@
+{
+  "client": "acme-corp",
+  "client_display": "Acme Corp",
+  "currency": "USD",
+  "must_appear": [
+    "$1,500",
+    "$500",
+    "$2,000",
+    "$10k/mo",
+    "Acme Corp",
+    "Sarah Connor",
+    "sarah@acmecorp.com",
+    "01/08/2026",
+    "Proposal No 0042"
+  ],
+  "must_not_contain": ["[Client Signatory Name]", "[Provider Signatory Name]"]
+}

@@ -1,0 +1,4 @@
+# Python deps for the `pdf` skill (.opencode/.agents/skills/pdf)
+pypdf>=4.0
+reportlab>=4.0
+Pillow>=10.0
