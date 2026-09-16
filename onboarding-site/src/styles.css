@@ -444,7 +444,7 @@ textarea { resize: vertical; }
 }
 
 .stat-number {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--accent);
   line-height: 1.1;
@@ -587,7 +587,7 @@ textarea { resize: vertical; }
   .h1 { font-size: 27px; }
   .h2 { font-size: 24px; }
   .stat-row { grid-template-columns: 1fr; gap: 10px; }
-  .stat-number { font-size: 28px; }
+  .stat-number { font-size: 22px; }
   .stakes-grid { grid-template-columns: 1fr; }
 }
 
