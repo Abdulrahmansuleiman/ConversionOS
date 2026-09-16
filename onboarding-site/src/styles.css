@@ -78,13 +78,29 @@ textarea { resize: vertical; }
   inset: 0;
   border-radius: inherit;
   background: radial-gradient(
-    ellipse 70% 60% at 50% 0%,
-    rgba(46, 123, 255, 0.08) 0%,
-    transparent 70%
+    ellipse 70% 35% at 50% 0%,
+    rgba(46, 123, 255, 0.16) 0%,
+    transparent 75%
   );
-  filter: blur(40px);
+  filter: blur(30px);
   pointer-events: none;
   z-index: -1;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(46, 123, 255, 0.5) 50%,
+    transparent
+  );
+  pointer-events: none;
 }
 
 /* ---------- Header / Logo ---------- */
