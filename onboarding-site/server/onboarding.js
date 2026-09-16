@@ -172,6 +172,7 @@ async function archivePage(pageId) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ archived: true }),
+    signal: AbortSignal.timeout(15000),
   });
 }
 

@@ -44,6 +44,8 @@ async function api(method, url, body, version = NOTION_VERSION) {
       'Content-Type': 'application/json',
     },
     body: body ? JSON.stringify(body) : undefined,
+    // Fail loud instead of hanging the onboarding submit forever.
+    signal: AbortSignal.timeout(15000),
   });
   const json = await res.json();
   if (!res.ok) {
