@@ -67,7 +67,7 @@ export default function App() {
       return;
     }
     setErrors({});
-    setScreen(2);
+    setScreen(3);
   }, [form]);
 
   // Screen 3 → 4
@@ -78,7 +78,7 @@ export default function App() {
       return;
     }
     setErrors({});
-    setScreen(3);
+    setScreen(4);
   }, [form]);
 
   // Screen 4 → submit
