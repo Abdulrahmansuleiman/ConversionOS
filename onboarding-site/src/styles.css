@@ -69,7 +69,7 @@ textarea { resize: vertical; }
   display: flex;
   flex-direction: column;
   gap: 24px;
-  box-shadow: 0 0 60px rgba(46, 123, 255, 0.08);
+  box-shadow: 0 0 60px rgba(46, 123, 255, 0.08), 0 0 120px rgba(46, 123, 255, 0.12);
 }
 
 .card::before {
@@ -78,8 +78,8 @@ textarea { resize: vertical; }
   inset: 0;
   border-radius: inherit;
   background: radial-gradient(
-    ellipse 60% 50% at 50% 0%,
-    rgba(46, 123, 255, 0.05) 0%,
+    ellipse 70% 60% at 50% 0%,
+    rgba(46, 123, 255, 0.12) 0%,
     transparent 70%
   );
   filter: blur(40px);
