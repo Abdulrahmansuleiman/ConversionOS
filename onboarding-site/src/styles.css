@@ -102,7 +102,7 @@ textarea { resize: vertical; }
 
 /* ---------- Typography ---------- */
 .h1 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -583,7 +583,7 @@ textarea { resize: vertical; }
 @media (max-width: 640px) {
   .page { padding: 20px 12px 36px; }
   .card { padding: 28px 20px; }
-  .h1 { font-size: 32px; }
+  .h1 { font-size: 27px; }
   .h2 { font-size: 24px; }
   .stat-row { grid-template-columns: 1fr; gap: 10px; }
   .stat-number { font-size: 28px; }

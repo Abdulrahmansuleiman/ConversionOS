@@ -25,7 +25,7 @@ export default function WelcomeScreen({ onStart }: Props) {
       </div>
 
       {/* Headline */}
-      <h1 className="h1 animate-in-delay-1" style={{ textAlign: 'center' }}>
+      <h1 className="h1 animate-in-delay-1">
         Let&apos;s get your{' '}
         <span className="gradient-text">agent live.</span>
       </h1>
@@ -53,7 +53,7 @@ export default function WelcomeScreen({ onStart }: Props) {
 
       {/* What you'll get today */}
       <div className="animate-in-delay-3">
-        <p className="eyebrow" style={{ textAlign: 'center', marginBottom: 12 }}>
+        <p className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>
           What you&apos;ll get today
         </p>
         <div className="welcome-features">
