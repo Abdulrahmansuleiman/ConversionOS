@@ -26,8 +26,8 @@ export default function WelcomeScreen({ onStart }: Props) {
 
       {/* Headline */}
       <h1 className="h1 animate-in-delay-1">
-        Let&apos;s get your{' '}
-        <span className="gradient-text">agent live.</span>
+        Welcome to the{' '}
+        <span className="gradient-text">top 1%.</span>
       </h1>
 
       {/* Subtext */}
