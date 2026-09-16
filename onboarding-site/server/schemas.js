@@ -1,6 +1,7 @@
 // server/schemas.js
 // Property type maps per database, used when creating/updating rows via the
-// portal. Keys must match the Notion property names exactly.
+// onboarding backend. Keys must match the Notion property names exactly.
+// Reused verbatim from launchops-portal/server/schemas.js.
 export const DB = {
   Projects: {
     titleKey: 'Client',

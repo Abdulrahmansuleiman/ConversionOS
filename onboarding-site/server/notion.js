@@ -3,6 +3,8 @@
 // Database ids are bundled in notion-store.json (not secrets); the integration
 // token comes from NOTION_TOKEN at runtime. All normalization happens here so
 // routes never touch raw Notion property shapes.
+// Reused from launchops-portal/server/notion.js. Added createRowFull() so the
+// onboarding flow can capture the created project page URL (statusUrl).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -181,6 +183,16 @@ export async function createRow(name, props, schema) {
     properties: encodeProps(props, schema),
   });
   return res.id;
+}
+
+// Like createRow, but returns { id, url } so callers can link back to the
+// created page (used for the onboarding project row → statusUrl).
+export async function createRowFull(name, props, schema) {
+  const res = await api('POST', 'https://api.notion.com/v1/pages', {
+    parent: { type: 'database_id', database_id: dbId(name) },
+    properties: encodeProps(props, schema),
+  });
+  return { id: res.id, url: res.url ?? null };
 }
 
 export async function updateRow(pageId, props, schema) {

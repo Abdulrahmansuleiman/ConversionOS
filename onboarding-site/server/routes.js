@@ -8,7 +8,7 @@ import { createProjectWithRoadmap, findLatestProjectBySlug, validateOnboardPaylo
 export function buildRoutes() {
   const r = express.Router();
 
-  // --- Health (mirrors app.js /api/health) ---
+  // --- Health ---
   r.get('/health', async (_req, res) => {
     try {
       const h = await n.health();
@@ -18,19 +18,19 @@ export function buildRoutes() {
     }
   });
 
-  // --- Submit onboarding (§5.2) ---
+  // --- Submit onboarding ---
   r.post('/onboard', async (req, res) => {
     try {
       const { error, fields } = validateOnboardPayload(req.body);
       if (error) {
         return res.status(400).json({ ok: false, error, fields });
       }
-      const { projectId, clientSlug, clientName } = await createProjectWithRoadmap(req.body);
+      const { projectId, clientSlug, statusUrl, clientName } = await createProjectWithRoadmap(req.body);
       return res.status(201).json({
         ok: true,
         projectId,
         clientSlug,
-        statusUrl: `/status/${clientSlug}`,
+        statusUrl,
         projectName: clientName,
       });
     } catch (e) {
@@ -41,7 +41,7 @@ export function buildRoutes() {
     }
   });
 
-  // --- Client status lookup (§5.5) ---
+  // --- Client status lookup (unknown slug → 404) ---
   r.get('/status/:clientSlug', async (req, res) => {
     try {
       const found = await findLatestProjectBySlug(req.params.clientSlug);
@@ -70,11 +70,6 @@ export function buildRoutes() {
     } catch (e) {
       return res.status(500).json({ ok: false, error: e.message });
     }
-  });
-
-  // --- Deferred: Client Feedback form creation (see BUILD_SPEC §8.3.5) ---
-  r.post('/onboard/:projectId/feedback-form', (_req, res) => {
-    res.status(501).json({ ok: false, error: 'not implemented — see BUILD_SPEC §8.3.5' });
   });
 
   return r;

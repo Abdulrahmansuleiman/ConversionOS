@@ -15,12 +15,6 @@ export function resolveConfig() {
   const notionToken = (process.env.NOTION_TOKEN || '').trim();
   const port = Number.parseInt(process.env.ONBOARDING_PORT || '4100', 10);
 
-  if (process.env.VERCEL === '1' && !notionToken) {
-    throw new Error(
-      'NOTION_TOKEN is empty — the onboarding site backend needs it to write to the project store. Set it in Vercel env vars.'
-    );
-  }
-
   return {
     notionToken,
     port: Number.isFinite(port) ? port : 4100,
