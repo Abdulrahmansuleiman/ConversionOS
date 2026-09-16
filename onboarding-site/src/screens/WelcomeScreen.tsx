@@ -1,5 +1,5 @@
 // src/screens/WelcomeScreen.tsx
-// Screen 1 — Welcome. Stats are "—", "2–4 weeks", "2-3x" only (Raymon's spec).
+// Screen 1 — Welcome. Stats are "10+", "2–4 weeks", "2-3x" (Raymon confirmed).
 // Uses react-icons FiFile, FiKey, FiPhone for the "what you'll get" rows.
 import { FiFile, FiKey, FiPhone } from 'react-icons/fi';
 
@@ -17,7 +17,7 @@ export default function WelcomeScreen({ onStart }: Props) {
   return (
     <div className="card animate-in">
       {/* Pill badge */}
-      <div className="animate-in-delay-1" style={{ display: 'flex', justifyContent: 'center' }}>
+      <div className="animate-in-delay-1">
         <span className="pill-badge">
           <span className="pill-dot" />
           NEW CLIENT ONBOARDING
@@ -31,14 +31,14 @@ export default function WelcomeScreen({ onStart }: Props) {
       </h1>
 
       {/* Subtext */}
-      <p className="body-text animate-in-delay-2" style={{ textAlign: 'center' }}>
-        Takes about 5 minutes and gets your AI agent building today.
+      <p className="body-text animate-in-delay-2">
+        Most businesses are still doing this manually. You're not. Let's get your project live - this takes 5 minutes.
       </p>
 
       {/* Stat row */}
       <div className="stat-row animate-in-delay-2">
         <div className="stat-box">
-          <span className="stat-number">—</span>
+          <span className="stat-number">10+</span>
           <span className="stat-label">Businesses scaled</span>
         </div>
         <div className="stat-box">
