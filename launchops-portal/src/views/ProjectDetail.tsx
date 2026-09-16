@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import styled from 'styled-components';
-import { FiArrowLeft, FiExternalLink, FiCheck, FiRotateCcw, FiFileText, FiLink } from 'react-icons/fi';
+import { FiArrowLeft, FiExternalLink, FiCheck, FiRotateCcw, FiFileText, FiLink, FiMessageSquare } from 'react-icons/fi';
 import { client } from '../api/client';
 import { theme, projectStatusColor, PHASES, phaseStatusColor } from '../theme';
 import { StatusBadge, StarRating, Loading, EmptyState, formatDate, daysUntil } from '../components/ui';
@@ -15,6 +15,49 @@ const PHASE_ICON: Record<string, React.ReactNode> = {
   Launch: '05',
   'Post-launch support': '06',
 };
+
+// --- Intake parsing ------------------------------------------------------
+// The onboarding site writes project notes as:
+//   [Onboarded via onboarding site]
+//
+//   <Discovery question>
+//   <client's answer>
+//
+//   <next question>
+//   <next answer>
+// …
+// Parse that into structured Q&A pairs so the UI can show a proper card
+// instead of a raw text wall. Projects whose notes don't match this format
+// (source tag, or more than one block) fall back to the raw notes panel.
+type IntakeQA = { q: string; a: string };
+
+function parseIntake(notes: string): { source: string | null; qas: IntakeQA[] } | null {
+  const blocks = notes
+    .split(/\n{2,}/)
+    .map((b) => b.trim())
+    .filter(Boolean);
+  if (!blocks.length) return null;
+
+  let source: string | null = null;
+  let rest = blocks;
+  if (/^\[.*\]$/.test(blocks[0])) {
+    source = blocks[0].replace(/^\[|\]$/g, '');
+    rest = blocks.slice(1);
+  }
+
+  const qas: IntakeQA[] = [];
+  for (const block of rest) {
+    const nl = block.indexOf('\n');
+    if (nl === -1) {
+      qas.push({ q: block, a: '' });
+      continue;
+    }
+    qas.push({ q: block.slice(0, nl).trim(), a: block.slice(nl + 1).trim() });
+  }
+
+  const structured = source !== null || qas.length > 1;
+  return structured ? { source, qas } : null;
+}
 
 export function ProjectDetail({ projectId, onBack }: { projectId: string; onBack: () => void }) {
   const [data, setData] = useState<Detail | null>(null);
@@ -39,6 +82,7 @@ export function ProjectDetail({ projectId, onBack }: { projectId: string; onBack
   const launch = project['Launch Date'];
   const tMinus = daysUntil(launch);
   const doneCount = milestones.filter((m) => m.Status === 'Complete').length;
+  const intake = project.Notes ? parseIntake(project.Notes) : null;
 
   const setMilestoneStatus = async (m: Milestone, next: string) => {
     await client.patch(`/api/milestones/${m.id}`, { Status: next });
@@ -77,7 +121,30 @@ export function ProjectDetail({ projectId, onBack }: { projectId: string; onBack
         )}
       </MetaStrip>
 
-      {project.Notes && <Notes>{project.Notes}</Notes>}
+      {project.Notes && !intake && <Notes>{project.Notes}</Notes>}
+
+      {intake && (
+        <IntakeCard>
+          <IntakeHead>
+            <IntakeTitle>
+              <IntakeIcon><FiMessageSquare size={14} /></IntakeIcon>
+              Client discovery
+            </IntakeTitle>
+            <IntakeBadges>
+              {intake.source && <SourcePill>{intake.source}</SourcePill>}
+              <CountPill>{intake.qas.length} answers</CountPill>
+            </IntakeBadges>
+          </IntakeHead>
+          <IntakeGrid>
+            {intake.qas.map((qa, i) => (
+              <IntakeItem key={i}>
+                <IntakeQ>{qa.q || 'Note'}</IntakeQ>
+                <IntakeA>{qa.a || '—'}</IntakeA>
+              </IntakeItem>
+            ))}
+          </IntakeGrid>
+        </IntakeCard>
+      )}
 
       <Grid3>
         <TimelineCard>
@@ -259,6 +326,110 @@ const Notes = styled.div`
   margin-bottom: 20px;
   white-space: pre-wrap;
   line-height: 1.6;
+`;
+
+// --- Client discovery (structured onboarding intake) ---
+const IntakeCard = styled.div`
+  background: linear-gradient(180deg, ${theme.colors.surface} 0%, ${theme.colors.surface2} 100%);
+  border: 1px solid ${theme.colors.border};
+  border-radius: ${theme.radii.lg};
+  box-shadow: ${theme.shadows.card};
+  padding: 20px 22px;
+  margin-bottom: 20px;
+`;
+
+const IntakeHead = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+`;
+
+const IntakeTitle = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: ${theme.fonts.display};
+  font-weight: 600;
+  font-size: 14.5px;
+  letter-spacing: 0.01em;
+`;
+
+const IntakeIcon = styled.span`
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${theme.colors.accent2Soft};
+  color: ${theme.colors.accent2};
+  border: 1px solid rgba(76, 201, 240, 0.25);
+`;
+
+const IntakeBadges = styled.div`
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+`;
+
+const SourcePill = styled.span`
+  font-family: ${theme.fonts.mono};
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: ${theme.colors.accent2};
+  background: ${theme.colors.accent2Soft};
+  border: 1px solid rgba(76, 201, 240, 0.25);
+  border-radius: 999px;
+  padding: 4px 10px;
+`;
+
+const CountPill = styled.span`
+  font-family: ${theme.fonts.mono};
+  font-size: 10.5px;
+  color: ${theme.colors.textMuted};
+  border: 1px solid ${theme.colors.border};
+  border-radius: 999px;
+  padding: 4px 10px;
+`;
+
+const IntakeGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  @media (max-width: 900px) { grid-template-columns: 1fr; }
+`;
+
+const IntakeItem = styled.div`
+  background: ${theme.colors.surface2};
+  border: 1px solid ${theme.colors.border};
+  border-radius: ${theme.radii.md};
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+`;
+
+const IntakeQ = styled.div`
+  font-family: ${theme.fonts.mono};
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: ${theme.colors.textMuted};
+  line-height: 1.4;
+`;
+
+const IntakeA = styled.div`
+  font-size: 13.5px;
+  color: ${theme.colors.text};
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-break: break-word;
 `;
 
 const Grid3 = styled.div`
