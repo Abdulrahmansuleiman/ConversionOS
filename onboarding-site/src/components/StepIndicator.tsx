@@ -65,7 +65,7 @@ const Num = styled.span<{ $state: StepState }>`
   font-weight: 600;
   background: ${({ $state }) =>
     $state === 'upcoming' ? theme.colors.surface2 : theme.colors.accent};
-  color: ${({ $state }) => ($state === 'upcoming' ? theme.colors.textFaint : '#0A0E17')};
+  color: ${({ $state }) => ($state === 'upcoming' ? theme.colors.textFaint : '#FFFFFF')};
   border: 1px solid
     ${({ $state }) => ($state === 'upcoming' ? theme.colors.border : theme.colors.accent)};
   box-shadow: ${({ $state }) => ($state === 'current' ? theme.shadows.glow : 'none')};

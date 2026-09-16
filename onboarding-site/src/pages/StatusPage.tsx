@@ -175,7 +175,7 @@ const StartCTA = styled.span`
   padding: 12px 22px;
   border-radius: ${theme.radii.md}px;
   background: ${theme.colors.accent};
-  color: #0a0e17;
+  color: #fff;
   font-family: ${theme.fonts.display};
   font-size: 15px;
   font-weight: 700;

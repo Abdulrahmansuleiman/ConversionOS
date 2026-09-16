@@ -1,4 +1,7 @@
-// LaunchOps brand tokens — copied verbatim from launchops-portal/src/theme.ts.
+// LaunchOps brand tokens — LaunchOps BLUE (rebrand per Raymon 2026-09-16).
+// Accent palette matches pipeline-dashboard/src/theme.ts (canonical):
+//   accent #2563eb (blue-600), hover #1d4ed8, soft rgba(37,99,235,.12),
+//   gradient #60a5fa -> #2563eb. Page bg stays LaunchOps deep navy-ink #0A0E17.
 export const theme = {
   fonts: {
     display: "'Space Grotesk', 'Inter', system-ui, sans-serif",
@@ -14,24 +17,32 @@ export const theme = {
     text: '#EAF1F9',
     textMuted: '#8B96AC',
     textFaint: '#5B6787',
-    accent: '#FFB43A',
-    accentSoft: 'rgba(255, 180, 58, 0.14)',
-    accent2: '#4CC9F0',
-    accent2Soft: 'rgba(76, 201, 240, 0.12)',
+    // brand accent (blue-600 family)
+    accent: '#2563eb',
+    accentHover: '#1d4ed8',
+    accentSoft: 'rgba(37, 99, 235, 0.12)',
+    accentGradient: 'linear-gradient(135deg, #60a5fa 0%, #2563eb 100%)',
+    accent2: '#60a5fa',
+    accent2Soft: 'rgba(96, 165, 250, 0.12)',
+    // icon tints (muted blue family for the landing list rows)
+    iconDoc: '#93c5fd',
+    iconPhone: '#60a5fa',
     positive: '#34D399',
     negative: '#F87171',
     warning: '#FBBF24',
-    info: '#4CC9F0',
+    info: '#60a5fa',
     sidebarBg: '#080B12',
     sidebarText: '#8B96AC',
-    sidebarActive: '#FFB43A',
-    grid: 'rgba(148, 163, 184, 0.07)',
+    sidebarActive: '#2563eb',
+    // subtle fine-grid line for the landing page backdrop
+    gridLine: 'rgba(139, 150, 172, 0.05)',
   },
+  gridSize: '42px',
   radii: { sm: 8, md: 12, lg: 18 },
   shadows: {
     card: '0 1px 0 rgba(255,255,255,0.03) inset, 0 10px 30px rgba(0,0,0,0.35)',
-    hover: '0 1px 0 rgba(255,255,255,0.05) inset, 0 18px 44px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,180,58,0.18)',
-    glow: '0 0 0 1px rgba(255,180,58,0.35), 0 0 24px rgba(255,180,58,0.18)',
+    hover: '0 1px 0 rgba(255,255,255,0.05) inset, 0 18px 44px rgba(0,0,0,0.5), 0 0 0 1px rgba(37,99,235,0.18)',
+    glow: '0 0 0 1px rgba(37,99,235,0.35), 0 0 24px rgba(37,99,235,0.18)',
   },
 };
 
@@ -39,8 +50,8 @@ export type StatusColor = string;
 
 export const projectStatusColor: Record<string, string> = {
   'In Discovery': '#8B96AC',
-  Proposed: '#4CC9F0',
-  Contracted: '#FFB43A',
+  Proposed: '#60a5fa',
+  Contracted: '#2563eb',
   Building: '#C084FC',
   QA: '#22D3EE',
   Live: '#34D399',
@@ -49,7 +60,7 @@ export const projectStatusColor: Record<string, string> = {
 
 export const phaseStatusColor: Record<string, string> = {
   'Not started': '#5B6787',
-  'In progress': '#FFB43A',
+  'In progress': '#2563eb',
   Blocked: '#F87171',
   Complete: '#34D399',
 };

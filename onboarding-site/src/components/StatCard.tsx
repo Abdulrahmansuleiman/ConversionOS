@@ -22,18 +22,21 @@ const Shell = styled.div`
   border: 1px solid ${theme.colors.border};
   border-radius: ${theme.radii.lg}px;
   box-shadow: ${theme.shadows.card};
-  padding: 22px 24px;
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 `;
 
 const Value = styled.div`
   font-family: ${theme.fonts.display};
-  font-size: 34px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
   color: ${theme.colors.accent};
   line-height: 1.1;
+  white-space: nowrap;
 `;
 
 const Label = styled.div`

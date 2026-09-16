@@ -10,12 +10,8 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: ${theme.fonts.body};
     background:
-      linear-gradient(${theme.colors.grid} 1px, transparent 1px),
-      linear-gradient(90deg, ${theme.colors.grid} 1px, transparent 1px),
-      radial-gradient(1200px 600px at 70% -10%, rgba(76, 201, 240, 0.06), transparent 55%),
-      radial-gradient(1000px 700px at -10% 110%, rgba(255, 180, 58, 0.05), transparent 55%),
+      radial-gradient(1100px 560px at 50% -8%, rgba(37, 99, 235, 0.1), transparent 60%),
       ${theme.colors.bg};
-    background-size: 44px 44px, 44px 44px, auto, auto, auto;
     color: ${theme.colors.text};
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -25,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
   button { font-family: inherit; cursor: pointer; }
   h1, h2, h3 { font-family: ${theme.fonts.display}; }
 
-  ::selection { background: rgba(255, 180, 58, 0.28); color: #fff; }
+  ::selection { background: rgba(37, 99, 235, 0.35); color: #fff; }
 
   :focus-visible {
     outline: 2px solid ${theme.colors.accent};

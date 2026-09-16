@@ -1,19 +1,23 @@
 // src/content/copy.ts — every visible string on the site, in one place.
 // Subcopy approved by Raymon; headline is still a placeholder draft awaiting
 // his approval (BUILD_SPEC §8.3.2) — flagged inline below.
+// whatYouGet rows reference icons by key ('document' | 'key' | 'phone') so this
+// stays a pure data file; the landing page maps keys to react-icons components.
 
 export const copy = {
   landing: {
     eyebrow: 'New client onboarding',
-    // PLACEHOLDER — Raymon to approve or replace.
+    // PLACEHOLDER — Raymon to approve or replace. The trailing word is rendered
+    // with the LaunchOps blue gradient fill (see LandingPage Highlight span).
     headline: 'Meet your AI agent, faster.',
+    headlineHighlight: 'faster.',
     subcopy:
       "Most businesses are still doing this manually. You're not. Let's get your project live - this takes 5 minutes.",
     whatYouGetTitle: "What you'll get today",
     whatYouGet: [
-      '📋 Your personal Notion project workspace (roadmap)',
-      '🔑 Dashboard access for your build',
-      '📞 Onboarding call with the team',
+      { icon: 'document', text: 'Your personal Notion project workspace (roadmap)' },
+      { icon: 'key', text: 'Dashboard access for your build' },
+      { icon: 'phone', text: 'Onboarding call with the team' },
     ],
     cta: 'Start onboarding →',
     footer: 'Secured by LaunchOps · All data encrypted',

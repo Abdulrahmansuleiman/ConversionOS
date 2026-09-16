@@ -42,7 +42,7 @@ const Shell = styled.button<{ $variant: Variant }>`
     $variant === 'primary'
       ? `
         background: ${theme.colors.accent};
-        color: #0A0E17;
+        color: #FFFFFF;
         &:hover:not(:disabled) { box-shadow: ${theme.shadows.hover}; transform: translateY(-1px); }
       `
       : `
