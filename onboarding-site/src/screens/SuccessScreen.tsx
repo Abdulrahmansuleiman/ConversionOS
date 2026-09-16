@@ -1,11 +1,30 @@
 // src/screens/SuccessScreen.tsx
-// Screen 5 — Success. No stepper. Green check banner, step cards, Cal.com placeholder.
+// Screen 5 — Success. No stepper. Green check banner, step cards,
+// GoHighLevel booking widget (LeadConnector embed).
+
+import { useEffect } from 'react';
 
 interface Props {
   firstName: string;
 }
 
+const BOOKING_SRC = 'https://api.leadconnectorhq.com/widget/booking/n6A0JupbZJCV5l50rewr';
+const WIDGET_ID = 'DEU4doKcUr2mk0JlOCvF_1789585815658';
+
 export default function SuccessScreen({ firstName }: Props) {
+  // Load the LeadConnector form_embed script once so the widget hydrates.
+  useEffect(() => {
+    if (document.getElementById('msgsndr-form-embed')) return;
+    const script = document.createElement('script');
+    script.id = 'msgsndr-form-embed';
+    script.src = 'https://link.msgsndr.com/js/form_embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      // Keep the script cached — removing it would break the widget on re-mount.
+    };
+  }, []);
+
   return (
     <div className="card">
       {/* Green check banner */}
@@ -46,9 +65,14 @@ export default function SuccessScreen({ firstName }: Props) {
         </h3>
       </div>
 
-      <div className="booking-placeholder">
-        Booking widget — connect Cal.com or Calendly here
-      </div>
+      <iframe
+        src={BOOKING_SRC}
+        allow="payment"
+        id={WIDGET_ID}
+        className="booking-widget"
+        scrolling="no"
+        title="Book your kickoff call"
+      />
     </div>
   );
 }

@@ -570,14 +570,17 @@ textarea { resize: vertical; }
 
 .step-card-btn:hover { border-color: var(--accent); }
 
-.booking-placeholder {
-  padding: 40px 20px;
-  border: 1px dashed var(--border-strong);
-  border-radius: var(--radius-card);
-  text-align: center;
-  color: var(--text-muted);
-  font-size: 14px;
-  line-height: 1.5;
+.booking-widget {
+  width: 100%;
+  min-height: 700px;
+  border: none;
+  overflow: hidden;
+  border-radius: 16px;
+  background: transparent;
+}
+
+@media (max-width: 640px) {
+  .booking-widget { min-height: 600px; }
 }
 
 .personalized {
