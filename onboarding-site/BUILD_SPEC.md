@@ -386,8 +386,9 @@ export function slugify(name: string): string {
 2. For each raw row compute `rowSlug = slugify(normalized Client title)`; keep matches.
 3. Sort matches by **`created_time` descending** (read `row.created_time` from raw results —
    `normalize()` doesn't map it) and take the first → **latest project for the slug.**
-4. Fetch its milestones: `n.listRows('Roadmap', { filter: { property: 'Project', relation: { contains: id } } })`
-   sorted by the canonical `PHASE_ORDER` (from portal `theme.ts`), then `Due Date`.
+4. Fetch its milestones: `n.listRows('Roadmap', 'Milestone', { filter: { property: 'Project', relation: { contains: id } } })`
+   (note: `listRows(name, titleKey, opts)` — the second argument is the title key, the third is the filter)
+   sorted by the canonical `PHASES` constant (from portal `theme.ts`), then `Due Date`.
 
 Response `200`:
 ```jsonc
@@ -399,7 +400,7 @@ Response `200`:
   "milestones": [
     { "id": "…", "milestone": "Kickoff", "phase": "Kickoff", "status": "In progress" },
     { "id": "…", "milestone": "Design", "phase": "Design", "status": "Not started" }
-    // …6 rows, PHASE_ORDER
+    // …6 rows, PHASES order
   ]
 }
 ```
@@ -501,7 +502,9 @@ Each stage lists its **verification gate**; do not start a stage whose dependenc
    `Start onboarding →` navigates to `/onboard`; **no** RJ Media copy/figures present (grep:
    "top 1%", "50+", "3x" must return nothing in `src/`).
 
-4. **S4 — Wizard.** `OnboardPage`, `StepIndicator`, `Field`, `validate.ts`, review step with edit
+4. **S4 — Wizard.** `content/options.ts` (industry list, team size list, agent type list from
+   §4.2 — created here, consumed by Steps 2 & 3), `OnboardPage`, `StepIndicator`, `Field`,
+   `validate.ts`, review step with edit
    buttons, completion/error states per §4.2. State holds only typed values.
    **Verify:** each step blocks Next on invalid input with inline errors; review shows the exact
    typed values; edit jumps back preserving state; submit disabled while in flight; no sample
@@ -525,7 +528,7 @@ Each stage lists its **verification gate**; do not start a stage whose dependenc
 7. **S7 — Status endpoint + page.** `GET /api/status/:clientSlug` (latest-lookup §5.5) +
    `StatusPage` per §4.3 (`StatusBadge`, timeline, 404, error+retry).
    **Verify:** returns the **latest** of the two test rows from S6(d) with milestones in
-   `PHASE_ORDER`; unknown slug → 404; UI shows `Welcome, QA TEST…` (then archive test rows, §7.4);
+   `PHASES`; unknown slug → 404; UI shows `Welcome, QA TEST…` (then archive test rows, §7.4);
    frontend resolves `statusUrl` against `window.location.origin`.
 
 8. **S8 — Error-state sweep.** Recheck every async path: submit failure, status 404, status 5xx,
