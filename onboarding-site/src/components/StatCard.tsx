@@ -5,11 +5,13 @@ import { theme } from '../theme';
 import type { Stat } from '../content/stats';
 
 export function StatCard({ stat }: { stat: Stat }) {
+  // value may be number | string | null. Null (unconfirmed) renders "—";
+  // strings like "2-4 weeks" or "2-3x" render verbatim — no numeric
+  // formatting is ever applied to values that could be strings.
+  const display = stat.value === null ? '—' : String(stat.value) + (stat.unit ? ` ${stat.unit}` : '');
   return (
     <Shell>
-      <Value>
-        {stat.value === null ? '—' : `${stat.value}${stat.unit ? ` ${stat.unit}` : ''}`}
-      </Value>
+      <Value>{display}</Value>
       <Label>{stat.label}</Label>
     </Shell>
   );

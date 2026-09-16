@@ -1,11 +1,12 @@
 // src/content/stats.ts — landing stat cards.
-// Values are placeholders awaiting Raymon (BUILD_SPEC §6.2): value === null
-// renders "—" on the page. Nothing is guessed here; RJ Media's figures
-// (50+, 7 days, 3x) must never appear anywhere in src/.
-export type Stat = { label: string; value: number | null; unit?: string; confirmed: boolean };
+// Confirmed by Raymon: Average ROI '2-3x', Time to go live '2-4 weeks'.
+// 'Businesses scaled' has NO confirmed number yet — value stays null and
+// renders "—" on the page (§6.2). Nothing is guessed here; RJ Media's
+// unconfirmed performance claims must never appear in rendered output.
+export type Stat = { label: string; value: number | string | null; unit?: string; confirmed: boolean };
 
 export const stats: Stat[] = [
   { label: 'Businesses scaled', value: null, confirmed: false }, // PLACEHOLDER — Raymon to confirm
-  { label: 'Days to go live', value: null, confirmed: false },
-  { label: 'Average ROI', value: null, unit: 'x', confirmed: false },
+  { label: 'Time to go live', value: '2-4 weeks', confirmed: true },
+  { label: 'Average ROI', value: '2-3x', confirmed: true },
 ];

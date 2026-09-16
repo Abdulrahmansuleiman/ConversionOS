@@ -1,15 +1,14 @@
 // src/content/copy.ts — every visible string on the site, in one place.
-// Two hero strings are placeholder drafts awaiting Raymon's approval
-// (see BUILD_SPEC §8.3.2) — flagged inline below.
+// Subcopy approved by Raymon; headline is still a placeholder draft awaiting
+// his approval (BUILD_SPEC §8.3.2) — flagged inline below.
 
 export const copy = {
   landing: {
     eyebrow: 'New client onboarding',
     // PLACEHOLDER — Raymon to approve or replace.
     headline: 'Meet your AI agent, faster.',
-    // PLACEHOLDER — Raymon to approve or replace.
     subcopy:
-      'Most teams lose leads in the follow-up. LaunchOps builds your conversational AI agent and ships it with a roadmap, a dashboard, and a team that answers. Onboarding takes 5 minutes.',
+      "Most businesses are still doing this manually. You're not. Let's get your project live - this takes 5 minutes.",
     whatYouGetTitle: "What you'll get today",
     whatYouGet: [
       '📋 Your personal Notion project workspace (roadmap)',
