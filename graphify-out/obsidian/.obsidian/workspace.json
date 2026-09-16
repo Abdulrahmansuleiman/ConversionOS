@@ -75,7 +75,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,6 +184,10 @@
   },
   "active": "495e3114b204beeb",
   "lastOpenFiles": [
+    "What happened.md",
+    "Untitled.canvas",
+    "send_email.py.md",
+    "_COMMUNITY_AI Agent Orchestration.md",
     "Proposal Writer.md",
     "GoHighLevel.md",
     "graph.canvas",

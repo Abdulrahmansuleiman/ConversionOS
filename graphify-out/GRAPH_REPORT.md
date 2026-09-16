@@ -1,15 +1,16 @@
-# Graph Report - onboarding-agent  (2026-08-20)
+# Graph Report - onboarding-agent  (2026-09-16)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 257 files · ~415,959 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1631 nodes · 2538 edges · 121 communities (93 shown, 28 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 24 edges (avg confidence: 0.83)
+- 1798 nodes · 2783 edges · 125 communities (96 shown, 29 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.83)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `97d182a0`
+- Built from commit: `0efbc810`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,27 +19,27 @@
 - notion.js
 - pipeline-dashboard/server/app.js
 - bloomline-dashboard/src/tabs/BookingsTab.tsx
-- build_proposal.py
+- bloomline-apparel/build_proposal.py
 - bloomline-dashboard/src/types/events.ts
-- build_contract.py
+- bloomline-apparel/build_contract.py
 - bloomline-dashboard/src/tabs/DashboardTab.tsx
 - ProjectDetail.tsx
-- notion-init.js
+- onboarding-site/server/notion.js
 - launchops-portal/src/components/ui.tsx
 - Overview.tsx
-- pipeline-dashboard/src/api/client.ts
+- pipeline-dashboard/src/types/events.ts
 - launchops-portal/src/components/Sidebar.tsx
 - PDF Processing Advanced Reference
 - Testimonials.tsx
 - opencode.json
 - pipeline-dashboard/src/tabs/DashboardTab.tsx
 - pipeline-dashboard/src/tabs/BookingsTab.tsx
-- SpeedTrendChart.tsx
-- pipeline-dashboard/src/types/events.ts
+- pipeline-dashboard/src/components/EmptyState.tsx
+- pipeline-dashboard/src/components/KpiCard.tsx
 - Proposal Writer
-- @types/react
+- bloomline-dashboard/src/tabs/CalendarTab.tsx
 - bloomline-dashboard/src/components/Sidebar.tsx
-- bloomline-dashboard/src/api/client.ts
+- onboarding-site/package.json
 - compilerOptions
 - compilerOptions
 - compilerOptions
@@ -46,13 +47,15 @@
 - compilerOptions
 - compilerOptions
 - Projects.tsx
+- leadflow/build_proposal.py
 - pipeline-dashboard/src/components/Sidebar.tsx
 - devDependencies
 - Documents.tsx
 - pipeline-dashboard/src/components/Header.tsx
-- notion-seed.js
+- onboarding-site/src/App.tsx
 - Leader Agent (Orchestrator)
 - LoginScreen.tsx
+- bloomline-dashboard/src/App.tsx
 - Non-fillable fields
 - bloomline-dashboard/src/components/KpiCard.tsx
 - build_receipt.py
@@ -60,39 +63,37 @@
 - scripts
 - dependencies
 - seed-demo.js
-- notion-upload-document.mjs
+- pipeline-dashboard/src/tabs/CalendarTab.tsx
 - bloomline-dashboard/src/components/ErrorBoundary.tsx
 - launchops-portal/src/App.tsx
 - launchops-portal/src/theme.ts
 - pipeline-dashboard/src/components/ErrorBoundary.tsx
-- label-notion-databases.mjs
+- leadflow/build_receipt.py
 - Changelog
-- pipeline-dashboard/src/components/charts/ConversionDonut.tsx
+- pipeline-dashboard/src/tabs/SettingsTab.tsx
 - dependencies
 - QA Categories
-- bloomline-dashboard/src/components/charts/WeeklyTrend.tsx
+- bloomline-dashboard/src/components/EmptyState.tsx
 - bloomline-dashboard/src/components/Header.tsx
-- notion-fix-schema.js
-- set-vercel-env.mjs
+- .opencode/opencode.json
+- compilerOptions
 - dependencies
 - Process
 - Bloomline Apparel Text AI Agent
+- wrap
 - launchops-portal/vercel.json
 - Invoice Template Skill
 - Icon Library
+- LeadFlow.io — Discovery Call Transcript
 - pipeline-dashboard/vercel.json
 - @types/react-dom
-- pipeline-dashboard/src/components/TimeframeToggle.tsx
-- inventory-notion-pages.mjs
-- send_email.py
+- @types/react
 - Bloomline Document Build Plan
-- bloomline-dashboard/src/components/charts/ConversionDonut.tsx
+- eslint
 - Process
 - Frontend Design
 - feedback-issue-template.md
-- eslint-plugin-react-refresh
 - Pipeline — Agent Report Dashboard
-- bloomline-dashboard/src/components/TimeframeToggle.tsx
 - wrap
 - extract_form_structure.py
 - bloomline-dashboard/tsconfig.json
@@ -102,7 +103,7 @@
 - check_bounding_boxes.py
 - graphify.js
 - pipeline-dashboard/tsconfig.json
-- Performance Log — Builder Agent
+- Entries
 - Bloomline Dashboard Index
 - Bloomline Dashboard README
 - n8n Dashboard Nodes Config
@@ -125,18 +126,20 @@
 - Performance Log — Infrastructure Agent
 - Performance Store
 - vite
+- onboarding-site/vercel.json
+- onboarding-site/tsconfig.json
 
 ## God Nodes (most connected - your core abstractions)
-1. `compilerOptions` - 18 edges
+1. `compilerOptions` - 19 edges
 2. `compilerOptions` - 18 edges
 3. `compilerOptions` - 18 edges
-4. `useFetch()` - 17 edges
-5. `compilerOptions` - 16 edges
+4. `compilerOptions` - 18 edges
+5. `useFetch()` - 17 edges
 6. `compilerOptions` - 16 edges
 7. `compilerOptions` - 16 edges
-8. `formatDate()` - 15 edges
-9. `useFetch()` - 15 edges
-10. `main()` - 13 edges
+8. `compilerOptions` - 16 edges
+9. `compilerOptions` - 16 edges
+10. `formatDate()` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Bloomline Document Build Plan` --references--> `Invoice Template`  [EXTRACTED]
@@ -165,7 +168,7 @@
 - **Data Persistence Stack** — opencode_agents_skills_notion_project_store, agents_builder_agent, dashboard_nodes_config [INFERRED 0.85]
 - **Business Document Templates** — templates_contract_template, templates_invoice_template, templates_proposal_template, templates_receipt_template [INFERRED 0.90]
 
-## Communities (121 total, 28 thin omitted)
+## Communities (125 total, 29 thin omitted)
 
 ### Community 0 - "bloomline-dashboard/server/index.js"
 Cohesion: 0.06
@@ -180,32 +183,32 @@ Cohesion: 0.06
 Nodes (43): atomicWrite(), createLocalFileAdapter(), DATA_DIR, __dirname, DuplicateEmailError, ensureDataDir(), EVENTS_FILE, USERS_FILE (+35 more)
 
 ### Community 3 - "bloomline-dashboard/src/tabs/BookingsTab.tsx"
-Cohesion: 0.06
-Nodes (71): Content, MainArea, BookingChip, BookingTime, CalendarGrid(), CalendarGridProps, DayCell, DayHeader (+63 more)
+Cohesion: 0.12
+Nodes (35): EmptyState(), ErrorState(), ErrorStateProps, Message, RetryButton, Wrapper, Badge, SampleDataBadge() (+27 more)
 
-### Community 4 - "build_proposal.py"
-Cohesion: 0.09
-Nodes (27): build_table(), bullets(), draw_chrome(), draw_cover(), esc(), h1(), h2(), NumberedCanvas (+19 more)
+### Community 4 - "bloomline-apparel/build_proposal.py"
+Cohesion: 0.13
+Nodes (19): build_table(), bullets(), draw_chrome(), draw_cover(), esc(), h1(), h2(), NumberedCanvas (+11 more)
 
 ### Community 5 - "bloomline-dashboard/src/types/events.ts"
-Cohesion: 0.19
-Nodes (16): api, useCalendar(), FetchState, useFetch(), useKpis(), useTopLeads(), useTrend(), DashboardTab() (+8 more)
+Cohesion: 0.15
+Nodes (21): api, ApiError, FetchState, useFetch(), useKpis(), useTopLeads(), useTrend(), useUsers() (+13 more)
 
-### Community 6 - "build_contract.py"
-Cohesion: 0.09
-Nodes (28): build(), build_story(), draw_content_decor(), draw_cover(), main(), Main section heading + the template's dark-navy underline rule., Two-column acceptance block (CLIENT / LAUNCHOPS AI)., Remove ReportLab's unused Helvetica page-resource entry (no glyphs use it).… (+20 more)
+### Community 6 - "bloomline-apparel/build_contract.py"
+Cohesion: 0.06
+Nodes (37): build(), build_story(), draw_content_decor(), draw_cover(), main(), Main section heading + the template's dark-navy underline rule., Two-column acceptance block (CLIENT / LAUNCHOPS AI)., Remove ReportLab's unused Helvetica page-resource entry (no glyphs use it).… (+29 more)
 
 ### Community 7 - "bloomline-dashboard/src/tabs/DashboardTab.tsx"
-Cohesion: 0.10
-Nodes (20): DarkCard, DarkCardHeader, DarkSub, DarkTitle, KPI_META, KpiGrid, KpiRow, LeadBar (+12 more)
+Cohesion: 0.06
+Nodes (35): ChartWrap, ConversionDonut(), ConversionDonutProps, DonutSegment, Legend, LegendCount, LegendDot, LegendRow (+27 more)
 
 ### Community 8 - "ProjectDetail.tsx"
-Cohesion: 0.05
-Nodes (35): AdvanceBtn, AssetContent, AssetIcon, AssetLink, AssetList, AssetName, AssetRow, AssetType (+27 more)
+Cohesion: 0.04
+Nodes (47): AdvanceBtn, AssetContent, AssetIcon, AssetLink, AssetList, AssetName, AssetRow, AssetType (+39 more)
 
-### Community 9 - "notion-init.js"
-Cohesion: 0.10
-Nodes (29): api(), ASSET_TYPES, chk(), createDatabase(), date(), __dirname, DOC_STATUS, DOC_TYPES (+21 more)
+### Community 9 - "onboarding-site/server/notion.js"
+Cohesion: 0.07
+Nodes (49): app, createApp(), __dirname, resolveConfig(), app, cfg, api(), chk() (+41 more)
 
 ### Community 10 - "launchops-portal/src/components/ui.tsx"
 Cohesion: 0.09
@@ -215,9 +218,9 @@ Nodes (26): Avatar(), Badge, Card(), CardShell, Circle, Dot, Empty, Fill (+18 mo
 Cohesion: 0.08
 Nodes (26): ChartBox, FeedDate, FeedList, FeedRow, FeedTitle, Grid2, Hero, HeroLabel (+18 more)
 
-### Community 12 - "pipeline-dashboard/src/api/client.ts"
-Cohesion: 0.18
-Nodes (16): api, ApiError, useCalendar(), FetchState, useFetch(), useKpis(), useSpeedTrend(), useTopLeads() (+8 more)
+### Community 12 - "pipeline-dashboard/src/types/events.ts"
+Cohesion: 0.14
+Nodes (22): api, ApiError, FetchState, useFetch(), useKpis(), useSpeedTrend(), useTopLeads(), useTrend() (+14 more)
 
 ### Community 13 - "launchops-portal/src/components/Sidebar.tsx"
 Cohesion: 0.08
@@ -236,32 +239,36 @@ Cohesion: 0.09
 Nodes (23): command, enabled, type, default_agent, NOTION_API_TOKEN, instructions, mcp, canva (+15 more)
 
 ### Community 17 - "pipeline-dashboard/src/tabs/DashboardTab.tsx"
-Cohesion: 0.09
-Nodes (22): DarkCard, DarkCardHeader, DarkSub, DarkTitle, handoverSubtitle(), KPI_META, KpiGrid, KpiRow (+14 more)
+Cohesion: 0.06
+Nodes (36): ChartWrap, ConversionDonut(), ConversionDonutProps, DonutSegment, Legend, LegendCount, LegendDot, LegendRow (+28 more)
 
 ### Community 18 - "pipeline-dashboard/src/tabs/BookingsTab.tsx"
-Cohesion: 0.06
-Nodes (72): Content, MainArea, BookingChip, BookingTime, CalendarGrid(), CalendarGridProps, DayCell, DayHeader (+64 more)
+Cohesion: 0.17
+Nodes (31): Content, MainArea, ErrorState(), Badge, SampleDataBadge(), Card, CardHeader, CardSub (+23 more)
 
-### Community 19 - "SpeedTrendChart.tsx"
-Cohesion: 0.15
-Nodes (15): App(), ChartWrap, formatHours(), SpeedTrendChart(), SpeedTrendChartProps, ChartWrap, WeeklyTrend(), WeeklyTrendProps (+7 more)
+### Community 19 - "pipeline-dashboard/src/components/EmptyState.tsx"
+Cohesion: 0.11
+Nodes (21): App(), ChartWrap, formatHours(), SpeedTrendChart(), SpeedTrendChartProps, ChartWrap, WeeklyTrend(), WeeklyTrendProps (+13 more)
 
-### Community 20 - "pipeline-dashboard/src/types/events.ts"
-Cohesion: 0.13
-Nodes (17): badgeText(), badgeTone(), Card, Dot, KpiCard(), KpiCardProps, Label, LabelRow (+9 more)
+### Community 20 - "pipeline-dashboard/src/components/KpiCard.tsx"
+Cohesion: 0.22
+Nodes (10): badgeText(), badgeTone(), Card, Dot, KpiCard(), KpiCardProps, Label, LabelRow (+2 more)
 
 ### Community 21 - "Proposal Writer"
 Cohesion: 0.09
 Nodes (22): Call to Action, Customization Options, Example: SaaS Implementation Proposal, Examples, Executive Summary, Executive Summary, How to Use, HR Software Implementation Proposal (+14 more)
 
+### Community 22 - "bloomline-dashboard/src/tabs/CalendarTab.tsx"
+Cohesion: 0.11
+Nodes (22): BookingChip, BookingTime, CalendarGrid(), CalendarGridProps, DayCell, DayHeader, DayNumber, Grid (+14 more)
+
 ### Community 23 - "bloomline-dashboard/src/components/Sidebar.tsx"
 Cohesion: 0.11
 Nodes (16): Aside, Avatar, Brand, BrandName, BuiltBy, Company, Nav, NAV_ITEMS (+8 more)
 
-### Community 24 - "bloomline-dashboard/src/api/client.ts"
-Cohesion: 0.39
-Nodes (4): ApiError, useUsers(), AddUserInput, DashboardUser
+### Community 24 - "onboarding-site/package.json"
+Cohesion: 0.06
+Nodes (35): concurrently, dotenv, express, dependencies, dotenv, express, react, react-dom (+27 more)
 
 ### Community 25 - "compilerOptions"
 Cohesion: 0.08
@@ -272,8 +279,8 @@ Cohesion: 0.10
 Nodes (19): compilerOptions, allowImportingTsExtensions, lib, module, moduleDetection, moduleResolution, noEmit, noFallthroughCasesInSwitch (+11 more)
 
 ### Community 27 - "compilerOptions"
-Cohesion: 0.08
-Nodes (23): compilerOptions, allowImportingTsExtensions, jsx, lib, module, moduleDetection, moduleResolution, noEmit (+15 more)
+Cohesion: 0.04
+Nodes (46): compilerOptions, allowImportingTsExtensions, jsx, lib, module, moduleDetection, moduleResolution, noEmit (+38 more)
 
 ### Community 28 - "compilerOptions"
 Cohesion: 0.10
@@ -288,8 +295,12 @@ Cohesion: 0.10
 Nodes (19): compilerOptions, allowImportingTsExtensions, lib, module, moduleDetection, moduleResolution, noEmit, noFallthroughCasesInSwitch (+11 more)
 
 ### Community 31 - "Projects.tsx"
-Cohesion: 0.13
-Nodes (18): Header(), daysUntil(), formatDate(), Feedback(), ProjectDetail(), Dates, Footer, GoBtn (+10 more)
+Cohesion: 0.12
+Nodes (19): Header(), daysUntil(), formatDate(), Feedback(), parseIntake(), ProjectDetail(), Dates, Footer (+11 more)
+
+### Community 32 - "leadflow/build_proposal.py"
+Cohesion: 0.18
+Nodes (13): build_table(), bullets(), draw_chrome(), draw_cover(), esc(), h1(), h2(), NumberedCanvas (+5 more)
 
 ### Community 33 - "pipeline-dashboard/src/components/Sidebar.tsx"
 Cohesion: 0.11
@@ -297,19 +308,19 @@ Nodes (16): Aside, Avatar, Brand, BrandName, BuiltBy, Company, Nav, NAV_ITEMS (+
 
 ### Community 34 - "devDependencies"
 Cohesion: 0.12
-Nodes (17): devDependencies, concurrently, eslint, @eslint/js, eslint-plugin-react-hooks, globals, typescript, typescript-eslint (+9 more)
+Nodes (17): devDependencies, concurrently, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh, globals, typescript, typescript-eslint (+9 more)
 
 ### Community 35 - "Documents.tsx"
 Cohesion: 0.14
 Nodes (14): EmptyState(), Client, DocName, Documents(), DownloadLink, Head, Notes, PaidLine (+6 more)
 
 ### Community 36 - "pipeline-dashboard/src/components/Header.tsx"
-Cohesion: 0.16
-Nodes (12): Badge, DevModeBadge(), Bar, BellButton, DateLabel, Header(), Right, Subtitle (+4 more)
+Cohesion: 0.18
+Nodes (11): Badge, DevModeBadge(), Bar, BellButton, DateLabel, Header(), Right, Subtitle (+3 more)
 
-### Community 37 - "notion-seed.js"
-Cohesion: 0.22
-Nodes (13): api(), __dirname, facts, findProject(), HEADERS, queryAll(), relOf(), root (+5 more)
+### Community 37 - "onboarding-site/src/App.tsx"
+Cohesion: 0.06
+Nodes (34): App(), Props, Props, Stepper(), STEPS, AGENT_ROWS, AGENT_TYPES, AgentType (+26 more)
 
 ### Community 38 - "Leader Agent (Orchestrator)"
 Cohesion: 0.14
@@ -319,13 +330,17 @@ Nodes (14): Builder Agent, Email Agent, Feedback Agent, Infrastructure Agent, Le
 Cohesion: 0.14
 Nodes (13): Button, Error, Eyebrow, Foot, Form, Input, LoginScreen(), Logo (+5 more)
 
+### Community 40 - "bloomline-dashboard/src/App.tsx"
+Cohesion: 0.29
+Nodes (12): Content, MainArea, useEvents(), BookingsTab(), toCalendarBooking(), ConversationsTab(), FollowUpsTab(), HumanTransfersTab() (+4 more)
+
 ### Community 41 - "Non-fillable fields"
 Cohesion: 0.11
 Nodes (18): A.1: Analyze the Structure, A.2: Check for Missing Elements, A.3: Create fields.json with PDF Coordinates, A.4: Validate Bounding Boxes, Approach A: Structure-Based Coordinates (Preferred), Approach B: Visual Estimation (Fallback), B.1: Convert PDF to Images, B.2: Initial Field Identification (+10 more)
 
 ### Community 42 - "bloomline-dashboard/src/components/KpiCard.tsx"
-Cohesion: 0.19
-Nodes (12): badgeText(), badgeTone(), Card, Dot, KpiCard(), KpiCardProps, Label, LabelRow (+4 more)
+Cohesion: 0.24
+Nodes (9): badgeText(), badgeTone(), Card, Dot, KpiCard(), KpiCardProps, Label, LabelRow (+1 more)
 
 ### Community 43 - "build_receipt.py"
 Cohesion: 0.15
@@ -347,9 +362,9 @@ Nodes (39): dependencies, dotenv, express, react, react-dom, react-icons, rechar
 Cohesion: 0.18
 Nodes (10): CHANNELS, client, events, KEY, LEADS, now, pick(), rng (+2 more)
 
-### Community 48 - "notion-upload-document.mjs"
-Cohesion: 0.29
-Nodes (11): api(), arg(), __dirname, H, main(), resolveClientId(), root, sleep() (+3 more)
+### Community 48 - "pipeline-dashboard/src/tabs/CalendarTab.tsx"
+Cohesion: 0.11
+Nodes (21): BookingChip, BookingTime, CalendarGrid(), CalendarGridProps, DayCell, DayHeader, DayNumber, Grid (+13 more)
 
 ### Community 49 - "bloomline-dashboard/src/components/ErrorBoundary.tsx"
 Cohesion: 0.18
@@ -367,17 +382,17 @@ Nodes (13): DateBox, Eyebrow, Head, Sub, Title, GlobalStyles, ASSET_TYPES, PHASE
 Cohesion: 0.18
 Nodes (7): Detail, ErrorBoundary, Fallback, Props, ReloadButton, State, Title
 
-### Community 54 - "label-notion-databases.mjs"
-Cohesion: 0.18
-Nodes (8): __dirname, H, keepDb, keepDs, results, root, store, token
+### Community 53 - "leadflow/build_receipt.py"
+Cohesion: 0.15
+Nodes (9): draw(), find(), protect(), Keep phone numbers and 'N days' phrases atomic so wrapping never splits them., # NOTE: template ARRIVE / DEPART travel fields omitted (no facts, N/A) -…, Return the exact must_appear token starting with `prefix`., Draw `text` at x with its glyph top at `top` (distance from page top)., Greedy word wrap by measured width; returns list of lines (no mid-word splits). (+1 more)
 
 ### Community 55 - "Changelog"
 Cohesion: 0.14
 Nodes (13): [0.1.3](https://github.com/supabase/agent-skills/compare/v0.1.2...v0.1.3) (2026-06-02), [0.1.4](https://github.com/supabase/agent-skills/compare/v0.1.3...v0.1.4) (2026-06-05), [0.1.5](https://github.com/supabase/agent-skills/compare/v0.1.4...v0.1.5) (2026-07-10), [0.1.6](https://github.com/supabase/agent-skills/compare/v0.1.5...supabase-v0.1.6) (2026-07-30), Bug Fixes, Bug Fixes, Bug Fixes, Bug Fixes (+5 more)
 
-### Community 56 - "pipeline-dashboard/src/components/charts/ConversionDonut.tsx"
-Cohesion: 0.22
-Nodes (9): ChartWrap, ConversionDonut(), ConversionDonutProps, DonutSegment, Legend, LegendCount, LegendDot, LegendRow (+1 more)
+### Community 56 - "pipeline-dashboard/src/tabs/SettingsTab.tsx"
+Cohesion: 0.12
+Nodes (16): ErrorStateProps, Message, RetryButton, Wrapper, Pill, useUsers(), ErrorBox, Field (+8 more)
 
 ### Community 57 - "dependencies"
 Cohesion: 0.12
@@ -387,21 +402,21 @@ Nodes (17): dependencies, dotenv, express, react, react-dom, react-icons, rechar
 Cohesion: 0.17
 Nodes (11): Accessibility, Best Practices, Content, Cross-Platform, Design QA Checklist, Interaction, Layout, QA Categories (+3 more)
 
-### Community 59 - "bloomline-dashboard/src/components/charts/WeeklyTrend.tsx"
-Cohesion: 0.20
-Nodes (10): App(), ChartWrap, WeeklyTrend(), WeeklyTrendProps, DefaultTheme, styled-components, GlobalStyles, Theme (+2 more)
+### Community 59 - "bloomline-dashboard/src/components/EmptyState.tsx"
+Cohesion: 0.13
+Nodes (14): App(), ChartWrap, WeeklyTrend(), WeeklyTrendProps, EmptyStateProps, Hint, Message, Title (+6 more)
 
 ### Community 60 - "bloomline-dashboard/src/components/Header.tsx"
-Cohesion: 0.16
-Nodes (12): Badge, DevModeBadge(), Bar, BellButton, DateLabel, Header(), Right, Subtitle (+4 more)
+Cohesion: 0.18
+Nodes (11): Badge, DevModeBadge(), Bar, BellButton, DateLabel, Header(), Right, Subtitle (+3 more)
 
-### Community 61 - "notion-fix-schema.js"
-Cohesion: 0.22
-Nodes (6): __dirname, H, root, SCHEMAS, store, token
+### Community 61 - ".opencode/opencode.json"
+Cohesion: 0.50
+Nodes (3): plugin, $schema, .opencode/plugins/graphify.js
 
-### Community 62 - "set-vercel-env.mjs"
-Cohesion: 0.22
-Nodes (6): auth, __dirname, envFile, envId, root, values
+### Community 62 - "compilerOptions"
+Cohesion: 0.10
+Nodes (19): compilerOptions, allowImportingTsExtensions, composite, isolatedModules, lib, module, moduleDetection, moduleResolution (+11 more)
 
 ### Community 63 - "dependencies"
 Cohesion: 0.05
@@ -415,6 +430,10 @@ Nodes (11): Error Handling, Example Usage, Execution Summary Template, Parallel 
 Cohesion: 0.29
 Nodes (7): Bloomline Apparel Text AI Agent, Discovery Call: Bloomline Apparel, Supabase Data Model, Dashboard Build Playbook, GoHighLevel, n8n, Shopify
 
+### Community 66 - "wrap"
+Cohesion: 0.67
+Nodes (3): main(), Word-wrap text to max_w points; returns list of lines. A literal "\n" inside…, wrap()
+
 ### Community 67 - "launchops-portal/vercel.json"
 Cohesion: 0.29
 Nodes (6): maxDuration, buildCommand, functions, api/index.js, outputDirectory, rewrites
@@ -427,29 +446,17 @@ Nodes (10): Best Practices, Domain Knowledge, How to Use, HTML Template Approach
 Cohesion: 0.29
 Nodes (7): Icon Library, Bluesky Icon, Discord Icon, Documentation Icon, GitHub Icon, Social Icon, X (Twitter) Icon
 
+### Community 70 - "LeadFlow.io — Discovery Call Transcript"
+Cohesion: 0.50
+Nodes (3): Extracted facts (from call), LeadFlow.io — Discovery Call Transcript, Open items noted from call
+
 ### Community 71 - "pipeline-dashboard/vercel.json"
 Cohesion: 0.29
 Nodes (6): maxDuration, buildCommand, functions, api/index.js, outputDirectory, rewrites
 
-### Community 73 - "pipeline-dashboard/src/components/TimeframeToggle.tsx"
-Cohesion: 0.33
-Nodes (5): Option, TIMEFRAME_OPTIONS, TimeframeToggle(), TimeframeToggleProps, Toggle
-
-### Community 74 - "inventory-notion-pages.mjs"
-Cohesion: 0.33
-Nodes (4): H, pages, root, token
-
-### Community 75 - "send_email.py"
-Cohesion: 0.60
-Nodes (5): load_env(), main(), refresh_access_token(), save_token(), send()
-
 ### Community 76 - "Bloomline Document Build Plan"
 Cohesion: 0.40
 Nodes (5): Bloomline Document Build Plan, Bloomline Contract PDF, Invoice Template, Proposal Template, Receipt Template
-
-### Community 77 - "bloomline-dashboard/src/components/charts/ConversionDonut.tsx"
-Cohesion: 0.22
-Nodes (9): ChartWrap, ConversionDonut(), ConversionDonutProps, DonutSegment, Legend, LegendCount, LegendDot, LegendRow (+1 more)
 
 ### Community 78 - "Process"
 Cohesion: 0.25
@@ -467,10 +474,6 @@ Nodes (5): Fix suggestion, Source, What happened, Skill Feedback, Steps
 Cohesion: 0.29
 Nodes (6): Deploy to Vercel, n8n → dashboard (ConversionOS), Pipeline — Agent Report Dashboard, Run locally, Supabase, Webhooks
 
-### Community 83 - "bloomline-dashboard/src/components/TimeframeToggle.tsx"
-Cohesion: 0.33
-Nodes (5): Option, TIMEFRAME_OPTIONS, TimeframeToggle(), TimeframeToggleProps, Toggle
-
 ### Community 84 - "wrap"
 Cohesion: 0.67
 Nodes (3): main(), Word-wrap text to max_w points; returns list of lines. A literal "\n" inside…, wrap()
@@ -487,34 +490,38 @@ Nodes (4): name, private, type, version
 Cohesion: 0.40
 Nodes (4): 2026-08-04 — Test email: "$10k/mo" (client: none), Entries, Performance Log — Email Agent, Standards (always do)
 
-### Community 93 - "Performance Log — Builder Agent"
-Cohesion: 0.40
-Nodes (4): 2026-08-20 — LaunchOps portal (Notion-backed ops hub), Entries, Performance Log — Builder Agent, Standards (always do)
+### Community 93 - "Entries"
+Cohesion: 0.33
+Nodes (5): 2026-08-20 — LaunchOps portal (Notion-backed ops hub), 2026-09-16 — LaunchOps onboarding website build (stages: Infra spec → QA → Builder S1-S11 → Build QA conditional PASS), Entries, Performance Log — Builder Agent, Standards (always do)
 
 ### Community 122 - "Performance Log — Infrastructure Agent"
-Cohesion: 0.50
-Nodes (3): Entries, Performance Log — Infrastructure Agent, Standards (always do)
+Cohesion: 0.40
+Nodes (4): 2026-09-16 — LaunchOps onboarding website spec (Infra spec → QA → Builder S1-S11, Build QA conditional PASS), Entries, Performance Log — Infrastructure Agent, Standards (always do)
 
 ### Community 123 - "Performance Store"
 Cohesion: 0.50
 Nodes (3): How it works, Performance Store, Rules
 
+### Community 128 - "onboarding-site/vercel.json"
+Cohesion: 0.29
+Nodes (6): maxDuration, buildCommand, functions, api/index.js, outputDirectory, rewrites
+
 ## Knowledge Gaps
-- **831 isolated node(s):** `FetchState`, `Asset`, `EmptyStateProps`, `ErrorStateProps`, `MonthNavProps` (+826 more)
+- **887 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `FetchState`, `ChangeLabel`, `EventType` (+882 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **28 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **29 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ErrorBoundary` connect `pipeline-dashboard/src/components/ErrorBoundary.tsx` to `pipeline-dashboard/src/tabs/BookingsTab.tsx`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `ErrorBoundary` connect `bloomline-dashboard/src/components/ErrorBoundary.tsx` to `bloomline-dashboard/src/tabs/BookingsTab.tsx`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `theme` connect `launchops-portal/src/theme.ts` to `Documents.tsx`, `LoginScreen.tsx`, `ProjectDetail.tsx`, `launchops-portal/src/components/ui.tsx`, `Overview.tsx`, `launchops-portal/src/components/Sidebar.tsx`, `Testimonials.tsx`, `Projects.tsx`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `FetchState`, `Asset`, `EmptyStateProps` to the rest of the system?**
-  _831 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `devDependencies` connect `devDependencies` to `@types/react-dom`, `@types/react`, `eslint`, `bloomline-dashboard/package.json`, `vite`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `KpiCard()` connect `bloomline-dashboard/src/components/KpiCard.tsx` to `bloomline-dashboard/src/tabs/DashboardTab.tsx`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **What connects `$schema`, `.opencode/plugins/graphify.js`, `FetchState` to the rest of the system?**
+  _887 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `bloomline-dashboard/server/index.js` be split into smaller, more focused modules?**
   _Cohesion score 0.062409288824383166 - nodes in this community are weakly interconnected._
 - **Should `notion.js` be split into smaller, more focused modules?**
