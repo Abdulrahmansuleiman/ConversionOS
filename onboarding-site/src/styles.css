@@ -73,6 +73,11 @@ textarea { resize: vertical; }
   box-shadow: 0 0 50px rgba(46, 123, 255, 0.06);
 }
 
+/* Wide variant — success screen so the booking widget has room to breathe. */
+.card--wide {
+  max-width: 920px;
+}
+
 .card::before {
   content: '';
   position: absolute;

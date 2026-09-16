@@ -12,6 +12,11 @@ const BOOKING_SRC = 'https://api.leadconnectorhq.com/widget/booking/n6A0JupbZJCV
 const WIDGET_ID = 'DEU4doKcUr2mk0JlOCvF_1789585815658';
 
 export default function SuccessScreen({ firstName }: Props) {
+  // Capitalize the first letter of the first name (display-only).
+  const prettyName = firstName
+    ? firstName.charAt(0).toUpperCase() + firstName.slice(1)
+    : 'There';
+
   // Load the LeadConnector form_embed script once so the widget hydrates.
   useEffect(() => {
     if (document.getElementById('msgsndr-form-embed')) return;
@@ -26,7 +31,7 @@ export default function SuccessScreen({ firstName }: Props) {
   }, []);
 
   return (
-    <div className="card">
+    <div className="card card--wide">
       {/* Green check banner */}
       <div className="success-banner">
         <span className="success-banner-icon" aria-hidden="true">✓</span>
@@ -58,10 +63,10 @@ export default function SuccessScreen({ firstName }: Props) {
       {/* Step 2 — Kickoff call */}
       <div>
         <p className="personalized">
-          <strong>{firstName},</strong> one last thing.
+          <strong>{prettyName},</strong> one last thing.
         </p>
         <h3 className="h2" style={{ fontSize: 20, marginTop: 4 }}>
-          Step 2 — Book your kickoff call.
+          Step 2 — Book your onboarding/ kickoff call.
         </h3>
       </div>
 
