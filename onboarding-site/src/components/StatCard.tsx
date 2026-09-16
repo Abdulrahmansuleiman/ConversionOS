@@ -1,0 +1,42 @@
+// src/components/StatCard.tsx — landing stat card.
+// value === null renders "—" (BUILD_SPEC §6.2): we never guess a number.
+import styled from 'styled-components';
+import { theme } from '../theme';
+import type { Stat } from '../content/stats';
+
+export function StatCard({ stat }: { stat: Stat }) {
+  return (
+    <Shell>
+      <Value>
+        {stat.value === null ? '—' : `${stat.value}${stat.unit ? ` ${stat.unit}` : ''}`}
+      </Value>
+      <Label>{stat.label}</Label>
+    </Shell>
+  );
+}
+
+const Shell = styled.div`
+  background: linear-gradient(180deg, ${theme.colors.surface} 0%, ${theme.colors.surface2} 100%);
+  border: 1px solid ${theme.colors.border};
+  border-radius: ${theme.radii.lg}px;
+  box-shadow: ${theme.shadows.card};
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+const Value = styled.div`
+  font-family: ${theme.fonts.display};
+  font-size: 34px;
+  font-weight: 700;
+  color: ${theme.colors.accent};
+  line-height: 1.1;
+`;
+
+const Label = styled.div`
+  font-size: 13px;
+  font-weight: 500;
+  color: ${theme.colors.textMuted};
+  letter-spacing: 0.03em;
+`;
