@@ -13,7 +13,7 @@
   --text-primary: #ffffff;
   --text-secondary: #9b9b9b;
   --text-muted: #6e6e6e;
-  --accent: #2563eb;
+  --accent: #2E7BFF;
   --accent-text: #ffffff;
   --radius-card: 20px;
   --radius-input: 12px;
@@ -59,6 +59,7 @@ textarea { resize: vertical; }
 
 /* ---------- Card ---------- */
 .card {
+  position: relative;
   width: 100%;
   max-width: 640px;
   background: var(--surface);
@@ -68,7 +69,22 @@ textarea { resize: vertical; }
   display: flex;
   flex-direction: column;
   gap: 24px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 60px rgba(46, 123, 255, 0.08);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    ellipse 60% 50% at 50% 0%,
+    rgba(46, 123, 255, 0.05) 0%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* ---------- Header / Logo ---------- */
@@ -140,7 +156,7 @@ textarea { resize: vertical; }
 }
 
 .stepper-dot.done   { background: var(--accent); }
-.stepper-dot.active { background: var(--accent); box-shadow: 0 0 0 4px rgba(37,99,235,0.25); }
+.stepper-dot.active { background: var(--accent); box-shadow: 0 0 0 4px rgba(46,123,255,0.25); }
 .stepper-dot.upcoming { background: var(--border-strong); }
 
 .stepper-label {
@@ -180,7 +196,7 @@ textarea { resize: vertical; }
   transition: background 0.15s ease, opacity 0.15s ease;
 }
 
-.primary-btn:hover { background: #1d4ed8; }
+.primary-btn:hover { background: #1E6BFF; }
 .primary-btn:disabled { opacity: 0.45; cursor: default; }
 .primary-btn .arrow {
   font-size: 18px;
@@ -332,7 +348,7 @@ textarea { resize: vertical; }
 
 .chip.selected {
   border-color: var(--accent);
-  background: rgba(37, 99, 235, 0.12);
+  background: rgba(46, 123, 255, 0.12);
   color: var(--accent-text);
 }
 
@@ -379,26 +395,35 @@ textarea { resize: vertical; }
 .error-banner strong { color: #fca5a5; }
 
 /* ---------- Welcome screen ---------- */
+.gradient-text {
+  background: linear-gradient(90deg, #2E7BFF, #60A5FA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .pill-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 6px 14px;
   border-radius: var(--radius-pill);
-  border: 1px solid var(--accent);
-  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(46, 123, 255, 0.16);
+  background: rgba(46, 123, 255, 0.06);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: rgba(46, 123, 255, 0.85);
 }
 
 .pill-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--accent);
+  background: #2E7BFF;
+  box-shadow: 0 0 8px rgba(46, 123, 255, 0.5);
 }
 
 .stat-row {

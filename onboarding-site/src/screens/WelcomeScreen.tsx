@@ -27,7 +27,7 @@ export default function WelcomeScreen({ onStart }: Props) {
       {/* Headline */}
       <h1 className="h1 animate-in-delay-1" style={{ textAlign: 'center' }}>
         Let&apos;s get your{' '}
-        <span className="accent">agent live.</span>
+        <span className="gradient-text">agent live.</span>
       </h1>
 
       {/* Subtext */}
