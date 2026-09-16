@@ -38,8 +38,8 @@ export default function WelcomeScreen({ onStart }: Props) {
       {/* Stat row */}
       <div className="stat-row animate-in-delay-2">
         <div className="stat-box">
-          <span className="stat-number">10+</span>
-          <span className="stat-label">Businesses scaled</span>
+          <span className="stat-number">6 months</span>
+          <span className="stat-label">Program duration</span>
         </div>
         <div className="stat-box">
           <span className="stat-number">2–4 weeks</span>
