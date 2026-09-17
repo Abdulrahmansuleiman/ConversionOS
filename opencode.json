@@ -12,7 +12,7 @@
       "environment": {
         "NOTION_API_TOKEN": "{env:NOTION_TOKEN}"
       },
-      "enabled": true
+      "enabled": false
     },
     "canva": {
       "type": "local",

@@ -480,22 +480,22 @@
     "semantic_hash": "4df091aefa30b9b3cec4e6fb87b44fc6"
   },
   "launchops-portal/server/notion.js": {
-    "mtime": 1787250026.477487,
-    "seen": 1787251289.5581696,
-    "ast_hash": "78b3f14bfcb14885ad9f8993ebb871a3",
+    "mtime": 1789683981.580548,
+    "seen": 1789684598.3537536,
+    "ast_hash": "c62698f08696980b43a5b63b0f4e5576",
     "semantic_hash": ""
   },
   "launchops-portal/server/routes.js": {
-    "mtime": 1787246812.0115616,
-    "seen": 1787248627.0197854,
-    "ast_hash": "89d5f52840816d5594fd0008caf663b6",
-    "semantic_hash": "89d5f52840816d5594fd0008caf663b6"
+    "mtime": 1789684033.81592,
+    "seen": 1789684598.35376,
+    "ast_hash": "0b915e485cabaf6ed25e70dc420e68b7",
+    "semantic_hash": ""
   },
   "launchops-portal/server/schemas.js": {
-    "mtime": 1787246808.4464397,
-    "seen": 1787248627.0197878,
-    "ast_hash": "9286dd79571bed399d3876599cfc665f",
-    "semantic_hash": "9286dd79571bed399d3876599cfc665f"
+    "mtime": 1789684044.904322,
+    "seen": 1789684598.353764,
+    "ast_hash": "1a42c8e775ff833e61ec2b6611441320",
+    "semantic_hash": ""
   },
   "launchops-portal/src/App.tsx": {
     "mtime": 1787246990.959008,
@@ -528,10 +528,10 @@
     "semantic_hash": "bb4157e23b2581661060e380aee3b695"
   },
   "launchops-portal/src/components/ui.tsx": {
-    "mtime": 1787232445.68057,
-    "seen": 1787248627.0198061,
-    "ast_hash": "da9bc08c96d6c20dd0e5b497a1043aac",
-    "semantic_hash": "da9bc08c96d6c20dd0e5b497a1043aac"
+    "mtime": 1789684063.1651816,
+    "seen": 1789684598.353788,
+    "ast_hash": "0bfd5897e9f6b05a91f23349b01e5011",
+    "semantic_hash": ""
   },
   "launchops-portal/src/main.tsx": {
     "mtime": 1787220583.2114663,
@@ -552,10 +552,10 @@
     "semantic_hash": "07f07c6f75e0b6b5200935a8bb7ee5f4"
   },
   "launchops-portal/src/types/index.ts": {
-    "mtime": 1787246956.783552,
-    "seen": 1787248627.0198154,
-    "ast_hash": "bb564caae6f696aec4745e7ed8df67ea",
-    "semantic_hash": "bb564caae6f696aec4745e7ed8df67ea"
+    "mtime": 1789684087.9551966,
+    "seen": 1789684598.3537998,
+    "ast_hash": "0fdb23b7e09d9e16388c6a7a99b2896e",
+    "semantic_hash": ""
   },
   "launchops-portal/src/views/Documents.tsx": {
     "mtime": 1787247005.68934,
@@ -564,21 +564,21 @@
     "semantic_hash": "c5da804f91c993e58c563549cf6cb547"
   },
   "launchops-portal/src/views/Feedback.tsx": {
-    "mtime": 1787232611.2047422,
-    "seen": 1787248627.01982,
-    "ast_hash": "183ff120d4c66b68c07f1a1564f015d8",
-    "semantic_hash": "183ff120d4c66b68c07f1a1564f015d8"
+    "mtime": 1789684146.0172334,
+    "seen": 1789684598.3538077,
+    "ast_hash": "6f8e757f5b5977bc92722b41a5be3b38",
+    "semantic_hash": ""
   },
   "launchops-portal/src/views/Overview.tsx": {
-    "mtime": 1787238416.8388975,
-    "seen": 1787248627.0198226,
-    "ast_hash": "aa2785c6b96245e53a39ffeba5111bbd",
-    "semantic_hash": "aa2785c6b96245e53a39ffeba5111bbd"
+    "mtime": 1789684170.206043,
+    "seen": 1789684598.3538115,
+    "ast_hash": "e210badbaac4e1fe901062f8692595eb",
+    "semantic_hash": ""
   },
   "launchops-portal/src/views/ProjectDetail.tsx": {
-    "mtime": 1789588797.789498,
-    "seen": 1789589796.4792483,
-    "ast_hash": "d6e55f1e8de7f1dd5dac9d25e60e4bcb",
+    "mtime": 1789684210.5026064,
+    "seen": 1789684598.3538141,
+    "ast_hash": "63f7b55dff1b0f406d688813c681b881",
     "semantic_hash": ""
   },
   "launchops-portal/src/views/Projects.tsx": {
@@ -1098,9 +1098,9 @@
     "semantic_hash": ""
   },
   ".opencode/agent/feedback.md": {
-    "mtime": 1789591919.713191,
-    "seen": 1789591993.0094278,
-    "ast_hash": "270c4a932b19cac9f40a1390073b4996",
+    "mtime": 1789606642.1078534,
+    "seen": 1789684598.3544166,
+    "ast_hash": "bba82d4fdda56d54840440ac4b9887a9",
     "semantic_hash": ""
   },
   ".opencode/agent/infrastructure.md": {
@@ -1206,9 +1206,9 @@
     "semantic_hash": ""
   },
   "docs/performance/proposal.md": {
-    "mtime": 1789591920.9404087,
-    "seen": 1789591993.0095794,
-    "ast_hash": "c2449dc163f3b495bf984000c97f2708",
+    "mtime": 1789606357.9212365,
+    "seen": 1789684598.3545334,
+    "ast_hash": "42054b518a090ff42c65ae7d76445203",
     "semantic_hash": ""
   },
   "docs/playbooks/client-dashboard-build.md": {
@@ -2025,6 +2025,12 @@
     "mtime": 1789605016.867849,
     "seen": 1789605281.3573422,
     "ast_hash": "8ca84cfc9683de79409327caf13852e1",
+    "semantic_hash": ""
+  },
+  "launchops-portal/verify-feedback.mjs": {
+    "mtime": 1789684273.9591775,
+    "seen": 1789684598.3538425,
+    "ast_hash": "d8102713fe576a4ebc6e7278c33a9f5d",
     "semantic_hash": ""
   }
 }

@@ -183,19 +183,6 @@
       "source_location": "L16"
     },
     {
-      "id": "pipeline_dashboard_src_components_calendargrid_calendargridprops",
-      "label": "CalendarGridProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "calendargridprops",
-      "source_file": "pipeline-dashboard/src/components/CalendarGrid.tsx",
-      "source_location": "L10"
-    },
-    {
       "id": "pipeline_dashboard_src_hooks_usefetch_fetchstate",
       "label": "FetchState",
       "_callable": true,
@@ -209,6 +196,32 @@
       "source_location": "L6"
     },
     {
+      "id": "pipeline_dashboard_src_types_changes_change",
+      "label": "Change",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "change",
+      "source_file": "pipeline-dashboard/src/types/changes.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_changes_changelabel",
+      "label": "ChangeLabel",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "changelabel",
+      "source_file": "pipeline-dashboard/src/types/changes.ts",
+      "source_location": "L2"
+    },
+    {
       "id": "pipeline_dashboard_src_types_events_calendarbooking",
       "label": "CalendarBooking",
       "_callable": true,
@@ -220,19 +233,6 @@
       "norm_label": "calendarbooking",
       "source_file": "pipeline-dashboard/src/types/events.ts",
       "source_location": "L70"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_events_eventpayload",
-      "label": "EventPayload",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "eventpayload",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L13"
     },
     {
       "id": "pipeline_dashboard_src_types_events_eventtype",
@@ -261,19 +261,6 @@
       "source_location": "L79"
     },
     {
-      "id": "pipeline_dashboard_src_types_events_kpicounts",
-      "label": "KpiCounts",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "kpicounts",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L33"
-    },
-    {
       "id": "pipeline_dashboard_src_types_events_kpidata",
       "label": "KpiData",
       "_callable": true,
@@ -287,19 +274,6 @@
       "source_location": "L47"
     },
     {
-      "id": "pipeline_dashboard_src_types_events_kpikey",
-      "label": "KpiKey",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "kpikey",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L45"
-    },
-    {
       "id": "pipeline_dashboard_src_types_events_normalizedevent",
       "label": "NormalizedEvent",
       "_callable": true,
@@ -311,6 +285,19 @@
       "norm_label": "normalizedevent",
       "source_file": "pipeline-dashboard/src/types/events.ts",
       "source_location": "L25"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_events_speedbucket",
+      "label": "SpeedBucket",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "speedbucket",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L58"
     },
     {
       "id": "pipeline_dashboard_src_types_events_timeframe",
@@ -337,6 +324,19 @@
       "norm_label": "toplead",
       "source_file": "pipeline-dashboard/src/types/events.ts",
       "source_location": "L63"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_events_trendbucket",
+      "label": "TrendBucket",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "trendbucket",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L53"
     },
     {
       "id": "pipeline_dashboard_src_types_users_adduserinput",
@@ -388,7 +388,7 @@
       "file_type": "code",
       "norm_label": "document",
       "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L61"
+      "source_location": "L70"
     },
     {
       "id": "launchops_portal_src_types_index_feedback",
@@ -427,7 +427,7 @@
       "file_type": "code",
       "norm_label": "overview",
       "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L77"
+      "source_location": "L86"
     },
     {
       "id": "launchops_portal_src_types_index_project",
@@ -453,7 +453,7 @@
       "file_type": "code",
       "norm_label": "projectdetail",
       "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L88"
+      "source_location": "L97"
     },
     {
       "id": "launchops_portal_src_types_index_testimonial",
@@ -466,7 +466,7 @@
       "file_type": "code",
       "norm_label": "testimonial",
       "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L49"
+      "source_location": "L58"
     },
     {
       "id": "launchops_portal_src_types_index_view",
@@ -479,7 +479,7 @@
       "file_type": "code",
       "norm_label": "view",
       "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L95"
+      "source_location": "L104"
     },
     {
       "id": "pipeline_dashboard_src_components_monthnav_monthnavprops",
@@ -495,45 +495,6 @@
       "source_location": "L6"
     },
     {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_conversiondonutprops",
-      "label": "ConversionDonutProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "conversiondonutprops",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_donutsegment",
-      "label": "DonutSegment",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "donutsegment",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L10"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_emptystateprops",
-      "label": "EmptyStateProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "emptystateprops",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L7"
-    },
-    {
       "id": "pipeline_dashboard_src_components_timeframetoggle_timeframetoggleprops",
       "label": "TimeframeToggleProps",
       "_callable": true,
@@ -545,6 +506,32 @@
       "norm_label": "timeframetoggleprops",
       "source_file": "pipeline-dashboard/src/components/TimeframeToggle.tsx",
       "source_location": "L41"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_events_kpicounts",
+      "label": "KpiCounts",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
+      "file_type": "code",
+      "norm_label": "kpicounts",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_events_kpikey",
+      "label": "KpiKey",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
+      "file_type": "code",
+      "norm_label": "kpikey",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L45"
     },
     {
       "id": "pipeline_dashboard_src_components_errorstate_errorstateprops",
@@ -586,13 +573,39 @@
       "source_location": "L14"
     },
     {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_conversiondonutprops",
+      "label": "ConversionDonutProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "conversiondonutprops",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_donutsegment",
+      "label": "DonutSegment",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "donutsegment",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L10"
+    },
+    {
       "id": "pipeline_dashboard_src_components_charts_speedtrendchart_speedtrendchartprops",
       "label": "SpeedTrendChartProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "speedtrendchartprops",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -605,11 +618,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "weeklytrendprops",
       "source_file": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
       "source_location": "L11"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_emptystateprops",
+      "label": "EmptyStateProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "emptystateprops",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L7"
     },
     {
       "id": "pipeline_dashboard_src_styled_d_defaulttheme",
@@ -618,7 +644,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "defaulttheme",
       "source_file": "pipeline-dashboard/src/styled.d.ts",
@@ -631,37 +657,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "theme",
       "source_file": "pipeline-dashboard/src/theme.ts",
       "source_location": "L94"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_events_speedbucket",
-      "label": "SpeedBucket",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
-      "file_type": "code",
-      "norm_label": "speedbucket",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L58"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_events_trendbucket",
-      "label": "TrendBucket",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
-      "file_type": "code",
-      "norm_label": "trendbucket",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L53"
     },
     {
       "id": "pipeline_dashboard_server_adapters_local_file_duplicateemailerror",
@@ -701,32 +701,6 @@
       "norm_label": "kpicardprops",
       "source_file": "pipeline-dashboard/src/components/KpiCard.tsx",
       "source_location": "L11"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_changes_change",
-      "label": "Change",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "pipeline-dashboard/src/components/KpiCard.tsx",
-      "file_type": "code",
-      "norm_label": "change",
-      "source_file": "pipeline-dashboard/src/types/changes.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_changes_changelabel",
-      "label": "ChangeLabel",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "pipeline-dashboard/src/components/KpiCard.tsx",
-      "file_type": "code",
-      "norm_label": "changelabel",
-      "source_file": "pipeline-dashboard/src/types/changes.ts",
-      "source_location": "L2"
     },
     {
       "id": "bloomline_dashboard_src_components_calendargrid_calendargridprops",
@@ -1104,6 +1078,32 @@
       "norm_label": "kpicardprops",
       "source_file": "bloomline-dashboard/src/components/KpiCard.tsx",
       "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_calendargrid_calendargridprops",
+      "label": "CalendarGridProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "pipeline-dashboard/src/App.tsx",
+      "file_type": "code",
+      "norm_label": "calendargridprops",
+      "source_file": "pipeline-dashboard/src/components/CalendarGrid.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_events_eventpayload",
+      "label": "EventPayload",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "pipeline-dashboard/src/App.tsx",
+      "file_type": "code",
+      "norm_label": "eventpayload",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L13"
     },
     {
       "id": "bloomline_dashboard_src_components_errorboundary_errorboundary",
@@ -1982,6 +1982,18 @@
       "source_location": "L36"
     },
     {
+      "id": "launchops_portal_server_notion_canonicalfeedback",
+      "label": "canonicalFeedback()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "canonicalfeedback()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L260"
+    },
+    {
       "id": "launchops_portal_server_notion_chk",
       "label": "chk()",
       "_callable": true,
@@ -2003,7 +2015,7 @@
       "file_type": "code",
       "norm_label": "createrow()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L178"
+      "source_location": "L179"
     },
     {
       "id": "launchops_portal_server_notion_date",
@@ -2039,7 +2051,7 @@
       "file_type": "code",
       "norm_label": "encodeprops()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L138"
+      "source_location": "L139"
     },
     {
       "id": "launchops_portal_server_notion_getrow",
@@ -2051,7 +2063,7 @@
       "file_type": "code",
       "norm_label": "getrow()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L133"
+      "source_location": "L134"
     },
     {
       "id": "launchops_portal_server_notion_health",
@@ -2063,7 +2075,19 @@
       "file_type": "code",
       "norm_label": "health()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L192"
+      "source_location": "L193"
+    },
+    {
+      "id": "launchops_portal_server_notion_listfeedback",
+      "label": "listFeedback()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "listfeedback()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L284"
     },
     {
       "id": "launchops_portal_server_notion_listrows",
@@ -2075,7 +2099,7 @@
       "file_type": "code",
       "norm_label": "listrows()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L128"
+      "source_location": "L129"
     },
     {
       "id": "launchops_portal_server_notion_lookupprojectname",
@@ -2087,7 +2111,19 @@
       "file_type": "code",
       "norm_label": "lookupprojectname()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L197"
+      "source_location": "L198"
+    },
+    {
+      "id": "launchops_portal_server_notion_matchprojectid",
+      "label": "matchProjectId()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "matchprojectid()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L234"
     },
     {
       "id": "launchops_portal_server_notion_multi",
@@ -2100,6 +2136,18 @@
       "norm_label": "multi()",
       "source_file": "launchops-portal/server/notion.js",
       "source_location": "L58"
+    },
+    {
+      "id": "launchops_portal_server_notion_namekey",
+      "label": "nameKey()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "namekey()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L229"
     },
     {
       "id": "launchops_portal_server_notion_normalize",
@@ -2135,7 +2183,7 @@
       "file_type": "code",
       "norm_label": "querydatabase()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L112"
+      "source_location": "L113"
     },
     {
       "id": "launchops_portal_server_notion_rel",
@@ -2207,7 +2255,7 @@
       "file_type": "code",
       "norm_label": "updaterow()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L186"
+      "source_location": "L187"
     },
     {
       "id": "launchops_portal_server_notion_url",
@@ -2251,11 +2299,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "avatar()",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L114"
+      "source_location": "L118"
     },
     {
       "id": "launchops_portal_src_components_ui_card",
@@ -2263,11 +2311,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "card()",
       "source_file": "launchops-portal/src/components/ui.tsx",
       "source_location": "L46"
+    },
+    {
+      "id": "launchops_portal_src_components_ui_emptystate",
+      "label": "EmptyState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "Projects.tsx",
+      "file_type": "code",
+      "norm_label": "emptystate()",
+      "source_file": "launchops-portal/src/components/ui.tsx",
+      "source_location": "L185"
     },
     {
       "id": "launchops_portal_src_components_ui_hextorgba",
@@ -2275,7 +2335,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "hextorgba()",
       "source_file": "launchops-portal/src/components/ui.tsx",
@@ -2287,35 +2347,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "progressbar()",
       "source_file": "launchops-portal/src/components/ui.tsx",
       "source_location": "L66"
-    },
-    {
-      "id": "launchops_portal_src_components_ui_starrating",
-      "label": "StarRating()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
-      "file_type": "code",
-      "norm_label": "starrating()",
-      "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L90"
-    },
-    {
-      "id": "launchops_portal_src_components_ui_statusbadge",
-      "label": "StatusBadge()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
-      "file_type": "code",
-      "norm_label": "statusbadge()",
-      "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L4"
     },
     {
       "id": "launchops_portal_src_components_ui_stringtocolor",
@@ -2323,11 +2359,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "stringtocolor()",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L144"
+      "source_location": "L148"
+    },
+    {
+      "id": "launchops_portal_src_components_ui_daysuntil",
+      "label": "daysUntil()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Overview.tsx",
+      "file_type": "code",
+      "norm_label": "daysuntil()",
+      "source_file": "launchops-portal/src/components/ui.tsx",
+      "source_location": "L213"
     },
     {
       "id": "launchops_portal_src_views_overview_kpicard",
@@ -2402,18 +2450,6 @@
       "source_location": "L26"
     },
     {
-      "id": "pipeline_dashboard_src_components_devmodebadge_devmodebadge",
-      "label": "DevModeBadge()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "devmodebadge()",
-      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
-      "source_location": "L22"
-    },
-    {
       "id": "pipeline_dashboard_src_hooks_usefetch_usefetch",
       "label": "useFetch()",
       "_callable": true,
@@ -2426,76 +2462,16 @@
       "source_location": "L13"
     },
     {
-      "id": "pipeline_dashboard_src_hooks_usehealth_usehealth",
-      "label": "useHealth()",
+      "id": "pipeline_dashboard_src_hooks_useusers_useusers",
+      "label": "useUsers()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
       "community_name": "pipeline-dashboard/src/types/events.ts",
       "file_type": "code",
-      "norm_label": "usehealth()",
-      "source_file": "pipeline-dashboard/src/hooks/useHealth.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_hooks_usekpis_usekpis",
-      "label": "useKpis()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "usekpis()",
-      "source_file": "pipeline-dashboard/src/hooks/useKpis.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_hooks_usespeedtrend_usespeedtrend",
-      "label": "useSpeedTrend()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "usespeedtrend()",
-      "source_file": "pipeline-dashboard/src/hooks/useSpeedTrend.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_hooks_usetopleads_usetopleads",
-      "label": "useTopLeads()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "usetopleads()",
-      "source_file": "pipeline-dashboard/src/hooks/useTopLeads.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_hooks_usetrend_usetrend",
-      "label": "useTrend()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "usetrend()",
-      "source_file": "pipeline-dashboard/src/hooks/useTrend.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_tabs_dashboardtab_dashboardtab",
-      "label": "DashboardTab()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "dashboardtab()",
-      "source_file": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
-      "source_location": "L215"
+      "norm_label": "useusers()",
+      "source_file": "pipeline-dashboard/src/hooks/useUsers.ts",
+      "source_location": "L7"
     },
     {
       "id": "launchops_portal_check_portal_password_env_api",
@@ -2774,30 +2750,6 @@
       "source_location": "L46"
     },
     {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_conversiondonut",
-      "label": "ConversionDonut()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "conversiondonut()",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L62"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_segmentcolor",
-      "label": "segmentColor()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "segmentcolor()",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L56"
-    },
-    {
       "id": "launchops_portal_cleanup_portal_store_api",
       "label": "api()",
       "_callable": true,
@@ -2954,16 +2906,88 @@
       "source_location": "L31"
     },
     {
-      "id": "launchops_portal_src_components_ui_loading",
-      "label": "Loading()",
+      "id": "launchops_portal_src_components_header_clockicon",
+      "label": "ClockIcon()",
       "_callable": true,
       "_origin": "ast",
       "community": 15,
       "community_name": "Testimonials.tsx",
       "file_type": "code",
-      "norm_label": "loading()",
+      "norm_label": "clockicon()",
+      "source_file": "launchops-portal/src/components/Header.tsx",
+      "source_location": "L65"
+    },
+    {
+      "id": "launchops_portal_src_components_header_header",
+      "label": "Header()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "header()",
+      "source_file": "launchops-portal/src/components/Header.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "launchops_portal_src_components_ui_formatdate",
+      "label": "formatDate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "formatdate()",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L151"
+      "source_location": "L206"
+    },
+    {
+      "id": "launchops_portal_src_components_ui_starrating",
+      "label": "StarRating()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "starrating()",
+      "source_file": "launchops-portal/src/components/ui.tsx",
+      "source_location": "L90"
+    },
+    {
+      "id": "launchops_portal_src_views_feedback_feedback",
+      "label": "Feedback()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "feedback()",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "launchops_portal_src_views_projects_projects",
+      "label": "Projects()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "projects()",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "launchops_portal_src_views_testimonials_testimonials",
+      "label": "Testimonials()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "testimonials()",
+      "source_file": "launchops-portal/src/views/Testimonials.tsx",
+      "source_location": "L10"
     },
     {
       "id": "pipeline_dashboard_src_components_timeframetoggle_timeframetoggle",
@@ -2976,6 +3000,66 @@
       "norm_label": "timeframetoggle()",
       "source_file": "pipeline-dashboard/src/components/TimeframeToggle.tsx",
       "source_location": "L46"
+    },
+    {
+      "id": "pipeline_dashboard_src_hooks_usekpis_usekpis",
+      "label": "useKpis()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
+      "file_type": "code",
+      "norm_label": "usekpis()",
+      "source_file": "pipeline-dashboard/src/hooks/useKpis.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_hooks_usespeedtrend_usespeedtrend",
+      "label": "useSpeedTrend()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
+      "file_type": "code",
+      "norm_label": "usespeedtrend()",
+      "source_file": "pipeline-dashboard/src/hooks/useSpeedTrend.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_hooks_usetopleads_usetopleads",
+      "label": "useTopLeads()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
+      "file_type": "code",
+      "norm_label": "usetopleads()",
+      "source_file": "pipeline-dashboard/src/hooks/useTopLeads.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_hooks_usetrend_usetrend",
+      "label": "useTrend()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
+      "file_type": "code",
+      "norm_label": "usetrend()",
+      "source_file": "pipeline-dashboard/src/hooks/useTrend.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_tabs_dashboardtab_dashboardtab",
+      "label": "DashboardTab()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
+      "file_type": "code",
+      "norm_label": "dashboardtab()",
+      "source_file": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
+      "source_location": "L215"
     },
     {
       "id": "pipeline_dashboard_src_tabs_dashboardtab_handoversubtitle",
@@ -3091,11 +3175,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "app()",
       "source_file": "pipeline-dashboard/src/App.tsx",
       "source_location": "L31"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_conversiondonut",
+      "label": "ConversionDonut()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "conversiondonut()",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L62"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_segmentcolor",
+      "label": "segmentColor()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "segmentcolor()",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L56"
     },
     {
       "id": "pipeline_dashboard_src_components_charts_speedtrendchart_formathours",
@@ -3103,7 +3211,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "formathours()",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -3115,7 +3223,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "speedtrendchart()",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -3127,7 +3235,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "weeklytrend()",
       "source_file": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
@@ -3139,7 +3247,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "formatdaykey()",
       "source_file": "pipeline-dashboard/src/utils/format.ts",
@@ -3734,100 +3842,16 @@
       "source_location": "L88"
     },
     {
-      "id": "launchops_portal_src_components_header_header",
-      "label": "Header()",
+      "id": "launchops_portal_src_components_ui_loading",
+      "label": "Loading()",
       "_callable": true,
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "header()",
-      "source_file": "launchops-portal/src/components/Header.tsx",
-      "source_location": "L5"
-    },
-    {
-      "id": "launchops_portal_src_components_ui_daysuntil",
-      "label": "daysUntil()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "Projects.tsx",
-      "file_type": "code",
-      "norm_label": "daysuntil()",
+      "norm_label": "loading()",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L209"
-    },
-    {
-      "id": "launchops_portal_src_components_ui_formatdate",
-      "label": "formatDate()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "Projects.tsx",
-      "file_type": "code",
-      "norm_label": "formatdate()",
-      "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L202"
-    },
-    {
-      "id": "launchops_portal_src_views_feedback_feedback",
-      "label": "Feedback()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "Projects.tsx",
-      "file_type": "code",
-      "norm_label": "feedback()",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "launchops_portal_src_views_projectdetail_parseintake",
-      "label": "parseIntake()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "Projects.tsx",
-      "file_type": "code",
-      "norm_label": "parseintake()",
-      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L34"
-    },
-    {
-      "id": "launchops_portal_src_views_projectdetail_projectdetail",
-      "label": "ProjectDetail()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "Projects.tsx",
-      "file_type": "code",
-      "norm_label": "projectdetail()",
-      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L62"
-    },
-    {
-      "id": "launchops_portal_src_views_projects_projects",
-      "label": "Projects()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "Projects.tsx",
-      "file_type": "code",
-      "norm_label": "projects()",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L10"
-    },
-    {
-      "id": "launchops_portal_src_views_testimonials_testimonials",
-      "label": "Testimonials()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "Projects.tsx",
-      "file_type": "code",
-      "norm_label": "testimonials()",
-      "source_file": "launchops-portal/src/views/Testimonials.tsx",
-      "source_location": "L10"
+      "source_location": "L155"
     },
     {
       "id": "clients_leadflow_build_proposal_build_table",
@@ -4022,16 +4046,16 @@
       "source_location": "L189"
     },
     {
-      "id": "launchops_portal_src_components_ui_emptystate",
-      "label": "EmptyState()",
+      "id": "launchops_portal_src_components_ui_statusbadge",
+      "label": "StatusBadge()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "Documents.tsx",
       "file_type": "code",
-      "norm_label": "emptystate()",
+      "norm_label": "statusbadge()",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L181"
+      "source_location": "L4"
     },
     {
       "id": "launchops_portal_src_views_documents_documents",
@@ -4058,6 +4082,18 @@
       "source_location": "L94"
     },
     {
+      "id": "pipeline_dashboard_src_components_devmodebadge_devmodebadge",
+      "label": "DevModeBadge()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "pipeline-dashboard/src/components/Header.tsx",
+      "file_type": "code",
+      "norm_label": "devmodebadge()",
+      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
+      "source_location": "L22"
+    },
+    {
       "id": "pipeline_dashboard_src_components_header_header",
       "label": "Header()",
       "_callable": true,
@@ -4068,6 +4104,18 @@
       "norm_label": "header()",
       "source_file": "pipeline-dashboard/src/components/Header.tsx",
       "source_location": "L80"
+    },
+    {
+      "id": "pipeline_dashboard_src_hooks_usehealth_usehealth",
+      "label": "useHealth()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "pipeline-dashboard/src/components/Header.tsx",
+      "file_type": "code",
+      "norm_label": "usehealth()",
+      "source_file": "pipeline-dashboard/src/hooks/useHealth.ts",
+      "source_location": "L6"
     },
     {
       "id": "onboarding_site_src_app_app",
@@ -4754,18 +4802,6 @@
       "source_location": "L6"
     },
     {
-      "id": "pipeline_dashboard_src_hooks_useusers_useusers",
-      "label": "useUsers()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "pipeline-dashboard/src/App.tsx",
-      "file_type": "code",
-      "norm_label": "useusers()",
-      "source_file": "pipeline-dashboard/src/hooks/useUsers.ts",
-      "source_location": "L7"
-    },
-    {
       "id": "pipeline_dashboard_src_tabs_bookingstab_bookingstab",
       "label": "BookingsTab()",
       "_callable": true,
@@ -5124,18 +5160,6 @@
       "norm_label": "app()",
       "source_file": "launchops-portal/src/App.tsx",
       "source_location": "L14"
-    },
-    {
-      "id": "launchops_portal_src_components_header_clockicon",
-      "label": "ClockIcon()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "launchops-portal/src/theme.ts",
-      "file_type": "code",
-      "norm_label": "clockicon()",
-      "source_file": "launchops-portal/src/components/Header.tsx",
-      "source_location": "L65"
     },
     {
       "id": "pipeline_dashboard_src_components_errorboundary_errorboundary_componentdidcatch",
@@ -5855,7 +5879,31 @@
       "file_type": "code",
       "norm_label": "metachip()",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L283"
+      "source_location": "L290"
+    },
+    {
+      "id": "launchops_portal_src_views_projectdetail_parseintake",
+      "label": "parseIntake()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "ProjectDetail.tsx",
+      "file_type": "code",
+      "norm_label": "parseintake()",
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L34"
+    },
+    {
+      "id": "launchops_portal_src_views_projectdetail_projectdetail",
+      "label": "ProjectDetail()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "ProjectDetail.tsx",
+      "file_type": "code",
+      "norm_label": "projectdetail()",
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L62"
     },
     {
       "id": "onboarding_site_redeploy_onboarding_prod_api",
@@ -6947,6 +6995,17 @@
       "source_location": "L11"
     },
     {
+      "id": "launchops_portal_server_notion_feedback_props",
+      "label": "FEEDBACK_PROPS",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "feedback_props",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L216"
+    },
+    {
       "id": "launchops_portal_server_notion_root",
       "label": "root",
       "_origin": "ast",
@@ -6991,11 +7050,55 @@
       "source_location": "L4"
     },
     {
+      "id": "launchops_portal_verify_feedback",
+      "label": "verify-feedback.mjs",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "verify-feedback.mjs",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_checks",
+      "label": "CHECKS",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "checks",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L36"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_projects",
+      "label": "projects",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "projects",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L5"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_ratings",
+      "label": "ratings",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "ratings",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L47"
+    },
+    {
       "id": "launchops_portal_src_components_ui",
       "label": "launchops-portal/src/components/ui.tsx",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "launchops-portal/src/components/ui.tsx",
       "source_file": "launchops-portal/src/components/ui.tsx",
@@ -7006,7 +7109,7 @@
       "label": "Badge",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "badge",
       "source_file": "launchops-portal/src/components/ui.tsx",
@@ -7017,7 +7120,7 @@
       "label": "CardShell",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "cardshell",
       "source_file": "launchops-portal/src/components/ui.tsx",
@@ -7028,18 +7131,18 @@
       "label": "Circle",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "circle",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L128"
+      "source_location": "L132"
     },
     {
       "id": "launchops_portal_src_components_ui_dot",
       "label": "Dot",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "dot",
       "source_file": "launchops-portal/src/components/ui.tsx",
@@ -7050,18 +7153,18 @@
       "label": "Empty",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "empty",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L191"
+      "source_location": "L195"
     },
     {
       "id": "launchops_portal_src_components_ui_fill",
       "label": "Fill",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "fill",
       "source_file": "launchops-portal/src/components/ui.tsx",
@@ -7072,154 +7175,187 @@
       "label": "LoadWrap",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "loadwrap",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L160"
+      "source_location": "L164"
     },
     {
       "id": "launchops_portal_src_components_ui_muted",
       "label": "Muted",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "muted",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L109"
+      "source_location": "L113"
     },
     {
       "id": "launchops_portal_src_components_ui_spinner",
       "label": "Spinner",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "spinner",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L171"
+      "source_location": "L175"
     },
     {
       "id": "launchops_portal_src_components_ui_star",
       "label": "Star",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "star",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L103"
+      "source_location": "L107"
     },
     {
       "id": "launchops_portal_src_components_ui_track",
       "label": "Track",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
       "norm_label": "track",
       "source_file": "launchops-portal/src/components/ui.tsx",
       "source_location": "L74"
     },
     {
-      "id": "launchops_portal_src_views_feedback",
-      "label": "Feedback.tsx",
+      "id": "launchops_portal_src_views_projects",
+      "label": "Projects.tsx",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
-      "norm_label": "feedback.tsx",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "norm_label": "projects.tsx",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
       "source_location": "L1"
     },
     {
-      "id": "launchops_portal_src_views_feedback_count",
-      "label": "Count",
+      "id": "launchops_portal_src_views_projects_dates",
+      "label": "Dates",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
-      "norm_label": "count",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L129"
+      "norm_label": "dates",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L176"
     },
     {
-      "id": "launchops_portal_src_views_feedback_filterbtn",
-      "label": "FilterBtn",
+      "id": "launchops_portal_src_views_projects_footer",
+      "label": "Footer",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
-      "norm_label": "filterbtn",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L115"
+      "norm_label": "footer",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L167"
     },
     {
-      "id": "launchops_portal_src_views_feedback_filters",
-      "label": "FILTERS",
+      "id": "launchops_portal_src_views_projects_gobtn",
+      "label": "GoBtn",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
-      "norm_label": "filters",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L10"
+      "norm_label": "gobtn",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L182"
     },
     {
-      "id": "launchops_portal_src_views_feedback_fmain",
-      "label": "FMain",
+      "id": "launchops_portal_src_views_projects_linkrow",
+      "label": "LinkRow",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
-      "norm_label": "fmain",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L166"
+      "norm_label": "linkrow",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L157"
     },
     {
-      "id": "launchops_portal_src_views_feedback_fsub",
-      "label": "FSub",
+      "id": "launchops_portal_src_views_projects_meta",
+      "label": "Meta",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
-      "norm_label": "fsub",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L177"
+      "norm_label": "meta",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L132"
     },
     {
-      "id": "launchops_portal_src_views_feedback_projcell",
-      "label": "ProjCell",
+      "id": "launchops_portal_src_views_projects_name",
+      "label": "Name",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
-      "norm_label": "projcell",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L187"
+      "norm_label": "name",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L125"
     },
     {
-      "id": "launchops_portal_src_views_feedback_reviewbtn",
-      "label": "ReviewBtn",
+      "id": "launchops_portal_src_views_projects_progressmeta",
+      "label": "ProgressMeta",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
-      "norm_label": "reviewbtn",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L194"
+      "norm_label": "progressmeta",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L148"
     },
     {
-      "id": "launchops_portal_src_views_feedback_table",
-      "label": "Table",
+      "id": "launchops_portal_src_views_projects_progressrow",
+      "label": "ProgressRow",
       "_origin": "ast",
       "community": 10,
-      "community_name": "launchops-portal/src/components/ui.tsx",
+      "community_name": "Projects.tsx",
       "file_type": "code",
-      "norm_label": "table",
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L137"
+      "norm_label": "progressrow",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L141"
+    },
+    {
+      "id": "launchops_portal_src_views_projects_projectcard",
+      "label": "ProjectCard",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "Projects.tsx",
+      "file_type": "code",
+      "norm_label": "projectcard",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L113"
+    },
+    {
+      "id": "launchops_portal_src_views_projects_projectgrid",
+      "label": "ProjectGrid",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "Projects.tsx",
+      "file_type": "code",
+      "norm_label": "projectgrid",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L107"
+    },
+    {
+      "id": "launchops_portal_src_views_projects_top",
+      "label": "Top",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "Projects.tsx",
+      "file_type": "code",
+      "norm_label": "top",
+      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "source_location": "L119"
     },
     {
       "id": "bloomline_dashboard_src_vite_env_d",
@@ -7574,28 +7710,6 @@
       "source_location": "L47"
     },
     {
-      "id": "pipeline_dashboard_src_components_devmodebadge",
-      "label": "pipeline-dashboard/src/components/DevModeBadge.tsx",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "pipeline-dashboard/src/components/devmodebadge.tsx",
-      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_devmodebadge_badge",
-      "label": "Badge",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "badge",
-      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
-      "source_location": "L7"
-    },
-    {
       "id": "pipeline_dashboard_src_hooks_usecalendar",
       "label": "pipeline-dashboard/src/hooks/useCalendar.ts",
       "_origin": "ast",
@@ -7692,6 +7806,17 @@
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/hooks/useusers.ts",
       "source_file": "pipeline-dashboard/src/hooks/useUsers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_changes",
+      "label": "pipeline-dashboard/src/types/changes.ts",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "pipeline-dashboard/src/types/changes.ts",
+      "source_file": "pipeline-dashboard/src/types/changes.ts",
       "source_location": "L1"
     },
     {
@@ -8853,127 +8978,6 @@
       "source_location": "L12"
     },
     {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut",
-      "label": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "pipeline-dashboard/src/components/charts/conversiondonut.tsx",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_chartwrap",
-      "label": "ChartWrap",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "chartwrap",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L19"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legend",
-      "label": "Legend",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "legend",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L24"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legendcount",
-      "label": "LegendCount",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "legendcount",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L47"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legenddot",
-      "label": "LegendDot",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "legenddot",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L39"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legendrow",
-      "label": "LegendRow",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "legendrow",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L31"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate",
-      "label": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "pipeline-dashboard/src/components/emptystate.tsx",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_hint",
-      "label": "Hint",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "hint",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L44"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_message",
-      "label": "Message",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "message",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L37"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_title",
-      "label": "Title",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "title",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L31"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_wrapper",
-      "label": "Wrapper",
-      "_origin": "ast",
-      "community": 139,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "wrapper",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L14"
-    },
-    {
       "id": "opencode_agents_skills_pdf_reference",
       "label": "reference.md",
       "_origin": "ast",
@@ -9745,6 +9749,72 @@
       "norm_label": "eslint-plugin-react-refresh",
       "source_file": "bloomline-dashboard/package.json",
       "source_location": "L32"
+    },
+    {
+      "id": "launchops_portal_src_components_header",
+      "label": "launchops-portal/src/components/Header.tsx",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "launchops-portal/src/components/header.tsx",
+      "source_file": "launchops-portal/src/components/Header.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_src_components_header_datebox",
+      "label": "DateBox",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "datebox",
+      "source_file": "launchops-portal/src/components/Header.tsx",
+      "source_location": "L51"
+    },
+    {
+      "id": "launchops_portal_src_components_header_eyebrow",
+      "label": "Eyebrow",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "eyebrow",
+      "source_file": "launchops-portal/src/components/Header.tsx",
+      "source_location": "L29"
+    },
+    {
+      "id": "launchops_portal_src_components_header_head",
+      "label": "Head",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "head",
+      "source_file": "launchops-portal/src/components/Header.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "launchops_portal_src_components_header_sub",
+      "label": "Sub",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "sub",
+      "source_file": "launchops-portal/src/components/Header.tsx",
+      "source_location": "L45"
+    },
+    {
+      "id": "launchops_portal_src_components_header_title",
+      "label": "Title",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Testimonials.tsx",
+      "file_type": "code",
+      "norm_label": "title",
+      "source_file": "launchops-portal/src/components/Header.tsx",
+      "source_location": "L38"
     },
     {
       "id": "launchops_portal_src_views_testimonials",
@@ -10792,11 +10862,77 @@
       "source_location": "L62"
     },
     {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut",
+      "label": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "pipeline-dashboard/src/components/charts/conversiondonut.tsx",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_chartwrap",
+      "label": "ChartWrap",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "chartwrap",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L19"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legend",
+      "label": "Legend",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "legend",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legendcount",
+      "label": "LegendCount",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "legendcount",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L47"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legenddot",
+      "label": "LegendDot",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "legenddot",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L39"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legendrow",
+      "label": "LegendRow",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "legendrow",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L31"
+    },
+    {
       "id": "pipeline_dashboard_src_components_charts_speedtrendchart",
       "label": "SpeedTrendChart.tsx",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "speedtrendchart.tsx",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -10807,7 +10943,7 @@
       "label": "ChartWrap",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "chartwrap",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -10818,7 +10954,7 @@
       "label": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/components/charts/weeklytrend.tsx",
       "source_file": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
@@ -10829,18 +10965,73 @@
       "label": "ChartWrap",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "chartwrap",
       "source_file": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
       "source_location": "L16"
     },
     {
+      "id": "pipeline_dashboard_src_components_emptystate",
+      "label": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "pipeline-dashboard/src/components/emptystate.tsx",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_hint",
+      "label": "Hint",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "hint",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L44"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_message",
+      "label": "Message",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "message",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L37"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_title",
+      "label": "Title",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "title",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_wrapper",
+      "label": "Wrapper",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "wrapper",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L14"
+    },
+    {
       "id": "pipeline_dashboard_src_main",
       "label": "pipeline-dashboard/src/main.tsx",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/main.tsx",
       "source_file": "pipeline-dashboard/src/main.tsx",
@@ -10851,7 +11042,7 @@
       "label": "pipeline-dashboard/src/styled.d.ts",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/styled.d.ts",
       "source_file": "pipeline-dashboard/src/styled.d.ts",
@@ -10862,7 +11053,7 @@
       "label": "styled-components",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "styled-components",
       "source_file": "pipeline-dashboard/src/styled.d.ts",
@@ -10873,7 +11064,7 @@
       "label": "pipeline-dashboard/src/styles/GlobalStyles.ts",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/styles/globalstyles.ts",
       "source_file": "pipeline-dashboard/src/styles/GlobalStyles.ts",
@@ -10884,7 +11075,7 @@
       "label": "GlobalStyles",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "globalstyles",
       "source_file": "pipeline-dashboard/src/styles/GlobalStyles.ts",
@@ -10895,7 +11086,7 @@
       "label": "pipeline-dashboard/src/theme.ts",
       "_origin": "ast",
       "community": 19,
-      "community_name": "SpeedTrendChart.tsx",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/theme.ts",
       "source_file": "pipeline-dashboard/src/theme.ts",
@@ -11296,17 +11487,6 @@
       "norm_label": "value",
       "source_file": "pipeline-dashboard/src/components/KpiCard.tsx",
       "source_location": "L59"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_changes",
-      "label": "pipeline-dashboard/src/types/changes.ts",
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "pipeline-dashboard/src/components/KpiCard.tsx",
-      "file_type": "code",
-      "norm_label": "pipeline-dashboard/src/types/changes.ts",
-      "source_file": "pipeline-dashboard/src/types/changes.ts",
-      "source_location": "L1"
     },
     {
       "id": "opencode_agents_skills_proposal_writer_skill",
@@ -14124,136 +14304,158 @@
       "source_location": "L23"
     },
     {
-      "id": "launchops_portal_src_views_projects",
-      "label": "Projects.tsx",
+      "id": "launchops_portal_src_views_feedback",
+      "label": "Feedback.tsx",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "projects.tsx",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
+      "norm_label": "feedback.tsx",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
       "source_location": "L1"
     },
     {
-      "id": "launchops_portal_src_views_projects_dates",
-      "label": "Dates",
+      "id": "launchops_portal_src_views_feedback_bizname",
+      "label": "BizName",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "dates",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L176"
+      "norm_label": "bizname",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L223"
     },
     {
-      "id": "launchops_portal_src_views_projects_footer",
-      "label": "Footer",
+      "id": "launchops_portal_src_views_feedback_count",
+      "label": "Count",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "footer",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L167"
+      "norm_label": "count",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L151"
     },
     {
-      "id": "launchops_portal_src_views_projects_gobtn",
-      "label": "GoBtn",
+      "id": "launchops_portal_src_views_feedback_fbadges",
+      "label": "FBadges",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "gobtn",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L182"
+      "norm_label": "fbadges",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L244"
     },
     {
-      "id": "launchops_portal_src_views_projects_linkrow",
-      "label": "LinkRow",
+      "id": "launchops_portal_src_views_feedback_filterbtn",
+      "label": "FilterBtn",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "linkrow",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L157"
+      "norm_label": "filterbtn",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L137"
     },
     {
-      "id": "launchops_portal_src_views_projects_meta",
-      "label": "Meta",
+      "id": "launchops_portal_src_views_feedback_filters",
+      "label": "FILTERS",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "meta",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L132"
+      "norm_label": "filters",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L10"
     },
     {
-      "id": "launchops_portal_src_views_projects_name",
-      "label": "Name",
+      "id": "launchops_portal_src_views_feedback_fmain",
+      "label": "FMain",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "name",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L125"
+      "norm_label": "fmain",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L188"
     },
     {
-      "id": "launchops_portal_src_views_projects_progressmeta",
-      "label": "ProgressMeta",
+      "id": "launchops_portal_src_views_feedback_fsub",
+      "label": "FSub",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "progressmeta",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L148"
+      "norm_label": "fsub",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L199"
     },
     {
-      "id": "launchops_portal_src_views_projects_progressrow",
-      "label": "ProgressRow",
+      "id": "launchops_portal_src_views_feedback_mutedcell",
+      "label": "MutedCell",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "progressrow",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L141"
+      "norm_label": "mutedcell",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L240"
     },
     {
-      "id": "launchops_portal_src_views_projects_projectcard",
-      "label": "ProjectCard",
+      "id": "launchops_portal_src_views_feedback_namestack",
+      "label": "NameStack",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "projectcard",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L113"
+      "norm_label": "namestack",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L216"
     },
     {
-      "id": "launchops_portal_src_views_projects_projectgrid",
-      "label": "ProjectGrid",
+      "id": "launchops_portal_src_views_feedback_projcell",
+      "label": "ProjCell",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "projectgrid",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L107"
+      "norm_label": "projcell",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L209"
     },
     {
-      "id": "launchops_portal_src_views_projects_top",
-      "label": "Top",
+      "id": "launchops_portal_src_views_feedback_projname",
+      "label": "ProjName",
       "_origin": "ast",
       "community": 31,
-      "community_name": "Projects.tsx",
+      "community_name": "Feedback.tsx",
       "file_type": "code",
-      "norm_label": "top",
-      "source_file": "launchops-portal/src/views/Projects.tsx",
-      "source_location": "L119"
+      "norm_label": "projname",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L229"
+    },
+    {
+      "id": "launchops_portal_src_views_feedback_reviewbtn",
+      "label": "ReviewBtn",
+      "_origin": "ast",
+      "community": 31,
+      "community_name": "Feedback.tsx",
+      "file_type": "code",
+      "norm_label": "reviewbtn",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L271"
+    },
+    {
+      "id": "launchops_portal_src_views_feedback_table",
+      "label": "Table",
+      "_origin": "ast",
+      "community": 31,
+      "community_name": "Feedback.tsx",
+      "file_type": "code",
+      "norm_label": "table",
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L159"
     },
     {
       "id": "clients_leadflow_build_proposal",
@@ -14760,6 +14962,28 @@
       "norm_label": "typetag",
       "source_file": "launchops-portal/src/views/Documents.tsx",
       "source_location": "L182"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_devmodebadge",
+      "label": "pipeline-dashboard/src/components/DevModeBadge.tsx",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "pipeline-dashboard/src/components/Header.tsx",
+      "file_type": "code",
+      "norm_label": "pipeline-dashboard/src/components/devmodebadge.tsx",
+      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_devmodebadge_badge",
+      "label": "Badge",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "pipeline-dashboard/src/components/Header.tsx",
+      "file_type": "code",
+      "norm_label": "badge",
+      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
+      "source_location": "L7"
     },
     {
       "id": "pipeline_dashboard_src_components_header",
@@ -16748,72 +16972,6 @@
       "norm_label": "main",
       "source_file": "launchops-portal/src/App.tsx",
       "source_location": "L83"
-    },
-    {
-      "id": "launchops_portal_src_components_header",
-      "label": "launchops-portal/src/components/Header.tsx",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "launchops-portal/src/theme.ts",
-      "file_type": "code",
-      "norm_label": "launchops-portal/src/components/header.tsx",
-      "source_file": "launchops-portal/src/components/Header.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_src_components_header_datebox",
-      "label": "DateBox",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "launchops-portal/src/theme.ts",
-      "file_type": "code",
-      "norm_label": "datebox",
-      "source_file": "launchops-portal/src/components/Header.tsx",
-      "source_location": "L51"
-    },
-    {
-      "id": "launchops_portal_src_components_header_eyebrow",
-      "label": "Eyebrow",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "launchops-portal/src/theme.ts",
-      "file_type": "code",
-      "norm_label": "eyebrow",
-      "source_file": "launchops-portal/src/components/Header.tsx",
-      "source_location": "L29"
-    },
-    {
-      "id": "launchops_portal_src_components_header_head",
-      "label": "Head",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "launchops-portal/src/theme.ts",
-      "file_type": "code",
-      "norm_label": "head",
-      "source_file": "launchops-portal/src/components/Header.tsx",
-      "source_location": "L20"
-    },
-    {
-      "id": "launchops_portal_src_components_header_sub",
-      "label": "Sub",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "launchops-portal/src/theme.ts",
-      "file_type": "code",
-      "norm_label": "sub",
-      "source_file": "launchops-portal/src/components/Header.tsx",
-      "source_location": "L45"
-    },
-    {
-      "id": "launchops_portal_src_components_header_title",
-      "label": "Title",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "launchops-portal/src/theme.ts",
-      "file_type": "code",
-      "norm_label": "title",
-      "source_file": "launchops-portal/src/components/Header.tsx",
-      "source_location": "L38"
     },
     {
       "id": "launchops_portal_src_main",
@@ -20185,7 +20343,7 @@
       "file_type": "code",
       "norm_label": "advancebtn",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L579"
+      "source_location": "L586"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetcontent",
@@ -20196,7 +20354,7 @@
       "file_type": "code",
       "norm_label": "assetcontent",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L632"
+      "source_location": "L639"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_asseticon",
@@ -20207,7 +20365,7 @@
       "file_type": "code",
       "norm_label": "asseticon",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L610"
+      "source_location": "L617"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetlink",
@@ -20218,7 +20376,7 @@
       "file_type": "code",
       "norm_label": "assetlink",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L644"
+      "source_location": "L651"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetlist",
@@ -20229,7 +20387,7 @@
       "file_type": "code",
       "norm_label": "assetlist",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L593"
+      "source_location": "L600"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetname",
@@ -20240,7 +20398,7 @@
       "file_type": "code",
       "norm_label": "assetname",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L621"
+      "source_location": "L628"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetrow",
@@ -20251,7 +20409,7 @@
       "file_type": "code",
       "norm_label": "assetrow",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L599"
+      "source_location": "L606"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assettype",
@@ -20262,7 +20420,7 @@
       "file_type": "code",
       "norm_label": "assettype",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L626"
+      "source_location": "L633"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_backbtn",
@@ -20273,7 +20431,7 @@
       "file_type": "code",
       "norm_label": "backbtn",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L262"
+      "source_location": "L269"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_card",
@@ -20284,7 +20442,7 @@
       "file_type": "code",
       "norm_label": "card",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L449"
+      "source_location": "L456"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_chip",
@@ -20295,7 +20453,7 @@
       "file_type": "code",
       "norm_label": "chip",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L292"
+      "source_location": "L299"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_chiplink",
@@ -20306,7 +20464,7 @@
       "file_type": "code",
       "norm_label": "chiplink",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L306"
+      "source_location": "L313"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_countpill",
@@ -20317,7 +20475,7 @@
       "file_type": "code",
       "norm_label": "countpill",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L391"
+      "source_location": "L398"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_emptyphase",
@@ -20328,7 +20486,7 @@
       "file_type": "code",
       "norm_label": "emptyphase",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L555"
+      "source_location": "L562"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_fdate",
@@ -20339,7 +20497,7 @@
       "file_type": "code",
       "norm_label": "fdate",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L665"
+      "source_location": "L686"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_feedbackitem",
@@ -20350,7 +20508,18 @@
       "file_type": "code",
       "norm_label": "feedbackitem",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L649"
+      "source_location": "L656"
+    },
+    {
+      "id": "launchops_portal_src_views_projectdetail_fhead",
+      "label": "FHead",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "ProjectDetail.tsx",
+      "file_type": "code",
+      "norm_label": "fhead",
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L672"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_ftext",
@@ -20361,7 +20530,18 @@
       "file_type": "code",
       "norm_label": "ftext",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L659"
+      "source_location": "L666"
+    },
+    {
+      "id": "launchops_portal_src_views_projectdetail_fwho",
+      "label": "FWho",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "ProjectDetail.tsx",
+      "file_type": "code",
+      "norm_label": "fwho",
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L680"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_grid3",
@@ -20372,7 +20552,7 @@
       "file_type": "code",
       "norm_label": "grid3",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L435"
+      "source_location": "L442"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakea",
@@ -20383,7 +20563,7 @@
       "file_type": "code",
       "norm_label": "intakea",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L427"
+      "source_location": "L434"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakebadges",
@@ -20394,7 +20574,7 @@
       "file_type": "code",
       "norm_label": "intakebadges",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L372"
+      "source_location": "L379"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakecard",
@@ -20405,7 +20585,7 @@
       "file_type": "code",
       "norm_label": "intakecard",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L332"
+      "source_location": "L339"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakegrid",
@@ -20416,7 +20596,7 @@
       "file_type": "code",
       "norm_label": "intakegrid",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L400"
+      "source_location": "L407"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakehead",
@@ -20427,7 +20607,7 @@
       "file_type": "code",
       "norm_label": "intakehead",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L341"
+      "source_location": "L348"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakeicon",
@@ -20438,7 +20618,7 @@
       "file_type": "code",
       "norm_label": "intakeicon",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L360"
+      "source_location": "L367"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakeitem",
@@ -20449,7 +20629,7 @@
       "file_type": "code",
       "norm_label": "intakeitem",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L407"
+      "source_location": "L414"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakeq",
@@ -20460,7 +20640,7 @@
       "file_type": "code",
       "norm_label": "intakeq",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L418"
+      "source_location": "L425"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intaketitle",
@@ -20471,7 +20651,7 @@
       "file_type": "code",
       "norm_label": "intaketitle",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L350"
+      "source_location": "L357"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_metastrip",
@@ -20482,7 +20662,7 @@
       "file_type": "code",
       "norm_label": "metastrip",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L276"
+      "source_location": "L283"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_node",
@@ -20493,7 +20673,7 @@
       "file_type": "code",
       "norm_label": "node",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L501"
+      "source_location": "L508"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_notes",
@@ -20504,7 +20684,7 @@
       "file_type": "code",
       "norm_label": "notes",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L319"
+      "source_location": "L326"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phase_icon",
@@ -20526,7 +20706,7 @@
       "file_type": "code",
       "norm_label": "phasebody",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L518"
+      "source_location": "L525"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phasemeta",
@@ -20537,7 +20717,7 @@
       "file_type": "code",
       "norm_label": "phasemeta",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L561"
+      "source_location": "L568"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phasename",
@@ -20548,7 +20728,7 @@
       "file_type": "code",
       "norm_label": "phasename",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L526"
+      "source_location": "L533"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phasenotes",
@@ -20559,7 +20739,7 @@
       "file_type": "code",
       "norm_label": "phasenotes",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L569"
+      "source_location": "L576"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phaserow",
@@ -20570,7 +20750,7 @@
       "file_type": "code",
       "norm_label": "phaserow",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L483"
+      "source_location": "L490"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phasetag",
@@ -20581,7 +20761,7 @@
       "file_type": "code",
       "norm_label": "phasetag",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L535"
+      "source_location": "L542"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_rightcol",
@@ -20592,7 +20772,7 @@
       "file_type": "code",
       "norm_label": "rightcol",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L443"
+      "source_location": "L450"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_sectionrow",
@@ -20603,7 +20783,7 @@
       "file_type": "code",
       "norm_label": "sectionrow",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L463"
+      "source_location": "L470"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_sectiontitle",
@@ -20614,7 +20794,7 @@
       "file_type": "code",
       "norm_label": "sectiontitle",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L457"
+      "source_location": "L464"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_sourcepill",
@@ -20625,7 +20805,7 @@
       "file_type": "code",
       "norm_label": "sourcepill",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L379"
+      "source_location": "L386"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_stagecount",
@@ -20636,7 +20816,7 @@
       "file_type": "code",
       "norm_label": "stagecount",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L470"
+      "source_location": "L477"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_timeline",
@@ -20647,7 +20827,7 @@
       "file_type": "code",
       "norm_label": "timeline",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L478"
+      "source_location": "L485"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_timelinecard",
@@ -20658,7 +20838,7 @@
       "file_type": "code",
       "norm_label": "timelinecard",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L476"
+      "source_location": "L483"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_tminus",
@@ -20669,7 +20849,7 @@
       "file_type": "code",
       "norm_label": "tminus",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L545"
+      "source_location": "L552"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_topbar",
@@ -20680,7 +20860,7 @@
       "file_type": "code",
       "norm_label": "topbar",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L255"
+      "source_location": "L262"
     },
     {
       "id": "opencode_agents_skills_supabase_assets_feedback_issue_template",
@@ -23862,20 +24042,20 @@
       "weight": 1.0
     },
     {
-      "source": "launchops_portal_server_notion_createrow",
-      "target": "launchops_portal_server_notion_api",
+      "source": "launchops_portal_server_notion_canonicalfeedback",
+      "target": "launchops_portal_server_notion_matchprojectid",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L179",
+      "source_location": "L262",
       "weight": 1.0
     },
     {
       "source": "launchops_portal_server_notion_createrow",
-      "target": "launchops_portal_server_notion_dbid",
+      "target": "launchops_portal_server_notion_api",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -23887,7 +24067,7 @@
     },
     {
       "source": "launchops_portal_server_notion_createrow",
-      "target": "launchops_portal_server_notion_encodeprops",
+      "target": "launchops_portal_server_notion_dbid",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -23895,6 +24075,18 @@
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
       "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion_createrow",
+      "target": "launchops_portal_server_notion_encodeprops",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L182",
       "weight": 1.0
     },
     {
@@ -23918,7 +24110,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L134",
+      "source_location": "L135",
       "weight": 1.0
     },
     {
@@ -23930,7 +24122,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L135",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -23942,7 +24134,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L193",
+      "source_location": "L194",
       "weight": 1.0
     },
     {
@@ -23954,7 +24146,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L194",
+      "source_location": "L195",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion_listfeedback",
+      "target": "launchops_portal_server_notion_listrows",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L286",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion_listfeedback",
+      "target": "launchops_portal_server_notion_canonicalfeedback",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L290",
       "weight": 1.0
     },
     {
@@ -23966,7 +24182,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L129",
+      "source_location": "L130",
       "weight": 1.0
     },
     {
@@ -23978,7 +24194,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L130",
+      "source_location": "L131",
       "weight": 1.0
     },
     {
@@ -23990,7 +24206,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L198",
+      "source_location": "L199",
       "weight": 1.0
     },
     {
@@ -24002,7 +24218,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L199",
+      "source_location": "L200",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion_matchprojectid",
+      "target": "launchops_portal_server_notion_namekey",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L235",
       "weight": 1.0
     },
     {
@@ -24026,7 +24254,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L82",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -24038,7 +24266,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L86",
+      "source_location": "L87",
       "weight": 1.0
     },
     {
@@ -24050,7 +24278,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L88",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
@@ -24062,7 +24290,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L90",
+      "source_location": "L91",
       "weight": 1.0
     },
     {
@@ -24074,7 +24302,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L92",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -24086,7 +24314,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L94",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -24098,7 +24326,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L118",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -24110,7 +24338,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L119",
+      "source_location": "L120",
       "weight": 1.0
     },
     {
@@ -24122,7 +24350,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L124",
+      "source_location": "L125",
       "weight": 1.0
     },
     {
@@ -24146,7 +24374,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L187",
+      "source_location": "L188",
       "weight": 1.0
     },
     {
@@ -24158,7 +24386,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L188",
+      "source_location": "L189",
       "weight": 1.0
     },
     {
@@ -24206,7 +24434,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L122",
+      "source_location": "L126",
       "weight": 1.0
     },
     {
@@ -24278,7 +24506,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L86",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -36188,6 +36416,18 @@
       "weight": 1.0
     },
     {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_server_notion",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "onboarding_site_api_index",
       "target": "onboarding_site_server_app",
       "relation": "imports_from",
@@ -43741,7 +43981,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L112",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -43763,7 +44003,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L128",
+      "source_location": "L129",
       "weight": 1.0
     },
     {
@@ -43774,7 +44014,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L133",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -43785,7 +44025,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L138",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -43807,7 +44047,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L178",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -43818,7 +44058,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L186",
+      "source_location": "L187",
       "weight": 1.0
     },
     {
@@ -43829,7 +44069,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L192",
+      "source_location": "L193",
       "weight": 1.0
     },
     {
@@ -43840,7 +44080,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L197",
+      "source_location": "L198",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_feedback_props",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L216",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_namekey",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L229",
       "weight": 1.0
     },
     {
@@ -43852,6 +44114,39 @@
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
       "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_matchprojectid",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_canonicalfeedback",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L260",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_listfeedback",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L284",
       "weight": 1.0
     },
     {
@@ -44555,7 +44850,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L103",
+      "source_location": "L107",
       "weight": 1.0
     },
     {
@@ -44566,7 +44861,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L109",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -44577,18 +44872,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L114",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_src_components_ui",
-      "target": "launchops_portal_src_components_ui_circle",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L128",
+      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -44604,13 +44888,24 @@
     },
     {
       "source": "launchops_portal_src_components_ui",
+      "target": "launchops_portal_src_components_ui_circle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/components/ui.tsx",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_components_ui",
       "target": "launchops_portal_src_components_ui_stringtocolor",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L144",
+      "source_location": "L148",
       "weight": 1.0
     },
     {
@@ -44621,7 +44916,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L151",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -44632,7 +44927,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L160",
+      "source_location": "L164",
       "weight": 1.0
     },
     {
@@ -44643,7 +44938,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L171",
+      "source_location": "L175",
       "weight": 1.0
     },
     {
@@ -44654,7 +44949,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L181",
+      "source_location": "L185",
       "weight": 1.0
     },
     {
@@ -44665,7 +44960,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L191",
+      "source_location": "L195",
       "weight": 1.0
     },
     {
@@ -44676,7 +44971,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L202",
+      "source_location": "L206",
       "weight": 1.0
     },
     {
@@ -44687,7 +44982,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/components/ui.tsx",
-      "source_location": "L209",
+      "source_location": "L213",
       "weight": 1.0
     },
     {
@@ -44890,6 +45185,17 @@
     },
     {
       "source": "launchops_portal_src_types_index",
+      "target": "launchops_portal_src_types_index_view",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/types/index.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_types_index",
       "target": "launchops_portal_src_types_index_milestone",
       "relation": "contains",
       "_origin": "ast",
@@ -44929,7 +45235,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L49",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -44940,7 +45246,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L61",
+      "source_location": "L70",
       "weight": 1.0
     },
     {
@@ -44951,7 +45257,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L77",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
@@ -44962,18 +45268,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L88",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_src_types_index",
-      "target": "launchops_portal_src_types_index_view",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/src/types/index.ts",
-      "source_location": "L95",
+      "source_location": "L97",
       "weight": 1.0
     },
     {
@@ -45121,28 +45416,6 @@
     },
     {
       "source": "launchops_portal_src_views_feedback",
-      "target": "launchops_portal_src_views_feedback_filters",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L109",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_src_views_feedback",
-      "target": "launchops_portal_src_views_feedback_filterbtn",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L115",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_src_views_feedback",
       "target": "launchops_portal_src_views_feedback_feedback",
       "relation": "contains",
       "_origin": "ast",
@@ -45154,18 +45427,18 @@
     },
     {
       "source": "launchops_portal_src_views_feedback",
-      "target": "launchops_portal_src_views_feedback_count",
+      "target": "launchops_portal_src_views_feedback_filters",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L129",
+      "source_location": "L131",
       "weight": 1.0
     },
     {
       "source": "launchops_portal_src_views_feedback",
-      "target": "launchops_portal_src_views_feedback_table",
+      "target": "launchops_portal_src_views_feedback_filterbtn",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -45176,13 +45449,35 @@
     },
     {
       "source": "launchops_portal_src_views_feedback",
+      "target": "launchops_portal_src_views_feedback_count",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_feedback",
+      "target": "launchops_portal_src_views_feedback_table",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_feedback",
       "target": "launchops_portal_src_views_feedback_fmain",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L166",
+      "source_location": "L188",
       "weight": 1.0
     },
     {
@@ -45193,7 +45488,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L177",
+      "source_location": "L199",
       "weight": 1.0
     },
     {
@@ -45204,7 +45499,62 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L187",
+      "source_location": "L209",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_feedback",
+      "target": "launchops_portal_src_views_feedback_namestack",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L216",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_feedback",
+      "target": "launchops_portal_src_views_feedback_bizname",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L223",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_feedback",
+      "target": "launchops_portal_src_views_feedback_projname",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L229",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_feedback",
+      "target": "launchops_portal_src_views_feedback_mutedcell",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L240",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_feedback",
+      "target": "launchops_portal_src_views_feedback_fbadges",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/Feedback.tsx",
+      "source_location": "L244",
       "weight": 1.0
     },
     {
@@ -45215,7 +45565,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/Feedback.tsx",
-      "source_location": "L194",
+      "source_location": "L271",
       "weight": 1.0
     },
     {
@@ -45534,7 +45884,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L255",
+      "source_location": "L262",
       "weight": 1.0
     },
     {
@@ -45545,7 +45895,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L262",
+      "source_location": "L269",
       "weight": 1.0
     },
     {
@@ -45556,7 +45906,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L276",
+      "source_location": "L283",
       "weight": 1.0
     },
     {
@@ -45567,7 +45917,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L283",
+      "source_location": "L290",
       "weight": 1.0
     },
     {
@@ -45578,7 +45928,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L292",
+      "source_location": "L299",
       "weight": 1.0
     },
     {
@@ -45589,18 +45939,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L306",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_src_views_projectdetail",
-      "target": "launchops_portal_src_views_projectdetail_notes",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L319",
+      "source_location": "L313",
       "weight": 1.0
     },
     {
@@ -45616,13 +45955,24 @@
     },
     {
       "source": "launchops_portal_src_views_projectdetail",
+      "target": "launchops_portal_src_views_projectdetail_notes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L326",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_projectdetail",
       "target": "launchops_portal_src_views_projectdetail_intakecard",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L332",
+      "source_location": "L339",
       "weight": 1.0
     },
     {
@@ -45644,7 +45994,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L341",
+      "source_location": "L348",
       "weight": 1.0
     },
     {
@@ -45655,7 +46005,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L350",
+      "source_location": "L357",
       "weight": 1.0
     },
     {
@@ -45666,7 +46016,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L360",
+      "source_location": "L367",
       "weight": 1.0
     },
     {
@@ -45677,7 +46027,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L372",
+      "source_location": "L379",
       "weight": 1.0
     },
     {
@@ -45688,7 +46038,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L379",
+      "source_location": "L386",
       "weight": 1.0
     },
     {
@@ -45699,7 +46049,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L391",
+      "source_location": "L398",
       "weight": 1.0
     },
     {
@@ -45710,7 +46060,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L400",
+      "source_location": "L407",
       "weight": 1.0
     },
     {
@@ -45721,7 +46071,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L407",
+      "source_location": "L414",
       "weight": 1.0
     },
     {
@@ -45732,7 +46082,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L418",
+      "source_location": "L425",
       "weight": 1.0
     },
     {
@@ -45743,7 +46093,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L427",
+      "source_location": "L434",
       "weight": 1.0
     },
     {
@@ -45754,7 +46104,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L435",
+      "source_location": "L442",
       "weight": 1.0
     },
     {
@@ -45765,7 +46115,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L443",
+      "source_location": "L450",
       "weight": 1.0
     },
     {
@@ -45776,7 +46126,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L449",
+      "source_location": "L456",
       "weight": 1.0
     },
     {
@@ -45787,7 +46137,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L457",
+      "source_location": "L464",
       "weight": 1.0
     },
     {
@@ -45798,7 +46148,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L463",
+      "source_location": "L470",
       "weight": 1.0
     },
     {
@@ -45809,7 +46159,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L470",
+      "source_location": "L477",
       "weight": 1.0
     },
     {
@@ -45820,7 +46170,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L476",
+      "source_location": "L483",
       "weight": 1.0
     },
     {
@@ -45831,7 +46181,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L478",
+      "source_location": "L485",
       "weight": 1.0
     },
     {
@@ -45842,7 +46192,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L483",
+      "source_location": "L490",
       "weight": 1.0
     },
     {
@@ -45853,7 +46203,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L501",
+      "source_location": "L508",
       "weight": 1.0
     },
     {
@@ -45864,7 +46214,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L518",
+      "source_location": "L525",
       "weight": 1.0
     },
     {
@@ -45875,7 +46225,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L526",
+      "source_location": "L533",
       "weight": 1.0
     },
     {
@@ -45886,7 +46236,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L535",
+      "source_location": "L542",
       "weight": 1.0
     },
     {
@@ -45897,7 +46247,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L545",
+      "source_location": "L552",
       "weight": 1.0
     },
     {
@@ -45908,7 +46258,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L555",
+      "source_location": "L562",
       "weight": 1.0
     },
     {
@@ -45919,7 +46269,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L561",
+      "source_location": "L568",
       "weight": 1.0
     },
     {
@@ -45930,7 +46280,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L569",
+      "source_location": "L576",
       "weight": 1.0
     },
     {
@@ -45941,7 +46291,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L579",
+      "source_location": "L586",
       "weight": 1.0
     },
     {
@@ -45952,7 +46302,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L593",
+      "source_location": "L600",
       "weight": 1.0
     },
     {
@@ -45963,7 +46313,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L599",
+      "source_location": "L606",
       "weight": 1.0
     },
     {
@@ -45974,7 +46324,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L610",
+      "source_location": "L617",
       "weight": 1.0
     },
     {
@@ -45996,7 +46346,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L621",
+      "source_location": "L628",
       "weight": 1.0
     },
     {
@@ -46007,7 +46357,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L626",
+      "source_location": "L633",
       "weight": 1.0
     },
     {
@@ -46018,7 +46368,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L632",
+      "source_location": "L639",
       "weight": 1.0
     },
     {
@@ -46029,7 +46379,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L644",
+      "source_location": "L651",
       "weight": 1.0
     },
     {
@@ -46040,7 +46390,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L649",
+      "source_location": "L656",
       "weight": 1.0
     },
     {
@@ -46051,7 +46401,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L659",
+      "source_location": "L666",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_projectdetail",
+      "target": "launchops_portal_src_views_projectdetail_fhead",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L672",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_projectdetail",
+      "target": "launchops_portal_src_views_projectdetail_fwho",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L680",
       "weight": 1.0
     },
     {
@@ -46062,7 +46434,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L665",
+      "source_location": "L686",
       "weight": 1.0
     },
     {
@@ -46910,6 +47282,39 @@
       "confidence_score": 1.0,
       "source_file": "launchops-portal/vercel.json",
       "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_verify_feedback_checks",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_verify_feedback_ratings",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_verify_feedback_projects",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -55947,5 +56352,5 @@
       "source_file": "templates"
     }
   ],
-  "built_at_commit": "2894a282c385d18777f23e79bfe3a120b9993bc4"
+  "built_at_commit": "4367a62f44d9041b44159b7f81cd9bd9d402828c"
 }
