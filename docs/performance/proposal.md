@@ -54,3 +54,12 @@
 📌 Lesson / standard:
 - Every PDF gets a spacing audit (pdfplumber word-overlap / line-gap check) before handoff, especially signature and name/title blocks.
 - Aim for "amazing" — polished, breathable layout, not just factually correct.
+
+### 2026-09-17 — Full-project quality/error check + session-store spawn repair (client: none)
+No feedback given — Raymon could not be asked this session (the `question` tool was
+unavailable in the Feedback Agent's runtime), so no praise or correction was invented.
+Nothing merged into Standards. (Context of the task: full-project QA passed — graphify
+knowledge graph verified, git + secrets audit clean, 12 Vercel projects audited with both
+ConversionOS apps serving 200, Notion store clean, all 4 apps build; `scripts/verify_document.py`
+fact-sheet gate restored + `.env.example` repaired, all 8 client PDFs PASS; subagent
+session-store foreign-key fault fixed so agent spawns work again.)
