@@ -1,22 +1,22 @@
-# Graph Report - onboarding-agent  (2026-09-16)
+# Graph Report - onboarding-agent  (2026-09-17)
 
 ## Corpus Check
-- 257 files · ~415,959 words
+- 280 files · ~424,783 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1798 nodes · 2783 edges · 125 communities (96 shown, 29 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.83)
+- 1903 nodes · 2877 edges · 140 communities (110 shown, 30 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0efbc810`
+- Built from commit: `ba43b3e6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - bloomline-dashboard/server/index.js
-- notion.js
+- launchops-portal/server/notion.js
 - pipeline-dashboard/server/app.js
 - bloomline-dashboard/src/tabs/BookingsTab.tsx
 - bloomline-apparel/build_proposal.py
@@ -63,14 +63,14 @@
 - scripts
 - dependencies
 - seed-demo.js
-- pipeline-dashboard/src/tabs/CalendarTab.tsx
+- pipeline-dashboard/src/App.tsx
 - bloomline-dashboard/src/components/ErrorBoundary.tsx
 - launchops-portal/src/App.tsx
 - launchops-portal/src/theme.ts
 - pipeline-dashboard/src/components/ErrorBoundary.tsx
 - leadflow/build_receipt.py
 - Changelog
-- pipeline-dashboard/src/tabs/SettingsTab.tsx
+- compilerOptions
 - dependencies
 - QA Categories
 - bloomline-dashboard/src/components/EmptyState.tsx
@@ -87,13 +87,17 @@
 - LeadFlow.io — Discovery Call Transcript
 - pipeline-dashboard/vercel.json
 - @types/react-dom
-- @types/react
+- leadflow/build_contract.py
+- modal_proposal_agent.py
+- onboarding-site/add-notion-token-vercel.mjs
 - Bloomline Document Build Plan
 - eslint
 - Process
 - Frontend Design
 - feedback-issue-template.md
+- migrations.sql
 - Pipeline — Agent Report Dashboard
+- redeploy-onboarding-prod.mjs
 - wrap
 - extract_form_structure.py
 - bloomline-dashboard/tsconfig.json
@@ -125,9 +129,20 @@
 - Receipt Template
 - Performance Log — Infrastructure Agent
 - Performance Store
+- launchops-portal/check-portal-password-env.mjs
 - vite
+- diagnose-portal-login.mjs
 - onboarding-site/vercel.json
+- patch-portal-password-on-vercel.mjs
 - onboarding-site/tsconfig.json
+- sync-portal-password-to-vercel.mjs
+- check-portal-password-env.mjs
+- add-notion-token-vercel.mjs
+- redeploy-portal-prod.mjs
+- set-portal-password-on-vercel.mjs
+- check-portal-login.mjs
+- pipeline-dashboard/src/components/MonthNav.tsx
+- @types/react
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 19 edges
@@ -150,8 +165,8 @@
   clients/bloomline-apparel/bloomline-docs-plan.md → .opencode/Template/Receipt Template.pdf
 - `n8n Dashboard Nodes Config` --conceptually_related_to--> `ConversionOS n8n Workflow`  [EXTRACTED]
   dashboard-nodes-to-add.txt → N8N_WORKFLOW.png
-- `generate_client_proposal_pdf()` --calls--> `build_table()`  [INFERRED]
-  modal_proposal_agent.py → clients/bloomline-apparel/build_proposal.py
+- `Dashboard Build Playbook` --conceptually_related_to--> `n8n`  [INFERRED]
+  docs/playbooks/client-dashboard-build.md → clients/bloomline-apparel/transcripts/discovery-call-2026-08-05.md
 
 ## Import Cycles
 - None detected.
@@ -168,15 +183,15 @@
 - **Data Persistence Stack** — opencode_agents_skills_notion_project_store, agents_builder_agent, dashboard_nodes_config [INFERRED 0.85]
 - **Business Document Templates** — templates_contract_template, templates_invoice_template, templates_proposal_template, templates_receipt_template [INFERRED 0.90]
 
-## Communities (125 total, 29 thin omitted)
+## Communities (140 total, 30 thin omitted)
 
 ### Community 0 - "bloomline-dashboard/server/index.js"
 Cohesion: 0.06
 Nodes (38): atomicWrite(), createLocalFileAdapter(), DATA_DIR, __dirname, DuplicateEmailError, ensureDataDir(), EVENTS_FILE, USERS_FILE (+30 more)
 
-### Community 1 - "notion.js"
-Cohesion: 0.09
-Nodes (36): app, createApp(), issueToken(), loginRouter(), requireAuth(), secret(), sign(), verifyToken() (+28 more)
+### Community 1 - "launchops-portal/server/notion.js"
+Cohesion: 0.08
+Nodes (41): app, __dirname, env, names, root, st, createApp(), issueToken() (+33 more)
 
 ### Community 2 - "pipeline-dashboard/server/app.js"
 Cohesion: 0.06
@@ -187,16 +202,16 @@ Cohesion: 0.12
 Nodes (35): EmptyState(), ErrorState(), ErrorStateProps, Message, RetryButton, Wrapper, Badge, SampleDataBadge() (+27 more)
 
 ### Community 4 - "bloomline-apparel/build_proposal.py"
-Cohesion: 0.13
-Nodes (19): build_table(), bullets(), draw_chrome(), draw_cover(), esc(), h1(), h2(), NumberedCanvas (+11 more)
+Cohesion: 0.18
+Nodes (13): build_table(), bullets(), draw_chrome(), draw_cover(), esc(), h1(), h2(), NumberedCanvas (+5 more)
 
 ### Community 5 - "bloomline-dashboard/src/types/events.ts"
 Cohesion: 0.15
 Nodes (21): api, ApiError, FetchState, useFetch(), useKpis(), useTopLeads(), useTrend(), useUsers() (+13 more)
 
 ### Community 6 - "bloomline-apparel/build_contract.py"
-Cohesion: 0.06
-Nodes (37): build(), build_story(), draw_content_decor(), draw_cover(), main(), Main section heading + the template's dark-navy underline rule., Two-column acceptance block (CLIENT / LAUNCHOPS AI)., Remove ReportLab's unused Helvetica page-resource entry (no glyphs use it).… (+29 more)
+Cohesion: 0.10
+Nodes (24): build(), build_story(), draw_content_decor(), draw_cover(), main(), Flowable, Main section heading + the template's dark-navy underline rule., Two-column acceptance block (CLIENT / LAUNCHOPS AI). (+16 more)
 
 ### Community 7 - "bloomline-dashboard/src/tabs/DashboardTab.tsx"
 Cohesion: 0.06
@@ -219,8 +234,8 @@ Cohesion: 0.08
 Nodes (26): ChartBox, FeedDate, FeedList, FeedRow, FeedTitle, Grid2, Hero, HeroLabel (+18 more)
 
 ### Community 12 - "pipeline-dashboard/src/types/events.ts"
-Cohesion: 0.14
-Nodes (22): api, ApiError, FetchState, useFetch(), useKpis(), useSpeedTrend(), useTopLeads(), useTrend() (+14 more)
+Cohesion: 0.17
+Nodes (18): api, ApiError, FetchState, useFetch(), useUsers(), Change, ChangeLabel, CalendarBooking (+10 more)
 
 ### Community 13 - "launchops-portal/src/components/Sidebar.tsx"
 Cohesion: 0.08
@@ -239,16 +254,16 @@ Cohesion: 0.09
 Nodes (23): command, enabled, type, default_agent, NOTION_API_TOKEN, instructions, mcp, canva (+15 more)
 
 ### Community 17 - "pipeline-dashboard/src/tabs/DashboardTab.tsx"
-Cohesion: 0.06
-Nodes (36): ChartWrap, ConversionDonut(), ConversionDonutProps, DonutSegment, Legend, LegendCount, LegendDot, LegendRow (+28 more)
+Cohesion: 0.07
+Nodes (34): Option, TIMEFRAME_OPTIONS, TimeframeToggle(), TimeframeToggleProps, Toggle, useKpis(), useSpeedTrend(), useTopLeads() (+26 more)
 
 ### Community 18 - "pipeline-dashboard/src/tabs/BookingsTab.tsx"
-Cohesion: 0.17
-Nodes (31): Content, MainArea, ErrorState(), Badge, SampleDataBadge(), Card, CardHeader, CardSub (+23 more)
+Cohesion: 0.12
+Nodes (35): EmptyState(), ErrorState(), ErrorStateProps, Message, RetryButton, Wrapper, Badge, SampleDataBadge() (+27 more)
 
 ### Community 19 - "pipeline-dashboard/src/components/EmptyState.tsx"
-Cohesion: 0.11
-Nodes (21): App(), ChartWrap, formatHours(), SpeedTrendChart(), SpeedTrendChartProps, ChartWrap, WeeklyTrend(), WeeklyTrendProps (+13 more)
+Cohesion: 0.08
+Nodes (27): App(), ChartWrap, ConversionDonut(), ConversionDonutProps, DonutSegment, Legend, LegendCount, LegendDot (+19 more)
 
 ### Community 20 - "pipeline-dashboard/src/components/KpiCard.tsx"
 Cohesion: 0.22
@@ -268,7 +283,7 @@ Nodes (16): Aside, Avatar, Brand, BrandName, BuiltBy, Company, Nav, NAV_ITEMS (+
 
 ### Community 24 - "onboarding-site/package.json"
 Cohesion: 0.06
-Nodes (35): concurrently, dotenv, express, dependencies, dotenv, express, react, react-dom (+27 more)
+Nodes (35): dependencies, dotenv, express, react, react-dom, react-icons, devDependencies, concurrently (+27 more)
 
 ### Community 25 - "compilerOptions"
 Cohesion: 0.08
@@ -279,8 +294,8 @@ Cohesion: 0.10
 Nodes (19): compilerOptions, allowImportingTsExtensions, lib, module, moduleDetection, moduleResolution, noEmit, noFallthroughCasesInSwitch (+11 more)
 
 ### Community 27 - "compilerOptions"
-Cohesion: 0.04
-Nodes (46): compilerOptions, allowImportingTsExtensions, jsx, lib, module, moduleDetection, moduleResolution, noEmit (+38 more)
+Cohesion: 0.08
+Nodes (23): compilerOptions, allowImportingTsExtensions, jsx, lib, module, moduleDetection, moduleResolution, noEmit (+15 more)
 
 ### Community 28 - "compilerOptions"
 Cohesion: 0.10
@@ -319,8 +334,8 @@ Cohesion: 0.18
 Nodes (11): Badge, DevModeBadge(), Bar, BellButton, DateLabel, Header(), Right, Subtitle (+3 more)
 
 ### Community 37 - "onboarding-site/src/App.tsx"
-Cohesion: 0.06
-Nodes (34): App(), Props, Props, Stepper(), STEPS, AGENT_ROWS, AGENT_TYPES, AgentType (+26 more)
+Cohesion: 0.07
+Nodes (41): App(), ErrorBanner(), Props, Logo(), Props, Stepper(), STEPS, AGENT_ROWS (+33 more)
 
 ### Community 38 - "Leader Agent (Orchestrator)"
 Cohesion: 0.14
@@ -362,9 +377,9 @@ Nodes (39): dependencies, dotenv, express, react, react-dom, react-icons, rechar
 Cohesion: 0.18
 Nodes (10): CHANNELS, client, events, KEY, LEADS, now, pick(), rng (+2 more)
 
-### Community 48 - "pipeline-dashboard/src/tabs/CalendarTab.tsx"
-Cohesion: 0.11
-Nodes (21): BookingChip, BookingTime, CalendarGrid(), CalendarGridProps, DayCell, DayHeader, DayNumber, Grid (+13 more)
+### Community 48 - "pipeline-dashboard/src/App.tsx"
+Cohesion: 0.12
+Nodes (28): Content, MainArea, BookingChip, BookingTime, CalendarGrid(), CalendarGridProps, DayCell, DayHeader (+20 more)
 
 ### Community 49 - "bloomline-dashboard/src/components/ErrorBoundary.tsx"
 Cohesion: 0.18
@@ -390,9 +405,9 @@ Nodes (9): draw(), find(), protect(), Keep phone numbers and 'N days' phrases at
 Cohesion: 0.14
 Nodes (13): [0.1.3](https://github.com/supabase/agent-skills/compare/v0.1.2...v0.1.3) (2026-06-02), [0.1.4](https://github.com/supabase/agent-skills/compare/v0.1.3...v0.1.4) (2026-06-05), [0.1.5](https://github.com/supabase/agent-skills/compare/v0.1.4...v0.1.5) (2026-07-10), [0.1.6](https://github.com/supabase/agent-skills/compare/v0.1.5...supabase-v0.1.6) (2026-07-30), Bug Fixes, Bug Fixes, Bug Fixes, Bug Fixes (+5 more)
 
-### Community 56 - "pipeline-dashboard/src/tabs/SettingsTab.tsx"
-Cohesion: 0.12
-Nodes (16): ErrorStateProps, Message, RetryButton, Wrapper, Pill, useUsers(), ErrorBox, Field (+8 more)
+### Community 56 - "compilerOptions"
+Cohesion: 0.08
+Nodes (24): compilerOptions, allowImportingTsExtensions, composite, isolatedModules, jsx, lib, module, moduleDetection (+16 more)
 
 ### Community 57 - "dependencies"
 Cohesion: 0.12
@@ -454,6 +469,18 @@ Nodes (3): Extracted facts (from call), LeadFlow.io — Discovery Call Transcrip
 Cohesion: 0.29
 Nodes (6): maxDuration, buildCommand, functions, api/index.js, outputDirectory, rewrites
 
+### Community 73 - "leadflow/build_contract.py"
+Cohesion: 0.17
+Nodes (14): build(), build_story(), draw_content_decor(), draw_cover(), main(), Flowable, Main section heading + the template's dark-navy underline rule., Two-column acceptance block (CLIENT / LAUNCHOPS AI). (+6 more)
+
+### Community 74 - "modal_proposal_agent.py"
+Cohesion: 0.38
+Nodes (6): function, local_entrypoint, generate_client_proposal_pdf(), main(), register_fonts(), remote_generate_proposal()
+
+### Community 75 - "onboarding-site/add-notion-token-vercel.mjs"
+Cohesion: 0.29
+Nodes (4): __dirname, env, H, root
+
 ### Community 76 - "Bloomline Document Build Plan"
 Cohesion: 0.40
 Nodes (5): Bloomline Document Build Plan, Bloomline Contract PDF, Invoice Template, Proposal Template, Receipt Template
@@ -473,6 +500,10 @@ Nodes (5): Fix suggestion, Source, What happened, Skill Feedback, Steps
 ### Community 82 - "Pipeline — Agent Report Dashboard"
 Cohesion: 0.29
 Nodes (6): Deploy to Vercel, n8n → dashboard (ConversionOS), Pipeline — Agent Report Dashboard, Run locally, Supabase, Webhooks
+
+### Community 83 - "redeploy-onboarding-prod.mjs"
+Cohesion: 0.29
+Nodes (4): __dirname, env, H, root
 
 ### Community 84 - "wrap"
 Cohesion: 0.67
@@ -502,29 +533,69 @@ Nodes (4): 2026-09-16 — LaunchOps onboarding website spec (Infra spec → QA �
 Cohesion: 0.50
 Nodes (3): How it works, Performance Store, Rules
 
+### Community 124 - "launchops-portal/check-portal-password-env.mjs"
+Cohesion: 0.17
+Nodes (8): __dirname, DO_FIX, env, envFile, envTxt, H, prj, root
+
+### Community 127 - "diagnose-portal-login.mjs"
+Cohesion: 0.20
+Nodes (6): __dirname, env, envTxt, H, prj, root
+
 ### Community 128 - "onboarding-site/vercel.json"
 Cohesion: 0.29
 Nodes (6): maxDuration, buildCommand, functions, api/index.js, outputDirectory, rewrites
 
+### Community 129 - "patch-portal-password-on-vercel.mjs"
+Cohesion: 0.20
+Nodes (6): __dirname, env, envTxt, H, prj, root
+
+### Community 131 - "sync-portal-password-to-vercel.mjs"
+Cohesion: 0.22
+Nodes (5): __dirname, env, envTxt, prjJson, root
+
+### Community 133 - "check-portal-password-env.mjs"
+Cohesion: 0.25
+Nodes (5): __dirname, env, H, prj, root
+
+### Community 134 - "add-notion-token-vercel.mjs"
+Cohesion: 0.25
+Nodes (5): __dirname, env, H, prj, root
+
+### Community 135 - "redeploy-portal-prod.mjs"
+Cohesion: 0.25
+Nodes (5): __dirname, env, H, prj, root
+
+### Community 136 - "set-portal-password-on-vercel.mjs"
+Cohesion: 0.25
+Nodes (5): A, __dirname, env, prj, root
+
+### Community 137 - "check-portal-login.mjs"
+Cohesion: 0.29
+Nodes (5): __dirname, env, H, prj, root
+
+### Community 138 - "pipeline-dashboard/src/components/MonthNav.tsx"
+Cohesion: 0.33
+Nodes (5): ArrowButton, Label, MonthNav(), MonthNavProps, Nav
+
 ## Knowledge Gaps
-- **887 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `FetchState`, `ChangeLabel`, `EventType` (+882 more)
+- **954 isolated node(s):** `__dirname`, `root`, `env`, `H`, `__dirname` (+949 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **29 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **30 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `theme` connect `launchops-portal/src/theme.ts` to `Documents.tsx`, `LoginScreen.tsx`, `ProjectDetail.tsx`, `launchops-portal/src/components/ui.tsx`, `Overview.tsx`, `launchops-portal/src/components/Sidebar.tsx`, `Testimonials.tsx`, `Projects.tsx`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `devDependencies` to `@types/react-dom`, `@types/react`, `eslint`, `bloomline-dashboard/package.json`, `vite`?**
+- **Why does `Theme` connect `pipeline-dashboard/src/components/EmptyState.tsx` to `pipeline-dashboard/src/tabs/DashboardTab.tsx`, `pipeline-dashboard/src/tabs/BookingsTab.tsx`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `KpiCard()` connect `bloomline-dashboard/src/components/KpiCard.tsx` to `bloomline-dashboard/src/tabs/DashboardTab.tsx`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `$schema`, `.opencode/plugins/graphify.js`, `FetchState` to the rest of the system?**
-  _887 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `__dirname`, `root`, `env` to the rest of the system?**
+  _954 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `bloomline-dashboard/server/index.js` be split into smaller, more focused modules?**
   _Cohesion score 0.062409288824383166 - nodes in this community are weakly interconnected._
-- **Should `notion.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.09468599033816426 - nodes in this community are weakly interconnected._
+- **Should `launchops-portal/server/notion.js` be split into smaller, more focused modules?**
+  _Cohesion score 0.0784313725490196 - nodes in this community are weakly interconnected._
 - **Should `pipeline-dashboard/server/app.js` be split into smaller, more focused modules?**
   _Cohesion score 0.05875706214689266 - nodes in this community are weakly interconnected._
+- **Should `bloomline-dashboard/src/tabs/BookingsTab.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.12292358803986711 - nodes in this community are weakly interconnected._
