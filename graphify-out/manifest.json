@@ -1967,30 +1967,6 @@
     "ast_hash": "e8d365a15d0166b26bbce22d78e903ea",
     "semantic_hash": ""
   },
-  "launchops-portal/fix-portal-login-on-vercel.mjs": {
-    "mtime": 1789601653.9916916,
-    "seen": 1789603078.489369,
-    "ast_hash": "018319000dab4037c176f63fdbcc94cc",
-    "semantic_hash": ""
-  },
-  "launchops-portal/fix-portal-login.mjs": {
-    "mtime": 1789600889.9559343,
-    "seen": 1789603078.4893715,
-    "ast_hash": "9a1360d7d1fa3354203192fa665e8e02",
-    "semantic_hash": ""
-  },
-  "launchops-portal/fix-portal-password-prod.mjs": {
-    "mtime": 1789602012.4299445,
-    "seen": 1789603078.4893746,
-    "ast_hash": "d6fbf17f1ab7a059b35b0c9cbbe1dbef",
-    "semantic_hash": ""
-  },
-  "launchops-portal/fix-portal-password.mjs": {
-    "mtime": 1789601441.9371264,
-    "seen": 1789603078.4893785,
-    "ast_hash": "98e5fffd6cb3226f60fa7eaf51bfb9f5",
-    "semantic_hash": ""
-  },
   "launchops-portal/list-projects.mjs": {
     "mtime": 1789599530.269774,
     "seen": 1789603078.489383,
@@ -2001,18 +1977,6 @@
     "mtime": 1789601878.7802923,
     "seen": 1789603078.489397,
     "ast_hash": "b655f414d9ee4e5bbfa9ec1944b926e1",
-    "semantic_hash": ""
-  },
-  "launchops-portal/patch-portal-password-vercel.mjs": {
-    "mtime": 1789601743.2786572,
-    "seen": 1789603078.489401,
-    "ast_hash": "791ef56809403b0ab1dd0b0afd6a5f7f",
-    "semantic_hash": ""
-  },
-  "launchops-portal/patch-portal-password.mjs": {
-    "mtime": 1789601553.1807127,
-    "seen": 1789603078.489405,
-    "ast_hash": "9dd1161152851060130c565d746ef12a",
     "semantic_hash": ""
   },
   "launchops-portal/redeploy-portal-prod.mjs": {
@@ -2031,12 +1995,6 @@
     "mtime": 1789602313.507035,
     "seen": 1789603078.4895222,
     "ast_hash": "26ce36c3bc820e5228b3c2facd9c0e98",
-    "semantic_hash": ""
-  },
-  "onboarding-site/.opencode/vercel-fix.js": {
-    "mtime": 1789597193.4312599,
-    "seen": 1789603078.489557,
-    "ast_hash": "cd755cf2d8ee0723965a0571cb937f25",
     "semantic_hash": ""
   },
   "launchops-portal/public/favicon.png": {
@@ -2061,6 +2019,12 @@
     "mtime": 1789603491.8709967,
     "seen": 1789603609.5560787,
     "ast_hash": "1aa260afe21adbf9545a76fb12e1091f",
+    "semantic_hash": ""
+  },
+  "scripts/verify_document.py": {
+    "mtime": 1789605016.867849,
+    "seen": 1789605281.3573422,
+    "ast_hash": "8ca84cfc9683de79409327caf13852e1",
     "semantic_hash": ""
   }
 }

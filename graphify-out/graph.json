@@ -183,6 +183,19 @@
       "source_location": "L16"
     },
     {
+      "id": "pipeline_dashboard_src_components_calendargrid_calendargridprops",
+      "label": "CalendarGridProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "calendargridprops",
+      "source_file": "pipeline-dashboard/src/components/CalendarGrid.tsx",
+      "source_location": "L10"
+    },
+    {
       "id": "pipeline_dashboard_src_hooks_usefetch_fetchstate",
       "label": "FetchState",
       "_callable": true,
@@ -196,32 +209,6 @@
       "source_location": "L6"
     },
     {
-      "id": "pipeline_dashboard_src_types_changes_change",
-      "label": "Change",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "change",
-      "source_file": "pipeline-dashboard/src/types/changes.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_changes_changelabel",
-      "label": "ChangeLabel",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "changelabel",
-      "source_file": "pipeline-dashboard/src/types/changes.ts",
-      "source_location": "L2"
-    },
-    {
       "id": "pipeline_dashboard_src_types_events_calendarbooking",
       "label": "CalendarBooking",
       "_callable": true,
@@ -233,6 +220,19 @@
       "norm_label": "calendarbooking",
       "source_file": "pipeline-dashboard/src/types/events.ts",
       "source_location": "L70"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_events_eventpayload",
+      "label": "EventPayload",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "eventpayload",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L13"
     },
     {
       "id": "pipeline_dashboard_src_types_events_eventtype",
@@ -261,6 +261,19 @@
       "source_location": "L79"
     },
     {
+      "id": "pipeline_dashboard_src_types_events_kpicounts",
+      "label": "KpiCounts",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "kpicounts",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L33"
+    },
+    {
       "id": "pipeline_dashboard_src_types_events_kpidata",
       "label": "KpiData",
       "_callable": true,
@@ -274,6 +287,19 @@
       "source_location": "L47"
     },
     {
+      "id": "pipeline_dashboard_src_types_events_kpikey",
+      "label": "KpiKey",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "kpikey",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L45"
+    },
+    {
       "id": "pipeline_dashboard_src_types_events_normalizedevent",
       "label": "NormalizedEvent",
       "_callable": true,
@@ -285,19 +311,6 @@
       "norm_label": "normalizedevent",
       "source_file": "pipeline-dashboard/src/types/events.ts",
       "source_location": "L25"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_events_speedbucket",
-      "label": "SpeedBucket",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "speedbucket",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L58"
     },
     {
       "id": "pipeline_dashboard_src_types_events_timeframe",
@@ -324,19 +337,6 @@
       "norm_label": "toplead",
       "source_file": "pipeline-dashboard/src/types/events.ts",
       "source_location": "L63"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_events_trendbucket",
-      "label": "TrendBucket",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "trendbucket",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L53"
     },
     {
       "id": "pipeline_dashboard_src_types_users_adduserinput",
@@ -495,6 +495,45 @@
       "source_location": "L6"
     },
     {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_conversiondonutprops",
+      "label": "ConversionDonutProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "conversiondonutprops",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_donutsegment",
+      "label": "DonutSegment",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "donutsegment",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_emptystateprops",
+      "label": "EmptyStateProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "emptystateprops",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L7"
+    },
+    {
       "id": "pipeline_dashboard_src_components_timeframetoggle_timeframetoggleprops",
       "label": "TimeframeToggleProps",
       "_callable": true,
@@ -506,32 +545,6 @@
       "norm_label": "timeframetoggleprops",
       "source_file": "pipeline-dashboard/src/components/TimeframeToggle.tsx",
       "source_location": "L41"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_events_kpicounts",
-      "label": "KpiCounts",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
-      "file_type": "code",
-      "norm_label": "kpicounts",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L33"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_events_kpikey",
-      "label": "KpiKey",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
-      "file_type": "code",
-      "norm_label": "kpikey",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L45"
     },
     {
       "id": "pipeline_dashboard_src_components_errorstate_errorstateprops",
@@ -573,39 +586,13 @@
       "source_location": "L14"
     },
     {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_conversiondonutprops",
-      "label": "ConversionDonutProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "conversiondonutprops",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_donutsegment",
-      "label": "DonutSegment",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "donutsegment",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L10"
-    },
-    {
       "id": "pipeline_dashboard_src_components_charts_speedtrendchart_speedtrendchartprops",
       "label": "SpeedTrendChartProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "speedtrendchartprops",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -618,24 +605,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "weeklytrendprops",
       "source_file": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
       "source_location": "L11"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_emptystateprops",
-      "label": "EmptyStateProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "emptystateprops",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L7"
     },
     {
       "id": "pipeline_dashboard_src_styled_d_defaulttheme",
@@ -644,7 +618,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "defaulttheme",
       "source_file": "pipeline-dashboard/src/styled.d.ts",
@@ -657,11 +631,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "theme",
       "source_file": "pipeline-dashboard/src/theme.ts",
       "source_location": "L94"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_events_speedbucket",
+      "label": "SpeedBucket",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SpeedTrendChart.tsx",
+      "file_type": "code",
+      "norm_label": "speedbucket",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L58"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_events_trendbucket",
+      "label": "TrendBucket",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SpeedTrendChart.tsx",
+      "file_type": "code",
+      "norm_label": "trendbucket",
+      "source_file": "pipeline-dashboard/src/types/events.ts",
+      "source_location": "L53"
     },
     {
       "id": "pipeline_dashboard_server_adapters_local_file_duplicateemailerror",
@@ -701,6 +701,32 @@
       "norm_label": "kpicardprops",
       "source_file": "pipeline-dashboard/src/components/KpiCard.tsx",
       "source_location": "L11"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_changes_change",
+      "label": "Change",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "pipeline-dashboard/src/components/KpiCard.tsx",
+      "file_type": "code",
+      "norm_label": "change",
+      "source_file": "pipeline-dashboard/src/types/changes.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_changes_changelabel",
+      "label": "ChangeLabel",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "pipeline-dashboard/src/components/KpiCard.tsx",
+      "file_type": "code",
+      "norm_label": "changelabel",
+      "source_file": "pipeline-dashboard/src/types/changes.ts",
+      "source_location": "L2"
     },
     {
       "id": "bloomline_dashboard_src_components_calendargrid_calendargridprops",
@@ -1078,32 +1104,6 @@
       "norm_label": "kpicardprops",
       "source_file": "bloomline-dashboard/src/components/KpiCard.tsx",
       "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_calendargrid_calendargridprops",
-      "label": "CalendarGridProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "pipeline-dashboard/src/App.tsx",
-      "file_type": "code",
-      "norm_label": "calendargridprops",
-      "source_file": "pipeline-dashboard/src/components/CalendarGrid.tsx",
-      "source_location": "L10"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_events_eventpayload",
-      "label": "EventPayload",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "pipeline-dashboard/src/App.tsx",
-      "file_type": "code",
-      "norm_label": "eventpayload",
-      "source_file": "pipeline-dashboard/src/types/events.ts",
-      "source_location": "L13"
     },
     {
       "id": "bloomline_dashboard_src_components_errorboundary_errorboundary",
@@ -1862,6 +1862,18 @@
       "source_location": "L9"
     },
     {
+      "id": "launchops_portal_check_domains_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L23"
+    },
+    {
       "id": "launchops_portal_server_app_createapp",
       "label": "createApp()",
       "_callable": true,
@@ -2390,6 +2402,18 @@
       "source_location": "L26"
     },
     {
+      "id": "pipeline_dashboard_src_components_devmodebadge_devmodebadge",
+      "label": "DevModeBadge()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "devmodebadge()",
+      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
+      "source_location": "L22"
+    },
+    {
       "id": "pipeline_dashboard_src_hooks_usefetch_usefetch",
       "label": "useFetch()",
       "_callable": true,
@@ -2402,16 +2426,76 @@
       "source_location": "L13"
     },
     {
-      "id": "pipeline_dashboard_src_hooks_useusers_useusers",
-      "label": "useUsers()",
+      "id": "pipeline_dashboard_src_hooks_usehealth_usehealth",
+      "label": "useHealth()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
       "community_name": "pipeline-dashboard/src/types/events.ts",
       "file_type": "code",
-      "norm_label": "useusers()",
-      "source_file": "pipeline-dashboard/src/hooks/useUsers.ts",
-      "source_location": "L7"
+      "norm_label": "usehealth()",
+      "source_file": "pipeline-dashboard/src/hooks/useHealth.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_hooks_usekpis_usekpis",
+      "label": "useKpis()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "usekpis()",
+      "source_file": "pipeline-dashboard/src/hooks/useKpis.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_hooks_usespeedtrend_usespeedtrend",
+      "label": "useSpeedTrend()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "usespeedtrend()",
+      "source_file": "pipeline-dashboard/src/hooks/useSpeedTrend.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_hooks_usetopleads_usetopleads",
+      "label": "useTopLeads()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "usetopleads()",
+      "source_file": "pipeline-dashboard/src/hooks/useTopLeads.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_hooks_usetrend_usetrend",
+      "label": "useTrend()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "usetrend()",
+      "source_file": "pipeline-dashboard/src/hooks/useTrend.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "pipeline_dashboard_src_tabs_dashboardtab_dashboardtab",
+      "label": "DashboardTab()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "dashboardtab()",
+      "source_file": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
+      "source_location": "L215"
     },
     {
       "id": "launchops_portal_check_portal_password_env_api",
@@ -2690,6 +2774,186 @@
       "source_location": "L46"
     },
     {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_conversiondonut",
+      "label": "ConversionDonut()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "conversiondonut()",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L62"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_segmentcolor",
+      "label": "segmentColor()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "segmentcolor()",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L56"
+    },
+    {
+      "id": "launchops_portal_cleanup_portal_store_api",
+      "label": "api()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 140,
+      "community_name": "cleanup-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "api()",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L19"
+    },
+    {
+      "id": "launchops_portal_cleanup_portal_store_queryall",
+      "label": "queryAll()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 140,
+      "community_name": "cleanup-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "queryall()",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L47"
+    },
+    {
+      "id": "launchops_portal_cleanup_portal_store_sleep",
+      "label": "sleep()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 140,
+      "community_name": "cleanup-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "sleep()",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L17"
+    },
+    {
+      "id": "launchops_portal_cleanup_portal_store_titleof",
+      "label": "titleOf()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 140,
+      "community_name": "cleanup-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "titleof()",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L35"
+    },
+    {
+      "id": "launchops_portal_debug_portal_store_api",
+      "label": "api()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 141,
+      "community_name": "debug-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "api()",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L19"
+    },
+    {
+      "id": "launchops_portal_debug_portal_store_peektitle",
+      "label": "peekTitle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 141,
+      "community_name": "debug-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "peektitle()",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L44"
+    },
+    {
+      "id": "launchops_portal_debug_portal_store_queryall",
+      "label": "queryAll()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 141,
+      "community_name": "debug-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "queryall()",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L31"
+    },
+    {
+      "id": "launchops_portal_find_junk_api",
+      "label": "api()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "find-junk.mjs",
+      "file_type": "code",
+      "norm_label": "api()",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L18"
+    },
+    {
+      "id": "launchops_portal_find_junk_queryall",
+      "label": "queryAll()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "find-junk.mjs",
+      "file_type": "code",
+      "norm_label": "queryall()",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L43"
+    },
+    {
+      "id": "launchops_portal_find_junk_sleep",
+      "label": "sleep()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "find-junk.mjs",
+      "file_type": "code",
+      "norm_label": "sleep()",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L16"
+    },
+    {
+      "id": "launchops_portal_find_junk_titleof",
+      "label": "titleOf()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "find-junk.mjs",
+      "file_type": "code",
+      "norm_label": "titleof()",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L34"
+    },
+    {
+      "id": "scripts_verify_document_extract_text",
+      "label": "extract_text()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 143,
+      "community_name": "verify_document.py",
+      "file_type": "code",
+      "norm_label": "extract_text()",
+      "source_file": "scripts/verify_document.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "scripts_verify_document_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 143,
+      "community_name": "verify_document.py",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/verify_document.py",
+      "source_location": "L31"
+    },
+    {
       "id": "launchops_portal_src_components_ui_loading",
       "label": "Loading()",
       "_callable": true,
@@ -2712,66 +2976,6 @@
       "norm_label": "timeframetoggle()",
       "source_file": "pipeline-dashboard/src/components/TimeframeToggle.tsx",
       "source_location": "L46"
-    },
-    {
-      "id": "pipeline_dashboard_src_hooks_usekpis_usekpis",
-      "label": "useKpis()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
-      "file_type": "code",
-      "norm_label": "usekpis()",
-      "source_file": "pipeline-dashboard/src/hooks/useKpis.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_hooks_usespeedtrend_usespeedtrend",
-      "label": "useSpeedTrend()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
-      "file_type": "code",
-      "norm_label": "usespeedtrend()",
-      "source_file": "pipeline-dashboard/src/hooks/useSpeedTrend.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_hooks_usetopleads_usetopleads",
-      "label": "useTopLeads()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
-      "file_type": "code",
-      "norm_label": "usetopleads()",
-      "source_file": "pipeline-dashboard/src/hooks/useTopLeads.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_hooks_usetrend_usetrend",
-      "label": "useTrend()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
-      "file_type": "code",
-      "norm_label": "usetrend()",
-      "source_file": "pipeline-dashboard/src/hooks/useTrend.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "pipeline_dashboard_src_tabs_dashboardtab_dashboardtab",
-      "label": "DashboardTab()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
-      "file_type": "code",
-      "norm_label": "dashboardtab()",
-      "source_file": "pipeline-dashboard/src/tabs/DashboardTab.tsx",
-      "source_location": "L215"
     },
     {
       "id": "pipeline_dashboard_src_tabs_dashboardtab_handoversubtitle",
@@ -2887,35 +3091,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "app()",
       "source_file": "pipeline-dashboard/src/App.tsx",
       "source_location": "L31"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_conversiondonut",
-      "label": "ConversionDonut()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "conversiondonut()",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L62"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_segmentcolor",
-      "label": "segmentColor()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "segmentcolor()",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L56"
     },
     {
       "id": "pipeline_dashboard_src_components_charts_speedtrendchart_formathours",
@@ -2923,7 +3103,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "formathours()",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -2935,7 +3115,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "speedtrendchart()",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -2947,7 +3127,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "weeklytrend()",
       "source_file": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
@@ -2959,7 +3139,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "formatdaykey()",
       "source_file": "pipeline-dashboard/src/utils/format.ts",
@@ -3878,18 +4058,6 @@
       "source_location": "L94"
     },
     {
-      "id": "pipeline_dashboard_src_components_devmodebadge_devmodebadge",
-      "label": "DevModeBadge()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "pipeline-dashboard/src/components/Header.tsx",
-      "file_type": "code",
-      "norm_label": "devmodebadge()",
-      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
-      "source_location": "L22"
-    },
-    {
       "id": "pipeline_dashboard_src_components_header_header",
       "label": "Header()",
       "_callable": true,
@@ -3900,18 +4068,6 @@
       "norm_label": "header()",
       "source_file": "pipeline-dashboard/src/components/Header.tsx",
       "source_location": "L80"
-    },
-    {
-      "id": "pipeline_dashboard_src_hooks_usehealth_usehealth",
-      "label": "useHealth()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "pipeline-dashboard/src/components/Header.tsx",
-      "file_type": "code",
-      "norm_label": "usehealth()",
-      "source_file": "pipeline-dashboard/src/hooks/useHealth.ts",
-      "source_location": "L6"
     },
     {
       "id": "onboarding_site_src_app_app",
@@ -4598,6 +4754,18 @@
       "source_location": "L6"
     },
     {
+      "id": "pipeline_dashboard_src_hooks_useusers_useusers",
+      "label": "useUsers()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "pipeline-dashboard/src/App.tsx",
+      "file_type": "code",
+      "norm_label": "useusers()",
+      "source_file": "pipeline-dashboard/src/hooks/useUsers.ts",
+      "source_location": "L7"
+    },
+    {
       "id": "pipeline_dashboard_src_tabs_bookingstab_bookingstab",
       "label": "BookingsTab()",
       "_callable": true,
@@ -5258,126 +5426,6 @@
       "source_location": "L76"
     },
     {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_get_field_info",
-      "label": "get_field_info()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "get_field_info()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L47"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_get_full_annotation_field_id",
-      "label": "get_full_annotation_field_id()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "get_full_annotation_field_id()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L9"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_make_field_dict",
-      "label": "make_field_dict()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "make_field_dict()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L19"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_write_field_info",
-      "label": "write_field_info()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "write_field_info()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L110"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_fill_pdf_fields",
-      "label": "fill_pdf_fields()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "fill_pdf_fields()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
-      "source_location": "L11"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_monkeypatch_pydpf_method",
-      "label": "monkeypatch_pydpf_method()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "monkeypatch_pydpf_method()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
-      "source_location": "L74"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_validation_error_for_field_value",
-      "label": "validation_error_for_field_value()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "validation_error_for_field_value()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
-      "source_location": "L55"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_fill_pdf_form",
-      "label": "fill_pdf_form()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "fill_pdf_form()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
-      "source_location": "L33"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_transform_from_image_coords",
-      "label": "transform_from_image_coords()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "transform_from_image_coords()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
-      "source_location": "L10"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_transform_from_pdf_coords",
-      "label": "transform_from_pdf_coords()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "transform_from_pdf_coords()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
-      "source_location": "L23"
-    },
-    {
       "id": "bloomline_dashboard_src_components_devmodebadge_devmodebadge",
       "label": "DevModeBadge()",
       "_callable": true,
@@ -5604,6 +5652,126 @@
       "norm_label": "_ytop()",
       "source_file": "clients/leadflow/build_contract.py",
       "source_location": "L76"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_get_field_info",
+      "label": "get_field_info()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "get_field_info()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L47"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_get_full_annotation_field_id",
+      "label": "get_full_annotation_field_id()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "get_full_annotation_field_id()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L9"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_make_field_dict",
+      "label": "make_field_dict()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "make_field_dict()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_write_field_info",
+      "label": "write_field_info()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "write_field_info()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L110"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_fill_pdf_fields",
+      "label": "fill_pdf_fields()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "fill_pdf_fields()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_monkeypatch_pydpf_method",
+      "label": "monkeypatch_pydpf_method()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "monkeypatch_pydpf_method()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_validation_error_for_field_value",
+      "label": "validation_error_for_field_value()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "validation_error_for_field_value()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
+      "source_location": "L55"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_fill_pdf_form",
+      "label": "fill_pdf_form()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "fill_pdf_form()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_transform_from_image_coords",
+      "label": "transform_from_image_coords()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "transform_from_image_coords()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "source_location": "L10"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_transform_from_pdf_coords",
+      "label": "transform_from_pdf_coords()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "transform_from_pdf_coords()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "source_location": "L23"
     },
     {
       "id": "modal_proposal_agent_generate_client_proposal_pdf",
@@ -6537,6 +6705,83 @@
       "source_location": "L4"
     },
     {
+      "id": "launchops_portal_check_domains",
+      "label": "check-domains.mjs",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "check-domains.mjs",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_check_domains_dirname",
+      "label": "__dirname",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "__dirname",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L5"
+    },
+    {
+      "id": "launchops_portal_check_domains_env",
+      "label": "env",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "env",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L8"
+    },
+    {
+      "id": "launchops_portal_check_domains_envfile",
+      "label": "envFile",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "envfile",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L7"
+    },
+    {
+      "id": "launchops_portal_check_domains_h",
+      "label": "H",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "h",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L16"
+    },
+    {
+      "id": "launchops_portal_check_domains_prj",
+      "label": "prj",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "prj",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L14"
+    },
+    {
+      "id": "launchops_portal_check_domains_root",
+      "label": "root",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "root",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L6"
+    },
+    {
       "id": "launchops_portal_list_projects",
       "label": "list-projects.mjs",
       "_origin": "ast",
@@ -7329,6 +7574,28 @@
       "source_location": "L47"
     },
     {
+      "id": "pipeline_dashboard_src_components_devmodebadge",
+      "label": "pipeline-dashboard/src/components/DevModeBadge.tsx",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "pipeline-dashboard/src/components/devmodebadge.tsx",
+      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_devmodebadge_badge",
+      "label": "Badge",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "pipeline-dashboard/src/types/events.ts",
+      "file_type": "code",
+      "norm_label": "badge",
+      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
+      "source_location": "L7"
+    },
+    {
       "id": "pipeline_dashboard_src_hooks_usecalendar",
       "label": "pipeline-dashboard/src/hooks/useCalendar.ts",
       "_origin": "ast",
@@ -7425,17 +7692,6 @@
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/hooks/useusers.ts",
       "source_file": "pipeline-dashboard/src/hooks/useUsers.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_dashboard_src_types_changes",
-      "label": "pipeline-dashboard/src/types/changes.ts",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "pipeline-dashboard/src/types/events.ts",
-      "file_type": "code",
-      "norm_label": "pipeline-dashboard/src/types/changes.ts",
-      "source_file": "pipeline-dashboard/src/types/changes.ts",
       "source_location": "L1"
     },
     {
@@ -8597,26 +8853,125 @@
       "source_location": "L12"
     },
     {
-      "id": "bloomline_dashboard_package_devdependencies_types_react",
-      "label": "@types/react",
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut",
+      "label": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
       "_origin": "ast",
       "community": 139,
-      "community_name": "@types/react",
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
       "file_type": "code",
-      "norm_label": "@types/react",
-      "source_file": "bloomline-dashboard/package.json",
-      "source_location": "L26"
+      "norm_label": "pipeline-dashboard/src/components/charts/conversiondonut.tsx",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L1"
     },
     {
-      "id": "bloomline_dashboard_package_json_types_react",
-      "label": "@types/react",
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_chartwrap",
+      "label": "ChartWrap",
       "_origin": "ast",
       "community": 139,
-      "community_name": "@types/react",
-      "file_type": "concept",
-      "norm_label": "@types/react",
-      "source_file": "bloomline-dashboard/package.json",
-      "source_location": "L26"
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "chartwrap",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L19"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legend",
+      "label": "Legend",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "legend",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legendcount",
+      "label": "LegendCount",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "legendcount",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L47"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legenddot",
+      "label": "LegendDot",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "legenddot",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L39"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legendrow",
+      "label": "LegendRow",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "legendrow",
+      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate",
+      "label": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "pipeline-dashboard/src/components/emptystate.tsx",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_hint",
+      "label": "Hint",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "hint",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L44"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_message",
+      "label": "Message",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "message",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L37"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_title",
+      "label": "Title",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "title",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "pipeline_dashboard_src_components_emptystate_wrapper",
+      "label": "Wrapper",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "file_type": "code",
+      "norm_label": "wrapper",
+      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "source_location": "L14"
     },
     {
       "id": "opencode_agents_skills_pdf_reference",
@@ -9181,6 +9536,215 @@
       "norm_label": "troubleshooting common issues",
       "source_file": ".opencode/.agents/skills/pdf/reference.md",
       "source_location": "L567"
+    },
+    {
+      "id": "launchops_portal_cleanup_portal_store",
+      "label": "cleanup-portal-store.mjs",
+      "_origin": "ast",
+      "community": 140,
+      "community_name": "cleanup-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "cleanup-portal-store.mjs",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_cleanup_portal_store_dirname",
+      "label": "__dirname",
+      "_origin": "ast",
+      "community": 140,
+      "community_name": "cleanup-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "__dirname",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L8"
+    },
+    {
+      "id": "launchops_portal_cleanup_portal_store_env",
+      "label": "env",
+      "_origin": "ast",
+      "community": 140,
+      "community_name": "cleanup-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "env",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L10"
+    },
+    {
+      "id": "launchops_portal_cleanup_portal_store_root",
+      "label": "root",
+      "_origin": "ast",
+      "community": 140,
+      "community_name": "cleanup-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "root",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L9"
+    },
+    {
+      "id": "launchops_portal_cleanup_portal_store_should_archive",
+      "label": "SHOULD_ARCHIVE",
+      "_origin": "ast",
+      "community": 140,
+      "community_name": "cleanup-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "should_archive",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L16"
+    },
+    {
+      "id": "launchops_portal_debug_portal_store",
+      "label": "debug-portal-store.mjs",
+      "_origin": "ast",
+      "community": 141,
+      "community_name": "debug-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "debug-portal-store.mjs",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_debug_portal_store_auth",
+      "label": "auth",
+      "_origin": "ast",
+      "community": 141,
+      "community_name": "debug-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "auth",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L15"
+    },
+    {
+      "id": "launchops_portal_debug_portal_store_dirname",
+      "label": "__dirname",
+      "_origin": "ast",
+      "community": 141,
+      "community_name": "debug-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "__dirname",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L7"
+    },
+    {
+      "id": "launchops_portal_debug_portal_store_env",
+      "label": "env",
+      "_origin": "ast",
+      "community": 141,
+      "community_name": "debug-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "env",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L9"
+    },
+    {
+      "id": "launchops_portal_debug_portal_store_root",
+      "label": "root",
+      "_origin": "ast",
+      "community": 141,
+      "community_name": "debug-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "root",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L8"
+    },
+    {
+      "id": "launchops_portal_debug_portal_store_store",
+      "label": "store",
+      "_origin": "ast",
+      "community": 141,
+      "community_name": "debug-portal-store.mjs",
+      "file_type": "code",
+      "norm_label": "store",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L17"
+    },
+    {
+      "id": "launchops_portal_find_junk",
+      "label": "find-junk.mjs",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "find-junk.mjs",
+      "file_type": "code",
+      "norm_label": "find-junk.mjs",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_find_junk_dirname",
+      "label": "__dirname",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "find-junk.mjs",
+      "file_type": "code",
+      "norm_label": "__dirname",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L7"
+    },
+    {
+      "id": "launchops_portal_find_junk_env",
+      "label": "env",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "find-junk.mjs",
+      "file_type": "code",
+      "norm_label": "env",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L10"
+    },
+    {
+      "id": "launchops_portal_find_junk_root",
+      "label": "root",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "find-junk.mjs",
+      "file_type": "code",
+      "norm_label": "root",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L8"
+    },
+    {
+      "id": "launchops_portal_find_junk_store",
+      "label": "store",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "find-junk.mjs",
+      "file_type": "code",
+      "norm_label": "store",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L9"
+    },
+    {
+      "id": "scripts_verify_document",
+      "label": "verify_document.py",
+      "_origin": "ast",
+      "community": 143,
+      "community_name": "verify_document.py",
+      "file_type": "code",
+      "norm_label": "verify_document.py",
+      "source_file": "scripts/verify_document.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "bloomline_dashboard_package_devdependencies_eslint_plugin_react_refresh",
+      "label": "eslint-plugin-react-refresh",
+      "_origin": "ast",
+      "community": 144,
+      "community_name": "eslint-plugin-react-refresh",
+      "file_type": "code",
+      "norm_label": "eslint-plugin-react-refresh",
+      "source_file": "bloomline-dashboard/package.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "eslint_plugin_react_refresh",
+      "label": "eslint-plugin-react-refresh",
+      "_origin": "ast",
+      "community": 144,
+      "community_name": "eslint-plugin-react-refresh",
+      "file_type": "concept",
+      "norm_label": "eslint-plugin-react-refresh",
+      "source_file": "bloomline-dashboard/package.json",
+      "source_location": "L32"
     },
     {
       "id": "launchops_portal_src_views_testimonials",
@@ -10228,77 +10792,11 @@
       "source_location": "L62"
     },
     {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut",
-      "label": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "pipeline-dashboard/src/components/charts/conversiondonut.tsx",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_chartwrap",
-      "label": "ChartWrap",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "chartwrap",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L19"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legend",
-      "label": "Legend",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "legend",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L24"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legendcount",
-      "label": "LegendCount",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "legendcount",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L47"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legenddot",
-      "label": "LegendDot",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "legenddot",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L39"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_charts_conversiondonut_legendrow",
-      "label": "LegendRow",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "legendrow",
-      "source_file": "pipeline-dashboard/src/components/charts/ConversionDonut.tsx",
-      "source_location": "L31"
-    },
-    {
       "id": "pipeline_dashboard_src_components_charts_speedtrendchart",
       "label": "SpeedTrendChart.tsx",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "speedtrendchart.tsx",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -10309,7 +10807,7 @@
       "label": "ChartWrap",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "chartwrap",
       "source_file": "pipeline-dashboard/src/components/charts/SpeedTrendChart.tsx",
@@ -10320,7 +10818,7 @@
       "label": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/components/charts/weeklytrend.tsx",
       "source_file": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
@@ -10331,73 +10829,18 @@
       "label": "ChartWrap",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "chartwrap",
       "source_file": "pipeline-dashboard/src/components/charts/WeeklyTrend.tsx",
       "source_location": "L16"
     },
     {
-      "id": "pipeline_dashboard_src_components_emptystate",
-      "label": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "pipeline-dashboard/src/components/emptystate.tsx",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_hint",
-      "label": "Hint",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "hint",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L44"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_message",
-      "label": "Message",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "message",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L37"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_title",
-      "label": "Title",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "title",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L31"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_emptystate_wrapper",
-      "label": "Wrapper",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "file_type": "code",
-      "norm_label": "wrapper",
-      "source_file": "pipeline-dashboard/src/components/EmptyState.tsx",
-      "source_location": "L14"
-    },
-    {
       "id": "pipeline_dashboard_src_main",
       "label": "pipeline-dashboard/src/main.tsx",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/main.tsx",
       "source_file": "pipeline-dashboard/src/main.tsx",
@@ -10408,7 +10851,7 @@
       "label": "pipeline-dashboard/src/styled.d.ts",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/styled.d.ts",
       "source_file": "pipeline-dashboard/src/styled.d.ts",
@@ -10419,7 +10862,7 @@
       "label": "styled-components",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "styled-components",
       "source_file": "pipeline-dashboard/src/styled.d.ts",
@@ -10430,7 +10873,7 @@
       "label": "pipeline-dashboard/src/styles/GlobalStyles.ts",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/styles/globalstyles.ts",
       "source_file": "pipeline-dashboard/src/styles/GlobalStyles.ts",
@@ -10441,7 +10884,7 @@
       "label": "GlobalStyles",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "globalstyles",
       "source_file": "pipeline-dashboard/src/styles/GlobalStyles.ts",
@@ -10452,7 +10895,7 @@
       "label": "pipeline-dashboard/src/theme.ts",
       "_origin": "ast",
       "community": 19,
-      "community_name": "pipeline-dashboard/src/components/EmptyState.tsx",
+      "community_name": "SpeedTrendChart.tsx",
       "file_type": "code",
       "norm_label": "pipeline-dashboard/src/theme.ts",
       "source_file": "pipeline-dashboard/src/theme.ts",
@@ -10853,6 +11296,17 @@
       "norm_label": "value",
       "source_file": "pipeline-dashboard/src/components/KpiCard.tsx",
       "source_location": "L59"
+    },
+    {
+      "id": "pipeline_dashboard_src_types_changes",
+      "label": "pipeline-dashboard/src/types/changes.ts",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "pipeline-dashboard/src/components/KpiCard.tsx",
+      "file_type": "code",
+      "norm_label": "pipeline-dashboard/src/types/changes.ts",
+      "source_file": "pipeline-dashboard/src/types/changes.ts",
+      "source_location": "L1"
     },
     {
       "id": "opencode_agents_skills_proposal_writer_skill",
@@ -14033,17 +14487,6 @@
       "source_location": "L31"
     },
     {
-      "id": "bloomline_dashboard_package_devdependencies_eslint_plugin_react_refresh",
-      "label": "eslint-plugin-react-refresh",
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "eslint-plugin-react-refresh",
-      "source_file": "bloomline-dashboard/package.json",
-      "source_location": "L32"
-    },
-    {
       "id": "bloomline_dashboard_package_devdependencies_globals",
       "label": "globals",
       "_origin": "ast",
@@ -14053,6 +14496,17 @@
       "norm_label": "globals",
       "source_file": "bloomline-dashboard/package.json",
       "source_location": "L33"
+    },
+    {
+      "id": "bloomline_dashboard_package_devdependencies_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/react",
+      "source_file": "bloomline-dashboard/package.json",
+      "source_location": "L26"
     },
     {
       "id": "bloomline_dashboard_package_devdependencies_typescript",
@@ -14099,6 +14553,17 @@
       "source_location": "L29"
     },
     {
+      "id": "bloomline_dashboard_package_json_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "devDependencies",
+      "file_type": "concept",
+      "norm_label": "@types/react",
+      "source_file": "bloomline-dashboard/package.json",
+      "source_location": "L26"
+    },
+    {
       "id": "bloomline_dashboard_package_json_typescript",
       "label": "typescript",
       "_origin": "ast",
@@ -14141,17 +14606,6 @@
       "norm_label": "eslint-plugin-react-hooks",
       "source_file": "bloomline-dashboard/package.json",
       "source_location": "L31"
-    },
-    {
-      "id": "eslint_plugin_react_refresh",
-      "label": "eslint-plugin-react-refresh",
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "eslint-plugin-react-refresh",
-      "source_file": "bloomline-dashboard/package.json",
-      "source_location": "L32"
     },
     {
       "id": "globals",
@@ -14306,28 +14760,6 @@
       "norm_label": "typetag",
       "source_file": "launchops-portal/src/views/Documents.tsx",
       "source_location": "L182"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_devmodebadge",
-      "label": "pipeline-dashboard/src/components/DevModeBadge.tsx",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "pipeline-dashboard/src/components/Header.tsx",
-      "file_type": "code",
-      "norm_label": "pipeline-dashboard/src/components/devmodebadge.tsx",
-      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_dashboard_src_components_devmodebadge_badge",
-      "label": "Badge",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "pipeline-dashboard/src/components/Header.tsx",
-      "file_type": "code",
-      "norm_label": "badge",
-      "source_file": "pipeline-dashboard/src/components/DevModeBadge.tsx",
-      "source_location": "L7"
     },
     {
       "id": "pipeline_dashboard_src_components_header",
@@ -17569,50 +18001,6 @@
       "source_location": ""
     },
     {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info",
-      "label": "extract_form_field_info.py",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "extract_form_field_info.py",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields",
-      "label": "fill_fillable_fields.py",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "fill_fillable_fields.py",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations",
-      "label": "fill_pdf_form_with_annotations.py",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "fill_pdf_form_with_annotations.py",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "pdfreader",
-      "label": "PdfReader",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "bloomline-apparel/build_contract.py",
-      "file_type": "code",
-      "norm_label": "pdfreader",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "clients_bloomline_apparel_build_contract_rationale_196",
       "label": "Main section heading + the template's dark-navy underline rule.",
       "_origin": "ast",
@@ -19387,6 +19775,50 @@
       "community_name": "leadflow/build_contract.py",
       "file_type": "code",
       "norm_label": "flowable",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info",
+      "label": "extract_form_field_info.py",
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "extract_form_field_info.py",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields",
+      "label": "fill_fillable_fields.py",
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "fill_fillable_fields.py",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations",
+      "label": "fill_pdf_form_with_annotations.py",
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "fill_pdf_form_with_annotations.py",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "pdfreader",
+      "label": "PdfReader",
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "leadflow/build_contract.py",
+      "file_type": "code",
+      "norm_label": "pdfreader",
       "source_file": "",
       "source_location": ""
     },
@@ -23250,6 +23682,42 @@
       "weight": 1.0
     },
     {
+      "source": "launchops_portal_cleanup_portal_store_queryall",
+      "target": "launchops_portal_cleanup_portal_store_api",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_debug_portal_store_queryall",
+      "target": "launchops_portal_debug_portal_store_api",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_find_junk_queryall",
+      "target": "launchops_portal_find_junk_api",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
       "source": "launchops_portal_server_app_createapp",
       "target": "launchops_portal_server_config_resolveconfig",
       "relation": "calls",
@@ -25491,6 +25959,18 @@
       "context": "call",
       "source_file": "pipeline-dashboard/src/utils/format.ts",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_verify_document_main",
+      "target": "scripts_verify_document_extract_text",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/verify_document.py",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -41978,6 +42458,83 @@
       "weight": 1.0
     },
     {
+      "source": "launchops_portal_check_domains",
+      "target": "launchops_portal_check_domains_prj",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_check_domains",
+      "target": "launchops_portal_check_domains_h",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_check_domains",
+      "target": "launchops_portal_check_domains_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_check_domains",
+      "target": "launchops_portal_check_domains_dirname",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_check_domains",
+      "target": "launchops_portal_check_domains_root",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_check_domains",
+      "target": "launchops_portal_check_domains_envfile",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_check_domains",
+      "target": "launchops_portal_check_domains_env",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
       "source": "launchops_portal_check_portal_login",
       "target": "launchops_portal_check_portal_login_dirname",
       "relation": "contains",
@@ -42165,6 +42722,182 @@
       "weight": 1.0
     },
     {
+      "source": "launchops_portal_cleanup_portal_store",
+      "target": "launchops_portal_cleanup_portal_store_env",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_cleanup_portal_store",
+      "target": "launchops_portal_cleanup_portal_store_should_archive",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_cleanup_portal_store",
+      "target": "launchops_portal_cleanup_portal_store_sleep",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_cleanup_portal_store",
+      "target": "launchops_portal_cleanup_portal_store_api",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_cleanup_portal_store",
+      "target": "launchops_portal_cleanup_portal_store_titleof",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_cleanup_portal_store",
+      "target": "launchops_portal_cleanup_portal_store_queryall",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_cleanup_portal_store",
+      "target": "launchops_portal_cleanup_portal_store_dirname",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_cleanup_portal_store",
+      "target": "launchops_portal_cleanup_portal_store_root",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/cleanup-portal-store.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_debug_portal_store",
+      "target": "launchops_portal_debug_portal_store_auth",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_debug_portal_store",
+      "target": "launchops_portal_debug_portal_store_store",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_debug_portal_store",
+      "target": "launchops_portal_debug_portal_store_api",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_debug_portal_store",
+      "target": "launchops_portal_debug_portal_store_queryall",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_debug_portal_store",
+      "target": "launchops_portal_debug_portal_store_peektitle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_debug_portal_store",
+      "target": "launchops_portal_debug_portal_store_dirname",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_debug_portal_store",
+      "target": "launchops_portal_debug_portal_store_root",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_debug_portal_store",
+      "target": "launchops_portal_debug_portal_store_env",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/debug-portal-store.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "launchops_portal_diagnose_portal_login",
       "target": "launchops_portal_diagnose_portal_login_root",
       "relation": "contains",
@@ -42260,6 +42993,94 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/diagnose-portal-login.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_find_junk",
+      "target": "launchops_portal_find_junk_env",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_find_junk",
+      "target": "launchops_portal_find_junk_sleep",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_find_junk",
+      "target": "launchops_portal_find_junk_api",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_find_junk",
+      "target": "launchops_portal_find_junk_titleof",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_find_junk",
+      "target": "launchops_portal_find_junk_queryall",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_find_junk",
+      "target": "launchops_portal_find_junk_dirname",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_find_junk",
+      "target": "launchops_portal_find_junk_root",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/find-junk.mjs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_find_junk",
+      "target": "launchops_portal_find_junk_store",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/find-junk.mjs",
       "source_location": "L9",
       "weight": 1.0
     },
@@ -53715,6 +54536,37 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_verify_document",
+      "target": "scripts_verify_document_extract_text",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/verify_document.py",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_verify_document",
+      "target": "scripts_verify_document_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/verify_document.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_check_domains",
+      "target": "launchops_portal_server_notion",
+      "relation": "dynamic_import",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/check-domains.mjs"
+    },
+    {
       "source": "launchops_portal_list_projects",
       "target": "launchops_portal_server_notion",
       "relation": "dynamic_import",
@@ -55095,5 +55947,5 @@
       "source_file": "templates"
     }
   ],
-  "built_at_commit": "ba43b3e609e1c4d59b705e621cd022c87d0798fc"
+  "built_at_commit": "2894a282c385d18777f23e79bfe3a120b9993bc4"
 }
