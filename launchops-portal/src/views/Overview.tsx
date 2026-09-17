@@ -53,7 +53,7 @@ export function Overview({ onOpenProject }: { onOpenProject: (id: string) => voi
           icon={<FiStar />}
           color="#4CC9F0"
           label="Average rating"
-          value={data.avgRating === null ? '—' : Number(data.avgRating).toFixed(1)}
+          value={data.avgRating === null ? '—' : `${Number(data.avgRating).toFixed(1)}/10`}
         />
       </KpiGrid>
 
@@ -96,7 +96,7 @@ export function Overview({ onOpenProject }: { onOpenProject: (id: string) => voi
             <FeedList>
               {data.recentFeedback.map((f) => (
                 <FeedRow key={f.id} onClick={() => f.projectId && onOpenProject(f.projectId)}>
-                  <StarRating value={f.rating} />
+                  <StarRating value={f.rating} max={10} />
                   <FeedTitle>{f.title}</FeedTitle>
                   <FeedDate>{formatDate(f.submitted)}</FeedDate>
                 </FeedRow>

@@ -87,15 +87,19 @@ const Fill = styled.div<{ $value: number; $color: string }>`
   transition: width 0.4s ease;
 `;
 
-export function StarRating({ value }: { value: number | null }) {
+export function StarRating({ value, max = 5 }: { value: number | null; max?: number }) {
   if (value === null || value === undefined) return <Muted>—</Muted>;
   const stars = [1, 2, 3, 4, 5];
+  // The Notion form asks for a rating out of 10; stars are always 5, so scale.
+  const scaled = (Number(value) / max) * 5;
   return (
     <span style={{ display: 'inline-flex', gap: 2, alignItems: 'center' }}>
       {stars.map((s) => (
-        <Star key={s} $on={s <= Math.round(value)}>★</Star>
+        <Star key={s} $on={s <= Math.round(scaled)}>★</Star>
       ))}
-      <Muted style={{ marginLeft: 6 }}>{Number(value).toFixed(1)}</Muted>
+      <Muted style={{ marginLeft: 6 }}>
+        {max === 5 ? Number(value).toFixed(1) : `${Number(value)}/${max}`}
+      </Muted>
     </span>
   );
 }

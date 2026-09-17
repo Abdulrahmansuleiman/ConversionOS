@@ -43,7 +43,16 @@ export interface Feedback {
   'Would Recommend': boolean;
   Submitted: string | null;
   Status: string | null;
+  /** Client's full name as submitted on the Notion form. */
+  FullName: string | null;
+  /** Business name submitted on the form — resolved to a project. */
+  BusinessName: string | null;
+  'Biggest Result So Far': string | null;
+  Video: { name: string | null; url: string | null; type: string } | null;
+  /** Resolved project: the Project relation, else matched from BusinessName. */
+  projectId?: string | null;
   projectName?: string | null;
+  createdTime?: string | null;
 }
 
 export interface Testimonial {
@@ -82,7 +91,7 @@ export interface Overview {
   avgRating: number | null;
   statusBreakdown: Record<string, number>;
   launches: { title: string; launchDate: string; status: string | null; dashboardUrl: string | null }[];
-  recentFeedback: { id: string; title: string; rating: number | null; submitted: string | null; projectId: string }[];
+  recentFeedback: { id: string; title: string; rating: number | null; submitted: string | null; projectId: string | null }[];
 }
 
 export interface ProjectDetail {

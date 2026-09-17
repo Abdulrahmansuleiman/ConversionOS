@@ -237,9 +237,16 @@ export function ProjectDetail({ projectId, onBack }: { projectId: string; onBack
               <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
                 {feedback.map((f) => (
                   <FeedbackItem key={f.id}>
-                    <StarRating value={f.Rating} />
+                    <FHead>
+                      <StarRating value={f.Rating} max={10} />
+                      {(f.FullName || f.BusinessName) && (
+                        <FWho>{[f.FullName, f.BusinessName].filter(Boolean).join(' · ')}</FWho>
+                      )}
+                    </FHead>
+                    <FText><b>“{f.title}”</b></FText>
                     {f['What Went Well'] && <FText><b>Went well —</b> {f['What Went Well']}</FText>}
                     {f['What Could Improve'] && <FText><b>Improve —</b> {f['What Could Improve']}</FText>}
+                    {f['Biggest Result So Far'] && <FText><b>Biggest result —</b> {f['Biggest Result So Far']}</FText>}
                     <FDate>{formatDate(f.Submitted)}</FDate>
                   </FeedbackItem>
                 ))}
@@ -660,6 +667,20 @@ const FText = styled.p`
   font-size: 13px;
   line-height: 1.5;
   b { font-weight: 600; color: ${theme.colors.accent}; }
+`;
+
+const FHead = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+`;
+
+const FWho = styled.span`
+  font-family: ${theme.fonts.mono};
+  font-size: 11px;
+  color: ${theme.colors.textMuted};
 `;
 
 const FDate = styled.div`

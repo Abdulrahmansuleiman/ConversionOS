@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { FiCheck } from 'react-icons/fi';
 import { client } from '../api/client';
 import { theme } from '../theme';
@@ -62,6 +62,7 @@ export function Feedback({ onOpenProject }: { onOpenProject: (id: string) => voi
             <tr>
               <th>Rating</th>
               <th>Feedback</th>
+              <th>Client</th>
               <th>Project</th>
               <th>Submitted</th>
               <th>Status</th>
@@ -71,17 +72,38 @@ export function Feedback({ onOpenProject }: { onOpenProject: (id: string) => voi
           <tbody>
             {visible.map((f) => (
               <tr key={f.id}>
-                <td><StarRating value={f.Rating} /></td>
+                <td><StarRating value={f.Rating} max={10} /></td>
                 <td>
-                  <FMain onClick={() => f.Project?.[0] && onOpenProject(f.Project[0])}>{f.title || 'Untitled feedback'}</FMain>
+                  <FMain onClick={() => f.projectId && onOpenProject(f.projectId)}>{f.title || 'Untitled feedback'}</FMain>
                   {f['What Went Well'] && <FSub>👍 {f['What Went Well']}</FSub>}
                   {f['What Could Improve'] && <FSub>🔧 {f['What Could Improve']}</FSub>}
+                  {f['Biggest Result So Far'] && <FSub>⭐ {f['Biggest Result So Far']}</FSub>}
+                  {(f['Would Recommend'] || f.Video?.url) && (
+                    <FBadges>
+                      {f['Would Recommend'] && <MiniBadge $tone="good">Recommends</MiniBadge>}
+                      {f.Video?.url && (
+                        <MiniBadgeLink href={f.Video.url} target="_blank" rel="noreferrer" $tone="info" onClick={(e) => e.stopPropagation()}>
+                          ▶ Video
+                        </MiniBadgeLink>
+                      )}
+                    </FBadges>
+                  )}
                 </td>
                 <td>
                   <ProjCell>
-                    <Avatar name={f.projectName || '?'} size={24} />
-                    {f.projectName || '—'}
+                    <Avatar name={f.FullName || f.BusinessName || f.title} size={24} />
+                    <NameStack>
+                      <span>{f.FullName || f.BusinessName || '—'}</span>
+                      {f.FullName && f.BusinessName && <BizName>{f.BusinessName}</BizName>}
+                    </NameStack>
                   </ProjCell>
+                </td>
+                <td>
+                  {f.projectName ? (
+                    <ProjName onClick={() => f.projectId && onOpenProject(f.projectId)}>{f.projectName}</ProjName>
+                  ) : (
+                    <MutedCell title="No Project relation and no Business Name on this submission">—</MutedCell>
+                  )}
                 </td>
                 <td>{formatDate(f.Submitted)}</td>
                 <td>
@@ -190,6 +212,61 @@ const ProjCell = styled.div`
   gap: 8px;
   font-weight: 600;
 `;
+
+const NameStack = styled.span`
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+  span:first-child { font-weight: 600; }
+`;
+
+const BizName = styled.span`
+  font-size: 11.5px;
+  color: ${theme.colors.textMuted};
+  font-weight: 500;
+`;
+
+const ProjName = styled.button`
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: ${theme.colors.text};
+  &:hover { color: ${theme.colors.accent}; }
+`;
+
+const MutedCell = styled.span`
+  color: ${theme.colors.textFaint};
+`;
+
+const FBadges = styled.div`
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+`;
+
+const badgeBase = css<{ $tone: 'good' | 'info' }>`
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-family: ${theme.fonts.mono};
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: ${({ $tone }) => ($tone === 'good' ? theme.colors.positive : '#4CC9F0')};
+  background: ${({ $tone }) => ($tone === 'good' ? 'rgba(52,211,153,0.12)' : 'rgba(76,201,240,0.12)')};
+  border: 1px solid ${({ $tone }) => ($tone === 'good' ? 'rgba(52,211,153,0.28)' : 'rgba(76,201,240,0.28)')};
+`;
+
+const MiniBadge = styled.span<{ $tone: 'good' | 'info' }>`${badgeBase}`;
+const MiniBadgeLink = styled.a<{ $tone: 'good' | 'info' }>`${badgeBase}`;
 
 const ReviewBtn = styled.button`
   display: inline-flex;

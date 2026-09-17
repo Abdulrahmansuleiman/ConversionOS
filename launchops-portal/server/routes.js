@@ -33,7 +33,7 @@ export function buildRoutes() {
     try {
       const [projects, feedback] = await Promise.all([
         n.listRows('Projects', DB.Projects.titleKey),
-        n.listRows('Client Feedback', DB['Client Feedback'].titleKey),
+        n.listFeedback(),
       ]);
       const active = projects.filter((p) => !['Completed', 'In Discovery'].includes(p.Status ?? ''));
       const live = projects.filter((p) => p.Status === 'Live' || (p.Status === 'Completed' && p.DashboardURL));
@@ -56,7 +56,7 @@ export function buildRoutes() {
         recentFeedback: [...feedback]
           .sort((a, b) => String(b.Submitted ?? '').localeCompare(String(a.Submitted ?? '')))
           .slice(0, 5)
-          .map((f) => ({ id: f.id, title: f.title, rating: f.Rating, submitted: f.Submitted, projectId: f.Project?.[0] })),
+          .map((f) => ({ id: f.id, title: f.title, rating: f.Rating, submitted: f.Submitted, projectId: f.projectId })),
       });
     } catch (e) {
       res.status(500).json({ error: e.message });
@@ -85,15 +85,15 @@ export function buildRoutes() {
         n.listRows('Build Assets', DB['Build Assets'].titleKey, {
           filter: { property: 'Project', relation: { contains: req.params.id } },
         }),
-        n.listRows('Client Feedback', DB['Client Feedback'].titleKey, {
-          filter: { property: 'Project', relation: { contains: req.params.id } },
-        }),
+        // Feedback is matched on the *resolved* project (form submissions have no
+        // Project relation — they're attributed by Business Name).
+        n.listFeedback({ projectId: req.params.id }),
       ]);
       res.json({
         project,
         milestones: sortByPhase(milestones),
         assets,
-        feedback: [...feedback].sort((a, b) => String(b.Submitted ?? '').localeCompare(String(a.Submitted ?? ''))),
+        feedback,
       });
     } catch (e) {
       res.status(500).json({ error: e.message });
@@ -184,16 +184,7 @@ export function buildRoutes() {
   // --- Client Feedback ---
   r.get('/feedback', async (req, res) => {
     try {
-      const filter = req.query.project_id
-        ? { property: 'Project', relation: { contains: req.query.project_id } }
-        : undefined;
-      const rows = await n.listRows('Client Feedback', DB['Client Feedback'].titleKey, filter ? { filter } : {});
-      const names = await projectNameMap();
-      res.json(
-        rows
-          .sort((a, b) => String(b.Submitted ?? '').localeCompare(String(a.Submitted ?? '')))
-          .map((f) => ({ ...f, projectName: f.Project?.[0] ? names.get(f.Project[0]) || f.Project[0] : null }))
-      );
+      res.json(await n.listFeedback({ projectId: req.query.project_id }));
     } catch (e) {
       res.status(500).json({ error: e.message });
     }

@@ -69,9 +69,10 @@ export function normalize(props, titleKey) {
   return {
     id: props.__id,
     title,
+    createdTime: props.__created_time ?? null,
     ...Object.fromEntries(
       Object.entries(props)
-        .filter(([k]) => k !== titleKey && k !== '__id')
+        .filter(([k]) => k !== titleKey && k !== '__id' && k !== '__created_time')
         .map(([k, v]) => {
           switch (v?.type) {
             case 'title':
@@ -127,12 +128,12 @@ export async function queryDatabase(name, { filter, sorts, pageSize = 100 } = {}
 
 export async function listRows(name, titleKey, opts = {}) {
   const rows = await queryDatabase(name, opts);
-  return rows.map((r) => normalize({ __id: r.id, ...r.properties }, titleKey));
+  return rows.map((r) => normalize({ __id: r.id, __created_time: r.created_time, ...r.properties }, titleKey));
 }
 
 export async function getRow(name, id, titleKey) {
   const res = await api('GET', `https://api.notion.com/v1/pages/${id}`);
-  return normalize({ __id: res.id, ...res.properties }, titleKey);
+  return normalize({ __id: res.id, __created_time: res.created_time, ...res.properties }, titleKey);
 }
 
 export function encodeProps(props, schema) {
@@ -197,4 +198,96 @@ export async function health() {
 export async function lookupProjectName(projectId) {
   const p = await api('GET', `https://api.notion.com/v1/pages/${projectId}`);
   return normalize({ __id: p.id, ...p.properties }, 'Client').title || projectId;
+}
+
+// ---------------------------------------------------------------------------
+// Client Feedback
+//
+// The "Client Feedback" database is filled by a native Notion form, so its
+// property names are the form's question wording and are NOT tidy — several have
+// trailing spaces and question marks. They are mapped here, once, so nothing
+// downstream has to know them. Verified against the live database schema.
+//
+// A native Notion form also cannot set a relation, so `Project` arrives empty on
+// every submission. We therefore attribute a submission by matching the
+// submitted `Business Name` against the Projects database (exact → normalized →
+// containment), which is how a client's project is identified in practice.
+// ---------------------------------------------------------------------------
+export const FEEDBACK_PROPS = {
+  title: 'Feedback ',
+  FullName: 'Full Name',
+  BusinessName: 'Business Name',
+  Rating: 'What Rating (1-10) ',
+  Submitted: 'Date Filed / Submitted',
+  WentWell: 'What Went Well',
+  CouldImprove: 'What Could We Have Done Better',
+  Recommend: 'Would You Recommend LaunchOps ?',
+  BiggestResult: 'Biggest Result So Far',
+  Video: 'Record A 1-2min short video / Testimonial',
+};
+
+const nameKey = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+// Match a submitted business name to a project. Order: exact normalized match,
+// then containment either way ("Tripix" ↔ "Tripix.store"), then a token match.
+// Returns null when nothing matches confidently — never guesses.
+export function matchProjectId(businessName, projects = []) {
+  const key = nameKey(businessName);
+  if (key.length < 3) return null;
+
+  const exact = projects.find((p) => nameKey(p.title) === key);
+  if (exact) return exact.id;
+
+  const contains = projects.find((p) => {
+    const pk = nameKey(p.title);
+    if (pk.length < 4) return false;
+    return key.includes(pk) || pk.includes(key);
+  });
+  if (contains) return contains.id;
+
+  const tokens = String(businessName).toLowerCase().split(/[^a-z0-9]+/).filter((t) => t.length >= 4);
+  const byToken = projects.find((p) => {
+    const pk = nameKey(p.title);
+    return tokens.some((t) => pk.includes(t));
+  });
+  return byToken ? byToken.id : null;
+}
+
+// Canonicalize one Client Feedback row: keep the raw properties, surface stable
+// field names for the UI, and resolve the project (relation first, else by
+// business name). `Submitted` falls back to the row's real created_time so a
+// submission is never dateless.
+export function canonicalFeedback(row, projects = []) {
+  const relId = row.Project?.[0] || null;
+  const projectId = relId || matchProjectId(row[FEEDBACK_PROPS.BusinessName], projects);
+  const project = projectId ? projects.find((p) => p.id === projectId) || null : null;
+
+  return {
+    ...row,
+    title: String(row.title || '').trim() || 'Untitled feedback',
+    Rating: row[FEEDBACK_PROPS.Rating] ?? null,
+    Submitted: row[FEEDBACK_PROPS.Submitted] || row.createdTime || null,
+    'What Went Well': row[FEEDBACK_PROPS.WentWell] ?? null,
+    'What Could Improve': row[FEEDBACK_PROPS.CouldImprove] ?? null,
+    'Would Recommend': Boolean(row[FEEDBACK_PROPS.Recommend]),
+    FullName: row[FEEDBACK_PROPS.FullName] ?? null,
+    BusinessName: row[FEEDBACK_PROPS.BusinessName] ?? null,
+    'Biggest Result So Far': row[FEEDBACK_PROPS.BiggestResult] ?? null,
+    Video: (row[FEEDBACK_PROPS.Video] || [])[0] || null,
+    projectId,
+    projectName: project ? project.title : relId ? relId : null,
+  };
+}
+
+// Every feedback row, canonicalized and newest-first, optionally scoped to a
+// project (matched on the resolved project id so form submissions still count).
+export async function listFeedback({ projectId } = {}) {
+  const [projects, rows] = await Promise.all([
+    listRows('Projects', 'Client'),
+    listRows('Client Feedback', FEEDBACK_PROPS.title),
+  ]);
+  return rows
+    .map((r) => canonicalFeedback(r, projects))
+    .filter((f) => !projectId || f.projectId === projectId)
+    .sort((a, b) => String(b.Submitted ?? '').localeCompare(String(a.Submitted ?? '')));
 }

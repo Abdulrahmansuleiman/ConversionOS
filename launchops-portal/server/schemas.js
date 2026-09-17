@@ -41,15 +41,21 @@ export const DB = {
     },
   },
   'Client Feedback': {
-    titleKey: 'Feedback',
+    // Keys must match the live Notion property names EXACTLY — this database is
+    // filled by a native Notion form, so names are question-style and some have
+    // trailing spaces. Read-side mapping lives in notion.js (FEEDBACK_PROPS).
+    titleKey: 'Feedback ',
     props: {
-      Feedback: 'title',
-      Project: 'relation',
-      Rating: 'number',
+      'Feedback ': 'title',
+      'Full Name': 'rich_text',
+      'Business Name': 'rich_text',
+      'What Rating (1-10) ': 'number',
+      'Date Filed / Submitted': 'date',
       'What Went Well': 'rich_text',
-      'What Could Improve': 'rich_text',
-      'Would Recommend': 'checkbox',
-      Submitted: 'date',
+      'What Could We Have Done Better': 'rich_text',
+      'Would You Recommend LaunchOps ?': 'checkbox',
+      'Biggest Result So Far': 'rich_text',
+      Project: 'relation',
       Status: 'select',
     },
   },
