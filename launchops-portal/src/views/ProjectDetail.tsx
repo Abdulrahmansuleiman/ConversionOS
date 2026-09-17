@@ -247,7 +247,15 @@ export function ProjectDetail({ projectId, onBack }: { projectId: string; onBack
                     {f['What Went Well'] && <FText><b>Went well —</b> {f['What Went Well']}</FText>}
                     {f['What Could Improve'] && <FText><b>Improve —</b> {f['What Could Improve']}</FText>}
                     {f['Biggest Result So Far'] && <FText><b>Biggest result —</b> {f['Biggest Result So Far']}</FText>}
-                    <FDate>{formatDate(f.Submitted)}</FDate>
+                    <FMeta>
+                      <span>{formatDate(f.Submitted)}</span>
+                      {f['Would Recommend'] && <RecPill>Recommends</RecPill>}
+                      {f.Video?.url && (
+                        <a href={f.Video.url} target="_blank" rel="noreferrer">
+                          <RecPill>▶ Video</RecPill>
+                        </a>
+                      )}
+                    </FMeta>
                   </FeedbackItem>
                 ))}
               </div>
@@ -683,8 +691,26 @@ const FWho = styled.span`
   color: ${theme.colors.textMuted};
 `;
 
-const FDate = styled.div`
+const FMeta = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
   font-size: 12px;
   color: ${theme.colors.textMuted};
   font-family: ${theme.fonts.mono};
+`;
+
+const RecPill = styled.span`
+  font-family: ${theme.fonts.mono};
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: ${theme.colors.positive};
+  background: rgba(52, 211, 153, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.28);
+  border-radius: 999px;
+  padding: 2px 8px;
+  text-decoration: none;
 `;

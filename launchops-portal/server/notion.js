@@ -226,31 +226,59 @@ export const FEEDBACK_PROPS = {
   Video: 'Record A 1-2min short video / Testimonial',
 };
 
-const nameKey = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+// Business names arrive typed by hand, so normalise hard before comparing:
+// case, punctuation, "&"/"and", and legal suffixes ("Ltd", "LLC", "Group"…).
+// \b anchors keep real words safe (e.g. "Co" never touches "Costco").
+// Only TRUE legal-entity suffixes are stripped before an exact comparison.
+// Brand words ("Group", "Holdings", "Services", "Solutions") are deliberately
+// NOT stripped — they can distinguish two real clients (e.g. "London Solar
+// Group" vs "London Solar"). They are merely ignored during token matching.
+const LEGAL_SUFFIX = /\b(ltd|limited|llc|l\.l\.c|inc|incorporated|corp|corporation|co|company|gmbh|plc|pvt|private|sa|srl|bv|ag|oy|pte)\b/g;
+const STOP_TOKEN = new Set(['the', 'and', 'ltd', 'limited', 'llc', 'inc', 'co', 'company', 'corp', 'corporation', 'gmbh', 'plc', 'pvt', 'private', 'group', 'holdings', 'enterprises', 'trading', 'services', 'solutions']);
 
-// Match a submitted business name to a project. Order: exact normalized match,
-// then containment either way ("Tripix" ↔ "Tripix.store"), then a token match.
-// Returns null when nothing matches confidently — never guesses.
+const norm = (s) =>
+  String(s ?? '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .replace(/\s+/g, ' ');
+
+const nameKey = (s) => norm(s).replace(LEGAL_SUFFIX, '').replace(/[^a-z0-9]/g, '');
+
+const normTokens = (s) => norm(s).split(' ').filter((t) => t.length >= 3 && !STOP_TOKEN.has(t));
+
+// Match a submitted `Business Name` to a project (whose `Client` title IS the
+// business name).
+//
+// Rule: an exact hit wins outright. Otherwise the submitted name must point at
+// exactly ONE project across every fuzzy test — if two projects are plausible
+// (e.g. "Solar London" and "London Solar Group" both fit "London Solar Ltd"),
+// we return null rather than attribute one client's feedback to another.
+// Guessing wrong is worse than showing "—".
 export function matchProjectId(businessName, projects = []) {
-  const key = nameKey(businessName);
-  if (key.length < 3) return null;
+  const raw = String(businessName ?? '').trim();
+  const key = nameKey(raw);
+  if (!raw || key.length < 3) return null;
 
-  const exact = projects.find((p) => nameKey(p.title) === key);
-  if (exact) return exact.id;
+  // 1. Identical after normalising (case, punctuation, legal suffixes).
+  const exact = projects.filter((p) => nameKey(p.title) === key);
+  if (exact.length === 1) return exact[0].id;
+  if (exact.length > 1) return null; // duplicate titles — ambiguous
 
-  const contains = projects.find((p) => {
+  // 2. Fuzzy: one name contained in the other, or every token of the shorter
+  //    name present in the longer ("Tripix" ↔ "Tripix.store").
+  const bt = normTokens(raw);
+  const loose = projects.filter((p) => {
     const pk = nameKey(p.title);
-    if (pk.length < 4) return false;
-    return key.includes(pk) || pk.includes(key);
+    if (pk.length >= 4 && (key.includes(pk) || pk.includes(key))) return true;
+    const pt = normTokens(p.title);
+    if (!bt.length || !pt.length) return false;
+    const [shorter, longer] = bt.length <= pt.length ? [bt, pt] : [pt, bt];
+    return shorter.every((t) => longer.includes(t));
   });
-  if (contains) return contains.id;
 
-  const tokens = String(businessName).toLowerCase().split(/[^a-z0-9]+/).filter((t) => t.length >= 4);
-  const byToken = projects.find((p) => {
-    const pk = nameKey(p.title);
-    return tokens.some((t) => pk.includes(t));
-  });
-  return byToken ? byToken.id : null;
+  return loose.length === 1 ? loose[0].id : null;
 }
 
 // Canonicalize one Client Feedback row: keep the raw properties, surface stable
