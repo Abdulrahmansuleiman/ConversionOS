@@ -16,7 +16,11 @@
     },
     "canva": {
       "type": "local",
-      "command": ["npx", "-y", "@canva/cli@latest", "mcp"],
+      "command": [
+        "node",
+        "C:/Users/lenovo/AppData/Local/npm-cache/_npx/87893b1b3b6d0a05/node_modules/@canva/cli/cli.js",
+        "mcp"
+      ],
       "enabled": true
     }
   }
