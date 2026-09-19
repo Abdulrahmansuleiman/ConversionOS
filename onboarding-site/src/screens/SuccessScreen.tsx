@@ -13,7 +13,7 @@ const WIDGET_ID = 'DEU4doKcUr2mk0JlOCvF_1789585815658';
 
 // Where access requests are sent. THIS is the inbox the client's pre-written
 // "Request access in Notion" mail lands in.
-const ACCESS_REQUEST_TO = 'raymon4d.scales@gmail.com';
+const ACCESS_REQUEST_TO = 'abdul123rahmanj@gmail.com';
 
 export default function SuccessScreen({ firstName }: Props) {
   // Capitalize the first letter of the first name (display-only).
