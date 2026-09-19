@@ -643,6 +643,11 @@ textarea { resize: vertical; }
   font-weight: 700;
 }
 
+/* Force white on a snippet inside gray body text */
+.white-text {
+  color: var(--text-primary);
+}
+
 /* ---------- Grid helpers ---------- */
 .stakes-grid {
   display: grid;
