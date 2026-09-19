@@ -138,9 +138,15 @@
   "136": "set-portal-password-on-vercel.mjs",
   "137": "check-portal-login.mjs",
   "138": "pipeline-dashboard/src/components/MonthNav.tsx",
+  "139": "launchops-portal/server/app.js",
   "140": "cleanup-portal-store.mjs",
   "141": "debug-portal-store.mjs",
   "142": "find-junk.mjs",
   "143": "verify_document.py",
-  "144": "eslint-plugin-react-refresh"
+  "144": "eslint-plugin-react-refresh",
+  "145": "api",
+  "146": "verify-feedback.mjs",
+  "147": "check-domains.mjs",
+  "148": "list-projects.mjs",
+  "149": "launchops-portal/server/routes.js"
 }

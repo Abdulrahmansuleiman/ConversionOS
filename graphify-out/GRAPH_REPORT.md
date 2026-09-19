@@ -1,16 +1,16 @@
-# Graph Report - onboarding-agent  (2026-09-17)
+# Graph Report - onboarding-agent  (2026-09-19)
 
 ## Corpus Check
-- 275 files · ~423,941 words
+- 275 files · ~424,782 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1957 nodes · 2935 edges · 144 communities (113 shown, 31 thin omitted)
+- 1967 nodes · 2942 edges · 150 communities (118 shown, 32 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4367a62f`
+- Built from commit: `23eec35d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -142,11 +142,17 @@
 - set-portal-password-on-vercel.mjs
 - check-portal-login.mjs
 - pipeline-dashboard/src/components/MonthNav.tsx
+- launchops-portal/server/app.js
 - cleanup-portal-store.mjs
 - debug-portal-store.mjs
 - find-junk.mjs
 - verify_document.py
 - eslint-plugin-react-refresh
+- api
+- verify-feedback.mjs
+- check-domains.mjs
+- list-projects.mjs
+- launchops-portal/server/routes.js
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 19 edges
@@ -187,15 +193,15 @@
 - **Data Persistence Stack** — opencode_agents_skills_notion_project_store, agents_builder_agent, dashboard_nodes_config [INFERRED 0.85]
 - **Business Document Templates** — templates_contract_template, templates_invoice_template, templates_proposal_template, templates_receipt_template [INFERRED 0.90]
 
-## Communities (144 total, 31 thin omitted)
+## Communities (150 total, 32 thin omitted)
 
 ### Community 0 - "bloomline-dashboard/server/index.js"
 Cohesion: 0.06
 Nodes (38): atomicWrite(), createLocalFileAdapter(), DATA_DIR, __dirname, DuplicateEmailError, ensureDataDir(), EVENTS_FILE, USERS_FILE (+30 more)
 
 ### Community 1 - "launchops-portal/server/notion.js"
-Cohesion: 0.05
-Nodes (55): app, __dirname, env, envFile, H, prj, root, __dirname (+47 more)
+Cohesion: 0.15
+Nodes (21): canonicalFeedback(), chk(), date(), __dirname, FEEDBACK_PROPS, getRow(), listFeedback(), listRows() (+13 more)
 
 ### Community 2 - "pipeline-dashboard/server/app.js"
 Cohesion: 0.06
@@ -214,8 +220,8 @@ Cohesion: 0.15
 Nodes (21): api, ApiError, FetchState, useFetch(), useKpis(), useTopLeads(), useTrend(), useUsers() (+13 more)
 
 ### Community 6 - "bloomline-apparel/build_contract.py"
-Cohesion: 0.17
-Nodes (14): build(), build_story(), draw_content_decor(), draw_cover(), main(), Flowable, Main section heading + the template's dark-navy underline rule., Two-column acceptance block (CLIENT / LAUNCHOPS AI). (+6 more)
+Cohesion: 0.10
+Nodes (24): build(), build_story(), draw_content_decor(), draw_cover(), main(), Flowable, Main section heading + the template's dark-navy underline rule., Two-column acceptance block (CLIENT / LAUNCHOPS AI). (+16 more)
 
 ### Community 7 - "bloomline-dashboard/src/tabs/DashboardTab.tsx"
 Cohesion: 0.06
@@ -223,7 +229,7 @@ Nodes (35): ChartWrap, ConversionDonut(), ConversionDonutProps, DonutSegment, Le
 
 ### Community 8 - "ProjectDetail.tsx"
 Cohesion: 0.04
-Nodes (51): AdvanceBtn, AssetContent, AssetIcon, AssetLink, AssetList, AssetName, AssetRow, AssetType (+43 more)
+Nodes (52): AdvanceBtn, AssetContent, AssetIcon, AssetLink, AssetList, AssetName, AssetRow, AssetType (+44 more)
 
 ### Community 9 - "onboarding-site/server/notion.js"
 Cohesion: 0.07
@@ -254,8 +260,8 @@ Cohesion: 0.09
 Nodes (23): DateBox, Eyebrow, Head, Header(), Sub, Title, formatDate(), StarRating() (+15 more)
 
 ### Community 16 - "opencode.json"
-Cohesion: 0.09
-Nodes (23): command, enabled, type, default_agent, NOTION_API_TOKEN, instructions, mcp, canva (+15 more)
+Cohesion: 0.08
+Nodes (24): command, enabled, type, default_agent, NOTION_API_TOKEN, instructions, mcp, canva (+16 more)
 
 ### Community 17 - "pipeline-dashboard/src/tabs/DashboardTab.tsx"
 Cohesion: 0.07
@@ -339,7 +345,7 @@ Nodes (11): Badge, DevModeBadge(), Bar, BellButton, DateLabel, Header(), Right, 
 
 ### Community 37 - "onboarding-site/src/App.tsx"
 Cohesion: 0.07
-Nodes (41): App(), ErrorBanner(), Props, Logo(), Props, Stepper(), STEPS, AGENT_ROWS (+33 more)
+Nodes (35): App(), Props, Props, Stepper(), STEPS, AGENT_ROWS, AGENT_TYPES, AgentType (+27 more)
 
 ### Community 38 - "Leader Agent (Orchestrator)"
 Cohesion: 0.14
@@ -474,8 +480,8 @@ Cohesion: 0.29
 Nodes (6): maxDuration, buildCommand, functions, api/index.js, outputDirectory, rewrites
 
 ### Community 73 - "leadflow/build_contract.py"
-Cohesion: 0.10
-Nodes (24): build(), build_story(), draw_content_decor(), draw_cover(), main(), Flowable, Main section heading + the template's dark-navy underline rule., Two-column acceptance block (CLIENT / LAUNCHOPS AI). (+16 more)
+Cohesion: 0.17
+Nodes (14): build(), build_story(), draw_content_decor(), draw_cover(), main(), Flowable, Main section heading + the template's dark-navy underline rule., Two-column acceptance block (CLIENT / LAUNCHOPS AI). (+6 more)
 
 ### Community 74 - "modal_proposal_agent.py"
 Cohesion: 0.38
@@ -581,6 +587,10 @@ Nodes (5): __dirname, env, H, prj, root
 Cohesion: 0.33
 Nodes (5): ArrowButton, Label, MonthNav(), MonthNavProps, Nav
 
+### Community 139 - "launchops-portal/server/app.js"
+Cohesion: 0.23
+Nodes (13): app, createApp(), issueToken(), loginRouter(), requireAuth(), secret(), sign(), verifyToken() (+5 more)
+
 ### Community 140 - "cleanup-portal-store.mjs"
 Cohesion: 0.25
 Nodes (6): api(), __dirname, env, queryAll(), root, SHOULD_ARCHIVE
@@ -593,25 +603,41 @@ Nodes (7): api(), auth, __dirname, env, queryAll(), root, store
 Cohesion: 0.25
 Nodes (6): api(), __dirname, env, queryAll(), root, store
 
+### Community 145 - "api"
+Cohesion: 0.33
+Nodes (9): api(), createRow(), dbId(), encodeProps(), health(), queryDatabase(), store(), token() (+1 more)
+
+### Community 146 - "verify-feedback.mjs"
+Cohesion: 0.28
+Nodes (7): canon, idOf(), otherTabRows, projects, projectTabRows, rawSubmission, twins
+
+### Community 147 - "check-domains.mjs"
+Cohesion: 0.25
+Nodes (6): __dirname, env, envFile, H, prj, root
+
+### Community 148 - "list-projects.mjs"
+Cohesion: 0.33
+Nodes (5): __dirname, env, names, root, st
+
 ## Knowledge Gaps
-- **984 isolated node(s):** `__dirname`, `root`, `FEEDBACK_PROPS`, `Dot`, `Track` (+979 more)
+- **990 isolated node(s):** `Props`, `FetchState`, `ChangeLabel`, `EventType`, `Asset` (+985 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **31 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **32 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `theme` connect `launchops-portal/src/theme.ts` to `Documents.tsx`, `LoginScreen.tsx`, `ProjectDetail.tsx`, `Projects.tsx`, `Overview.tsx`, `launchops-portal/src/components/Sidebar.tsx`, `Testimonials.tsx`, `Feedback.tsx`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `strip_unused_helvetica()` connect `bloomline-apparel/build_contract.py` to `leadflow/build_contract.py`?**
+- **Why does `formatDate()` connect `Testimonials.tsx` to `Documents.tsx`, `ProjectDetail.tsx`, `Projects.tsx`, `Overview.tsx`, `Feedback.tsx`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `__dirname`, `root`, `FEEDBACK_PROPS` to the rest of the system?**
-  _984 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Props`, `FetchState`, `ChangeLabel` to the rest of the system?**
+  _990 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `bloomline-dashboard/server/index.js` be split into smaller, more focused modules?**
   _Cohesion score 0.062409288824383166 - nodes in this community are weakly interconnected._
-- **Should `launchops-portal/server/notion.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.05328218243819267 - nodes in this community are weakly interconnected._
 - **Should `pipeline-dashboard/server/app.js` be split into smaller, more focused modules?**
   _Cohesion score 0.05875706214689266 - nodes in this community are weakly interconnected._
 - **Should `bloomline-dashboard/src/tabs/BookingsTab.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.12292358803986711 - nodes in this community are weakly interconnected._
+- **Should `bloomline-dashboard/src/types/events.ts` be split into smaller, more focused modules?**
+  _Cohesion score 0.1495798319327731 - nodes in this community are weakly interconnected._

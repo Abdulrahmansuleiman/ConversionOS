@@ -1862,126 +1862,6 @@
       "source_location": "L9"
     },
     {
-      "id": "launchops_portal_check_domains_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "launchops-portal/check-domains.mjs",
-      "source_location": "L23"
-    },
-    {
-      "id": "launchops_portal_server_app_createapp",
-      "label": "createApp()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "createapp()",
-      "source_file": "launchops-portal/server/app.js",
-      "source_location": "L9"
-    },
-    {
-      "id": "launchops_portal_server_auth_issuetoken",
-      "label": "issueToken()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "issuetoken()",
-      "source_file": "launchops-portal/server/auth.js",
-      "source_location": "L19"
-    },
-    {
-      "id": "launchops_portal_server_auth_loginrouter",
-      "label": "loginRouter()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "loginrouter()",
-      "source_file": "launchops-portal/server/auth.js",
-      "source_location": "L45"
-    },
-    {
-      "id": "launchops_portal_server_auth_requireauth",
-      "label": "requireAuth()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "requireauth()",
-      "source_file": "launchops-portal/server/auth.js",
-      "source_location": "L40"
-    },
-    {
-      "id": "launchops_portal_server_auth_secret",
-      "label": "secret()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "secret()",
-      "source_file": "launchops-portal/server/auth.js",
-      "source_location": "L9"
-    },
-    {
-      "id": "launchops_portal_server_auth_sign",
-      "label": "sign()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "sign()",
-      "source_file": "launchops-portal/server/auth.js",
-      "source_location": "L15"
-    },
-    {
-      "id": "launchops_portal_server_auth_verifytoken",
-      "label": "verifyToken()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "verifytoken()",
-      "source_file": "launchops-portal/server/auth.js",
-      "source_location": "L24"
-    },
-    {
-      "id": "launchops_portal_server_config_resolveconfig",
-      "label": "resolveConfig()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "resolveconfig()",
-      "source_file": "launchops-portal/server/config.js",
-      "source_location": "L15"
-    },
-    {
-      "id": "launchops_portal_server_notion_api",
-      "label": "api()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "api()",
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L36"
-    },
-    {
       "id": "launchops_portal_server_notion_canonicalfeedback",
       "label": "canonicalFeedback()",
       "_callable": true,
@@ -1991,7 +1871,7 @@
       "file_type": "code",
       "norm_label": "canonicalfeedback()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L260"
+      "source_location": "L288"
     },
     {
       "id": "launchops_portal_server_notion_chk",
@@ -2006,18 +1886,6 @@
       "source_location": "L63"
     },
     {
-      "id": "launchops_portal_server_notion_createrow",
-      "label": "createRow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "createrow()",
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L179"
-    },
-    {
       "id": "launchops_portal_server_notion_date",
       "label": "date()",
       "_callable": true,
@@ -2028,30 +1896,6 @@
       "norm_label": "date()",
       "source_file": "launchops-portal/server/notion.js",
       "source_location": "L62"
-    },
-    {
-      "id": "launchops_portal_server_notion_dbid",
-      "label": "dbId()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "dbid()",
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L30"
-    },
-    {
-      "id": "launchops_portal_server_notion_encodeprops",
-      "label": "encodeProps()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "encodeprops()",
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L139"
     },
     {
       "id": "launchops_portal_server_notion_getrow",
@@ -2066,18 +1910,6 @@
       "source_location": "L134"
     },
     {
-      "id": "launchops_portal_server_notion_health",
-      "label": "health()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "health()",
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L193"
-    },
-    {
       "id": "launchops_portal_server_notion_listfeedback",
       "label": "listFeedback()",
       "_callable": true,
@@ -2087,7 +1919,7 @@
       "file_type": "code",
       "norm_label": "listfeedback()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L284"
+      "source_location": "L312"
     },
     {
       "id": "launchops_portal_server_notion_listrows",
@@ -2123,7 +1955,7 @@
       "file_type": "code",
       "norm_label": "matchprojectid()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L234"
+      "source_location": "L259"
     },
     {
       "id": "launchops_portal_server_notion_multi",
@@ -2147,7 +1979,19 @@
       "file_type": "code",
       "norm_label": "namekey()",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L229"
+      "source_location": "L247"
+    },
+    {
+      "id": "launchops_portal_server_notion_norm",
+      "label": "norm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "norm()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L239"
     },
     {
       "id": "launchops_portal_server_notion_normalize",
@@ -2162,6 +2006,18 @@
       "source_location": "L67"
     },
     {
+      "id": "launchops_portal_server_notion_normtokens",
+      "label": "normTokens()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "launchops-portal/server/notion.js",
+      "file_type": "code",
+      "norm_label": "normtokens()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L249"
+    },
+    {
       "id": "launchops_portal_server_notion_num",
       "label": "num()",
       "_callable": true,
@@ -2172,18 +2028,6 @@
       "norm_label": "num()",
       "source_file": "launchops-portal/server/notion.js",
       "source_location": "L60"
-    },
-    {
-      "id": "launchops_portal_server_notion_querydatabase",
-      "label": "queryDatabase()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "querydatabase()",
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L113"
     },
     {
       "id": "launchops_portal_server_notion_rel",
@@ -2210,18 +2054,6 @@
       "source_location": "L59"
     },
     {
-      "id": "launchops_portal_server_notion_store",
-      "label": "store()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "store()",
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L23"
-    },
-    {
       "id": "launchops_portal_server_notion_text",
       "label": "text()",
       "_callable": true,
@@ -2234,30 +2066,6 @@
       "source_location": "L56"
     },
     {
-      "id": "launchops_portal_server_notion_token",
-      "label": "token()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "token()",
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L16"
-    },
-    {
-      "id": "launchops_portal_server_notion_updaterow",
-      "label": "updateRow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "updaterow()",
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L187"
-    },
-    {
       "id": "launchops_portal_server_notion_url",
       "label": "url()",
       "_callable": true,
@@ -2268,30 +2076,6 @@
       "norm_label": "url()",
       "source_file": "launchops-portal/server/notion.js",
       "source_location": "L61"
-    },
-    {
-      "id": "launchops_portal_server_routes_buildroutes",
-      "label": "buildRoutes()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "buildroutes()",
-      "source_file": "launchops-portal/server/routes.js",
-      "source_location": "L7"
-    },
-    {
-      "id": "launchops_portal_server_routes_buildroutes_projectnamemap",
-      "label": "projectNameMap()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "projectnamemap()",
-      "source_file": "launchops-portal/server/routes.js",
-      "source_location": "L16"
     },
     {
       "id": "launchops_portal_src_components_ui_avatar",
@@ -2750,6 +2534,126 @@
       "source_location": "L46"
     },
     {
+      "id": "launchops_portal_server_app_createapp",
+      "label": "createApp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "createapp()",
+      "source_file": "launchops-portal/server/app.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "launchops_portal_server_auth_issuetoken",
+      "label": "issueToken()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "issuetoken()",
+      "source_file": "launchops-portal/server/auth.js",
+      "source_location": "L19"
+    },
+    {
+      "id": "launchops_portal_server_auth_loginrouter",
+      "label": "loginRouter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "loginrouter()",
+      "source_file": "launchops-portal/server/auth.js",
+      "source_location": "L45"
+    },
+    {
+      "id": "launchops_portal_server_auth_requireauth",
+      "label": "requireAuth()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "requireauth()",
+      "source_file": "launchops-portal/server/auth.js",
+      "source_location": "L40"
+    },
+    {
+      "id": "launchops_portal_server_auth_secret",
+      "label": "secret()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "secret()",
+      "source_file": "launchops-portal/server/auth.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "launchops_portal_server_auth_sign",
+      "label": "sign()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "sign()",
+      "source_file": "launchops-portal/server/auth.js",
+      "source_location": "L15"
+    },
+    {
+      "id": "launchops_portal_server_auth_verifytoken",
+      "label": "verifyToken()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "verifytoken()",
+      "source_file": "launchops-portal/server/auth.js",
+      "source_location": "L24"
+    },
+    {
+      "id": "launchops_portal_server_config_resolveconfig",
+      "label": "resolveConfig()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "resolveconfig()",
+      "source_file": "launchops-portal/server/config.js",
+      "source_location": "L15"
+    },
+    {
+      "id": "launchops_portal_server_routes_buildroutes",
+      "label": "buildRoutes()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "buildroutes()",
+      "source_file": "launchops-portal/server/routes.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "launchops_portal_server_routes_buildroutes_projectnamemap",
+      "label": "projectNameMap()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "projectnamemap()",
+      "source_file": "launchops-portal/server/routes.js",
+      "source_location": "L16"
+    },
+    {
       "id": "launchops_portal_cleanup_portal_store_api",
       "label": "api()",
       "_callable": true,
@@ -2904,6 +2808,150 @@
       "norm_label": "main()",
       "source_file": "scripts/verify_document.py",
       "source_location": "L31"
+    },
+    {
+      "id": "launchops_portal_server_notion_api",
+      "label": "api()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 145,
+      "community_name": "api",
+      "file_type": "code",
+      "norm_label": "api()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L36"
+    },
+    {
+      "id": "launchops_portal_server_notion_createrow",
+      "label": "createRow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 145,
+      "community_name": "api",
+      "file_type": "code",
+      "norm_label": "createrow()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L179"
+    },
+    {
+      "id": "launchops_portal_server_notion_dbid",
+      "label": "dbId()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 145,
+      "community_name": "api",
+      "file_type": "code",
+      "norm_label": "dbid()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L30"
+    },
+    {
+      "id": "launchops_portal_server_notion_encodeprops",
+      "label": "encodeProps()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 145,
+      "community_name": "api",
+      "file_type": "code",
+      "norm_label": "encodeprops()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L139"
+    },
+    {
+      "id": "launchops_portal_server_notion_health",
+      "label": "health()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 145,
+      "community_name": "api",
+      "file_type": "code",
+      "norm_label": "health()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L193"
+    },
+    {
+      "id": "launchops_portal_server_notion_querydatabase",
+      "label": "queryDatabase()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 145,
+      "community_name": "api",
+      "file_type": "code",
+      "norm_label": "querydatabase()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L113"
+    },
+    {
+      "id": "launchops_portal_server_notion_store",
+      "label": "store()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 145,
+      "community_name": "api",
+      "file_type": "code",
+      "norm_label": "store()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L23"
+    },
+    {
+      "id": "launchops_portal_server_notion_token",
+      "label": "token()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 145,
+      "community_name": "api",
+      "file_type": "code",
+      "norm_label": "token()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L16"
+    },
+    {
+      "id": "launchops_portal_server_notion_updaterow",
+      "label": "updateRow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 145,
+      "community_name": "api",
+      "file_type": "code",
+      "norm_label": "updaterow()",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L187"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_check",
+      "label": "check()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 146,
+      "community_name": "verify-feedback.mjs",
+      "file_type": "code",
+      "norm_label": "check()",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L10"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_idof",
+      "label": "idOf()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 146,
+      "community_name": "verify-feedback.mjs",
+      "file_type": "code",
+      "norm_label": "idof()",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L20"
+    },
+    {
+      "id": "launchops_portal_check_domains_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 147,
+      "community_name": "check-domains.mjs",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L23"
     },
     {
       "id": "launchops_portal_src_components_header_clockicon",
@@ -4283,7 +4331,7 @@
       "file_type": "code",
       "norm_label": "successscreen()",
       "source_file": "onboarding-site/src/screens/SuccessScreen.tsx",
-      "source_location": "L14"
+      "source_location": "L18"
     },
     {
       "id": "onboarding_site_src_screens_welcomescreen_welcomescreen",
@@ -5450,6 +5498,126 @@
       "source_location": "L76"
     },
     {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_get_field_info",
+      "label": "get_field_info()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "get_field_info()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L47"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_get_full_annotation_field_id",
+      "label": "get_full_annotation_field_id()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "get_full_annotation_field_id()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L9"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_make_field_dict",
+      "label": "make_field_dict()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "make_field_dict()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_write_field_info",
+      "label": "write_field_info()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "write_field_info()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L110"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_fill_pdf_fields",
+      "label": "fill_pdf_fields()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "fill_pdf_fields()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_monkeypatch_pydpf_method",
+      "label": "monkeypatch_pydpf_method()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "monkeypatch_pydpf_method()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_validation_error_for_field_value",
+      "label": "validation_error_for_field_value()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "validation_error_for_field_value()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
+      "source_location": "L55"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_fill_pdf_form",
+      "label": "fill_pdf_form()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "fill_pdf_form()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_transform_from_image_coords",
+      "label": "transform_from_image_coords()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "transform_from_image_coords()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "source_location": "L10"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_transform_from_pdf_coords",
+      "label": "transform_from_pdf_coords()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "transform_from_pdf_coords()",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "source_location": "L23"
+    },
+    {
       "id": "bloomline_dashboard_src_components_devmodebadge_devmodebadge",
       "label": "DevModeBadge()",
       "_callable": true,
@@ -5678,126 +5846,6 @@
       "source_location": "L76"
     },
     {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_get_field_info",
-      "label": "get_field_info()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "get_field_info()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L47"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_get_full_annotation_field_id",
-      "label": "get_full_annotation_field_id()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "get_full_annotation_field_id()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L9"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_make_field_dict",
-      "label": "make_field_dict()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "make_field_dict()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L19"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info_write_field_info",
-      "label": "write_field_info()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "write_field_info()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L110"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_fill_pdf_fields",
-      "label": "fill_pdf_fields()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "fill_pdf_fields()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
-      "source_location": "L11"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_monkeypatch_pydpf_method",
-      "label": "monkeypatch_pydpf_method()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "monkeypatch_pydpf_method()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
-      "source_location": "L74"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields_validation_error_for_field_value",
-      "label": "validation_error_for_field_value()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "validation_error_for_field_value()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
-      "source_location": "L55"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_fill_pdf_form",
-      "label": "fill_pdf_form()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "fill_pdf_form()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
-      "source_location": "L33"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_transform_from_image_coords",
-      "label": "transform_from_image_coords()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "transform_from_image_coords()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
-      "source_location": "L10"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations_transform_from_pdf_coords",
-      "label": "transform_from_pdf_coords()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "transform_from_pdf_coords()",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
-      "source_location": "L23"
-    },
-    {
       "id": "modal_proposal_agent_generate_client_proposal_pdf",
       "label": "generate_client_proposal_pdf()",
       "_callable": true,
@@ -5879,7 +5927,7 @@
       "file_type": "code",
       "norm_label": "metachip()",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L290"
+      "source_location": "L298"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_parseintake",
@@ -6731,248 +6779,6 @@
       "source_location": "L1"
     },
     {
-      "id": "launchops_portal_api_index",
-      "label": "launchops-portal/api/index.js",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "launchops-portal/api/index.js",
-      "source_file": "launchops-portal/api/index.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_api_index_app",
-      "label": "app",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "app",
-      "source_file": "launchops-portal/api/index.js",
-      "source_location": "L4"
-    },
-    {
-      "id": "launchops_portal_check_domains",
-      "label": "check-domains.mjs",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "check-domains.mjs",
-      "source_file": "launchops-portal/check-domains.mjs",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_check_domains_dirname",
-      "label": "__dirname",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "__dirname",
-      "source_file": "launchops-portal/check-domains.mjs",
-      "source_location": "L5"
-    },
-    {
-      "id": "launchops_portal_check_domains_env",
-      "label": "env",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "env",
-      "source_file": "launchops-portal/check-domains.mjs",
-      "source_location": "L8"
-    },
-    {
-      "id": "launchops_portal_check_domains_envfile",
-      "label": "envFile",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "envfile",
-      "source_file": "launchops-portal/check-domains.mjs",
-      "source_location": "L7"
-    },
-    {
-      "id": "launchops_portal_check_domains_h",
-      "label": "H",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "h",
-      "source_file": "launchops-portal/check-domains.mjs",
-      "source_location": "L16"
-    },
-    {
-      "id": "launchops_portal_check_domains_prj",
-      "label": "prj",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "prj",
-      "source_file": "launchops-portal/check-domains.mjs",
-      "source_location": "L14"
-    },
-    {
-      "id": "launchops_portal_check_domains_root",
-      "label": "root",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "root",
-      "source_file": "launchops-portal/check-domains.mjs",
-      "source_location": "L6"
-    },
-    {
-      "id": "launchops_portal_list_projects",
-      "label": "list-projects.mjs",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "list-projects.mjs",
-      "source_file": "launchops-portal/list-projects.mjs",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_list_projects_dirname",
-      "label": "__dirname",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "__dirname",
-      "source_file": "launchops-portal/list-projects.mjs",
-      "source_location": "L7"
-    },
-    {
-      "id": "launchops_portal_list_projects_env",
-      "label": "env",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "env",
-      "source_file": "launchops-portal/list-projects.mjs",
-      "source_location": "L9"
-    },
-    {
-      "id": "launchops_portal_list_projects_names",
-      "label": "names",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "names",
-      "source_file": "launchops-portal/list-projects.mjs",
-      "source_location": "L23"
-    },
-    {
-      "id": "launchops_portal_list_projects_root",
-      "label": "root",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "root",
-      "source_file": "launchops-portal/list-projects.mjs",
-      "source_location": "L8"
-    },
-    {
-      "id": "launchops_portal_list_projects_st",
-      "label": "st",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "st",
-      "source_file": "launchops-portal/list-projects.mjs",
-      "source_location": "L16"
-    },
-    {
-      "id": "launchops_portal_server_app",
-      "label": "launchops-portal/server/app.js",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "launchops-portal/server/app.js",
-      "source_file": "launchops-portal/server/app.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_server_auth",
-      "label": "auth.js",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "auth.js",
-      "source_file": "launchops-portal/server/auth.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_server_config",
-      "label": "launchops-portal/server/config.js",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "launchops-portal/server/config.js",
-      "source_file": "launchops-portal/server/config.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_server_config_dirname",
-      "label": "__dirname",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "__dirname",
-      "source_file": "launchops-portal/server/config.js",
-      "source_location": "L10"
-    },
-    {
-      "id": "launchops_portal_server_index",
-      "label": "launchops-portal/server/index.js",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "launchops-portal/server/index.js",
-      "source_file": "launchops-portal/server/index.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_server_index_app",
-      "label": "app",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "app",
-      "source_file": "launchops-portal/server/index.js",
-      "source_location": "L6"
-    },
-    {
-      "id": "launchops_portal_server_index_cfg",
-      "label": "cfg",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "cfg",
-      "source_file": "launchops-portal/server/index.js",
-      "source_location": "L5"
-    },
-    {
       "id": "launchops_portal_server_notion",
       "label": "launchops-portal/server/notion.js",
       "_origin": "ast",
@@ -7017,81 +6823,15 @@
       "source_location": "L12"
     },
     {
-      "id": "launchops_portal_server_routes",
-      "label": "launchops-portal/server/routes.js",
+      "id": "launchops_portal_server_notion_stop_token",
+      "label": "STOP_TOKEN",
       "_origin": "ast",
       "community": 1,
       "community_name": "launchops-portal/server/notion.js",
       "file_type": "code",
-      "norm_label": "launchops-portal/server/routes.js",
-      "source_file": "launchops-portal/server/routes.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_server_schemas",
-      "label": "launchops-portal/server/schemas.js",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "launchops-portal/server/schemas.js",
-      "source_file": "launchops-portal/server/schemas.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_server_schemas_db",
-      "label": "DB",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "db",
-      "source_file": "launchops-portal/server/schemas.js",
-      "source_location": "L4"
-    },
-    {
-      "id": "launchops_portal_verify_feedback",
-      "label": "verify-feedback.mjs",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "verify-feedback.mjs",
-      "source_file": "launchops-portal/verify-feedback.mjs",
-      "source_location": "L1"
-    },
-    {
-      "id": "launchops_portal_verify_feedback_checks",
-      "label": "CHECKS",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "checks",
-      "source_file": "launchops-portal/verify-feedback.mjs",
-      "source_location": "L36"
-    },
-    {
-      "id": "launchops_portal_verify_feedback_projects",
-      "label": "projects",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "projects",
-      "source_file": "launchops-portal/verify-feedback.mjs",
-      "source_location": "L5"
-    },
-    {
-      "id": "launchops_portal_verify_feedback_ratings",
-      "label": "ratings",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "launchops-portal/server/notion.js",
-      "file_type": "code",
-      "norm_label": "ratings",
-      "source_file": "launchops-portal/verify-feedback.mjs",
-      "source_location": "L47"
+      "norm_label": "stop_token",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L237"
     },
     {
       "id": "launchops_portal_src_components_ui",
@@ -8978,6 +8718,105 @@
       "source_location": "L12"
     },
     {
+      "id": "launchops_portal_api_index",
+      "label": "launchops-portal/api/index.js",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "launchops-portal/api/index.js",
+      "source_file": "launchops-portal/api/index.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_api_index_app",
+      "label": "app",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "app",
+      "source_file": "launchops-portal/api/index.js",
+      "source_location": "L4"
+    },
+    {
+      "id": "launchops_portal_server_app",
+      "label": "launchops-portal/server/app.js",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "launchops-portal/server/app.js",
+      "source_file": "launchops-portal/server/app.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_server_auth",
+      "label": "auth.js",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "auth.js",
+      "source_file": "launchops-portal/server/auth.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_server_config",
+      "label": "launchops-portal/server/config.js",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "launchops-portal/server/config.js",
+      "source_file": "launchops-portal/server/config.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_server_config_dirname",
+      "label": "__dirname",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "__dirname",
+      "source_file": "launchops-portal/server/config.js",
+      "source_location": "L10"
+    },
+    {
+      "id": "launchops_portal_server_index",
+      "label": "launchops-portal/server/index.js",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "launchops-portal/server/index.js",
+      "source_file": "launchops-portal/server/index.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_server_index_app",
+      "label": "app",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "app",
+      "source_file": "launchops-portal/server/index.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "launchops_portal_server_index_cfg",
+      "label": "cfg",
+      "_origin": "ast",
+      "community": 139,
+      "community_name": "launchops-portal/server/app.js",
+      "file_type": "code",
+      "norm_label": "cfg",
+      "source_file": "launchops-portal/server/index.js",
+      "source_location": "L5"
+    },
+    {
       "id": "opencode_agents_skills_pdf_reference",
       "label": "reference.md",
       "_origin": "ast",
@@ -9751,6 +9590,259 @@
       "source_location": "L32"
     },
     {
+      "id": "launchops_portal_verify_feedback",
+      "label": "verify-feedback.mjs",
+      "_origin": "ast",
+      "community": 146,
+      "community_name": "verify-feedback.mjs",
+      "file_type": "code",
+      "norm_label": "verify-feedback.mjs",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_canon",
+      "label": "canon",
+      "_origin": "ast",
+      "community": 146,
+      "community_name": "verify-feedback.mjs",
+      "file_type": "code",
+      "norm_label": "canon",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L76"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_othertabrows",
+      "label": "otherTabRows",
+      "_origin": "ast",
+      "community": 146,
+      "community_name": "verify-feedback.mjs",
+      "file_type": "code",
+      "norm_label": "othertabrows",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L87"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_projects",
+      "label": "projects",
+      "_origin": "ast",
+      "community": 146,
+      "community_name": "verify-feedback.mjs",
+      "file_type": "code",
+      "norm_label": "projects",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L16"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_projecttabrows",
+      "label": "projectTabRows",
+      "_origin": "ast",
+      "community": 146,
+      "community_name": "verify-feedback.mjs",
+      "file_type": "code",
+      "norm_label": "projecttabrows",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L85"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_rawsubmission",
+      "label": "rawSubmission",
+      "_origin": "ast",
+      "community": 146,
+      "community_name": "verify-feedback.mjs",
+      "file_type": "code",
+      "norm_label": "rawsubmission",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L60"
+    },
+    {
+      "id": "launchops_portal_verify_feedback_twins",
+      "label": "twins",
+      "_origin": "ast",
+      "community": 146,
+      "community_name": "verify-feedback.mjs",
+      "file_type": "code",
+      "norm_label": "twins",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L51"
+    },
+    {
+      "id": "launchops_portal_check_domains",
+      "label": "check-domains.mjs",
+      "_origin": "ast",
+      "community": 147,
+      "community_name": "check-domains.mjs",
+      "file_type": "code",
+      "norm_label": "check-domains.mjs",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_check_domains_dirname",
+      "label": "__dirname",
+      "_origin": "ast",
+      "community": 147,
+      "community_name": "check-domains.mjs",
+      "file_type": "code",
+      "norm_label": "__dirname",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L5"
+    },
+    {
+      "id": "launchops_portal_check_domains_env",
+      "label": "env",
+      "_origin": "ast",
+      "community": 147,
+      "community_name": "check-domains.mjs",
+      "file_type": "code",
+      "norm_label": "env",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L8"
+    },
+    {
+      "id": "launchops_portal_check_domains_envfile",
+      "label": "envFile",
+      "_origin": "ast",
+      "community": 147,
+      "community_name": "check-domains.mjs",
+      "file_type": "code",
+      "norm_label": "envfile",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L7"
+    },
+    {
+      "id": "launchops_portal_check_domains_h",
+      "label": "H",
+      "_origin": "ast",
+      "community": 147,
+      "community_name": "check-domains.mjs",
+      "file_type": "code",
+      "norm_label": "h",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L16"
+    },
+    {
+      "id": "launchops_portal_check_domains_prj",
+      "label": "prj",
+      "_origin": "ast",
+      "community": 147,
+      "community_name": "check-domains.mjs",
+      "file_type": "code",
+      "norm_label": "prj",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L14"
+    },
+    {
+      "id": "launchops_portal_check_domains_root",
+      "label": "root",
+      "_origin": "ast",
+      "community": 147,
+      "community_name": "check-domains.mjs",
+      "file_type": "code",
+      "norm_label": "root",
+      "source_file": "launchops-portal/check-domains.mjs",
+      "source_location": "L6"
+    },
+    {
+      "id": "launchops_portal_list_projects",
+      "label": "list-projects.mjs",
+      "_origin": "ast",
+      "community": 148,
+      "community_name": "list-projects.mjs",
+      "file_type": "code",
+      "norm_label": "list-projects.mjs",
+      "source_file": "launchops-portal/list-projects.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_list_projects_dirname",
+      "label": "__dirname",
+      "_origin": "ast",
+      "community": 148,
+      "community_name": "list-projects.mjs",
+      "file_type": "code",
+      "norm_label": "__dirname",
+      "source_file": "launchops-portal/list-projects.mjs",
+      "source_location": "L7"
+    },
+    {
+      "id": "launchops_portal_list_projects_env",
+      "label": "env",
+      "_origin": "ast",
+      "community": 148,
+      "community_name": "list-projects.mjs",
+      "file_type": "code",
+      "norm_label": "env",
+      "source_file": "launchops-portal/list-projects.mjs",
+      "source_location": "L9"
+    },
+    {
+      "id": "launchops_portal_list_projects_names",
+      "label": "names",
+      "_origin": "ast",
+      "community": 148,
+      "community_name": "list-projects.mjs",
+      "file_type": "code",
+      "norm_label": "names",
+      "source_file": "launchops-portal/list-projects.mjs",
+      "source_location": "L23"
+    },
+    {
+      "id": "launchops_portal_list_projects_root",
+      "label": "root",
+      "_origin": "ast",
+      "community": 148,
+      "community_name": "list-projects.mjs",
+      "file_type": "code",
+      "norm_label": "root",
+      "source_file": "launchops-portal/list-projects.mjs",
+      "source_location": "L8"
+    },
+    {
+      "id": "launchops_portal_list_projects_st",
+      "label": "st",
+      "_origin": "ast",
+      "community": 148,
+      "community_name": "list-projects.mjs",
+      "file_type": "code",
+      "norm_label": "st",
+      "source_file": "launchops-portal/list-projects.mjs",
+      "source_location": "L16"
+    },
+    {
+      "id": "launchops_portal_server_routes",
+      "label": "launchops-portal/server/routes.js",
+      "_origin": "ast",
+      "community": 149,
+      "community_name": "launchops-portal/server/routes.js",
+      "file_type": "code",
+      "norm_label": "launchops-portal/server/routes.js",
+      "source_file": "launchops-portal/server/routes.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_server_schemas",
+      "label": "launchops-portal/server/schemas.js",
+      "_origin": "ast",
+      "community": 149,
+      "community_name": "launchops-portal/server/routes.js",
+      "file_type": "code",
+      "norm_label": "launchops-portal/server/schemas.js",
+      "source_file": "launchops-portal/server/schemas.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "launchops_portal_server_schemas_db",
+      "label": "DB",
+      "_origin": "ast",
+      "community": 149,
+      "community_name": "launchops-portal/server/routes.js",
+      "file_type": "code",
+      "norm_label": "db",
+      "source_file": "launchops-portal/server/schemas.js",
+      "source_location": "L4"
+    },
+    {
       "id": "launchops_portal_src_components_header",
       "label": "launchops-portal/src/components/Header.tsx",
       "_origin": "ast",
@@ -9990,7 +10082,7 @@
       "file_type": "code",
       "norm_label": "enabled",
       "source_file": "opencode.json",
-      "source_location": "L20"
+      "source_location": "L24"
     },
     {
       "id": "opencode_canva_type",
@@ -10158,13 +10250,13 @@
       "source_location": "L4"
     },
     {
-      "id": "ref_canva_cli_latest",
-      "label": "@canva/cli@latest",
+      "id": "ref_c_users_lenovo_appdata_local_npm_cache_npx_87893b1b3b6d0a05_node_modules_canva_cli_cli_js",
+      "label": "C:/Users/lenovo/AppData/Local/npm-cache/_npx/87893b1b3b6d0a05/node_modules/@canva/cli/cli.js",
       "_origin": "ast",
       "community": 16,
       "community_name": "opencode.json",
       "file_type": "concept",
-      "norm_label": "@canva/cli@latest",
+      "norm_label": "c:/users/lenovo/appdata/local/npm-cache/_npx/87893b1b3b6d0a05/node_modules/@canva/cli/cli.js",
       "source_file": "opencode.json",
       "source_location": "L19"
     },
@@ -10176,6 +10268,17 @@
       "community_name": "opencode.json",
       "file_type": "concept",
       "norm_label": "mcp",
+      "source_file": "opencode.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "ref_node",
+      "label": "node",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "opencode.json",
+      "file_type": "concept",
+      "norm_label": "node",
       "source_file": "opencode.json",
       "source_location": "L19"
     },
@@ -18159,6 +18262,50 @@
       "source_location": ""
     },
     {
+      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info",
+      "label": "extract_form_field_info.py",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "extract_form_field_info.py",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields",
+      "label": "fill_fillable_fields.py",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "fill_fillable_fields.py",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations",
+      "label": "fill_pdf_form_with_annotations.py",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "fill_pdf_form_with_annotations.py",
+      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "pdfreader",
+      "label": "PdfReader",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "bloomline-apparel/build_contract.py",
+      "file_type": "code",
+      "norm_label": "pdfreader",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "clients_bloomline_apparel_build_contract_rationale_196",
       "label": "Main section heading + the template's dark-navy underline rule.",
       "_origin": "ast",
@@ -19937,50 +20084,6 @@
       "source_location": ""
     },
     {
-      "id": "opencode_agents_skills_pdf_scripts_extract_form_field_info",
-      "label": "extract_form_field_info.py",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "extract_form_field_info.py",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/extract_form_field_info.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_fillable_fields",
-      "label": "fill_fillable_fields.py",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "fill_fillable_fields.py",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_fillable_fields.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "opencode_agents_skills_pdf_scripts_fill_pdf_form_with_annotations",
-      "label": "fill_pdf_form_with_annotations.py",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "fill_pdf_form_with_annotations.py",
-      "source_file": ".opencode/.agents/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "pdfreader",
-      "label": "PdfReader",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "leadflow/build_contract.py",
-      "file_type": "code",
-      "norm_label": "pdfreader",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "clients_leadflow_build_contract_rationale_196",
       "label": "Main section heading + the template's dark-navy underline rule.",
       "_origin": "ast",
@@ -20343,7 +20446,7 @@
       "file_type": "code",
       "norm_label": "advancebtn",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L586"
+      "source_location": "L594"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetcontent",
@@ -20354,7 +20457,7 @@
       "file_type": "code",
       "norm_label": "assetcontent",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L639"
+      "source_location": "L647"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_asseticon",
@@ -20365,7 +20468,7 @@
       "file_type": "code",
       "norm_label": "asseticon",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L617"
+      "source_location": "L625"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetlink",
@@ -20376,7 +20479,7 @@
       "file_type": "code",
       "norm_label": "assetlink",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L651"
+      "source_location": "L659"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetlist",
@@ -20387,7 +20490,7 @@
       "file_type": "code",
       "norm_label": "assetlist",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L600"
+      "source_location": "L608"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetname",
@@ -20398,7 +20501,7 @@
       "file_type": "code",
       "norm_label": "assetname",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L628"
+      "source_location": "L636"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assetrow",
@@ -20409,7 +20512,7 @@
       "file_type": "code",
       "norm_label": "assetrow",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L606"
+      "source_location": "L614"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_assettype",
@@ -20420,7 +20523,7 @@
       "file_type": "code",
       "norm_label": "assettype",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L633"
+      "source_location": "L641"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_backbtn",
@@ -20431,7 +20534,7 @@
       "file_type": "code",
       "norm_label": "backbtn",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L269"
+      "source_location": "L277"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_card",
@@ -20442,7 +20545,7 @@
       "file_type": "code",
       "norm_label": "card",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L456"
+      "source_location": "L464"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_chip",
@@ -20453,7 +20556,7 @@
       "file_type": "code",
       "norm_label": "chip",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L299"
+      "source_location": "L307"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_chiplink",
@@ -20464,7 +20567,7 @@
       "file_type": "code",
       "norm_label": "chiplink",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L313"
+      "source_location": "L321"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_countpill",
@@ -20475,7 +20578,7 @@
       "file_type": "code",
       "norm_label": "countpill",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L398"
+      "source_location": "L406"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_emptyphase",
@@ -20486,18 +20589,7 @@
       "file_type": "code",
       "norm_label": "emptyphase",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L562"
-    },
-    {
-      "id": "launchops_portal_src_views_projectdetail_fdate",
-      "label": "FDate",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "ProjectDetail.tsx",
-      "file_type": "code",
-      "norm_label": "fdate",
-      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L686"
+      "source_location": "L570"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_feedbackitem",
@@ -20508,7 +20600,7 @@
       "file_type": "code",
       "norm_label": "feedbackitem",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L656"
+      "source_location": "L664"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_fhead",
@@ -20519,7 +20611,18 @@
       "file_type": "code",
       "norm_label": "fhead",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L672"
+      "source_location": "L680"
+    },
+    {
+      "id": "launchops_portal_src_views_projectdetail_fmeta",
+      "label": "FMeta",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "ProjectDetail.tsx",
+      "file_type": "code",
+      "norm_label": "fmeta",
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L694"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_ftext",
@@ -20530,7 +20633,7 @@
       "file_type": "code",
       "norm_label": "ftext",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L666"
+      "source_location": "L674"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_fwho",
@@ -20541,7 +20644,7 @@
       "file_type": "code",
       "norm_label": "fwho",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L680"
+      "source_location": "L688"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_grid3",
@@ -20552,7 +20655,7 @@
       "file_type": "code",
       "norm_label": "grid3",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L442"
+      "source_location": "L450"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakea",
@@ -20563,7 +20666,7 @@
       "file_type": "code",
       "norm_label": "intakea",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L434"
+      "source_location": "L442"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakebadges",
@@ -20574,7 +20677,7 @@
       "file_type": "code",
       "norm_label": "intakebadges",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L379"
+      "source_location": "L387"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakecard",
@@ -20585,7 +20688,7 @@
       "file_type": "code",
       "norm_label": "intakecard",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L339"
+      "source_location": "L347"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakegrid",
@@ -20596,7 +20699,7 @@
       "file_type": "code",
       "norm_label": "intakegrid",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L407"
+      "source_location": "L415"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakehead",
@@ -20607,7 +20710,7 @@
       "file_type": "code",
       "norm_label": "intakehead",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L348"
+      "source_location": "L356"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakeicon",
@@ -20618,7 +20721,7 @@
       "file_type": "code",
       "norm_label": "intakeicon",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L367"
+      "source_location": "L375"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakeitem",
@@ -20629,7 +20732,7 @@
       "file_type": "code",
       "norm_label": "intakeitem",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L414"
+      "source_location": "L422"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intakeq",
@@ -20640,7 +20743,7 @@
       "file_type": "code",
       "norm_label": "intakeq",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L425"
+      "source_location": "L433"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_intaketitle",
@@ -20651,7 +20754,7 @@
       "file_type": "code",
       "norm_label": "intaketitle",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L357"
+      "source_location": "L365"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_metastrip",
@@ -20662,7 +20765,7 @@
       "file_type": "code",
       "norm_label": "metastrip",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L283"
+      "source_location": "L291"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_node",
@@ -20673,7 +20776,7 @@
       "file_type": "code",
       "norm_label": "node",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L508"
+      "source_location": "L516"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_notes",
@@ -20684,7 +20787,7 @@
       "file_type": "code",
       "norm_label": "notes",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L326"
+      "source_location": "L334"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phase_icon",
@@ -20706,7 +20809,7 @@
       "file_type": "code",
       "norm_label": "phasebody",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L525"
+      "source_location": "L533"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phasemeta",
@@ -20717,7 +20820,7 @@
       "file_type": "code",
       "norm_label": "phasemeta",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L568"
+      "source_location": "L576"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phasename",
@@ -20728,7 +20831,7 @@
       "file_type": "code",
       "norm_label": "phasename",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L533"
+      "source_location": "L541"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phasenotes",
@@ -20739,7 +20842,7 @@
       "file_type": "code",
       "norm_label": "phasenotes",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L576"
+      "source_location": "L584"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phaserow",
@@ -20750,7 +20853,7 @@
       "file_type": "code",
       "norm_label": "phaserow",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L490"
+      "source_location": "L498"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_phasetag",
@@ -20761,7 +20864,18 @@
       "file_type": "code",
       "norm_label": "phasetag",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L542"
+      "source_location": "L550"
+    },
+    {
+      "id": "launchops_portal_src_views_projectdetail_recpill",
+      "label": "RecPill",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "ProjectDetail.tsx",
+      "file_type": "code",
+      "norm_label": "recpill",
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L704"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_rightcol",
@@ -20772,7 +20886,7 @@
       "file_type": "code",
       "norm_label": "rightcol",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L450"
+      "source_location": "L458"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_sectionrow",
@@ -20783,7 +20897,7 @@
       "file_type": "code",
       "norm_label": "sectionrow",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L470"
+      "source_location": "L478"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_sectiontitle",
@@ -20794,7 +20908,7 @@
       "file_type": "code",
       "norm_label": "sectiontitle",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L464"
+      "source_location": "L472"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_sourcepill",
@@ -20805,7 +20919,7 @@
       "file_type": "code",
       "norm_label": "sourcepill",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L386"
+      "source_location": "L394"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_stagecount",
@@ -20816,7 +20930,7 @@
       "file_type": "code",
       "norm_label": "stagecount",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L477"
+      "source_location": "L485"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_timeline",
@@ -20827,7 +20941,7 @@
       "file_type": "code",
       "norm_label": "timeline",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L485"
+      "source_location": "L493"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_timelinecard",
@@ -20838,7 +20952,7 @@
       "file_type": "code",
       "norm_label": "timelinecard",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L483"
+      "source_location": "L491"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_tminus",
@@ -20849,7 +20963,7 @@
       "file_type": "code",
       "norm_label": "tminus",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L552"
+      "source_location": "L560"
     },
     {
       "id": "launchops_portal_src_views_projectdetail_topbar",
@@ -20860,7 +20974,7 @@
       "file_type": "code",
       "norm_label": "topbar",
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L262"
+      "source_location": "L270"
     },
     {
       "id": "opencode_agents_skills_supabase_assets_feedback_issue_template",
@@ -24050,7 +24164,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L262",
+      "source_location": "L290",
       "weight": 1.0
     },
     {
@@ -24158,7 +24272,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L286",
+      "source_location": "L314",
       "weight": 1.0
     },
     {
@@ -24170,7 +24284,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L290",
+      "source_location": "L318",
       "weight": 1.0
     },
     {
@@ -24230,7 +24344,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L235",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion_matchprojectid",
+      "target": "launchops_portal_server_notion_normtokens",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L271",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion_namekey",
+      "target": "launchops_portal_server_notion_norm",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L247",
       "weight": 1.0
     },
     {
@@ -24315,6 +24453,18 @@
       "context": "call",
       "source_file": "launchops-portal/server/notion.js",
       "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion_normtokens",
+      "target": "launchops_portal_server_notion_norm",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L249",
       "weight": 1.0
     },
     {
@@ -24627,6 +24777,30 @@
       "context": "call",
       "source_file": "launchops-portal/src/views/Testimonials.tsx",
       "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback_othertabrows",
+      "target": "launchops_portal_verify_feedback_idof",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback_projecttabrows",
+      "target": "launchops_portal_verify_feedback_idof",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -25159,6 +25333,18 @@
     },
     {
       "source": "onboarding_site_src_app_app",
+      "target": "onboarding_site_src_lib_api_submitonboard",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "onboarding-site/src/App.tsx",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "onboarding_site_src_app_app",
       "target": "onboarding_site_src_lib_validate_validatedetails",
       "relation": "calls",
       "_origin": "ast",
@@ -25166,7 +25352,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L64",
+      "source_location": "L74",
       "weight": 1.0
     },
     {
@@ -25178,7 +25364,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L75",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -25190,19 +25376,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L86",
-      "weight": 1.0
-    },
-    {
-      "source": "onboarding_site_src_app_app",
-      "target": "onboarding_site_src_lib_api_submitonboard",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L95",
+      "source_location": "L96",
       "weight": 1.0
     },
     {
@@ -26745,7 +26919,7 @@
     },
     {
       "source": "opencode_canva_command",
-      "target": "ref_canva_cli_latest",
+      "target": "ref_c_users_lenovo_appdata_local_npm_cache_npx_87893b1b3b6d0a05_node_modules_canva_cli_cli_js",
       "relation": "extends",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -26769,19 +26943,7 @@
     },
     {
       "source": "opencode_canva_command",
-      "target": "ref_npx",
-      "relation": "extends",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "opencode.json",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "opencode_canva_command",
-      "target": "ref_y",
+      "target": "ref_node",
       "relation": "extends",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -31109,78 +31271,6 @@
       "context": "import",
       "source_file": "onboarding-site/server/routes.js",
       "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "onboarding_site_src_app",
-      "target": "onboarding_site_src_components_logo_logo",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "onboarding_site_src_app",
-      "target": "onboarding_site_src_components_errorbanner_errorbanner",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "onboarding_site_src_app",
-      "target": "onboarding_site_src_screens_welcomescreen_welcomescreen",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "onboarding_site_src_app",
-      "target": "onboarding_site_src_screens_detailsscreen_detailsscreen",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "onboarding_site_src_app",
-      "target": "onboarding_site_src_screens_projectscreen_projectscreen",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L15",
-      "weight": 1.0
-    },
-    {
-      "source": "onboarding_site_src_app",
-      "target": "onboarding_site_src_screens_discoveryscreen_discoveryscreen",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "onboarding-site/src/App.tsx",
-      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -36424,7 +36514,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "launchops-portal/verify-feedback.mjs",
-      "source_location": "L2",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -44096,17 +44186,6 @@
     },
     {
       "source": "launchops_portal_server_notion",
-      "target": "launchops_portal_server_notion_namekey",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L229",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_server_notion",
       "target": "launchops_portal_server_notion_store",
       "relation": "contains",
       "_origin": "ast",
@@ -44118,13 +44197,57 @@
     },
     {
       "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_stop_token",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L237",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_norm",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L239",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_namekey",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L247",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_normtokens",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L249",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
       "target": "launchops_portal_server_notion_matchprojectid",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L234",
+      "source_location": "L259",
       "weight": 1.0
     },
     {
@@ -44135,18 +44258,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L260",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_server_notion",
-      "target": "launchops_portal_server_notion_listfeedback",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/server/notion.js",
-      "source_location": "L284",
+      "source_location": "L288",
       "weight": 1.0
     },
     {
@@ -44158,6 +44270,17 @@
       "confidence_score": 1.0,
       "source_file": "launchops-portal/server/notion.js",
       "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_server_notion",
+      "target": "launchops_portal_server_notion_listfeedback",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/server/notion.js",
+      "source_location": "L312",
       "weight": 1.0
     },
     {
@@ -45884,7 +46007,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L262",
+      "source_location": "L270",
       "weight": 1.0
     },
     {
@@ -45895,7 +46018,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L269",
+      "source_location": "L277",
       "weight": 1.0
     },
     {
@@ -45906,7 +46029,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L283",
+      "source_location": "L291",
       "weight": 1.0
     },
     {
@@ -45917,7 +46040,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L290",
+      "source_location": "L298",
       "weight": 1.0
     },
     {
@@ -45928,18 +46051,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L299",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_src_views_projectdetail",
-      "target": "launchops_portal_src_views_projectdetail_chiplink",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L313",
+      "source_location": "L307",
       "weight": 1.0
     },
     {
@@ -45955,24 +46067,24 @@
     },
     {
       "source": "launchops_portal_src_views_projectdetail",
+      "target": "launchops_portal_src_views_projectdetail_chiplink",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L321",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_projectdetail",
       "target": "launchops_portal_src_views_projectdetail_notes",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L326",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_src_views_projectdetail",
-      "target": "launchops_portal_src_views_projectdetail_intakecard",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L339",
+      "source_location": "L334",
       "weight": 1.0
     },
     {
@@ -45988,13 +46100,24 @@
     },
     {
       "source": "launchops_portal_src_views_projectdetail",
+      "target": "launchops_portal_src_views_projectdetail_intakecard",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L347",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_projectdetail",
       "target": "launchops_portal_src_views_projectdetail_intakehead",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L348",
+      "source_location": "L356",
       "weight": 1.0
     },
     {
@@ -46005,7 +46128,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L357",
+      "source_location": "L365",
       "weight": 1.0
     },
     {
@@ -46016,7 +46139,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L367",
+      "source_location": "L375",
       "weight": 1.0
     },
     {
@@ -46027,7 +46150,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L379",
+      "source_location": "L387",
       "weight": 1.0
     },
     {
@@ -46038,7 +46161,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L386",
+      "source_location": "L394",
       "weight": 1.0
     },
     {
@@ -46049,7 +46172,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L398",
+      "source_location": "L406",
       "weight": 1.0
     },
     {
@@ -46060,7 +46183,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L407",
+      "source_location": "L415",
       "weight": 1.0
     },
     {
@@ -46071,7 +46194,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L414",
+      "source_location": "L422",
       "weight": 1.0
     },
     {
@@ -46082,7 +46205,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L425",
+      "source_location": "L433",
       "weight": 1.0
     },
     {
@@ -46093,7 +46216,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L434",
+      "source_location": "L442",
       "weight": 1.0
     },
     {
@@ -46104,7 +46227,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L442",
+      "source_location": "L450",
       "weight": 1.0
     },
     {
@@ -46115,7 +46238,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L450",
+      "source_location": "L458",
       "weight": 1.0
     },
     {
@@ -46126,7 +46249,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L456",
+      "source_location": "L464",
       "weight": 1.0
     },
     {
@@ -46137,7 +46260,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L464",
+      "source_location": "L472",
       "weight": 1.0
     },
     {
@@ -46148,7 +46271,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L470",
+      "source_location": "L478",
       "weight": 1.0
     },
     {
@@ -46159,7 +46282,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L477",
+      "source_location": "L485",
       "weight": 1.0
     },
     {
@@ -46170,7 +46293,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L483",
+      "source_location": "L491",
       "weight": 1.0
     },
     {
@@ -46181,7 +46304,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L485",
+      "source_location": "L493",
       "weight": 1.0
     },
     {
@@ -46192,7 +46315,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L490",
+      "source_location": "L498",
       "weight": 1.0
     },
     {
@@ -46203,7 +46326,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L508",
+      "source_location": "L516",
       "weight": 1.0
     },
     {
@@ -46214,7 +46337,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L525",
+      "source_location": "L533",
       "weight": 1.0
     },
     {
@@ -46225,7 +46348,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L533",
+      "source_location": "L541",
       "weight": 1.0
     },
     {
@@ -46236,7 +46359,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L542",
+      "source_location": "L550",
       "weight": 1.0
     },
     {
@@ -46247,7 +46370,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L552",
+      "source_location": "L560",
       "weight": 1.0
     },
     {
@@ -46258,7 +46381,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L562",
+      "source_location": "L570",
       "weight": 1.0
     },
     {
@@ -46269,7 +46392,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L568",
+      "source_location": "L576",
       "weight": 1.0
     },
     {
@@ -46280,7 +46403,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L576",
+      "source_location": "L584",
       "weight": 1.0
     },
     {
@@ -46291,7 +46414,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L586",
+      "source_location": "L594",
       "weight": 1.0
     },
     {
@@ -46302,7 +46425,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L600",
+      "source_location": "L608",
       "weight": 1.0
     },
     {
@@ -46313,18 +46436,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L606",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_src_views_projectdetail",
-      "target": "launchops_portal_src_views_projectdetail_asseticon",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L617",
+      "source_location": "L614",
       "weight": 1.0
     },
     {
@@ -46340,13 +46452,24 @@
     },
     {
       "source": "launchops_portal_src_views_projectdetail",
+      "target": "launchops_portal_src_views_projectdetail_asseticon",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L625",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_projectdetail",
       "target": "launchops_portal_src_views_projectdetail_assetname",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L628",
+      "source_location": "L636",
       "weight": 1.0
     },
     {
@@ -46357,7 +46480,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L633",
+      "source_location": "L641",
       "weight": 1.0
     },
     {
@@ -46368,7 +46491,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L639",
+      "source_location": "L647",
       "weight": 1.0
     },
     {
@@ -46379,7 +46502,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L651",
+      "source_location": "L659",
       "weight": 1.0
     },
     {
@@ -46390,7 +46513,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L656",
+      "source_location": "L664",
       "weight": 1.0
     },
     {
@@ -46401,7 +46524,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L666",
+      "source_location": "L674",
       "weight": 1.0
     },
     {
@@ -46412,7 +46535,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L672",
+      "source_location": "L680",
       "weight": 1.0
     },
     {
@@ -46423,18 +46546,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L680",
+      "source_location": "L688",
       "weight": 1.0
     },
     {
       "source": "launchops_portal_src_views_projectdetail",
-      "target": "launchops_portal_src_views_projectdetail_fdate",
+      "target": "launchops_portal_src_views_projectdetail_fmeta",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
-      "source_location": "L686",
+      "source_location": "L694",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_src_views_projectdetail",
+      "target": "launchops_portal_src_views_projectdetail_recpill",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/src/views/ProjectDetail.tsx",
+      "source_location": "L704",
       "weight": 1.0
     },
     {
@@ -47286,24 +47420,13 @@
     },
     {
       "source": "launchops_portal_verify_feedback",
-      "target": "launchops_portal_verify_feedback_checks",
+      "target": "launchops_portal_verify_feedback_check",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/verify-feedback.mjs",
-      "source_location": "L36",
-      "weight": 1.0
-    },
-    {
-      "source": "launchops_portal_verify_feedback",
-      "target": "launchops_portal_verify_feedback_ratings",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "launchops-portal/verify-feedback.mjs",
-      "source_location": "L47",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -47314,7 +47437,73 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "launchops-portal/verify-feedback.mjs",
-      "source_location": "L5",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_verify_feedback_idof",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_verify_feedback_twins",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_verify_feedback_rawsubmission",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_verify_feedback_canon",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_verify_feedback_projecttabrows",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "launchops_portal_verify_feedback",
+      "target": "launchops_portal_verify_feedback_othertabrows",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "launchops-portal/verify-feedback.mjs",
+      "source_location": "L87",
       "weight": 1.0
     },
     {
@@ -48667,7 +48856,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "onboarding-site/src/screens/SuccessScreen.tsx",
-      "source_location": "L14",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -51219,7 +51408,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "opencode.json",
-      "source_location": "L20",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -56352,5 +56541,5 @@
       "source_file": "templates"
     }
   ],
-  "built_at_commit": "4367a62f44d9041b44159b7f81cd9bd9d402828c"
+  "built_at_commit": "23eec35d70a45d96724ace95b30681a45ddb6a47"
 }
