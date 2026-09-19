@@ -17,8 +17,18 @@ import DiscoveryScreen from './screens/DiscoveryScreen';
 import SuccessScreen from './screens/SuccessScreen';
 
 export default function App() {
-  const [screen, setScreen] = useState<Screen>(1);
-  const [form, setForm] = useState<OnboardPayload>(emptyForm);
+  // Dev/test shortcut: /?preview=success&name=Alex jumps straight to screen 5
+  // so the Success page (booking + Notion access) can be reviewed without
+  // walking the whole funnel. Also used by the QA agent.
+  const params = new URLSearchParams(window.location.search);
+  const preview = params.get('preview');
+  const previewName = params.get('name') ?? '';
+  const [screen, setScreen] = useState<Screen>(preview === 'success' ? 5 : 1);
+  const [form, setForm] = useState<OnboardPayload>(
+    preview === 'success' && previewName
+      ? { ...emptyForm, fullName: previewName }
+      : emptyForm,
+  );
   const [errors, setErrors] = useState<ValidationErrors>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);

@@ -11,11 +11,26 @@ interface Props {
 const BOOKING_SRC = 'https://api.leadconnectorhq.com/widget/booking/n6A0JupbZJCV5l50rewr';
 const WIDGET_ID = 'DEU4doKcUr2mk0JlOCvF_1789585815658';
 
+// Where access requests are sent. THIS is the inbox the client's pre-written
+// "Request access in Notion" mail lands in.
+const ACCESS_REQUEST_TO = 'raymon4d.scales@gmail.com';
+
 export default function SuccessScreen({ firstName }: Props) {
   // Capitalize the first letter of the first name (display-only).
   const prettyName = firstName
     ? firstName.charAt(0).toUpperCase() + firstName.slice(1)
     : 'There';
+
+  // Pre-composed email: opens the client's mail app with everything filled in,
+  // so all they do is press Send.
+  const accessMailto = `mailto:${ACCESS_REQUEST_TO}?subject=${encodeURIComponent(
+    `Notion access request — ${prettyName}'s onboarding`,
+  )}&body=${encodeURIComponent(
+    `Hi LaunchOps team,\n\n` +
+      `I've just booked my onboarding/kickoff call and would like access to my project workspace in Notion.\n\n` +
+      `Could you please send me the invite?\n\n` +
+      `Thanks,\n${prettyName}`,
+  )}`;
 
   // Load the LeadConnector form_embed script once so the widget hydrates.
   useEffect(() => {
@@ -43,20 +58,15 @@ export default function SuccessScreen({ firstName }: Props) {
         </div>
       </div>
 
-      {/* Step 1 — Notion workspace */}
+      {/* Step 1 — Notion workspace access request */}
       <div className="step-card">
-        <div className="step-card-title">Step 1 — Open your project workspace</div>
+        <div className="step-card-title">Step 1 — Get access to your project workspace</div>
         <div className="step-card-desc">
-          Your Notion workspace includes a task board, deliverables list, and full project
-          roadmap.
+          Your project workspace lives in Notion. Tap below and your email app opens with a
+          ready-made access request — just hit send.
         </div>
-        <a
-          className="step-card-btn"
-          href="https://www.notion.so"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Open in Notion <span aria-hidden="true">↗</span>
+        <a className="primary-btn" href={accessMailto}>
+          Request access in Notion <span aria-hidden="true">→</span>
         </a>
       </div>
 
@@ -65,7 +75,7 @@ export default function SuccessScreen({ firstName }: Props) {
         <p className="personalized">
           <strong>{prettyName},</strong> one last thing.
         </p>
-        <h3 className="h2" style={{ fontSize: 20, marginTop: 4 }}>
+        <h3 className="h2" style={{ fontSize: 20, marginTop: 4, fontWeight: 400 }}>
           Step 2 — Book your onboarding/ kickoff call.
         </h3>
       </div>
