@@ -69,8 +69,8 @@ export default function SuccessScreen({ firstName }: Props) {
         </div>
         <div className="step-card-text">
           <span className="step-card-label">How to get access.</span>{' '}
-          Click the button below to request access — it opens a ready-made email to us. Send it
-          and we&apos;ll approve you within minutes.
+          Click the button below to <span className="step-card-ref">"Request access"</span> — it
+          opens a ready-made email to us. Send it and we&apos;ll approve you within minutes.
         </div>
         <div className="access-row">
           <a className="primary-btn primary-btn--fit" href={accessMailto}>

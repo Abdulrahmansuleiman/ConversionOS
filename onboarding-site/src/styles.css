@@ -559,12 +559,18 @@ textarea { resize: vertical; }
   color: var(--accent);
 }
 
-/* Normal white paragraph text inside the step card */
+/* Normal gray paragraph text inside the step card */
 .step-card-text {
   font-size: 14px;
   font-weight: 400;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   line-height: 1.5;
+}
+
+/* The quoted "Request access" inside the instruction line — white */
+.step-card-ref {
+  font-weight: 400;
+  color: var(--text-primary);
 }
 
 /* Bold white label: "How to get access." */
@@ -588,7 +594,7 @@ textarea { resize: vertical; }
 .access-row-hint {
   font-size: 13.5px;
   font-weight: 400;
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
 .step-card-desc {
