@@ -22,15 +22,25 @@ export default function SuccessScreen({ firstName }: Props) {
     : 'There';
 
   // Pre-composed email: opens the client's mail app with everything filled in,
-  // so all they do is press Send.
+  // so all they do is press Send. Request access happens FIRST (Step 1 on the
+  // page); booking the kickoff call is Step 2, so the message says booking
+  // comes next.
+  const accessMailBody = [
+    'Hi LaunchOps team,',
+    '',
+    'I would like access to my project workspace in Notion so I can get started on my roadmap.',
+    '',
+    'Step 2 is booking my onboarding/kickoff call, where we can open the roadmap together and kick things off.',
+    '',
+    'Could you please send me the invite?',
+    '',
+    'Thanks,',
+    prettyName,
+  ].join('\n');
+
   const accessMailto = `mailto:${ACCESS_REQUEST_TO}?subject=${encodeURIComponent(
     `Notion access request — ${prettyName}'s onboarding`,
-  )}&body=${encodeURIComponent(
-    `Hi LaunchOps team,\n\n` +
-      `I've just booked my onboarding/kickoff call and would like access to my project workspace in Notion.\n\n` +
-      `Could you please send me the invite?\n\n` +
-      `Thanks,\n${prettyName}`,
-  )}`;
+  )}&body=${encodeURIComponent(accessMailBody)}`;
 
   // Load the LeadConnector form_embed script once so the widget hydrates.
   useEffect(() => {
