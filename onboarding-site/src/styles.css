@@ -528,7 +528,7 @@ textarea { resize: vertical; }
 .success-banner-text {
   font-size: 15px;
   font-weight: 700;
-  color: #4ade80;
+  color: var(--accent);
 }
 
 .success-banner-sub {
@@ -548,6 +548,45 @@ textarea { resize: vertical; }
 
 .step-card-title {
   font-size: 15px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+/* Blue sub-line: "Your personal Notion workspace is live" */
+.step-card-sub {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--accent);
+}
+
+/* Normal white paragraph text inside the step card */
+.step-card-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* Bold white label: "How to get access." */
+.step-card-label {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Button that is NOT full width, with the hint text beside it */
+.primary-btn--fit {
+  width: fit-content;
+}
+
+.access-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.access-row-hint {
+  font-size: 13.5px;
   font-weight: 400;
   color: var(--text-primary);
 }

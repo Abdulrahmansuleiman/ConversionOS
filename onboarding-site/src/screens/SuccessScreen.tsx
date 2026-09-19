@@ -1,5 +1,5 @@
 // src/screens/SuccessScreen.tsx
-// Screen 5 — Success. No stepper. Green check banner, step cards,
+// Screen 5 — Success. No stepper. Success banner, Notion roadmap access card,
 // GoHighLevel booking widget (LeadConnector embed).
 
 import { useEffect } from 'react';
@@ -47,27 +47,37 @@ export default function SuccessScreen({ firstName }: Props) {
 
   return (
     <div className="card card--wide">
-      {/* Green check banner */}
+      {/* Success banner */}
       <div className="success-banner">
-        <span className="success-banner-icon" aria-hidden="true">✓</span>
+        <span className="success-banner-icon" aria-hidden="true">✅</span>
         <div>
           <div className="success-banner-text">Project set up successfully</div>
           <div className="success-banner-sub">
-            Your workspace is being provisioned. You&apos;ll get an email when it&apos;s ready.
+            Your Notion roadmap has been created and your account is in progress. Your roadmap
+            link is below — request access and we&apos;ll approve you within minutes.
           </div>
         </div>
       </div>
 
-      {/* Step 1 — Notion workspace access request */}
+      {/* Step 1 — Notion roadmap access request */}
       <div className="step-card">
-        <div className="step-card-title">Step 1 — Get access to your project workspace</div>
-        <div className="step-card-desc">
-          Your project workspace lives in Notion. Tap below and your email app opens with a
-          ready-made access request — just hit send.
+        <div className="step-card-title">📋 Step 1 — Open your project roadmap</div>
+        <div className="step-card-sub">Your personal Notion workspace is live</div>
+        <div className="step-card-text">
+          We&apos;ve built your dedicated project space in Notion. It contains your task board,
+          deliverables and every meeting recording.
         </div>
-        <a className="primary-btn" href={accessMailto}>
-          Request access in Notion <span aria-hidden="true">→</span>
-        </a>
+        <div className="step-card-text">
+          <span className="step-card-label">How to get access.</span>{' '}
+          Click the button below to request access — it opens a ready-made email to us. Send it
+          and we&apos;ll approve you within minutes.
+        </div>
+        <div className="access-row">
+          <a className="primary-btn primary-btn--fit" href={accessMailto}>
+            Request access in Notion <span aria-hidden="true">→</span>
+          </a>
+          <span className="access-row-hint">Then come back and book your call below 👇</span>
+        </div>
       </div>
 
       {/* Step 2 — Kickoff call */}
@@ -75,9 +85,10 @@ export default function SuccessScreen({ firstName }: Props) {
         <p className="personalized">
           <strong>{prettyName},</strong> one last thing.
         </p>
-        <h3 className="h2" style={{ fontSize: 20, marginTop: 4, fontWeight: 400 }}>
-          Step 2 — Book your onboarding/ kickoff call.
-        </h3>
+        <p className="personalized">
+          Step 2: Book your onboarding call. We will open your Notion roadmap together and kick
+          things off.
+        </p>
       </div>
 
       <iframe
