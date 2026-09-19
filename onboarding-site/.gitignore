@@ -3,4 +3,5 @@ dist
 .env
 *.tsbuildinfo
 .DS_Store
-npm-debug.log*dev-*.log
+npm-debug.log*
+dev-*.log
