@@ -83,7 +83,10 @@ export default function SuccessScreen({ firstName }: Props) {
       {/* Step 2 — Kickoff call */}
       <div>
         <p className="personalized">
-          <strong>{prettyName},</strong> <span className="white-text">one last thing.</span>
+          <strong>{prettyName},</strong>{' '}
+          <span className="white-text" style={{ fontWeight: 700 }}>
+            one last thing.
+          </span>
         </p>
         <p className="personalized">
           Step 2: Book your onboarding call. We will open your Notion roadmap together and kick
