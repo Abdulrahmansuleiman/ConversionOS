@@ -723,3 +723,31 @@ textarea { resize: vertical; }
     transform: none;
   }
 }
+
+/* ---------- Brand-blue scrollbar ---------- */
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) rgba(46, 123, 255, 0.08);
+}
+
+/* WebKit / Blink (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(46, 123, 255, 0.08);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1E6BFF;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
