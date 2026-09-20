@@ -26,6 +26,7 @@ export const HEARD_ABOUT = [
   'YouTube',
   'Instagram',
   'TikTok',
+  'Facebook',
   'LinkedIn',
   'Referral',
   'Cold outreach',
@@ -36,24 +37,27 @@ export const HEARD_ABOUT = [
 ];
 
 export const INDUSTRIES = [
-  'Real Estate',
-  'Home Services',
-  'Solar',
-  'Coaching/Info Products',
-  'Agencies',
-  'E-commerce',
-  'Healthcare',
+  'Solar / Renewables',
+  'Heat pumps / Boilers',
+  'Property / Real Estate',
+  'Construction / Trades',
+  'Healthcare / Clinics',
+  'Gym / Fitness',
+  'Recruitment',
   'Financial Services',
+  'Legal',
+  'E-commerce',
+  'SaaS',
   'Other',
 ];
 
 export const REVENUE_RANGES = [
-  'Under $5k',
-  '$5k–15k',
-  '$15k–30k',
-  '$30k–75k',
-  '$75k–150k',
-  '$150k+',
+  'Under £5k',
+  '£5k–15k',
+  '£15k–30k',
+  '£30k–75k',
+  '£75k–150k',
+  '£150k+',
   'Prefer not to say',
 ];
 
@@ -69,7 +73,7 @@ export const DISCOVERY_QUESTIONS = [
   { key: 'whyLaunchOps', label: 'Why did you decide to work with LaunchOps?' },
   { key: 'painPoint', label: 'What was your #1 pain point before reaching out?' },
   { key: 'triedBefore', label: 'What had you already tried before finding us?' },
-  { key: 'almostStopped', label: 'What almost stopped you from buying?' },
+  { key: 'almostStopped', label: 'What almost stopped you from investing?' },
   { key: 'consideredOthers', label: 'Who else did you consider? / What tipped it in our favor?' },
   { key: 'actionTrigger', label: 'What specific thing pushed you to take action?' },
   { key: 'problemOwnWords', label: 'How would you describe your problem in your own words?' },

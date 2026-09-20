@@ -35,6 +35,7 @@ export const HEARD_ABOUT = [
   'YouTube',
   'Instagram',
   'TikTok',
+  'Facebook',
   'LinkedIn',
   'Referral',
   'Cold outreach',
@@ -45,24 +46,27 @@ export const HEARD_ABOUT = [
 ] as const;
 
 export const INDUSTRIES = [
-  'Real Estate',
-  'Home Services',
-  'Solar',
-  'Coaching/Info Products',
-  'Agencies',
-  'E-commerce',
-  'Healthcare',
+  'Solar / Renewables',
+  'Heat pumps / Boilers',
+  'Property / Real Estate',
+  'Construction / Trades',
+  'Healthcare / Clinics',
+  'Gym / Fitness',
+  'Recruitment',
   'Financial Services',
+  'Legal',
+  'E-commerce',
+  'SaaS',
   'Other',
 ] as const;
 
 export const REVENUE_RANGES = [
-  'Under $5k',
-  '$5k–15k',
-  '$15k–30k',
-  '$30k–75k',
-  '$75k–150k',
-  '$150k+',
+  'Under £5k',
+  '£5k–15k',
+  '£15k–30k',
+  '£30k–75k',
+  '£75k–150k',
+  '£150k+',
   'Prefer not to say',
 ] as const;
 
@@ -112,7 +116,7 @@ export const DISCOVERY_QUESTIONS: DiscoveryQuestion[] = [
   },
   {
     key: 'almostStopped',
-    label: 'What almost stopped you from buying?',
+    label: 'What almost stopped you from investing?',
     placeholder: 'be honest — price, doubt, timing',
   },
   {
