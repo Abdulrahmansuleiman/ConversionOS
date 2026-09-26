@@ -1,0 +1,1226 @@
+{
+  "updatedAt": "",
+  "createdAt": "",
+  "id": "439068ac-efdf-4d3a-99cb-adc4c3723864",
+  "name": "LaunchOps Quoting Workflow",
+  "description": "Solar London quote sub-workflow. Deterministic catalog-driven pricing. All prices TBD at shipping.",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "workflowId": "",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "contact_id": {
+              "type": "string",
+              "description": "GHL contact id"
+            },
+            "contact_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "company_name": {
+              "type": "string"
+            },
+            "install_type": {
+              "type": "string",
+              "enum": [
+                "home",
+                "commercial"
+              ]
+            },
+            "requested_services": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "string"
+            },
+            "conversation_notes": {
+              "type": "string"
+            },
+            "currency": {
+              "type": "string",
+              "default": "GBP"
+            }
+          },
+          "required": [
+            "contact_id",
+            "email",
+            "install_type",
+            "requested_services",
+            "currency"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "942d8f68-6895-475f-b98e-c78f29f16b15",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const input = $json;\nconst required = ['contact_id','email','install_type','requested_services','currency'];\nfor (const f of required) {\n    if (!input[f] || String(input[f]).trim()==='') {\n        return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'missing:'+f}}];\n    }\n}\nconst emailRe = /^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/;\nif (!emailRe.test(input.email)) {\n    return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'email_missing_or_malformed'}}];\n}\nif (input.currency !== 'GBP') {\n    return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'currency_not_gbp'}}];\n}\nlet quantity = null;\nif (input.quantity !== undefined && input.quantity !== null && String(input.quantity).trim()!=='') {\n    const s = String(input.quantity).trim();\n    if (!/^[1-9][0-9]{0,2}$/.test(s)) {\n        return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'quantity_malformed'}}];\n    }\n    quantity = parseInt(s,10);\n    if (quantity > 1) {\n        return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'quantity_above_max_tbd'}}];\n    }\n}\nconst keys = input.requested_services.split(',').map(s=>s.trim()).filter(Boolean);\nconst ck = require('crypto').createHash('sha256').update([input.contact_id,[...keys].sort().join('+'),new Date().toISOString().split('T')[0]].join('|')).digest('hex');\nif (!/^[0-9a-f]{64}$/.test(ck)) {\n    return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'idempotency_key_invalid'}}];\n}\nreturn [{json:{...input,quantity,keys,idempotency_key:ck,ok:true}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        0,
+        200
+      ],
+      "id": "bbce01fa-f5ae-4c6d-a9f1-1a889d12e05a",
+      "name": "Validate Input"
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "false"
+            },
+            {
+              "name": "needs_human",
+              "value": "true"
+            },
+            {
+              "name": "status",
+              "value": "bad_input"
+            },
+            {
+              "name": "duplicate",
+              "value": "false"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $('Validate Input').item.json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": []
+            },
+            {
+              "name": "quote_rows_text",
+              "value": ""
+            },
+            {
+              "name": "total_display",
+              "value": null
+            },
+            {
+              "name": "subtotal_minor",
+              "value": 0
+            },
+            {
+              "name": "total_minor",
+              "value": 0
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "false"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            },
+            {
+              "name": "failure_reason",
+              "value": "={{ $('Validate Input').item.json.failure_reason }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        400
+      ],
+      "id": "e586c1e6-b655-495c-aaa2-3487ca599638",
+      "name": "Return: Bad Input"
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "table": "solar_london_quotes",
+        "columns": "quote_id,idempotency_key,contact_id,contact_name,email,company_name,install_type,quantity,services,currency,subtotal_minor,total_minor,total_display,quote_rows_text,status,attempt,catalog_checksum"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        600
+      ],
+      "id": "ae7c8910-df70-4efe-84af-9552710be3b7",
+      "name": "Claim Quote",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "operation": "select",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        800
+      ],
+      "id": "47f2119b-3e90-4784-a244-da1e2d926991",
+      "name": "Load Stored Outcome",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.status === 'pending' && $json.updated_at < new Date(Date.now() - 15*60*1000).toISOString() }}",
+              "value2": "true",
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        0,
+        1000
+      ],
+      "id": "e73ab5e7-91d7-449b-b166-38d1b9d530cc",
+      "name": "IF Reclaimable?"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        1200
+      ],
+      "id": "39cdcd2b-5ef2-405b-be8b-f51a38ec831b",
+      "name": "Reclaim Quote",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "false"
+            },
+            {
+              "name": "needs_human",
+              "value": "true"
+            },
+            {
+              "name": "status",
+              "value": "={{ $json.status }}"
+            },
+            {
+              "name": "duplicate",
+              "value": "true"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": []
+            },
+            {
+              "name": "quote_rows_text",
+              "value": ""
+            },
+            {
+              "name": "total_display",
+              "value": null
+            },
+            {
+              "name": "subtotal_minor",
+              "value": 0
+            },
+            {
+              "name": "total_minor",
+              "value": 0
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "false"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            },
+            {
+              "name": "failure_reason",
+              "value": "={{ 'duplicate:true,emailed:' + $json.status }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        1400
+      ],
+      "id": "b41ea538-9195-49a6-a31d-d044a5eaf6bc",
+      "name": "Return: Duplicate â€” Not Resent"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const EXPECTED_CHECKSUM = '742d5d2bb790ab4090f348ffc7f2772e93898eaac4163adc8b3aecb35896755f';\nconst CATALOG = {\n  \"catalog_version\": \"TEMPLATE-awaiting-raymon\",\n  \"client_slug\": \"solar-london\",\n  \"currency\": \"GBP\",\n  \"catalog_checksum\": \"aec8e818007e5c26b159565d20df22c31ab3656f57617d866711e372de549ed5\",\n  \"policy\": {\n    \"quantity\": {\n      \"min\": 1,\n      \"max\": \"TBD\"\n    },\n    \"idempotency\": {\n      \"max_attempts\": 3,\n      \"stale_claim_minutes\": 15\n    },\n    \"chat_quote_line_cap\": \"TBD\"\n  },\n  \"document_defaults\": {\n    \"prepared_by\": \"TBD\",\n    \"sender_email\": \"TBD\",\n    \"sender_name\": \"TBD\",\n    \"phone\": \"TBD\",\n    \"address\": \"TBD\",\n    \"vat_number\": \"TBD\",\n    \"quote_validity\": \"TBD\",\n    \"price_basis\": \"TBD\",\n    \"terms_line\": \"TBD\",\n    \"social_proof_line\": \"TBD\"\n  },\n  \"services\": [\n    {\n      \"key\": \"home_solar_install\",\n      \"display_name\": \"TBD\",\n      \"category\": \"installation\",\n      \"install_type\": \"home\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": false,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    },\n    {\n      \"key\": \"home_battery_storage\",\n      \"display_name\": \"TBD\",\n      \"category\": \"storage\",\n      \"install_type\": \"home\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": false,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    },\n    {\n      \"key\": \"home_solar_with_battery\",\n      \"display_name\": \"TBD\",\n      \"category\": \"bundle\",\n      \"install_type\": \"home\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": false,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    },\n    {\n      \"key\": \"commercial_solar_install\",\n      \"display_name\": \"TBD\",\n      \"category\": \"installation\",\n      \"install_type\": \"commercial\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": false,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    },\n    {\n      \"key\": \"solar_maintenance\",\n      \"display_name\": \"TBD\",\n      \"category\": \"maintenance\",\n      \"install_type\": \"both\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": false,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    },\n    {\n      \"key\": \"solar_repair\",\n      \"display_name\": \"TBD\",\n      \"category\": \"maintenance\",\n      \"install_type\": \"both\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": false,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    },\n    {\n      \"key\": \"electric_ev_charger\",\n      \"display_name\": \"TBD\",\n      \"category\": \"installation\",\n      \"install_type\": \"both\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": false,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    },\n    {\n      \"key\": \"solar_removal\",\n      \"display_name\": \"TBD\",\n      \"category\": \"removal\",\n      \"install_type\": \"both\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": false,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    },\n    {\n      \"key\": \"finance_options\",\n      \"display_name\": \"TBD\",\n      \"category\": \"finance\",\n      \"install_type\": \"both\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": false,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    },\n    {\n      \"key\": \"_self_test_solar_row\",\n      \"display_name\": \"SELF TEST ROW - NOT A SOLAR LONDON SERVICE\",\n      \"category\": \"installation\",\n      \"install_type\": \"both\",\n      \"pricing_model\": \"TBD\",\n      \"unit_label\": \"TBD\",\n      \"unit_size\": \"TBD\",\n      \"unit_size_unit\": \"TBD\",\n      \"unit_price\": \"TBD\",\n      \"currency\": \"GBP\",\n      \"vat_included\": \"TBD\",\n      \"includes\": [\n        \"TBD\"\n      ],\n      \"excludes\": [\n        \"TBD\"\n      ],\n      \"turnaround\": \"TBD\",\n      \"lead_time_note\": \"TBD\",\n      \"active\": true,\n      \"customer_facing\": false,\n      \"requires_quote_id\": true\n    }\n  ]\n};\nconst bare = {...CATALOG, catalog_checksum: ''};\nconst filtered = Object.fromEntries(Object.entries(bare).filter(([k]) => !k.startsWith('_') && !k.endsWith('_note')).sort(([a],[b]) => a<b?-1:a>b?1:0));\nconst canonical = JSON.stringify(filtered);\nconst actual = require('crypto').createHash('sha256').update(canonical,'utf8').digest('hex');\nif (actual !== EXPECTED_CHECKSUM) {\n  return [{json:{ok:false,needs_human:true,status:'catalog_checksum_mismatch',failure_reason:'catalog drift:'+actual}}];\n}\nreturn [{json:{CATALOG,catalog_checksum:EXPECTED_CHECKSUM,ok:true}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        0,
+        1600
+      ],
+      "id": "cbfdb25c-2b1d-46bd-9208-19bfc382baed",
+      "name": "Load Catalog"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        1800
+      ],
+      "id": "6abf7b9b-5101-47d6-8f39-f64d6ecb2cf0",
+      "name": "Mark Catalog Drift",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "false"
+            },
+            {
+              "name": "needs_human",
+              "value": "true"
+            },
+            {
+              "name": "status",
+              "value": "catalog_checksum_mismatch"
+            },
+            {
+              "name": "duplicate",
+              "value": "false"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $('Validate Input').item.json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": []
+            },
+            {
+              "name": "quote_rows_text",
+              "value": ""
+            },
+            {
+              "name": "total_display",
+              "value": null
+            },
+            {
+              "name": "subtotal_minor",
+              "value": 0
+            },
+            {
+              "name": "total_minor",
+              "value": 0
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "false"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            },
+            {
+              "name": "failure_reason",
+              "value": "catalog_checksum_mismatch"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        2000
+      ],
+      "id": "9f8e248a-a222-41e9-b96d-5b18d262c122",
+      "name": "Return: Catalog Drift"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const CATALOG = $('Load Catalog').item.json.CATALOG;\nconst input = $('Validate Input').item.json;\nconst keys = input.keys || input.requested_services.split(',').map(s=>s.trim()).filter(Boolean);\nconst installType = input.install_type;\nconst quantity = input.quantity || null;\nconst matched = keys.map(k => CATALOG.services.find(s => s.key === k && s.active === true));\nif (matched.some(m => m === undefined)) {\n  const u = keys.filter(k => !CATALOG.services.some(s => s.key === k && s.active));\n  return [{json:{ok:false,needs_human:true,status:'no_matching_service',failure_reason:'no_matching_catalog_service:'+u.join(',')}}];\n}\nconst lines = [];\nfor (const row of matched) {\n  if (row.install_type !== 'both' && row.install_type !== installType) {\n    return [{json:{ok:false,needs_human:true,status:'no_matching_service',failure_reason:'service_install_type_mismatch:'+row.key}}];\n  }\n  if (row.pricing_model === 'per_watt') {\n    if (row.unit_size_unit !== 'W') return [{json:{ok:false,needs_human:true,status:'blocked_tbd',failure_reason:'catalog_unit_size_unit_tbd:'+row.key}}];\n    if (!/^[1-9][0-9]{1,4}$/.test(String(row.unit_size))) return [{json:{ok:false,needs_human:true,status:'blocked_tbd',failure_reason:'catalog_unit_size_invalid:'+row.key}}];\n  }\n  const mr = /^\\d{1,9}(\\.\\d{1,2})?$/;\n  if (!mr.test(String(row.unit_price))) {\n    return [{json:{ok:false,needs_human:true,status:'blocked_tbd',failure_reason:'catalog_price_tbd:'+row.key}}];\n  }\n  if (row.customer_facing !== true) {\n    return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'service_not_customer_facing:'+row.key}}];\n  }\n  if (!['yes','no','TBD'].includes(row.vat_included)) {\n    return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'catalog_vat_invalid:'+row.key}}];\n  }\n  if (row.vat_included === 'TBD') {\n    return [{json:{ok:false,needs_human:true,status:'blocked_tbd',failure_reason:'catalog_vat_tbd:'+row.key}}];\n  }\n  const price = parseFloat(row.unit_price);\n  let minor;\n  switch(row.pricing_model) {\n    case 'flat': minor = Math.round(price*100); break;\n    case 'per_unit': if(quantity===null||quantity===0) return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'quantity_required_for:'+row.key}}]; minor = Math.round(price*quantity*100); break;\n    case 'per_watt': if(quantity===null||quantity===0) return [{json:{ok:false,needs_human:true,status:'bad_input',failure_reason:'quantity_required_for:'+row.key}}]; minor = Math.round(price*parseInt(String(row.unit_size),10)*quantity*100); break;\n    default: return [{json:{ok:false,needs_human:true,status:'blocked_tbd',failure_reason:'pricing_model_tbd:'+row.key}}];\n  }\n  lines.push({key:row.key,display_name:row.display_name,unit_price_minor:Math.round(price*100),minor,qty:quantity||1,unit_label:row.unit_label||'per install'});\n}\nconst subtotal_minor = lines.reduce((a,l) => a + l.minor, 0);\nconst total_minor = subtotal_minor;\nconst price_ledger = lines.map(l => ({key:l.key,display_name:l.display_name,unit_price_minor:l.unit_price_minor,qty:l.qty,line_total_minor:l.minor,line_total_display:Math.floor(l.minor/100)+'.'+String(l.minor%100).padStart(2,'0')}));\nconst quote_rows_text = lines.map(l => l.display_name+': Â£'+(l.minor/100).toFixed(2)).join('\\n');\nconst day = new Date().toISOString().split('T')[0];\nconst qid = 'Q-'+day+'-'+require('crypto').createHash('sha256').update(input.idempotency_key).digest('hex').slice(0,6).toUpperCase();\nreturn [{json:{ok:true,quote_id:qid,quote_rows_text,subtotal_minor,total_minor,price_ledger,lines,contact_id:input.contact_id,contact_name:input.contact_name,email:input.email,company_name:input.company_name,currency:'GBP',services:lines.map(l=>({key:l.key,display_name:l.display_name}))}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        0,
+        2200
+      ],
+      "id": "f5f2f79f-b883-431d-a893-33997d5903a0",
+      "name": "Match + Price Quote"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        2400
+      ],
+      "id": "8edd213b-b7b2-4045-91d3-f55426f4c2e7",
+      "name": "Mark No Matching Service",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "false"
+            },
+            {
+              "name": "needs_human",
+              "value": "true"
+            },
+            {
+              "name": "status",
+              "value": "no_matching_service"
+            },
+            {
+              "name": "duplicate",
+              "value": "false"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $('Validate Input').item.json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": []
+            },
+            {
+              "name": "quote_rows_text",
+              "value": ""
+            },
+            {
+              "name": "total_display",
+              "value": null
+            },
+            {
+              "name": "subtotal_minor",
+              "value": 0
+            },
+            {
+              "name": "total_minor",
+              "value": 0
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "false"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            },
+            {
+              "name": "failure_reason",
+              "value": "={{ $('Mark No Matching Service').item.json.failure_reason || 'no_matching_service'}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        2600
+      ],
+      "id": "ceffe428-0a38-45cc-b01c-0110182b2780",
+      "name": "Return: No Matching Service"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        2800
+      ],
+      "id": "abb0adbc-2fe7-47ed-8e11-eefdf63544c3",
+      "name": "Mark Blocked (TBD)",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "false"
+            },
+            {
+              "name": "needs_human",
+              "value": "true"
+            },
+            {
+              "name": "status",
+              "value": "blocked_tbd"
+            },
+            {
+              "name": "duplicate",
+              "value": "false"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $('Validate Input').item.json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": []
+            },
+            {
+              "name": "quote_rows_text",
+              "value": ""
+            },
+            {
+              "name": "total_display",
+              "value": null
+            },
+            {
+              "name": "subtotal_minor",
+              "value": 0
+            },
+            {
+              "name": "total_minor",
+              "value": 0
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "false"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            },
+            {
+              "name": "failure_reason",
+              "value": "catalog_price_tbd"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        3000
+      ],
+      "id": "45a6ea7b-d92b-4979-a51b-862114fac18f",
+      "name": "Return: Blocked â€” Price TBD"
+    },
+    {
+      "parameters": {
+        "model": {
+          "model": "gpt-4.1",
+          "type": "chat"
+        },
+        "promptType": "define",
+        "text": "Write one customer-facing sentence summarizing the quote. Use only the prices in the input. Do not invent numbers.",
+        "options": {
+          "systemMessage": "Summarize a solar quote in one sentence using only provided prices.",
+          "temperature": 0
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1,
+      "position": [
+        0,
+        3200
+      ],
+      "id": "6a448d3d-0286-44c0-8892-143e94d8cb5e",
+      "name": "Quote Summary AI",
+      "credentials": {
+        "openAiApi": "OpenAI account"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const input = $json;\nconst ledger = input.price_ledger || [];\nconst allowed = new Set();\nfor (const item of ledger) {\n  const m = (item.line_total_display||'').match(/\\d+(?:\\.\\d+)?/g) || [];\n  m.forEach(d => allowed.add(d));\n}\nlet summaryText = null;\nlet summaryFailed = false;\nif (input.data && input.data.text) {\n  summaryText = input.data.text;\n  const digits = summaryText.match(/\\d+(?:\\.\\d+)?/g) || [];\n  const hasBad = digits.some(d => !allowed.has(d)) || /Â£|GBP|%|TBD/.test(summaryText);\n  if (hasBad) { summaryText = null; summaryFailed = true; }\n} else { summaryFailed = true; }\nreturn [{json:{...input,summary_text:summaryText,summary_failed:summaryFailed}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        0,
+        3400
+      ],
+      "id": "e2718438-23fa-48cf-9de2-8e1d33fba084",
+      "name": "Guard Summary"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const input = $('Match + Price Quote').item.json;\nconst html = '<div style=\"font-family:Arial,sans-serif;max-width:600px;margin:0 auto;\"><h1>Quote from Solar London</h1><p>Reference: '+input.quote_id+'</p><table border=\"1\" cellpadding=\"8\"><tr><th>Service</th><th>Price</th></tr>'+input.price_ledger.map(l=>'<tr><td>'+l.display_name+'</td><td>'+l.line_total_display+'</td></tr>').join('')+'<tr style=\"font-weight:bold;\"><td>Total</td><td>'+(input.total_display||'Â£0.00')+'</td></tr></table></div>';\nconst plain = 'Quote from Solar London - '+input.quote_id+'\\n\\n'+input.quote_rows_text+'\\n\\nTotal: '+(input.total_display||'Â£0.00');\nconst forbidden = ['{{','}}','[YOUR_','YOUR_GOOGLE','TBD','recipient@example.com','null','undefined','llama'];\nconst scan = html+' '+plain;\nfor (const p of forbidden) { if(scan.includes(p)) return [{json:{ok:false,needs_human:true,status:'failed_document',failure_reason:'unresolved_'+p}}]; }\nreturn [{json:{...input,quote_email_html:html,quote_email_plain:plain,document_complete:true}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        0,
+        3600
+      ],
+      "id": "e4350f93-b4e2-499a-a8c5-786669dddbc7",
+      "name": "Build Quote Document"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        3800
+      ],
+      "id": "a3660698-2713-4081-be81-153dd392bc9d",
+      "name": "Mark Failed (Document)",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "false"
+            },
+            {
+              "name": "needs_human",
+              "value": "true"
+            },
+            {
+              "name": "status",
+              "value": "failed_document"
+            },
+            {
+              "name": "duplicate",
+              "value": "false"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $('Validate Input').item.json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": []
+            },
+            {
+              "name": "quote_rows_text",
+              "value": ""
+            },
+            {
+              "name": "total_display",
+              "value": null
+            },
+            {
+              "name": "subtotal_minor",
+              "value": 0
+            },
+            {
+              "name": "total_minor",
+              "value": 0
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "false"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            },
+            {
+              "name": "failure_reason",
+              "value": "={{ $('Mark Failed (Document)').item.json.failure_reason || 'failed_document'}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        4000
+      ],
+      "id": "7a736d7e-8ead-45e7-9b7a-46f71338f981",
+      "name": "Return: Bad Document"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const input = $('Build Quote Document').item.json;\nconst required = ['ok','needs_human','status','quote_id','duplicate','contact_id','services','quote_rows_text','total_display','subtotal_minor','total_minor','currency','emailed','lead_line'];\nfor (const f of required) { if(input[f]===undefined) return [{json:{ok:false,needs_human:true,status:'contract_violation',failure_reason:'missing:'+f}}]; }\nconst allowed = new Set(required);\nconst extra = Object.keys(input).filter(k => !allowed.has(k) && !['data','json','item'].includes(k));\nif(extra.length>0) return [{json:{ok:false,needs_human:true,status:'contract_violation',failure_reason:'extra_keys:'+extra.join(',')}}];\nif(input.subtotal_minor !== input.total_minor) return [{json:{ok:false,needs_human:true,status:'contract_violation',failure_reason:'subtotal_mismatch'}}];\nif(input.ok===true && input.emailed!==true) return [{json:{ok:false,needs_human:true,status:'contract_violation',failure_reason:'emailed_not_true'}}];\nif(/\\d/.test(String(input.lead_line||''))) return [{json:{ok:false,needs_human:true,status:'contract_violation',failure_reason:'digit_in_lead_line'}}];\nconst ledger = input.price_ledger||[];\nconst allowedNums = new Set();\nfor(const item of ledger){const m=(item.line_total_display||'').match(/\\d+(?:\\.\\d+)?/g)||[];m.forEach(d=>allowedNums.add(d));}\nfor(const field of ['quote_rows_text','total_display','summary_text']){const v=input[field]||'';const d=v.match(/\\d+(?:\\.\\d+)?/g)||[];for(const x of d){if(!allowedNums.has(x)) return [{json:{ok:false,needs_human:true,status:'contract_violation',failure_reason:'unverified_digit:'+x}}];}}\nreturn [{json:{...input,contract_valid:true}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        0,
+        4200
+      ],
+      "id": "ce483bf5-efe5-4cf7-8422-d6eaf0cf8c3d",
+      "name": "Contract Check"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        4400
+      ],
+      "id": "8fa300a2-26c5-490e-8bfa-8b0d1e30c559",
+      "name": "Mark Contract Violation",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "false"
+            },
+            {
+              "name": "needs_human",
+              "value": "true"
+            },
+            {
+              "name": "status",
+              "value": "contract_violation"
+            },
+            {
+              "name": "duplicate",
+              "value": "false"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $('Validate Input').item.json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": []
+            },
+            {
+              "name": "quote_rows_text",
+              "value": ""
+            },
+            {
+              "name": "total_display",
+              "value": null
+            },
+            {
+              "name": "subtotal_minor",
+              "value": 0
+            },
+            {
+              "name": "total_minor",
+              "value": 0
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "false"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            },
+            {
+              "name": "failure_reason",
+              "value": "={{ $('Mark Contract Violation').item.json.failure_reason || 'contract_violation'}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        4600
+      ],
+      "id": "1fe311bf-a62c-4d6e-93e2-c5aa76d95892",
+      "name": "Return: Contract Violation"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "message": {
+          "to": "={{ $('Validate Input').item.json.email }}",
+          "from": "={{ $('Build Quote Document').item.json.from_email }}",
+          "subject": "Your quote from Solar London - reference {{ $('Validate Input').item.json.quote_id }}",
+          "html": "={{ $('Build Quote Document').item.json.quote_email_html }}",
+          "options": {
+            "attachments": []
+          }
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 1,
+      "position": [
+        0,
+        4800
+      ],
+      "id": "9ab77152-9a5d-40fd-b08f-e71a471346fd",
+      "name": "Send Quote Email",
+      "credentials": {
+        "gmail": "Solar London Gmail"
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.messageId }}",
+              "value2": "",
+              "operator": {
+                "type": "string",
+                "operation": "isNotEmpty"
+              }
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        0,
+        5000
+      ],
+      "id": "06eafc79-0395-4b55-b924-84475a28db21",
+      "name": "IF Email OK?"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        5200
+      ],
+      "id": "431be0e4-3544-4a2e-997f-d9fea7edc5f4",
+      "name": "Mark Failed (Email)",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "false"
+            },
+            {
+              "name": "needs_human",
+              "value": "true"
+            },
+            {
+              "name": "status",
+              "value": "failed_email"
+            },
+            {
+              "name": "duplicate",
+              "value": "false"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $('Validate Input').item.json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": []
+            },
+            {
+              "name": "quote_rows_text",
+              "value": ""
+            },
+            {
+              "name": "total_display",
+              "value": null
+            },
+            {
+              "name": "subtotal_minor",
+              "value": 0
+            },
+            {
+              "name": "total_minor",
+              "value": 0
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "false"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            },
+            {
+              "name": "failure_reason",
+              "value": "={{ $('Mark Failed (Email)').item.json.failure_reason || 'failed_email'}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        5400
+      ],
+      "id": "95cf3d12-1324-49ff-b72b-f3713c5e2d95",
+      "name": "Return: Failed â€” Email"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        5600
+      ],
+      "id": "84d5b301-8419-4a5b-b426-7fbb5755fae8",
+      "name": "Mark Emailed",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "true"
+            },
+            {
+              "name": "needs_human",
+              "value": "false"
+            },
+            {
+              "name": "status",
+              "value": "emailed"
+            },
+            {
+              "name": "quote_id",
+              "value": "={{ $('Match + Price Quote').item.json.quote_id }}"
+            },
+            {
+              "name": "duplicate",
+              "value": "false"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $('Validate Input').item.json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": "={{ $('Match + Price Quote').item.json.services }}"
+            },
+            {
+              "name": "quote_rows_text",
+              "value": "={{ $('Match + Price Quote').item.json.quote_rows_text }}"
+            },
+            {
+              "name": "total_display",
+              "value": "={{ $('Match + Price Quote').item.json.total_display }}"
+            },
+            {
+              "name": "subtotal_minor",
+              "value": "={{ $('Match + Price Quote').item.json.subtotal_minor }}"
+            },
+            {
+              "name": "total_minor",
+              "value": "={{ $('Match + Price Quote').item.json.total_minor }}"
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "true"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        5800
+      ],
+      "id": "68a682ae-71db-4128-a593-00501c9859db",
+      "name": "Return: Priced + Emailed"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "table": "solar_london_quotes"
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        0,
+        6000
+      ],
+      "id": "c8d800f0-4fc9-4381-8613-9d555745fab4",
+      "name": "Mark Internal Error",
+      "credentials": {
+        "supabaseApi": "Supabase account f1"
+      }
+    },
+    {
+      "parameters": {
+        "mode": "keepOnlySet",
+        "fields": {
+          "values": [
+            {
+              "name": "ok",
+              "value": "false"
+            },
+            {
+              "name": "needs_human",
+              "value": "true"
+            },
+            {
+              "name": "status",
+              "value": "internal_error"
+            },
+            {
+              "name": "duplicate",
+              "value": "false"
+            },
+            {
+              "name": "contact_id",
+              "value": "={{ $('Validate Input').item.json.contact_id }}"
+            },
+            {
+              "name": "services",
+              "value": []
+            },
+            {
+              "name": "quote_rows_text",
+              "value": ""
+            },
+            {
+              "name": "total_display",
+              "value": null
+            },
+            {
+              "name": "subtotal_minor",
+              "value": 0
+            },
+            {
+              "name": "total_minor",
+              "value": 0
+            },
+            {
+              "name": "currency",
+              "value": "GBP"
+            },
+            {
+              "name": "emailed",
+              "value": "false"
+            },
+            {
+              "name": "lead_line",
+              "value": "let me check that with my manager"
+            },
+            {
+              "name": "failure_reason",
+              "value": "internal_error"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        0,
+        6200
+      ],
+      "id": "ef619319-fa94-4350-9f37-96f95363a358",
+      "name": "Return: Internal Error"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "",
+        "sendBody": true,
+        "body": {
+          "event_type": "={{ $json.ok ? 'quote_generated' : 'quote_blocked' }}",
+          "client_id": "={{ $json.contact_id }}",
+          "timestamp": "={{ new Date().toISOString() }}",
+          "payload": {
+            "lead_name": "={{ $json.contact_name }}",
+            "services": "={{ $json.services }}",
+            "currency": "GBP",
+            "status": "={{ $json.status }}",
+            "failure_reason": "={{ $json.failure_reason }}",
+            "emailed": "={{ $json.emailed }}"
+          }
+        },
+        "options": {
+          "continueOnFail": true
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        0,
+        6400
+      ],
+      "id": "e549e2c8-3b8b-48ae-99c5-52484017895b",
+      "name": "Dashboard - Quote Outcome"
+    }
+  ],
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Validate Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Input": {
+      "main": [
+        [
+          {
+            "node": "Claim Quote",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "tags": []
+}

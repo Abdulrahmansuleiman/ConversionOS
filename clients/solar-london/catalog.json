@@ -1,0 +1,430 @@
+{
+  "_README": [
+    "AUTHORITATIVE SOURCE OF TRUTH for Solar London's quote catalog.",
+    "This file is the file Raymon edits. The same payload is pasted as the",
+    "`const CATALOG` literal into the `Load Catalog` Code node of the quote sub-workflow.",
+    "The two MUST be identical after canonicalisation - sorted keys, no whitespace, UTF-8 -",
+    "which is what `catalog_checksum` proves. Not byte-identical: a JSON file and a JS string",
+    "literal cannot be, because JS escaping differs. Canonical identity is the checkable claim.",
+    "",
+    "PRICING BLOCKER (see spec section 4): Raymon's only price datum, verbatim, is:",
+    "  \"it depends on what the person pick it a solar panel let say it about 6k pounds\"",
+    "That sentence is ambiguous (per panel? per install? VAT-inclusive? real or illustrative?) and is",
+    "recorded ONLY as provenance of an open question. It must NEVER be parsed into a price, used as a",
+    "default, or used to bound any value.",
+    "",
+    "TBD IS A SHIPPING STATE, NOT A BLOCKER.",
+    "The system is complete and safe with every price at \"TBD\". Every branch is built and tested",
+    "in that state: the matcher runs, the strict price parse rejects \"TBD\", the quote aborts with",
+    "needs_human true, the row is written with status blocked_tbd, and NO EMAIL IS SENT. The moment",
+    "Raymon writes a real figure into unit_price and recomputes catalog_checksum, the same graph",
+    "emits the quote and sends the email. No code change, no node change, no re-wiring.",
+    "",
+    "RULES:",
+    "1. EVERY price-bearing field is the literal string \"TBD\" until Raymon supplies a value in writing.",
+    "2. Money fields are STRINGS on purpose. A number field cannot hold \"TBD\" without a type lie, and a",
+    "   type lie is exactly how a default price sneaks in. The pricing code parses money with",
+    "   /^\\d{1,9}(\\.\\d{1,2})?$/ and treats anything else as UNRESOLVED, which ABORTS the quote.",
+    "3. NEVER invent, infer, round, extrapolate, or \"reasonably assume\" any price, discount, VAT rate,",
+    "   turnaround, panel wattage, battery capacity, finance rate, or payment term.",
+    "4. If a price needed for a requested service is still \"TBD\" at quote time, the workflow ABORTS",
+    "   the quote and returns the pre-written human-handoff line. It must never emit a partial quote,",
+    "   a zero, a range, a \"from ...\" figure, or a model-invented number.",
+    "5. unit_size is NOT a money field and is NOT parsed with the money regex. It is an integer count",
+    "   of WATTS matching /^[1-9][0-9]{1,4}$/ and it requires unit_size_unit \"W\". A catalog value written",
+    "   for a kilowatt-scale system therefore FAILS validation and aborts, instead of silently pricing",
+    "   \"a three-kilowatt array as three watts\". Converting kW to W is arithmetic Raymon has not",
+    "   authorised, so v1 supports watts only. unit_size is a CATALOG value: the model never supplies",
+    "   or influences it.",
+    "6. CURRENCY IS GBP. Stated once, in the spec, section 2. It is not derived from any decision",
+    "   number - decision 4 was delivery by email.",
+    "",
+    "TWO INDEPENDENT GATES (this resolves the contradiction QA raised):",
+    "  active           true  = the matcher will accept this row. At least one row must be true or no",
+    "                         branch past `Match Services` can ever be exercised.",
+    "  customer_facing  true  = the row may be PRINTED on a customer-facing document. The content",
+    "                         check rejects any document containing a display_name whose row is not",
+    "                         customer_facing.",
+    "The one row that ships with active true is the reserved-namespace self-test row, which is NOT a",
+    "Solar London service, whose price is \"TBD\" so it can never produce a figure, and whose",
+    "customer_facing is false so it can never be printed. See spec section 4.5.",
+    "",
+    "FIELD TYPES:",
+    "  key                string  stable snake_case. The ONLY thing the agent may pass. Never shown to the lead.",
+    "  display_name       string  customer-facing name, printed only when customer_facing is true.",
+    "  category           enum    installation | storage | bundle | maintenance | removal | finance",
+    "  install_type       enum    home | commercial | both",
+    "  pricing_model      enum    flat | per_unit | per_watt | TBD   (Raymon chooses, per service)",
+    "  unit_label         string  e.g. per install / per panel / per watt. Must come from Raymon, never",
+    "                            be inferred from pricing_model.",
+    "  unit_size          string  only meaningful for per_watt. Panel wattage in WATTS. \"TBD\" until supplied.",
+    "  unit_size_unit     enum    W | kW | TBD.  Only W is supported in v1.",
+    "  unit_price         string  THE PRICE. See rule 2.",
+    "  currency           string  GBP.",
+    "  vat_included       enum    yes | no | TBD",
+    "  includes           string[] bullet deliverables. [\"TBD\"] until supplied.",
+    "  excludes           string[] bullet exclusions. [\"TBD\"] until supplied.",
+    "  turnaround         string  install timeframe. \"TBD\" until supplied. Never inferred.",
+    "  lead_time_note     string  optional extra line. \"TBD\" if needed.",
+    "  active             bool    false rows are never matched. See the two gates above.",
+    "  customer_facing    bool    false rows are never printed on a document. See the two gates above.",
+    "  requires_quote_id  bool    if true, this row may only appear on a formal numbered quote.",
+    "",
+    "ROW KEYS BELOW ARE PROPOSED, NOT CONFIRMED. Raymon renames, adds, or deletes freely.",
+    "See spec section 16.3, questions 10-13.",
+    "",
+    "NUMBERS IN THIS FILE fall into exactly two classes and they never mix:",
+    "  BUSINESS  - every price, VAT treatment, wattage, capacity, turnaround, discount and validity",
+    "             period. All are \"TBD\" and stay \"TBD\" until Raymon supplies them in writing.",
+    "  STRUCTURAL- the numbers under `policy` below, which are engineering safety bounds owned by this",
+    "             file so the spec prose and the catalog can never disagree. They are labelled as",
+    "             engineering bounds and are NOT Raymon's numbers and NOT business facts."
+  ],
+  "catalog_version": "TEMPLATE-awaiting-raymon",
+  "client_slug": "solar-london",
+  "business_name": "TBD",
+  "currency": "GBP",
+  "currency_note": "GBP. Stated once in spec section 2. It is not derived from any decision number; decision 4 was delivery by email.",
+  "catalog_checksum": "742d5d2bb790ab4090f348ffc7f2772e93898eaac4163adc8b3aecb35896755f",
+  "checksum_note": "SHA-256 (lowercase hex) of this file's canonical JSON form - keys sorted, no whitespace, UTF-8 - with THIS FIELD SET TO THE EMPTY STRING, and with every other `*_note` / `_README` / `_note` key removed. Excluding the checksum field is not an optimisation, it is the only way the value can exist: a digest computed over a document that contains the digest cannot be written back into that document, because writing it changes what is hashed. Excluding the note keys is so that editing an explanation cannot silently break a live quote. THE EXACT PROCEDURE IS IN THE SPEC (section 5.2) - copy it, do not improvise a hash.",
+  "checksum_paste_rule": "Two values are pasted into the `Load Catalog` Code node, and they are pasted SEPARATELY on purpose: (1) `EXPECTED_CHECKSUM` - this field, as a bare string; (2) the full canonical payload as `const CATALOG`. A single self-referential check - recomputing a digest and comparing it to a value carried inside the very object being hashed - can only ever pass, so it would detect nothing. Two independent pastes are what make stale-paste drift detectable: update the object, forget the string, and the run aborts with status catalog_checksum_mismatch instead of quoting yesterday's prices. S1 must prove the check fires by running it once with EXPECTED_CHECKSUM deliberately wrong.",
+  "checksum_failure_is_fatal": "On mismatch the run returns status catalog_checksum_mismatch, needs_human true, and ABORTS: no price, no email, no partial quote, and NO fallback to reading this file from disk or from any network location. A drifted in-node catalog means the prices the workflow is about to use are not the prices Raymon approved, and the only safe move is to stop.",
+  "policy": {
+    "_note": "STRUCTURAL. Engineering safety bounds, owned here so the spec prose and this file cannot disagree. These are NOT business facts and NOT Raymon's numbers.",
+    "quantity": {
+      "_note": "See spec section 5.4. quantity is a model-supplied STRING and is REFUSED, never repaired and never defaulted. There is no `?? 1` anywhere in this build.",
+      "min": 1,
+      "max": "TBD",
+      "max_note": "While max is \"TBD\" the EFFECTIVE cap equals the floor, so only a single unit is quotable and any larger request is refused with failure_reason quantity_above_max_tbd. This is fail-loud and it is intentional: it is how the system refuses to price on a bound nobody has confirmed. The moment Raymon writes a number here, multi-unit requests quote."
+    },
+    "idempotency": {
+      "_note": "STRUCTURAL. Retry safety bounds, not business facts.",
+      "max_attempts": 3,
+      "max_attempts_note": "The retry cap counts the REAL `attempt` column on solar_london_quotes. It is incremented only by the reclaim path, never by a fresh claim.",
+      "stale_claim_minutes": 15,
+      "stale_claim_minutes_note": "How long a `pending` claim may sit before it is reclaimable. Fifteen minutes is an engineering default chosen so a crash is recoverable within one working period without letting two live runs collide. Raise it if a claim legitimately takes longer; it is not a business commitment."
+    },
+    "chat_quote_line_cap": "TBD",
+    "chat_quote_line_cap_note": "Whether Amy summarises a long quote in chat, and after how many priced lines. While \"TBD\", NO cap is applied. This is a business preference, not an engineering bound."
+  },
+  "document_defaults": {
+    "_note": "Printed on every quote. All from Raymon, all verified against facts.json before the document ships. ANY value here that is still \"TBD\" and is needed for the output ABORTS the quote with status blocked_tbd and sends nothing. None of them is ever guessed.",
+    "prepared_by": "TBD",
+    "sender_email": "TBD",
+    "sender_email_note": "The Gmail node's From address. While \"TBD\" the run aborts with failure_reason catalog_sender_email_tbd and sends nothing. See spec section 6.5 and open question Q29.",
+    "sender_name": "TBD",
+    "phone": "TBD",
+    "address": "TBD",
+    "vat_number": "TBD",
+    "quote_validity": "TBD",
+    "quote_validity_note": "How long a quote is valid, printed on the document. \"TBD\" means the line is omitted, not guessed.",
+    "price_basis": "TBD",
+    "price_basis_note": "Is a quote a fixed price or a site-survey estimate? This changes document wording, not just a catalog line. If it is an estimate, terms_line is not optional.",
+    "terms_line": "TBD",
+    "social_proof_line": "TBD",
+    "social_proof_note": "The live persona cites a specific volume of five-star reviews. Confirm it is current and permitted on a client-facing quote before it appears on any document. \"TBD\" means the line is omitted, not guessed."
+  },
+  "services": [
+    {
+      "key": "home_solar_install",
+      "display_name": "TBD",
+      "category": "installation",
+      "install_type": "home",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": false,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "Q1/Q2/Q4/Q6: is the ~6k per panel or per home install? VAT included? Does the price vary with panel count, and if so what is the base plus the per-panel figure? How long does a home install take? Set active true and customer_facing true once this is real."
+    },
+    {
+      "key": "home_battery_storage",
+      "display_name": "TBD",
+      "category": "storage",
+      "install_type": "home",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": false,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "Q10/Q11/Q12: is battery storage a separate quoteable line for home installs? How is it priced - flat, per unit, or per unit of storage capacity? If capacity-based, what is the capacity unit and its size? That size is a number only you can give us."
+    },
+    {
+      "key": "home_solar_with_battery",
+      "display_name": "TBD",
+      "category": "bundle",
+      "install_type": "home",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": false,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "Q11: is a solar-plus-battery bundle quoted as its own line, or as the two component lines added together? If it is a bundle, is the bundle price discounted relative to the components - and if so, that discount figure is a number you must give us. We will not infer one."
+    },
+    {
+      "key": "commercial_solar_install",
+      "display_name": "TBD",
+      "category": "installation",
+      "install_type": "commercial",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": false,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "Q1/Q6: is commercial solar priced the same way as home, or differently? Is it always a site-survey-only estimate rather than a fixed price? What is the turnaround for a commercial install?"
+    },
+    {
+      "key": "solar_maintenance",
+      "display_name": "TBD",
+      "category": "maintenance",
+      "install_type": "both",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": false,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "Q11/Q12: do you quote maintenance and monitoring as a line item, and is it recurring or one-off? If recurring, what is the billing period - this is the one place the catalog may legitimately need a period word in unit_label, and that word is yours to choose."
+    },
+    {
+      "key": "solar_repair",
+      "display_name": "TBD",
+      "category": "maintenance",
+      "install_type": "both",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": false,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "Q8/Q11/Q12: is repair / fault rectification quoted as a flat call-out, a call-out plus parts, or only after a survey? Are call-out, parts and labour separate lines or one figure?"
+    },
+    {
+      "key": "electric_ev_charger",
+      "display_name": "TBD",
+      "category": "installation",
+      "install_type": "both",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": false,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "Q10: is EV charger installation part of what Solar London quotes? If yes, is it tied to a panel count, or quoted on its own? Does it share the same pricing model as the panel install?"
+    },
+    {
+      "key": "solar_removal",
+      "display_name": "TBD",
+      "category": "removal",
+      "install_type": "both",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": false,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "Q10: do you quote removal / decommissioning? If so, is it per panel or a fixed job?"
+    },
+    {
+      "key": "finance_options",
+      "display_name": "TBD",
+      "category": "finance",
+      "install_type": "both",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": false,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "Q9: is finance offered, and from which provider? If finance appears on a quote, is it quoted as a line with its own figure, or mentioned in the summary only? If it carries a figure or an APR, that is a number you must give us - we will not infer one."
+    },
+    {
+      "key": "_self_test_solar_row",
+      "display_name": "SELF TEST ROW - NOT A SOLAR LONDON SERVICE",
+      "_row_note": "This row exists so the machinery past `Match Services` can be exercised end to end while every real price is \"TBD\". It is NOT a Solar London service and must never be presented as one. It cannot produce a number: its price is \"TBD\", so the pricing code aborts the quote every single time. It cannot be printed: customer_facing is false, and check_quote_content.py check D fails the stage if its display_name ever appears on a document. The leading underscore reserves the namespace so no real key can collide with it. Leave this row in place permanently - it is how a price change is regression-tested without inventing a price.",
+      "category": "installation",
+      "install_type": "both",
+      "pricing_model": "TBD",
+      "unit_label": "TBD",
+      "unit_size": "TBD",
+      "unit_size_unit": "TBD",
+      "unit_price": "TBD",
+      "currency": "GBP",
+      "vat_included": "TBD",
+      "includes": [
+        "TBD"
+      ],
+      "excludes": [
+        "TBD"
+      ],
+      "turnaround": "TBD",
+      "lead_time_note": "TBD",
+      "active": true,
+      "customer_facing": false,
+      "requires_quote_id": true,
+      "raymon_question": "None. This row is not yours to answer. Do not price it, do not activate it as customer facing, and do not delete it."
+    }
+  ],
+  "forbidden_services": [
+    "Social Media Marketing",
+    "CRO",
+    "Website Build",
+    "SEO"
+  ],
+  "forbidden_services_note": "These four came from the old marketing-agency catalog. They are NOT Solar London services. If any of them ever appears in a matched service list, a document, or a chat message, the build has regressed.",
+  "forbidden_business_content": {
+    "_note": "Verbatim strings lifted from the live export dated 2026-09-26. They are the residue of a different business that was pasted into the text agent. check_quote_content.py check C scans every rendered document for all of them, and check A rejects any service name that is not a customer_facing catalog row - which catches foreign content nobody thought to list here. This list is a second line of defence, not the primary one.",
+    "from_live_email_node": [
+      "detailed marketing services quote",
+      "growth-focused marketing partner",
+      "paid traffic systems",
+      "Dial in your funnels",
+      "Turn cold traffic",
+      "Transparent Pricing",
+      "Transparent pricing",
+      "monthly and one-time project work"
+    ],
+    "from_live_html_payload_node": [
+      "Custom Strategy. Transparent Pricing. Built to Scale Your Brand.",
+      "Service Quote",
+      "Monthly Price",
+      "One-Time Price"
+    ],
+    "from_live_find_services_node": [
+      "JR Marketing Agency"
+    ],
+    "placeholders": [
+      "[YOUR_AGENCY_NAME]",
+      "[YOUR_NAME]",
+      "[YOUR_EMAIL]",
+      "[YOUR_PHONE]",
+      "[YOUR_LOCATION]",
+      "YOUR_GOOGLE_SHEET_ID",
+      "YOUR_GOOGLE_SHEET_URL"
+    ],
+    "dead_values": [
+      "recipient@example.com"
+    ]
+  },
+  "verification": {
+    "_note": "scripts/verify_document.py is necessary and NOT sufficient. QA proved a PDF rebuilt from the old marketing copy PASSES it, because it only knows must_appear and must_not_contain from facts.json and has no idea what business the document is for. The check that actually catches wrong-business content is clients/solar-london/build-spec/check_quote_content.py, which is derived from THIS FILE and from the workflow export. Run both. See spec section 12.",
+    "check_1_fact_sheet": "Render the quote repo-side to a PDF, then run scripts/verify_document.py with a path RESOLVED by the shell, and check $LASTEXITCODE. Never pass a literal glob - PowerShell does not expand it for a native exe and the script exits 1 on a correct file. Never invoke with fewer than two arguments - it prints usage and exits 2 without checking anything.",
+    "check_2_content": "python clients/solar-london/build-spec/check_quote_content.py --catalog clients/solar-london/catalog.json --facts clients/solar-london/facts.json --quote <rendered text> --ledger <price-ledger.json> --export <text-agent export> --expect-nodes 44",
+    "check_a_is_the_important_one": "Catalog subset: every service name printed on the document must be the display_name of a row with customer_facing true. Any foreign service from any business fails. This is a positive structural rule derived from this file, not a hand-written blocklist, so it catches content nobody anticipated.",
+    "check_b_binds_numbers": "Every money-shaped token on the document must appear in price_ledger, and every ledger figure must be derivable from a unit_price in THIS FILE. This is what makes the check a pricing guard and not just a text guard.",
+    "no_placeholder_in_output": "The `Build Quote Document` Code node scans the rendered HTML for unresolved expressions and for the placeholder tokens listed in forbidden_business_content.placeholders, and ABORTS the quote if anything matches. The old workflow shipped every one of those straight to customers; that defect must not come back.",
+    "fail_loud_rule": "AGENTS.md section 9.7. If any price needed for a requested service is unresolved at quote time, the quote ABORTS and the lead receives the pre-written handoff line. It must never receive a partial quote, a zero, or a model-invented number. A blocked email never means a silent lead: the handoff reply still goes out on the normal chat path."
+  }
+}
