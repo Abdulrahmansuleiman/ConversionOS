@@ -1,0 +1,154 @@
+{
+  "_README": [
+    "Solar London CLIENT FACT SHEET - TEMPLATE, awaiting Raymon.",
+    "",
+    "Per AGENTS.md section 7, every client has clients/<client>/facts.json and it is the single",
+    "source of truth for names, numbers, currency, percentages, dates and codes. Every document and",
+    "email must preserve each fact verbatim.",
+    "",
+    "AUTOMATED CHECK:  python scripts/verify_document.py clients/solar-london/facts.json clients/solar-london/pdfs/*.pdf",
+    "scripts/verify_document.py reads EXACTLY two keys from this file: `must_appear` and",
+    "`must_not_contain`. `must_appear` is a list of strings that must each be present in the extracted",
+    "PDF text (whitespace-normalised). `must_not_contain` is a list of strings that must each be ABSENT.",
+    "Exit code 0 = ALL PASS. Exit 1 = VERIFICATION FAILED, and the stage fails.",
+    "",
+    "The extra keys in this file (business, pricing, email, quote_document, open_questions) are for",
+    "humans and agents. The script ignores them; they are here so the file is the one place a Builder",
+    "looks for a fact, rather than scattering defaults across workflow nodes.",
+    "",
+    "WHEN FILLING:",
+    "1. Copy this file to clients/solar-london/facts.json and fill it from Raymon's written answers only.",
+    "2. Add to `must_appear` ONLY strings Raymon has actually confirmed. Do not add a price to",
+    "   `must_appear` until he gives that price in writing. An unconfirmed string in `must_appear`",
+    "   fails every PDF and teaches the team to pad the list.",
+    "3. Leave `must_not_contain` populated. It is the anti-hallucination guard, not filler.",
+    "4. Re-run the verification script after every quote-document change."
+  ],
+
+  "client_slug": "solar-london",
+  "status": "TEMPLATE - awaiting raymon",
+  "last_updated": "2026-09-26",
+
+  "must_appear": [
+    "Solar London"
+  ],
+  "must_appear_note": "Only one confirmed fact exists so far. Everything else is genuinely unknown, and an unknown fact must never be guessed into a PDF.",
+
+  "must_not_contain": [
+    "[YOUR_AGENCY_NAME]",
+    "[YOUR_NAME]",
+    "[YOUR_EMAIL]",
+    "[YOUR_PHONE]",
+    "[YOUR_LOCATION]",
+    "YOUR_GOOGLE_SHEET_ID",
+    "YOUR_GOOGLE_SHEET_URL",
+    "JR Marketing Agency",
+    "Social Media Marketing",
+    "CRO",
+    "Website Build",
+    "SEO",
+    "TBD",
+    "GBP 0",
+    "GBP 0.00",
+    "recipient@example.com",
+    "null",
+    "undefined"
+  ],
+  "must_not_contain_note": [
+    "The [YOUR_*] and YOUR_GOOGLE_SHEET_* entries are literal placeholders that the old quote workflow",
+    "shipped to customers. Their reappearance is a regression and must fail the stage.",
+    "'JR Marketing Agency', 'Social Media Marketing', 'CRO', 'Website Build' and 'SEO' came from the",
+    "old marketing-agency catalog. They are not Solar London services. Raymon's decision was that the",
+    "business is solar, so these are forbidden everywhere.",
+    "'TBD' is the load-bearing pricing sentinel. A delivered PDF must NEVER contain it - if it does, an",
+    "unresolved price leaked into a customer-facing document, which is the exact failure this whole",
+    "system is designed to prevent.",
+    "CAVEAT: the script does substring matching, not word matching. 'CRO' will also match inside any word",
+    "containing those three letters, and 'null' will match inside 'nullable'. Confirm none of these can",
+    "occur in a legitimate solar quote before relying on them, or drop the risky entry."
+  ],
+
+  "business": {
+    "trading_name": "TBD",
+    "registered_name": "TBD",
+    "vat_number": "TBD",
+    "industry": "solar panels",
+    "location_as_stated_by_raymon": "London, Canary Wharf",
+    "address": "TBD",
+    "phone": "TBD",
+    "website": "TBD",
+    "social_proof_claim": "TBD",
+    "social_proof_note": "The AI persona cites 'over 500+ 5 star Trustpilot reviews'. Confirm this is current and permitted on a client-facing quote before it appears on any document.",
+    "booking_url": "www.bookhere.com",
+    "booking_url_note": "Confirmed in the live persona prompt. A real booking link, not a placeholder - but it is a URL, not a price, and it is never to be treated as one."
+  },
+
+  "persona": {
+    "agent_name": "Amy",
+    "role": "reception team",
+    "company": "Solar London",
+    "voice": "British, casual, 30-year-old human, short messages, 2-3 sentences, occasional spelling or grammar slip, never American, never emoji, never a long dash",
+    "handoff_line_literal": "let me check that with my manager",
+    "handoff_line_note": "Taken verbatim from the live AI Conversation Agent systemMessage. In the quote sub-workflow this is a LITERAL string in the Return nodes, not model output, so it matches her voice by construction and cannot be hallucinated."
+  },
+
+  "pricing": {
+    "currency": "GBP",
+    "source_quote_verbatim": "it depends on what the person pick it a solar panel let say it about 6k pounds",
+    "source_quote_provenance": "Raymon, in conversation, 2026-09-26. This is the ONLY price datum that exists.",
+    "source_quote_parsed": null,
+    "source_quote_note": "Deliberately null. The sentence is ambiguous in at least four ways: per panel or per install; VAT-inclusive or plus VAT; a real list price or a conversational illustration; home or commercial. It is recorded as the provenance of an open question and must NEVER be parsed into a price, used as a default, or used to bound a future Raymon-supplied value.",
+    "catalog_file": "clients/solar-london/catalog.json",
+    "catalog_template": "clients/solar-london/build-spec/catalog-template.json",
+    "tbd_sentinel": "TBD",
+    "tbd_rule": "Every price-bearing catalog field is the literal string \"TBD\" until Raymon supplies a value in writing. Money fields are strings on purpose; the pricing Code node parses them with /^\\d{1,9}(\\.\\d{1,2})?$/ and treats any non-match as UNRESOLVED, which ABORTS the quote.",
+    "fail_loud_rule": "AGENTS.md section 9.7. An unresolved price aborts the quote and returns a pre-written human-handoff line. Never a partial quote, never a zero, never a range, never a model-invented number.",
+    "vat_treatment": "TBD",
+    "quote_validity": "TBD",
+    "price_basis": "TBD",
+    "price_basis_note": "Is a quote a fixed price or a site-survey estimate? This changes document wording, not just a catalog line."
+  },
+
+  "email": {
+    "sender_name": "TBD",
+    "sender_email": "TBD",
+    "reply_to": "TBD",
+    "delivery_method": "ghl_outbound_email_webhook",
+    "delivery_method_note": "RESOLVED DECISION. There is no Gmail credential on the instance and none is required. Delivery uses a new GoHighLevel outbound email webhook - the same mechanism already proven three times in the text agent via services.leadconnectorhq.com/hooks/... . GHL stays the single sender, the email comes from Solar London's own sending domain, and it lands in the same GHL conversation record as Amy's WhatsApp messages.",
+    "gmail_credential": null,
+    "gmail_credential_note": "null means NOT AVAILABLE and NOT ADDED. If Raymon later adds a Gmail OAuth2 credential, this is the escape hatch that would let the stock `Email the Quote` node send a native PDF attachment.",
+    "quote_email_webhook_url": "TBD",
+    "quote_email_webhook_url_note": "BLOCKING open item. A new GHL webhook trigger gets a NEW uuid. The three existing triggers on this location are WhatsApp/SMS and must not be reused. Never guess this URL.",
+    "send_keyed_on": "contact_id",
+    "send_keyed_on_note": "The send is keyed on the GHL Contact ID, not on an email string typed by a model. GHL resolves the recipient from its own contact record, so there is no path by which a hallucinated address becomes the delivery target.",
+    "pdf_attachment_route": "B1",
+    "pdf_attachment_route_note": "v1 ships the quote as a styled HTML email body - zero new infrastructure, fully functional. v1.1 adds a PDF attachment via a Supabase Storage signed URL, which requires Raymon to create a bucket and to confirm `Supabase account f1` holds a SERVICE-ROLE key (anon keys cannot upload). Never a public bucket.",
+    "supabase_storage_bucket": null,
+    "supabase_storage_policy": "time-limited signed URL - never public read"
+  },
+
+  "quote_document": {
+    "title": "TBD",
+    "title_note": "Raymon's decision was that the business is solar. The old document title was a marketing-agency Service Quote and must not survive.",
+    "subtitle": "TBD",
+    "prepared_for_label": "Prepared for",
+    "prepared_by_label": "Prepared by",
+    "date_format": "DD/MM/YYYY",
+    "date_format_note": "Confirm with Raymon. The old document used new Date().toLocaleDateString(), which is locale-dependent and therefore not reproducible between the dev machine and production. Use an explicit format.",
+    "table_columns": ["Service", "Description", "Includes", "Excludes", "Price", "Turnaround"],
+    "table_columns_note": "The old marketing columns (Monthly Price / One-Time Price) do not fit a solar quote and must not be carried over. Confirm the final column set with Raymon.",
+    "footer_note": "TBD",
+    "terms_line": "TBD",
+    "terms_line_note": "e.g. prices subject to a site survey. If the quote is an estimate rather than a fixed price, this line is not optional.",
+    "chat_format": "plain text, no markdown, no bullets, no bold, no tables, no HTML, each price in its own message",
+    "chat_format_note": "Matches the live persona's existing output rules so the quote reads like the rest of Amy's messages."
+  },
+
+  "kpi_note": "Solar London has no confirmed dashboard deployment, so no dashboard KPI facts are recorded here. If a dashboard is later deployed, the quote sub-workflow may post an optional `quote_generated` event with the canonical envelope { event_type, client_id, timestamp, payload } per AGENTS.md section 7.1. `quote_generated` is additive and does not replace conversation_started, booking_made, handed_off_to_human, or follow_up_triggered. A `quote_generated` KPI card is NOT in scope for the first build.",
+
+  "open_questions": "See clients/solar-london/build-spec/quote-integration-spec.md section 17. Twenty-eight questions: ten about pricing, four about the catalog, six about business facts, six build-blocking technical questions, two that can safely be defaulted.",
+  "open_question_count": 28,
+
+  "verification_command": "python scripts/verify_document.py clients/solar-london/facts.json clients/solar-london/pdfs/*.pdf",
+  "verification_stage_gate": "Roadmap stage S1 cannot complete until this command prints ALL PASS on at least one real rendered quote PDF."
+}
