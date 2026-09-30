@@ -1230,14 +1230,117 @@ html {
   50% { opacity: 1; }
 }
 
-@media (max-width: 860px) {
+/* ── Responsive — after-booking page ── */
+
+/* Small laptops / large tablets: prep cards go 3 → 2 columns */
+@media (max-width: 960px) {
   .prep-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vsl-glow {
+    inset: -40px -20px;
   }
 }
 
-@media (max-width: 480px) {
-  .vsl-glow {
-    inset: -30px -10px;
+/* Tablets (portrait) */
+@media (max-width: 768px) {
+  .ab-page { padding-top: 32px; }
+  .ab-hero { margin-bottom: 32px; }
+  .ab-sub { font-size: 15.5px; }
+  .vsl-wrap { margin-bottom: 48px; }
+  .ab-prep, .ab-map, .ab-faq { margin-bottom: 48px; }
+  .roadmap-step { padding-left: 76px; }
+}
+
+/* Phones (landscape + portrait) */
+@media (max-width: 640px) {
+  .prep-grid {
+    grid-template-columns: 1fr;
   }
+  .prep-card {
+    padding: 20px 18px;
+  }
+  .roadmap {
+    gap: 28px;
+  }
+  .roadmap-step {
+    padding-left: 68px;
+  }
+  .roadmap-node {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+  }
+  .roadmap-line {
+    left: 23px;
+  }
+  .roadmap-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .roadmap-title {
+    font-size: 15.5px;
+  }
+  .faq-q {
+    padding: 14px 16px;
+    font-size: 13.5px;
+  }
+  .faq-a {
+    padding: 0 16px;
+  }
+  .faq-item--open .faq-a {
+    padding: 0 16px 16px;
+  }
+  .ab-signoff {
+    font-size: 17px;
+  }
+}
+
+/* Small phones (iPhone SE / older Androids) + short landscape */
+@media (max-width: 480px) {
+  .ab-badge {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+  .vsl-glow {
+    inset: -24px -6px;
+  }
+  .vsl-play {
+    width: 72px;
+    height: 72px;
+  }
+  .vsl-play-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .roadmap-step {
+    padding-left: 60px;
+  }
+  .roadmap-line {
+    left: 21px;
+  }
+  .roadmap-num {
+    font-size: 9px;
+    padding: 1px 5px;
+  }
+  .ab-build-chip {
+    padding: 8px 14px;
+    gap: 8px;
+  }
+  .ab-build-label {
+    font-size: 11px;
+  }
+  .ab-build-value,
+  .ab-build-day {
+    font-size: 13px;
+  }
+}
+
+/* Very wide screens: keep content comfortably centered */
+@media (min-width: 1600px) {
+  .ab-page {
+    padding-top: 64px;
+  }
+  .vsl-wrap { max-width: 960px; }
+  .ab-map { max-width: 1100px; }
 }
