@@ -2,7 +2,7 @@
 // Root component — client-side state machine moving through 5 screens.
 // Single route, no page reloads. All state in component state; persisted to
 // /api/onboard on final submit.
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import type { Screen, OnboardPayload, ValidationErrors } from './types';
 import { emptyForm } from './types';
 import { submitOnboard } from './lib/api';
@@ -126,6 +126,18 @@ export default function App() {
   const startOnboarding = useCallback(() => {
     setScreen(2);
   }, []);
+
+  // Remember the client's first name so the post-booking page (/after-booking)
+  // can greet them even when the calendar redirect URL carries no name param.
+  useEffect(() => {
+    if (screen === 5 && form.fullName.trim()) {
+      try {
+        localStorage.setItem('launchops-first-name', form.fullName.trim().split(' ')[0]);
+      } catch {
+        /* storage unavailable — the fallback name handles it */
+      }
+    }
+  }, [screen, form.fullName]);
 
   return (
     <div className="page">

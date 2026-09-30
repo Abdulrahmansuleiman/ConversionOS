@@ -751,3 +751,281 @@ html {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+/* ======================================================================
+   After-booking page (/after-booking) — "your onboarding is being processed"
+   ====================================================================== */
+
+.ab-page {
+  padding-top: 48px;
+}
+
+/* Hero */
+.ab-hero {
+  max-width: 780px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.ab-badge {
+  animation: fadeUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.ab-title {
+  font-size: clamp(34px, 6vw, 56px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.ab-accent {
+  color: var(--accent);
+}
+
+.ab-sub {
+  color: var(--text-secondary);
+  font-size: 17px;
+  max-width: 560px;
+}
+
+/* ── VSL video frame ── */
+.vsl-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  margin-bottom: 64px;
+}
+
+/* Soft glow blob behind the player */
+.vsl-glow {
+  position: absolute;
+  inset: -60px -40px;
+  background: radial-gradient(
+    ellipse 55% 60% at 50% 45%,
+    rgba(46, 123, 255, 0.32) 0%,
+    rgba(46, 123, 255, 0.08) 45%,
+    transparent 70%
+  );
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: -1;
+  animation: abGlowPulse 4.5s ease-in-out infinite;
+}
+
+.vsl-stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #0d0d0d;
+  border: 1px solid rgba(46, 123, 255, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(46, 123, 255, 0.15),
+    0 0 60px rgba(46, 123, 255, 0.22),
+    0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+.vsl-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.vsl-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background:
+    radial-gradient(ellipse 60% 70% at 50% 55%, rgba(46, 123, 255, 0.18) 0%, transparent 70%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 40%);
+}
+
+.vsl-play {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  box-shadow: 0 0 40px rgba(46, 123, 255, 0.55);
+}
+
+.vsl-play-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(46, 123, 255, 0.6);
+  animation: abPing 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.vsl-play-icon {
+  width: 34px;
+  height: 34px;
+  transform: translateX(2px);
+  fill: currentColor;
+  stroke: none;
+}
+
+.vsl-caption {
+  color: var(--text-secondary);
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+/* ── Process map ("what happens next") ── */
+.ab-map {
+  width: 100%;
+  max-width: 1040px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.ab-map-eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.ab-map-title {
+  font-size: clamp(26px, 4vw, 38px);
+  line-height: 1.2;
+  margin-bottom: 48px;
+}
+
+.roadmap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  text-align: left;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Glowing connector line down the spine */
+.roadmap-line {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 27px;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 123, 255, 0.15),
+    rgba(46, 123, 255, 0.6),
+    var(--accent),
+    rgba(46, 123, 255, 0.35)
+  );
+  box-shadow: 0 0 18px rgba(46, 123, 255, 0.45);
+  z-index: 0;
+}
+
+.roadmap-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding-left: 84px;
+}
+
+.roadmap-node {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-raised);
+  border: 1px solid rgba(46, 123, 255, 0.45);
+  box-shadow:
+    0 0 0 5px rgba(10, 10, 10, 1),
+    0 0 24px rgba(46, 123, 255, 0.35);
+  z-index: 1;
+}
+
+.roadmap-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--accent);
+  stroke-width: 2;
+}
+
+.roadmap-num {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent-text);
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 2px 6px;
+  box-shadow: 0 0 12px rgba(46, 123, 255, 0.6);
+}
+
+.roadmap-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.roadmap-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  max-width: 460px;
+}
+
+/* ── Personal sign-off ── */
+.ab-signoff {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 19px;
+  color: var(--text-primary);
+}
+
+.ab-signoff-note {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+/* ── Animations ── */
+@keyframes abPing {
+  0% { transform: scale(1); opacity: 0.85; }
+  70%, 100% { transform: scale(1.65); opacity: 0; }
+}
+
+@keyframes abGlowPulse {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+
+@media (max-width: 480px) {
+  .vsl-glow {
+    inset: -30px -10px;
+  }
+}
