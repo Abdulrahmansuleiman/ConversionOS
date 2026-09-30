@@ -90,9 +90,8 @@ export default function AfterBookingScreen() {
         </span>
 
         <h1 className="ab-title">
-          Hey, <span className="gradient-text">{prettyName}.</span>
-          <br />
-          Your onboarding is being <span className="ab-accent">processed.</span>
+          Hey, <span className="gradient-text">{prettyName}.</span> Your onboarding is being{' '}
+          <span className="ab-accent">processed.</span>
         </h1>
 
         <p className="ab-sub">
