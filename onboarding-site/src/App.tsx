@@ -127,17 +127,19 @@ export default function App() {
     setScreen(2);
   }, []);
 
-  // Remember the client's first name so the post-booking page (/after-booking)
-  // can greet them even when the calendar redirect URL carries no name param.
+  // Remember the client's first name + agent type so the post-booking page
+  // (/after-booking) can greet them and confirm their build even when the
+  // calendar redirect URL carries no query params.
   useEffect(() => {
     if (screen === 5 && form.fullName.trim()) {
       try {
         localStorage.setItem('launchops-first-name', form.fullName.trim().split(' ')[0]);
+        if (form.agentType) localStorage.setItem('launchops-agent-type', form.agentType);
       } catch {
         /* storage unavailable — the fallback name handles it */
       }
     }
-  }, [screen, form.fullName]);
+  }, [screen, form.fullName, form.agentType]);
 
   return (
     <div className="page">
