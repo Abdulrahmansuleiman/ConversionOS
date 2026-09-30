@@ -25,7 +25,6 @@ import {
   FiTrendingUp,
   FiPlay,
   FiMail,
-  FiEdit3,
   FiMessageCircle,
   FiChevronDown,
 } from 'react-icons/fi';
@@ -79,22 +78,23 @@ const STATS = [
 ] as const;
 
 // "While you wait" — action items grounded in the real flow (the Notion access
-// request email, the booking confirmation, the kickoff prep).
+// request email, the WhatsApp group, the weekly coaching calendar). Copy is
+// deliberately plain-spoken for trades businesses (solar / roofing clients).
 const PREP = [
   {
     Icon: FiMail,
     title: 'Check your inbox',
-    text: 'Your Notion workspace invite lands within minutes of your access request.',
-  },
-  {
-    Icon: FiEdit3,
-    title: 'Note your 3 goals',
-    text: 'Jot down what success looks like for you before the kickoff call.',
+    text: 'Your Notion invite lands within minutes of your request \u2014 keep an eye out for it.',
   },
   {
     Icon: FiMessageCircle,
-    title: 'Questions? Just reply',
-    text: 'Reply to your onboarding email any time \u2014 a human answers.',
+    title: 'We\u2019ll add you to WhatsApp',
+    text: 'We create a group for 24/7 communication \u2014 questions answered fast, no waiting on emails.',
+  },
+  {
+    Icon: FiCalendar,
+    title: 'Weekly coaching calls',
+    text: 'We set up a calendar and start weekly coaching \u2014 so you learn to build these systems for your own projects too.',
   },
 ] as const;
 
