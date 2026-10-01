@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>LaunchOps — Your roadmap</title>
+    <style>
+      /* ── Inter variable (vendored, wght 100–900) ─────────────────── */
+      @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/inter-latin.woff2') format('woff2');
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: block;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      /* Canvas. render.ps1 parses this rule for the viewport size, so the
+         screenshot can never be cropped independently of the design grid. */
+      html, body { width: 2400px; height: 1520px; overflow: hidden; background: #0a0a0a; }
+
+      body {
+        font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+        color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* ── Sheet ───────────────────────────────────────────────────── */
+      .sheet {
+        position: relative;
+        width: 2400px;
+        height: 1520px;
+        background: #0a0a0a;
+      }
+
+      /* One wash, and only one: ambient light where the eye enters. */
+      .wash {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          1180px 760px at 4% 6%,
+          rgba(46, 123, 255, 0.075) 0%,
+          rgba(46, 123, 255, 0) 72%
+        );
+      }
+
+      /* Outer margin: 132 top / 140 sides / 128 bottom — all ≥ 120. */
+      .frame {
+        position: absolute;
+        inset: 132px 140px 128px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ── Masthead ────────────────────────────────────────────────── */
+      .masthead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 24px;
+      }
+      .mark {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #6e6e6e;
+      }
+      .dot {
+        width: 5px;
+        height: 5px;
+        background: #2e7bff;
+        flex: none;
+      }
+
+      /* ── Title zone ──────────────────────────────────────────────── */
+      .headline {
+        margin-top: 46px;
+        font-size: 104px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -0.035em;
+        color: #ffffff;
+      }
+      .sub {
+        margin-top: 32px;
+        width: 1480px;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -0.005em;
+        color: #9b9b9b;
+      }
+
+      .hrule {
+        margin-top: 92px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.075);
+      }
+
+      /* ── The spine ───────────────────────────────────────────────────
+         Geometry is derived from the same constants as the phase grid
+         below, so the hairline always passes through all six nodes. */
+      .rail {
+        position: relative;
+        margin-top: 60px;
+        height: 48px;
+        --gap: 36px;
+        --col: calc((100% - 5 * var(--gap)) / 6);
+        --step: calc(var(--col) + var(--gap));
+        --r: calc(var(--col) / 2);
+      }
+
+      /* Continuous hairline, node 01 centre → node 06 centre. */
+      .spine {
+        position: absolute;
+        left: var(--r);
+        width: calc(5 * var(--step));
+        top: 0;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.13);
+      }
+      /* The one accent hairline: it leads in to the first node and stops. */
+      .lead {
+        position: absolute;
+        left: 0;
+        width: var(--r);
+        top: 0;
+        height: 1px;
+        background: #2e7bff;
+        opacity: 0.9;
+      }
+
+      /* Station mark: a 12px square riding the spine, on a 1px drop tick. */
+      .node, .tick { position: absolute; }
+      .node {
+        top: -6px;
+        width: 12px;
+        height: 12px;
+        margin-left: -6px;
+        background: #0a0a0a;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .tick {
+        top: 12px;
+        width: 1px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.26);
+      }
+      /* Phase 01 — where the client stands. Accent node, tick and ring. */
+      .node--now {
+        background: #2e7bff;
+        border-color: #2e7bff;
+      }
+      .tick--now { background: #2e7bff; opacity: 0.75; }
+      .ring {
+        position: absolute;
+        top: -14px;
+        width: 28px;
+        height: 28px;
+        margin-left: -14px;
+        border: 1px solid #2e7bff;
+        opacity: 0.24;
+      }
+      [data-i='0'] { left: calc(var(--step) * 0 + var(--r)); }
+      [data-i='1'] { left: calc(var(--step) * 1 + var(--r)); }
+      [data-i='2'] { left: calc(var(--step) * 2 + var(--r)); }
+      [data-i='3'] { left: calc(var(--step) * 3 + var(--r)); }
+      [data-i='4'] { left: calc(var(--step) * 4 + var(--r)); }
+      [data-i='5'] { left: calc(var(--step) * 5 + var(--r)); }
+
+      /* ── The six phases ──────────────────────────────────────────── */
+      .cols {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 36px;
+      }
+
+      .idx {
+        font-size: 104px;
+        font-weight: 250;
+        line-height: 0.92;
+        letter-spacing: -0.05em;
+        color: rgba(255, 255, 255, 0.3);
+        font-feature-settings: 'tnum' 1;
+      }
+
+      /* Fixed-height row so every phase name sits on one shared baseline. */
+      .tagrow {
+        margin-top: 30px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+      }
+      .tag {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #2e7bff;
+      }
+
+      .name {
+        margin-top: 28px;
+        min-height: 114px;
+        font-size: 54px;
+        font-weight: 500;
+        line-height: 1.06;
+        letter-spacing: -0.022em;
+        color: #ffffff;
+        hyphens: none;
+      }
+      /* Hold the hyphenated word together so it never breaks after "Post-". */
+      .nb { white-space: nowrap; }
+
+      .desc {
+        margin-top: 24px;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -0.002em;
+        color: #9b9b9b;
+      }
+
+      /* ── Footer ──────────────────────────────────────────────────── */
+      .foot {
+        margin-top: auto;
+        padding-top: 36px;
+        border-top: 1px solid rgba(255, 255, 255, 0.075);
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+      /* 52px, not 26px: the timeline is the most commercially important line
+         on the graphic and was the smallest type in it. At 52px it survives the
+         4800 -> 680px downscale Notion renders at with ~11px cap height.
+         Tracking and weight ratios are unchanged, so the note stays the
+         substance and the wordmark stays a lighter signature. */
+      .foot-note {
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #868686;
+      }
+      .foot-brand {
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #4d4d4d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sheet">
+      <div class="wash"></div>
+
+      <div class="frame">
+        <div class="masthead">
+          <span class="mark"><span class="dot"></span>LaunchOps</span>
+          <span class="mark">Your roadmap</span>
+        </div>
+
+        <h1 class="headline">What happens next</h1>
+        <p class="sub">You’ll follow your roadmap step by step — design, build, review, launch — and we stay with you through post-launch support.</p>
+
+        <div class="hrule"></div>
+
+        <!-- the spine -->
+        <div class="rail">
+          <div class="spine"></div>
+          <div class="lead"></div>
+
+          <div class="ring" data-i="0"></div>
+          <div class="node node--now" data-i="0"></div>
+          <div class="node" data-i="1"></div>
+          <div class="node" data-i="2"></div>
+          <div class="node" data-i="3"></div>
+          <div class="node" data-i="4"></div>
+          <div class="node" data-i="5"></div>
+
+          <div class="tick tick--now" data-i="0"></div>
+          <div class="tick" data-i="1"></div>
+          <div class="tick" data-i="2"></div>
+          <div class="tick" data-i="3"></div>
+          <div class="tick" data-i="4"></div>
+          <div class="tick" data-i="5"></div>
+        </div>
+
+        <!-- the six phases -->
+        <div class="cols">
+          <div class="col">
+            <div class="idx">01</div>
+            <div class="tagrow"><span class="tag">Current</span></div>
+            <h2 class="name">Kickoff</h2>
+            <p class="desc">We meet, open your roadmap together and lock the plan.</p>
+          </div>
+
+          <div class="col">
+            <div class="idx">02</div>
+            <div class="tagrow"></div>
+            <h2 class="name">Design</h2>
+            <p class="desc">We design your AI agent’s workflow, messaging and handoffs.</p>
+          </div>
+
+          <div class="col">
+            <div class="idx">03</div>
+            <div class="tagrow"></div>
+            <h2 class="name">Build</h2>
+            <p class="desc">We build and connect your agent to your systems.</p>
+          </div>
+
+          <div class="col">
+            <div class="idx">04</div>
+            <div class="tagrow"></div>
+            <h2 class="name">Review</h2>
+            <p class="desc">You test it live. We refine until it’s right.</p>
+          </div>
+
+          <div class="col">
+            <div class="idx">05</div>
+            <div class="tagrow"></div>
+            <h2 class="name">Launch</h2>
+            <p class="desc">Your agent goes live and starts working for you.</p>
+          </div>
+
+          <div class="col">
+            <div class="idx">06</div>
+            <div class="tagrow"></div>
+            <h2 class="name"><span class="nb">Post-launch</span> support</h2>
+            <p class="desc">Monitoring, updates, growth.</p>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="foot">
+          <div class="foot-note">2–4 weeks from kickoff</div>
+          <div class="foot-brand">LaunchOps</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
