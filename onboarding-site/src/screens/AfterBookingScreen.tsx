@@ -144,11 +144,11 @@ export default function AfterBookingScreen() {
           Onboarding confirmed
         </div>
         <h1 className="ab-title">
-          Hey {prettyName}, your onboarding is being <em>processed.</em>
+          You&apos;re in. Here&apos;s what happens <em>next.</em>
         </h1>
         <p className="ab-sub">
-          Everything is queued. Watch the short video below — then follow your roadmap.
-          It&apos;s all handled.
+          Everything&apos;s queued. Watch the short video below, then work through your roadmap step
+          by step. We&apos;re handling the rest.
         </p>
 
         {metaItems.length > 0 && (
