@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FiArrowLeft, FiExternalLink, FiCheck, FiRotateCcw, FiFileText, FiLink, FiMessageSquare } from 'react-icons/fi';
 import { client } from '../api/client';
 import { theme, projectStatusColor, PHASES, phaseStatusColor } from '../theme';
+import { countComplete, isCompleteMilestone, allMilestonesComplete } from '../lib/status';
 import { StatusBadge, StarRating, Loading, EmptyState, formatDate, daysUntil } from '../components/ui';
 import { Header } from '../components/Header';
 import type { ProjectDetail as Detail, Milestone } from '../types';
@@ -81,11 +82,21 @@ export function ProjectDetail({ projectId, onBack }: { projectId: string; onBack
   const { project, milestones, assets, feedback } = data;
   const launch = project['Launch Date'];
   const tMinus = daysUntil(launch);
-  const doneCount = milestones.filter((m) => m.Status === 'Complete').length;
+  const doneCount = countComplete(milestones);
   const intake = project.Notes ? parseIntake(project.Notes) : null;
+  // Every stage complete => the project reads Completed, full stop. The API
+  // already derives this; this guard keeps the header honest while a refetch is
+  // in flight and protects against any stale status cached in the tab.
+  const statusLabel = allMilestonesComplete(milestones) ? 'Completed' : project.Status || '—';
 
   const setMilestoneStatus = async (m: Milestone, next: string) => {
-    await client.patch(`/api/milestones/${m.id}`, { Status: next });
+    const res = await client.patch<{ projects?: { id: string; Status: string | null }[] }>(
+      `/api/milestones/${m.id}`,
+      { Status: next }
+    );
+    // Reflect the derived project status immediately, then refresh everything.
+    const updated = (res.projects || []).find((p) => p.id === project.id);
+    if (updated) setData((d) => (d ? { ...d, project: { ...d.project, Status: updated.Status } } : d));
     load();
   };
 
@@ -101,7 +112,7 @@ export function ProjectDetail({ projectId, onBack }: { projectId: string; onBack
         <BackBtn onClick={onBack}>
           <FiArrowLeft /> All missions
         </BackBtn>
-        <StatusBadge label={project.Status || '—'} color={projectStatusColor[project.Status || ''] || '#5B6787'} />
+        <StatusBadge label={statusLabel} color={projectStatusColor[statusLabel] || '#5B6787'} />
       </TopBar>
 
       <MetaStrip>
@@ -173,7 +184,7 @@ export function ProjectDetail({ projectId, onBack }: { projectId: string; onBack
               return ms.map((m) => {
                 const color = phaseStatusColor[m.Status || ''] || '#5B6787';
                 const mT = daysUntil(m['Due Date']);
-                const isDone = m.Status === 'Complete';
+                const isDone = isCompleteMilestone(m.Status);
                 return (
                   <PhaseRow key={m.id} $empty={false}>
                     <Node $color={color} $done={isDone}>

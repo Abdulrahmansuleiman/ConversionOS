@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FiExternalLink, FiArrowRight } from 'react-icons/fi';
 import { client } from '../api/client';
 import { theme, projectStatusColor } from '../theme';
+import { countComplete, allMilestonesComplete } from '../lib/status';
 import { Card, StatusBadge, Avatar, ProgressBar, Loading, EmptyState, formatDate, daysUntil } from '../components/ui';
 import { Header } from '../components/Header';
 import type { Project, Milestone } from '../types';
@@ -49,14 +50,20 @@ export function Projects({ onOpenProject }: { onOpenProject: (id: string) => voi
         <ProjectGrid>
           {projects.map((p) => {
             const ms = milestones[p.id] || [];
-            const done = ms.filter((m) => m.Status === 'Complete').length;
+            const done = countComplete(ms);
             const progress = ms.length ? Math.round((done / ms.length) * 100) : 0;
+            // A finished mission can never render as anything but done, even if
+            // a stale status was cached in this tab.
+            const statusLabel = allMilestonesComplete(ms) ? 'Completed' : p.Status || '—';
             const tMinus = daysUntil(p['Launch Date']);
             return (
               <ProjectCard key={p.id} onClick={() => onOpenProject(p.id)}>
                 <Top>
                   <Avatar name={p.title} />
-                  <StatusBadge label={p.Status || '—'} color={projectStatusColor[p.Status || ''] || '#5B6787'} />
+                  <StatusBadge
+                    label={statusLabel}
+                    color={projectStatusColor[statusLabel] || '#5B6787'}
+                  />
                 </Top>
                 <Name>{p.title}</Name>
                 <Meta>

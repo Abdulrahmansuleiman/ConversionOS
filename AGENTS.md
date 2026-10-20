@@ -276,6 +276,16 @@ maps database names → ids. Full model, API-version rules, and the per-client f
 form workflow live in the **`notion-project-store` skill** (`.opencode/.agents/skills/notion-project-store`).
 Load it before touching any portal/Notion project data.
 
+**Project status is derived, never hand-written.** `Projects.Status` is computed
+from the roadmap on every read/write by `launchops-portal/server/status.js`
+(markdown spec: `docs/project-status.md`). Every stage complete → `Completed`;
+Launch complete → `Completed` (post-launch support is not required first). Never
+PATCH a project's Status directly on a project that has milestones — mark the
+stage. After bulk edits or new-client imports run
+`node scripts/reconcile-project-status.mjs`; before deploying status/roadmap
+changes run `node scripts/test-project-status.mjs`. A change is not fixed until
+it is deployed — production deploys from `master`.
+
 **Client documents live in Notion, never in repo folders.** Every client-facing PDF
 (proposal, contract, invoice, receipt) is stored in the **Client Documents** database
 via `scripts/notion-upload-document.mjs` (Notion file-upload flow) and surfaced in the

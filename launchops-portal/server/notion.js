@@ -110,10 +110,11 @@ export function normalize(props, titleKey) {
   };
 }
 
-export async function queryDatabase(name, { filter, sorts, pageSize = 100 } = {}) {
+async function queryDatabasePage(name, { filter, sorts, pageSize = 100, startCursor } = {}) {
   const body = { page_size: pageSize };
   if (filter) body.filter = filter;
   if (sorts) body.sorts = sorts;
+  if (startCursor) body.start_cursor = startCursor;
   // Use the backing data source id when this store has one (new API model),
   // otherwise query the classic database id directly (created with API 2022-06-28).
   const ds = store().dataSources?.[name];
@@ -122,12 +123,25 @@ export async function queryDatabase(name, { filter, sorts, pageSize = 100 } = {}
   // queried with the version they were created under (2022-06-28), otherwise
   // Notion rejects the request URL.
   const version = ds ? NOTION_VERSION : '2022-06-28';
-  const res = await api('POST', `https://api.notion.com/v1/${base}/query`, body, version);
+  return api('POST', `https://api.notion.com/v1/${base}/query`, body, version);
+}
+
+export async function queryDatabase(name, opts = {}) {
+  const res = await queryDatabasePage(name, opts);
   return res.results;
 }
 
+// Read every row, following `next_cursor`. Notion caps a page at 100, so a
+// single-page read silently drops rows once the store grows — which would hide
+// milestones and make a finished project look unfinished. Never single-page.
 export async function listRows(name, titleKey, opts = {}) {
-  const rows = await queryDatabase(name, opts);
+  const rows = [];
+  let cursor;
+  do {
+    const page = await queryDatabasePage(name, { ...opts, startCursor: cursor });
+    rows.push(...page.results);
+    cursor = page.has_more && page.next_cursor ? page.next_cursor : null;
+  } while (cursor);
   return rows.map((r) => normalize({ __id: r.id, __created_time: r.created_time, ...r.properties }, titleKey));
 }
 

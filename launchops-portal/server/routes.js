@@ -3,6 +3,7 @@
 import express from 'express';
 import * as n from './notion.js';
 import { DB } from './schemas.js';
+import { deriveProjectStatus } from './status.js';
 
 export function buildRoutes() {
   const r = express.Router();
@@ -16,6 +17,68 @@ export function buildRoutes() {
   async function projectNameMap() {
     const projects = await n.listRows('Projects', DB.Projects.titleKey);
     return new Map(projects.map((p) => [p.id, p.title]));
+  }
+
+  // --- Status self-heal ----------------------------------------------------
+  // Projects.Status and milestone Status are independent Notion fields, so
+  // they can drift ("In Discovery" + every milestone Complete). The effective
+  // status is always derived from the milestones (advance-only, see
+  // status.js) and, when it differs from what's stored, we write it back so
+  // the Notion store heals itself too.
+  async function withDerivedStatus(project, milestones) {
+    const derived = deriveProjectStatus(project.Status, milestones);
+    if (!derived || derived === project.Status) return project; // no opinion / already right → no write
+    try {
+      await n.updateRow(project.id, { Status: derived }, DB.Projects.props);
+      console.log(`[status] healed ${project.id} "${project.title}": ${project.Status} -> ${derived}`);
+    } catch (e) {
+      // A read must never fail because the write-back failed — the API answer
+      // is correct either way (the next read retries the heal).
+      console.error(`[status] heal failed ${project.id}: ${e.message}`);
+    }
+    return { ...project, Status: derived };
+  }
+
+  // Re-derive one project's Status from its own roadmap, right now, and write
+  // it back. Called on every milestone write so the project row is correct the
+  // instant a stage is marked Complete — it does not depend on the client
+  // refetching, on a later read, or on anyone remembering to set the select.
+  async function syncProjectStatus(projectId) {
+    try {
+      const [project, milestones] = await Promise.all([
+        n.getRow('Projects', projectId, DB.Projects.titleKey),
+        n.listRows('Roadmap', DB.Roadmap.titleKey, {
+          filter: { property: 'Project', relation: { contains: projectId } },
+        }),
+      ]);
+      return await withDerivedStatus(project, milestones);
+    } catch (e) {
+      console.error(`[status] sync failed for project ${projectId}: ${e.message}`);
+      return null;
+    }
+  }
+
+  async function syncProjectsForMilestone(milestone) {
+    const ids = [...new Set(milestone?.Project || [])];
+    const synced = await Promise.all(ids.map((id) => syncProjectStatus(id)));
+    return synced
+      .filter(Boolean)
+      .map((p) => ({ id: p.id, title: p.title, Status: p.Status }));
+  }
+
+  async function listProjectsWithStatus(projectOpts = {}) {
+    const [projects, milestones] = await Promise.all([
+      n.listRows('Projects', DB.Projects.titleKey, projectOpts),
+      n.listRows('Roadmap', DB.Roadmap.titleKey),
+    ]);
+    const byProject = new Map();
+    for (const m of milestones) {
+      for (const pid of m.Project || []) {
+        if (!byProject.has(pid)) byProject.set(pid, []);
+        byProject.get(pid).push(m);
+      }
+    }
+    return Promise.all(projects.map((p) => withDerivedStatus(p, byProject.get(p.id) || [])));
   }
 
   // --- Health ---
@@ -32,7 +95,7 @@ export function buildRoutes() {
   r.get('/overview', async (_req, res) => {
     try {
       const [projects, feedback] = await Promise.all([
-        n.listRows('Projects', DB.Projects.titleKey),
+        listProjectsWithStatus(),
         n.listFeedback(),
       ]);
       const active = projects.filter((p) => !['Completed', 'In Discovery'].includes(p.Status ?? ''));
@@ -63,10 +126,35 @@ export function buildRoutes() {
     }
   });
 
+  // --- Status reconcile ----------------------------------------------------
+  // Heal every project's Status from its roadmap in one call. Safe to run any
+  // time, idempotent, and it is exactly what the portal shows. Used after a
+  // deploy and as the recovery path if a row is ever hand-edited in Notion.
+  const reconcileAll = async () => {
+    const rows = await listProjectsWithStatus();
+    return rows.map((p) => ({ id: p.id, title: p.title, Status: p.Status }));
+  };
+
+  r.post('/status/reconcile', async (_req, res) => {
+    try {
+      res.json({ ok: true, projects: await reconcileAll() });
+    } catch (e) {
+      res.status(500).json({ ok: false, error: e.message });
+    }
+  });
+
+  r.get('/status/reconcile', async (_req, res) => {
+    try {
+      res.json({ ok: true, projects: await reconcileAll() });
+    } catch (e) {
+      res.status(500).json({ ok: false, error: e.message });
+    }
+  });
+
   // --- Projects ---
   r.get('/projects', async (_req, res) => {
     try {
-      const rows = await n.listRows('Projects', DB.Projects.titleKey, {
+      const rows = await listProjectsWithStatus({
         sorts: [{ property: 'Client', direction: 'ascending' }],
       });
       res.json(rows);
@@ -90,7 +178,7 @@ export function buildRoutes() {
         n.listFeedback({ projectId: req.params.id }),
       ]);
       res.json({
-        project,
+        project: await withDerivedStatus(project, milestones),
         milestones: sortByPhase(milestones),
         assets,
         feedback,
@@ -135,7 +223,10 @@ export function buildRoutes() {
   r.post('/milestones', async (req, res) => {
     try {
       const id = await n.createRow('Roadmap', req.body, DB.Roadmap.props);
-      res.status(201).json({ ok: true, id });
+      // A newly created (already-complete) stage must move the project too.
+      const row = await n.getRow('Roadmap', id, DB.Roadmap.titleKey);
+      const projects = await syncProjectsForMilestone(row);
+      res.status(201).json({ ok: true, id, projects });
     } catch (e) {
       res.status(500).json({ error: e.message });
     }
@@ -144,7 +235,12 @@ export function buildRoutes() {
   r.patch('/milestones/:id', async (req, res) => {
     try {
       await n.updateRow(req.params.id, req.body, DB.Roadmap.props);
-      res.json({ ok: true, id: req.params.id });
+      // Re-derive the parent project's Status immediately. The response carries
+      // it back so the client can show the new status without a refetch, and
+      // the same write is what keeps Notion correct.
+      const row = await n.getRow('Roadmap', req.params.id, DB.Roadmap.titleKey);
+      const projects = await syncProjectsForMilestone(row);
+      res.json({ ok: true, id: req.params.id, projects });
     } catch (e) {
       res.status(500).json({ error: e.message });
     }
