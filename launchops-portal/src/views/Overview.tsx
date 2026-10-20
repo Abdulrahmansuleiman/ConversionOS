@@ -23,15 +23,18 @@ export function Overview({ onOpenProject }: { onOpenProject: (id: string) => voi
     .map(([name, value]) => ({ name, value }))
     .filter((d) => d.value > 0);
 
+  const hero = launchHero(data);
+  const avg = data.avgRating;
+
   return (
     <div>
       <Header title="Overview" subtitle="Your agency at a glance — every mission in one place" eyebrow="Flight deck" />
 
       <Hero>
         <HeroLeft>
-          <HeroLabel>NEXT LAUNCH</HeroLabel>
-          <HeroValue>{nextLaunch(data) ? formatDate(nextLaunch(data).launchDate) : '—'}</HeroValue>
-          <HeroSub>{nextLaunch(data) ? launchSub(nextLaunch(data)) : 'No launch scheduled yet'}</HeroSub>
+          <HeroLabel>{hero.label}</HeroLabel>
+          <HeroValue>{hero.value}</HeroValue>
+          <HeroSub>{hero.sub}</HeroSub>
         </HeroLeft>
         <HeroRight>
           <HeroStat>
@@ -46,14 +49,37 @@ export function Overview({ onOpenProject }: { onOpenProject: (id: string) => voi
       </Hero>
 
       <KpiGrid>
-        <KpiCard icon={<FiFolder />} color="#8B96AC" label="Total projects" value={String(data.totalProjects)} />
-        <KpiCard icon={<FiZap />} color="#FFB43A" label="Active projects" value={String(data.activeProjects)} />
-        <KpiCard icon={<FiGlobe />} color="#34D399" label="Live dashboards" value={String(data.liveDashboards)} />
+        <KpiCard
+          icon={<FiFolder />}
+          color="#8B96AC"
+          label="Total projects"
+          value={String(data.totalProjects)}
+          hint="Every client on record"
+        />
+        <KpiCard
+          icon={<FiZap />}
+          color="#FFB43A"
+          label="Active projects"
+          value={String(data.activeProjects)}
+          hint="In delivery or live — completed clients still count"
+        />
+        <KpiCard
+          icon={<FiGlobe />}
+          color="#34D399"
+          label="Live dashboards"
+          value={String(data.liveDashboards)}
+          hint="Built and deployed, with a dashboard link"
+        />
         <KpiCard
           icon={<FiStar />}
           color="#4CC9F0"
           label="Average rating"
-          value={data.avgRating === null ? '—' : `${Number(data.avgRating).toFixed(1)}/10`}
+          value={avg === null ? '—' : `${Number(avg).toFixed(1)}/10`}
+          hint={
+            avg === null
+              ? 'No client ratings yet'
+              : `From ${data.feedbackCount} feedback response${data.feedbackCount === 1 ? '' : 's'}`
+          }
         />
       </KpiGrid>
 
@@ -111,12 +137,21 @@ export function Overview({ onOpenProject }: { onOpenProject: (id: string) => voi
   );
 }
 
-function nextLaunch(data: OverviewData) {
-  return (
-    data.launches
-      .filter((l) => l.launchDate && l.status !== 'Live' && l.status !== 'Completed')
-      .sort((a, b) => a.launchDate.localeCompare(b.launchDate))[0] || null
-  );
+// Next launch = soonest date from today. With no upcoming date we show the most
+// recent launch instead of a bare dash, so the panel is never empty when the
+// agency has shipped something. The label changes with it.
+function launchHero(data: OverviewData) {
+  const dated = data.launches.filter((l) => l.launchDate);
+  const today = new Date().toISOString().slice(0, 10);
+  const upcoming = dated
+    .filter((l) => l.launchDate >= today)
+    .sort((a, b) => a.launchDate.localeCompare(b.launchDate))[0];
+  if (upcoming) return { label: 'NEXT LAUNCH', value: formatDate(upcoming.launchDate), sub: launchSub(upcoming) };
+
+  const latest = [...dated].sort((a, b) => b.launchDate.localeCompare(a.launchDate))[0];
+  if (latest) return { label: 'LATEST LAUNCH', value: formatDate(latest.launchDate), sub: launchSub(latest) };
+
+  return { label: 'NEXT LAUNCH', value: '—', sub: 'No launch dates recorded yet' };
 }
 
 function launchSub(l: { title: string; launchDate: string }) {
@@ -127,7 +162,19 @@ function launchSub(l: { title: string; launchDate: string }) {
   return `${l.title} launches in ${n === 1 ? '1 day' : `${n} days`}`;
 }
 
-function KpiCard({ icon, color, label, value }: { icon: React.ReactNode; color: string; label: string; value: string }) {
+function KpiCard({
+  icon,
+  color,
+  label,
+  value,
+  hint,
+}: {
+  icon: React.ReactNode;
+  color: string;
+  label: string;
+  value: string;
+  hint?: string;
+}) {
   return (
     <Card>
       <KpiTop>
@@ -135,6 +182,7 @@ function KpiCard({ icon, color, label, value }: { icon: React.ReactNode; color: 
         <KpiValue>{value}</KpiValue>
       </KpiTop>
       <KpiLabel>{label}</KpiLabel>
+      {hint && <KpiHint>{hint}</KpiHint>}
     </Card>
   );
 }
@@ -257,6 +305,14 @@ const KpiValue = styled.div`
 const KpiLabel = styled.div`
   color: ${theme.colors.textMuted};
   font-size: 13px;
+`;
+
+const KpiHint = styled.div`
+  margin-top: 4px;
+  font-family: ${theme.fonts.mono};
+  font-size: 10.5px;
+  line-height: 1.45;
+  color: ${theme.colors.textFaint};
 `;
 
 const Grid2 = styled.div`

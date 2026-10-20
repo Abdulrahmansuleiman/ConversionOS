@@ -98,8 +98,23 @@ export function buildRoutes() {
         listProjectsWithStatus(),
         n.listFeedback(),
       ]);
-      const active = projects.filter((p) => !['Completed', 'In Discovery'].includes(p.Status ?? ''));
-      const live = projects.filter((p) => p.Status === 'Live' || (p.Status === 'Completed' && p.DashboardURL));
+      // KPI definitions (docs/portal-metrics.md):
+      //   Total projects  — every client on record.
+      //   Active projects — clients we are working for or supporting. A COMPLETED
+      //                     project is a live client, so it stays active; only an
+      //                     explicitly archived/cancelled one drops out. This is
+      //                     why Active must never be 0 while clients exist.
+      //   Live dashboards — dashboards we have actually built and deployed, i.e.
+      //                     a Dashboard URL is on record (any status).
+      //   Average rating  — mean of client feedback ratings, null when none yet.
+      const ARCHIVED = new Set(['archived', 'cancelled', 'canceled']);
+      const isArchived = (p) => ARCHIVED.has(String(p.Status ?? '').trim().toLowerCase());
+      const hasDashboard = (p) =>
+        (typeof p['Dashboard URL'] === 'string' && p['Dashboard URL'].trim() !== '') ||
+        String(p.Status ?? '').trim().toLowerCase() === 'live';
+
+      const active = projects.filter((p) => !isArchived(p));
+      const dashboards = projects.filter(hasDashboard);
       const ratings = feedback.map((f) => f.Rating).filter((x) => typeof x === 'number');
       const statusBreakdown = projects.reduce((acc, p) => {
         const s = p.Status || 'Unknown';
@@ -109,7 +124,7 @@ export function buildRoutes() {
       res.json({
         totalProjects: projects.length,
         activeProjects: active.length,
-        liveDashboards: live.length,
+        liveDashboards: dashboards.length,
         feedbackCount: feedback.length,
         avgRating: ratings.length ? ratings.reduce((a, b) => a + b, 0) / ratings.length : null,
         statusBreakdown,
